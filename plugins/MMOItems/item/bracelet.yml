@@ -1,0 +1,4 @@
+RING:
+  base:
+    material: DIAMOND
+    lifesteal: 10.0

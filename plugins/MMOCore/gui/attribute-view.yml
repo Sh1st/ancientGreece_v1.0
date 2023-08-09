@@ -1,0 +1,77 @@
+
+# GUI display name
+name: Атрибуты персонажа
+
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 27
+
+items:
+    reallocate:
+        slots: [26]
+        function: reallocation
+        item: CAULDRON
+        name: '&aОчки атрибутов'
+        lore:
+            - ''
+            - 'Всего вы потратили &6{total}&7 очков атрибутов.'
+            - '&7Нажмите правой кнопкой мыши, чтобы'
+            - '&7перераспределить их.'
+            - ''
+            - '&eНужно 1 очко перераспределения атрибута.'
+            - '&e◆ Очки перераспределения атрибутов: &6{points}'
+    str:
+        slots: [11]
+        function: attribute_strength
+        name: '&cСила'
+        item: GOLDEN_APPLE
+        lore: # {buffs} returns amount of buffs
+            - ''
+            - '&7Потрачено очков: &6{spent}&7/&6{max}'
+            - '&7Всего силы: &6&l{current}'
+            - ''
+            - '&8При повышении уровня:'
+            - '&7  +{buff_attack_damage}% Физический урон (&a+{total_attack_damage}%&7)'
+            - '&7  +{buff_max_health}% Максимальное здоровье (&a+{total_max_health}%&7)'
+            - ''
+            - '&eНажмите, для улучшения на 1 очко'
+            - '&e◆ Текущие очки атрибутов: {attribute_points}'
+    dex:
+        slots: [13]
+        function: attribute_dexterity
+        name: '&aЛовкость'
+        item: LEATHER_BOOTS
+        hide-flags: true
+        lore:
+            - ''
+            - '&7Потрачено очков: &6{spent}&7/&6{max}'
+            - '&7Всего ловкости: &6&l{current}'
+            - ''
+            - '&8При повышении уровня:'
+            - '&7  +{buff_projectile_damage}% Урон от снарядов (&a+{total_projectile_damage}%&7)'
+            - '&7  +{buff_attack_speed}% Скорость атаки (&a+{total_attack_speed}%&7)'
+            - '&7  +{buff_armor} Броня (&a+{total_armor}%&7)'
+            - '&7  +{buff_movement_speed}% Скорость передвижения (&a+{total_movement_speed}%&7)'
+            - ''
+            - '&eНажмите, для улучшения на 1 очко'
+            - '&e◆ Текущие очки атрибутов: {attribute_points}'
+    int:
+        slots: [15]
+        function: attribute_intelligence
+        name: '&bИнтеллект'
+        item: BOOK
+        lore:
+            - ''
+            - '&7Потрачено очков: &6{spent}&7/&6{max}'
+            - '&7Всего интеллекта: &6&l{current}'
+            - ''
+            - '&8При повышении уровня:'
+            - '&7  +{buff_magic_damage}% Урон способностей (&a+{total_magic_damage}%&7)'
+            - '&7  +{buff_cooldown_reduction}% Кулдаун способностей (&a+{total_cooldown_reduction}%&7)'
+            - '&7  +{buff_additional_experience}% XP Бонус (&a+{total_additional_experience}%&7)'
+            - '&7  +{buff_max_mana} Максимальная мана (&a+{total_max_mana}&7)'
+            - '&7  +{buff_mana_regeneration} Регенерация маны (&a+{total_mana_regeneration}&7)'
+            - ''
+            - '&eНажмите, для улучшения на 1 очко'
+            - '&e◆ Текущие очки атрибутов: {attribute_points}'

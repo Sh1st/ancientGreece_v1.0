@@ -1,0 +1,642 @@
+
+# Default item types. These cannot be removed. They
+# may be used as 'parents' to create new item types
+# which will behave just like another item type. Parents
+# generate their own config file at /language/item_type.yml
+
+# Every item type has its template for unidentified items.
+# If you don't specify one like the default SWORD item type,
+# it will use the default (not translated) english one.
+
+# Used as reference when using /mmoitems commands
+SWORD:
+
+    # The display parameter is used to display the item in both
+    # the item brower and the recipe list when shifting a
+    # workbench. You can use durability for custom textures.
+    # In 1.14, durability is replaced by CustomModelData.
+    display: IRON_SWORD:0
+    
+    # Name displayed in the item lore.
+    name: 'Sword'
+    
+    # Template of an unidentified item.
+    unident-item:
+        name: '&f#prefix#Неопознанный меч'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+DAGGER:
+    display: STONE_SWORD
+    name: 'Dagger'
+    unident-item:
+        name: '&f#prefix#Неопознанный кинжал'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+SPEAR:
+    display: TRIDENT
+    name: 'Spear'
+    unident-item:
+        name: '&f#prefix#Неопознанное копьё'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+HAMMER:
+    display: IRON_AXE
+    name: 'Hammer'
+    unident-item:
+        name: '&f#prefix#Неопознанный молот'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+GAUNTLET:
+    display: IRON_HORSE_ARMOR
+    name: 'Gauntlet'
+    unident-item:
+        name: '&f#prefix#Неопознанная перчатка'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+WHIP:
+    display: LEAD
+    name: 'Whip'
+    unident-item:
+        name: '&f#prefix#Неопознанный хлыст'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+STAFF:
+    display: DIAMOND_HOE
+    name: 'Staff'
+    unident-item:
+        name: '&f#prefix#Неопознанный посох'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+BOW:
+    display: BOW
+    name: 'Bow'
+    unident-item:
+        name: '&f#prefix#Неопознанный лук'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+CROSSBOW:
+    display: WOODEN_PICKAXE
+    name: 'Crossbow'
+    unident-item:
+        name: '&f#prefix#Неопознанный арбалет'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+MUSKET:
+    display: IRON_HORSE_ARMOR
+    name: 'Musket'
+    unident-item:
+        name: '&f#prefix#Неопознанный мушкет'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+LUTE:
+    display: NAME_TAG
+    name: 'Lute'
+    unident-item:
+        name: '&f#prefix#Неопознанный лут'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+# Applies stats in both hands
+CATALYST:
+    display: PRISMARINE_SHARD
+    name: 'Catalyst'
+    unident-item:
+        name: '&f#prefix#Неопознанный катализатор'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+# Applies stats in offhand only
+OFF_CATALYST:
+    display: PRISMARINE_CRYSTALS
+    name: 'Catalyst (Offhand)'
+    unident-item:
+        name: '&f#prefix#Неопознанный катализатор (левая рука)'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+# Applies stats in mainhand only
+MAIN_CATALYST:
+    display: PRISMARINE_CRYSTALS
+    name: 'Catalyst (Mainhand)'
+    unident-item:
+        name: '&f#prefix#Неопознанный катализатор (правая рука)'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+ORNAMENT:
+    display: GOLD_NUGGET
+    name: 'Ornament'
+    unident-item:
+        name: '&f#prefix#Неопознанное украшение'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+ACCESSORY:
+    display: DIAMOND
+    name: 'Accessory'
+    unident-item:
+        name: '&f#prefix#Неопознанный аксессуар'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+ARMOR:
+    display: IRON_CHESTPLATE
+    name: 'Armor'
+    unident-item:
+        name: '&f#prefix#Неопознанная броня'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+TOOL:
+    display: IRON_PICKAXE
+    name: 'Tool'
+    unident-item:
+        name: '&f#prefix#Неопознанный инструмент'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+CONSUMABLE:
+    display: APPLE
+    name: 'Consumable'
+    unident-item:
+        name: '&f#prefix#Неопознанные материалы'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+MISCELLANEOUS:
+    display: WATER_BUCKET
+    name: 'Miscellaneous'
+    unident-item:
+        name: '&f#prefix#Неопознанные разные предметы'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+SKIN:
+    display: LEATHER
+    name: 'Skin'
+    unident-item:
+        name: '&f#prefix#Неопознанный скин'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+GEM_STONE:
+    display: EMERALD
+    name: 'Gem Stone'
+    unident-item:
+        name: '&f#prefix#Неопознанный гем'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+BLOCK:
+    display: STONE:0
+    name: 'Block'
+    unident-item:
+        name: '&f#prefix#Неопознанный блок'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+
+# Default subtypes
+GREATSWORD:
+    display: DIAMOND_SWORD
+    name: 'Greatsword'
+    parent: 'SWORD'
+    unident-item:
+        name: '&f#prefix#Неопознанный огромный меч'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+LONG_SWORD:
+    display: STONE_SWORD
+    name: 'Long Sword'
+    parent: 'SWORD'
+    unident-item:
+        name: '&f#prefix#Неопознанный длинный меч'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+KATANA:
+    display: IRON_SWORD
+    name: 'Katana'
+    parent: 'SWORD'
+    unident-item:
+        name: '&f#prefix#Неопознанная катана'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+THRUSTING_SWORD:
+    display: GOLDEN_SWORD
+    name: 'Thrusting Sword'
+    parent: 'DAGGER'
+    unident-item:
+        name: '&f#prefix#Неопознанный колющий кинжал'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+    
+AXE:
+    display: STONE_AXE
+    name: 'Axe'
+    parent: 'SWORD'
+    unident-item:
+        name: '&f#prefix#Неопознанный топор'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+    
+GREATAXE:
+    display: DIAMOND_AXE
+    name: 'Greataxe'
+    parent: 'SWORD'
+    unident-item:
+        name: '&f#prefix#Неопознанный огромный топор'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+    
+HALBERD:
+    display: IRON_AXE
+    name: 'Halberd'
+    parent: 'SWORD'
+    unident-item:
+        name: '&f#prefix#Неопознанная алебарда'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+    
+LANCE:
+    display: STICK
+    name: 'Lance'
+    parent: 'SPEAR'
+    unident-item:
+        name: '&f#prefix#Неопознанная пика'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+    
+GREATHAMMER:
+    display: DIAMOND_AXE
+    name: 'Greathammer'
+    parent: 'HAMMER'
+    unident-item:
+        name: '&f#prefix#Неопознанная огромная кувалда'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+    
+GREATSTAFF:
+    display: DIAMOND_HOE
+    name: 'Greatstaff'
+    parent: 'HAMMER'
+    unident-item:
+        name: '&f#prefix#Неопознанный большой посох'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+    
+STAVE:
+    display: IRON_HOE
+    name: 'Stave'
+    parent: 'HAMMER'
+    unident-item:
+        name: '&f#prefix#Неопознанный скипетр'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+    
+TOME:
+    display: BOOK
+    name: 'Tome'
+    parent: 'CATALYST'
+    unident-item:
+        name: '&f#prefix#Неопознанный том'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+    
+TALISMAN:
+    display: TOTEM_OF_UNDYING
+    name: 'Talisman'
+    parent: 'CATALYST'
+    unident-item:
+        name: '&f#prefix#Неопознанный талисман'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+ 
+WAND:
+    display: STICK
+    name: 'Wand'
+    parent: 'STAFF'
+    unident-item:
+        name: '&f#prefix#Неопознанная палка'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+
+GREATBOW:
+    display: BOW
+    name: 'Greatbow'
+    parent: 'BOW'
+    unident-item:
+        name: '&f#prefix#Неопознанный большой лук'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+    
+SHIELD:
+    display: SHIELD
+    name: 'Shield'
+    parent: CATALYST
+    unident-item:
+        name: '&f#prefix#Неопознанный щит'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+    
+MATERIAL:
+    display: PAPER
+    name: 'Material'
+    parent: 'MISCELLANEOUS'
+    unident-item:
+        name: '&f#prefix#Неопознанный материал'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'    
+RING:
+    display: DIAMOND
+    name: 'Ring'
+    unident-item:
+        name: '&f#prefix#Неопознанное кольцо'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+        
+BRACELET:
+    display: DIAMOND
+    name: 'Bracelet'
+    unident-item:
+        name: '&f#prefix#Неопознанный браслет'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'
+        
+AMULET:
+    display: DIAMOND
+    name: 'Amulet'
+    unident-item:
+        name: '&f#prefix#Неопознанный амулет'
+        lore:
+        - '&7Предмет был запечатан. Отнесите'
+        - '&7его к идентификатору, чтобы раскрыть'
+        - '&7потенциал предмета!'
+        - '{tier}'
+        - '{tier}&aИнфо:'
+        - '{range}&a- &7Диапазон уровней: &f#range#'
+        - '{tier}&a- &7Качество: #prefix##tier#'

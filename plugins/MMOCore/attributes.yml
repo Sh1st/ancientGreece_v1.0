@@ -1,0 +1,36 @@
+
+# Attribute ID
+strength:
+
+    name: Strength
+    
+    # Maximum amount of points players 
+    # may spend in this attribute.
+    max-points: 20
+    
+    # Buffs given every 1 attribute point spent
+    # in this specific attribute.
+    buff:
+        attack_damage: 1%
+        max_health: 1%
+
+dexterity:
+    name: Dexterity
+    max-points: 20
+    buff:
+        projectile_damage: 1
+        attack_speed: 0.5%
+        armor: 0.1
+        movement_speed: 0.5%
+
+intelligence:
+    name: Intelligence
+    max-points: 20
+    buff:
+        magic_damage: 1
+        cooldown_reduction: 1
+        additional_experience: 1
+        max_mana: 1
+        mana_regeneration: 0.02
+        
+        

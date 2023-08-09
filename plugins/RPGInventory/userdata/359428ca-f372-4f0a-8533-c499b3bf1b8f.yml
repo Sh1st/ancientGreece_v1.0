@@ -1,0 +1,89 @@
+inventory:
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Bracelet"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"+10%
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Вампиризм"}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf1c/Zw9AsJZmCKjuVgEICLg8h4TxcGliBPP3c2BiG4hI+nm2twiKujj4MKAxhwMIjCJV0i/Rx9PZ3jffyDXBn0o5XUkp2KEpNTc1JLlHSUgEgtUdvQQFVBzfzCpAsbLuy5sP/CjosNF3Zc2H5hjxLQeiFU60MiA1wZOJyCHJ1dfVxDOBj4PIJDgiIRTnaoVgouSSxRslKCCQGt8HcPLskvqlSyiq5WwvBl/OGNxSVFQA3RsUq1sbUMALozS24NAQAA
+  '34':
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Ring"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"+10%
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Вампиризм"}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf1c/Zw9AsJZmCKjuVgEICLg8h4TxcGliBPP3c2BiG4hI+nm2twiKujj4MKAxhwMIjCJV0i/Rx9PZ3jffyDXBm0o5XUkoMy89KVdJSASC1R29BAVUHN/MKkCxsu7Lmw/8KOiw0XdlzYfmGPEtBqIVSrQyIDXCGWczDweQSHBEUinOpQrRRckliiZKUEEwIa7+8eXJJfVKlkFV2thOG7+MMbi0uKgBqiY5VqY2sZAFfp504FAQAA
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Amulet"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"+10%
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Вампиризм"}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf1c/Zw9AsJZmCKjuVgEICLg8h4TxcGliBPP3c2BiG4hI+nm2twiKujj4MKAxhwMIjCJV0i/Rx9PZ3jffyDXBl0o5XUkh1zS3NSS5R0lIBILVHb0EBVQc38wqQLGy7subD/wo6LDRd2XNh+YY8S0HIhVMtDIgNcGdgcfUN9XEM4GPg8gkOCIhHOdahWCi5JLFGyUoIJAS3wdw8uyS+qVLKKrlbC8GH84Y3FJUVADdGxSrWxtQwAnrjEawkBAAA=
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Ring"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"+10%
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Вампиризм"}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitemsDecoy
+          uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf1c/Zw9AsJZmCKjuVgEICLg8h4TxcGliBPP3c2BiG4hI+nm2twiKujj4MKAxhwMIjCJV0i/Rx9PZ3jffyDXBm0o5XUkoMy89KVdJSASC1R29BAVUHN/MKkCxsu7Lmw/8KOiw0XdlzYfmGPEtBqIVSrQyIDXCGWczDweQSHBEUinOpQrRRckliiZKUEEwIa7+8eXJJfVKlkFV2thOG7+MMbi0uKgBqiY5VqY2sZAFfp504FAQAA

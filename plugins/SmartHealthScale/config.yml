@@ -1,0 +1,46 @@
+# --------- MUST READ ---------
+
+# Using VSCode for yaml files will reduce 40% of the yml errors!
+# Each and every config section is super heavily commented
+# I assume you are configuring the right way!
+# Happy Admining, Good Luck!
+
+# --------- --------- ---------
+
+
+# This plugin will just change visibility of hearts, but player will have actual number of hearts,
+# Just to reduce the cluttering!
+
+# NOTE: Health is not Hearts, 2 health = 1 heart.
+# Make sure to use '/shs reload' (after making changes!)
+# Do '/shs help' if you are confused.
+
+
+# Health Settings
+
+enable-scaling: 'true'
+# Whether Health should scale(at true) or not(at false)
+# This value can be changed in-game too(use /shs help)
+# Keeping it blank will result in true.
+# Value: 'true' or 'false'.
+
+scale-at: 1
+# This is the minimum health of player, after which the scaling will be applied
+# Value: Positive INTEGERS Only (>=1), No Decimals.
+
+scale-to: 40
+# This is the number of health(hearts = scale-to/2) visible after the 'scale-at' limit is crossed.
+# Value: Positive INTEGERS Only (>=1), No Decimals.
+
+# Permission Settings
+permission-denial-message: "&cHey, you don't have permission to do that!"
+# Prints to the player(non-admins) if he/she tries to execute /shsreload OR /smarthealthscale
+
+send-denial-message: true
+# Whether to send the above message
+
+permission: 'rank.admin'
+# This is the permission required to reload this config file.
+# Always true for Operators.
+# Make sure you have this 'rank.admin' included in your admin group of the permission Plugin. (e.g.Luckperms, etc.)
+# Value: Any text/numbers. (must not be empty!)

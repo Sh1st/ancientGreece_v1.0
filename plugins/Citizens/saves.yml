@@ -1,0 +1,234 @@
+# Citizens NPC Storage
+
+
+last-created-npc-id: 12
+npc:
+  '8':
+    metadata:
+      cached-skin-uuid: 2eb1d49c-f54d-4a28-bc70-c3de25ecce4b
+      cached-skin-uuid-name: hurius
+      nameplate-visible: 'false'
+    name: '&2Охотник'
+    uuid: 17e231f5-6ca6-4f68-98a8-f12fd2a806fb
+    traits:
+      spawned: true
+      lookclose:
+        range: '5.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        headonly: false
+        perplayer: false
+        randomLookDelay: 60
+        randomSwitchTargets: false
+        realisticlooking: false
+        targetnpcs: false
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: HcFLiO7n2QlVGgKfc24QxK/gj3nu/qvb3dO77qAansNRKV/SI6xiaMciPsidUasDBm2Gyh7erGOK0uNrveQkLdwsbTB+wtstO7F9etf4oJ843m/Y1fxhePPRXpxuSx1GsUiquP8nqSjHOClaNOwatzeVxQBCBD+MnllfaMiOORMxmaWc7mRmkp8CFJLAGH0IiOQO54ibCqNLARyr92eviHUzCFRzgoDapSlL3bG/8ZJkKwJ27HttHNyN5ncWudolg3kJ2plh4lATikGqsqC4ZdQhauLlIY2iav140+WdfhJs7n+t5V/eOTQCc26nCWuReQtu4Fh3mwM3yz7HM2bxhpZPzFdU9Y3KH2xJXgR9GM3C3bWMhrG36WF999wvwgejfpy1ANBEvYS5hu123jKUapaXeO5Eg9pD/XvkaEKdAkMCwEmybcU8EJ5OmM0laZLO4Obl71TEM+mEYemDqy1T+2BHD20wBXduxRXNQL3RvQK6wGVyl4BfwEaH+zh9M2OBITMoy2b4G4/pW1IqL1w6PTdR8Sd8GdrvXXvVnsalWTlJy6CSH9D3YLjSvsHUayE340YOPn9on6fP3P/2owuvgAasTkenOXw1SEkjqu+MoBS4vg9JLRCEL/YGaPf/NlGax2flolUAYvFk/o/Q0XvuOS5VzXaSzNGHO17IhJH4X0I=
+        skinName: Hurius
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY4NTM2MjM1NjEzNCwKICAicHJvZmlsZUlkIiA6ICIyZWIxZDQ5Y2Y1NGQ0YTI4YmM3MGMzZGUyNWVjY2U0YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJIdXJpdXMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGE1YTllYjJlMzA2NWQzZTU5YWNjMmQyYzk2NzdiNTAxMmE2ZWE2YjIwMDAzOWJmMDUyMWNiMTkwYjhkMmQ1MCIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjlhNzY1Mzc2NDc5ODlmOWEwYjZkMDAxZTMyMGRhYzU5MWMzNTllOWU2MWEzMWY0Y2UxMWM4OGYyMDdmMGFkNCIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      type: PLAYER
+      location:
+        bodyYaw: -57.62367
+        world: world
+        x: '-208.472'
+        y: '67.0'
+        z: '196.4974'
+        yaw: '-57.6237'
+        pitch: '0.0'
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1
+        hideErrorMessages: false
+        persistSequence: false
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+        lines:
+          '0': '&7NPC'
+          '1': '&2Охотник'
+      owner:
+        uuid: ''
+    traitnames: hologramtrait,rotationtrait,skintrait,spawned,lookclose,commandtrait,owner,scoreboardtrait,mounttrait,location,type,inventory
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '10':
+    metadata:
+      cached-skin-uuid: 8845eb4d-1f8a-4f54-8509-a1e2735339aa
+      cached-skin-uuid-name: thanksbetogod
+      nameplate-visible: 'false'
+    name: '&2Служитель храма'
+    uuid: fd71473c-6276-440b-9583-e1cb5063c734
+    traits:
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+        lines:
+          '0': '&7NPC'
+          '1': '&2Служитель храма'
+      location:
+        bodyYaw: -58.336487
+        world: world
+        x: '-79.4881'
+        y: '66.0'
+        z: '262.5144'
+        yaw: '-58.3365'
+        pitch: '2.0614'
+      type: PLAYER
+      spawned: true
+      owner:
+        uuid: 8ad9c176-b8d4-4ef8-b924-b5e1b10a1399
+      skintrait:
+        fetchDefaultSkin: true
+        signature: hd9mQPHdfTQBZ3pnLS0FMyjaQWf3XN4iaxF4SRTWkjukTSHs9c3CtJt6OtlImdxU/Nvmudq1e2un64QAXu8NxuHTRh3pcd1o2dwudMVmNAgsoxIEUqM2OEZ3m4E5X4wEqSRo2HIiifoM4rCd+lJGW/UAaLI0eY43xT4/LNHF4EtaBbsc5Gysqx2y/9L3wZpMUzYrO3Xhg7msWZ40he80PJWEpta/pH/8JqVQOoWMQxPDV6e9O7QHoi+QblBLjjT3oyJOSDXBRHOiJA5tcQPpAvScBsCVC5Ktbqj3g6UFAd4B+2w6j0dJgfnE75cmXjgxdBf4+LJyL0K9tgy/UvZjvYf+HfXZn1clxq33v4c08zlJ9fsvWN7hy0Y+Qr9ss6nkz76TNa+fOuJX98XCCsLlC4UEgZF8F60qF1hWHUCU3Pyj5BSnoIY1mIw8exizGjFXuInr/jAFKpFltzhyJhdLuYAtAYE97zI3sh0z6LMy2RiGBR9S24v343Oko65OdGr/5d/1uYH4/Rc5fYEiPSBx6JVHaZXIaq0mCr+juDh/UT/55UOA8I3OgaxgmJ/JV2X2408S+R+/8CZWjzK6T4pYmqNbW/zLIMka8dEwb8prNDTqr30ttzAJZpvW/J1K0aEmxV8r3WJLzPr5zs6BEdF7pL5b/gKUUhPJA2yps+h2hEM=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY4NTI4Mjc5OTA3OCwKICAicHJvZmlsZUlkIiA6ICI4ODQ1ZWI0ZDFmOGE0ZjU0ODUwOWExZTI3MzUzMzlhYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaGFua3NCZVRvR29kIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzIxYzE3YTRhNWM2ZjQwNDEyM2YyYzE4ZDRjZTdmNjg0ODAzNzZkZTA0OWM2NzBlYjgzYTQxNWRkNGUzNjRjZjYiCiAgICB9CiAgfQp9
+        updateSkins: false
+        skinName: ThanksBeToGod
+    traitnames: hologramtrait,skintrait,spawned,scoreboardtrait,owner,mounttrait,location,type,inventory
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '12':
+    metadata:
+      cached-skin-uuid: 457b7d2c-258f-4a1b-9243-78835e4f1e23
+      cached-skin-uuid-name: knight
+      flyable: true
+      swim: true
+      minecraft-ai: true
+    name: '&cТочно не Зевс'
+    uuid: 05e87ab2-1f48-4785-9691-f5ee1c41a9b8
+    traits:
+      location:
+        bodyYaw: 121.26045
+        world: world
+        x: '-109.3542'
+        y: '66.0'
+        z: '300.6159'
+        yaw: '141.2605'
+        pitch: '0.0'
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+      spawned: true
+      type: PLAYER
+      lookclose:
+        range: '5.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        headonly: false
+        perplayer: false
+        randomLookDelay: 60
+        randomSwitchTargets: false
+        realisticlooking: false
+        targetnpcs: false
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: Tus4w4RAQ/z4XaYFbSp6cjE/nVL4ROtijINeGIXpS1MisxpZjIeLyERdGX/YtXY9vSPXlrJCS+NEoOM89tJ2Aoa0EDOs/gDRhT6LyL5FSoklUzB4arDci362YV2MEVRCuVLlxG7ZGVioLf7i/C5iaKqCWKYM4PvlqQL/c6BSAImSN/wRNxjZVxnuVAzoPbzhFNh4PVKsLN0YDDyWvjzulXaNYbqpngZlxaGztJWUh4gzp6qv7LLb+Rzh/c59vouqDKOm3HDyG0BCOcvyczoe6V9Q9mSPJ1zmhBUdtYA2d6LgPiui8+ZR0H31ETKKs7u1ZOaLRa2ZVN66RGceqeHusoR/s2T1ivuD+imu4skcaV+JX9BHTlA2zGOJJwtJ64CHyuYTDHJuB9Y04PdcQMbO3X+8NfCRAqAQiK2nl+h1ZI3OXTZhZYV8FUw4lOsIRPbtSwtC6gvcBkuOgbWoNObns1V9v7uN/aXQ9WGigrj9CAQ0PI0OGDAkZQ3bqtuyiNAOSgIE4ziMu//hzpllJyf6zeNPpmM2aFFKa6jFZ46sZeVvAf9+SeyvFcbFVE6F5bF7f7K8zJiglGOCAs4gLf17hFRqpG7bSlJViWby6y7ZYjvvGBiOwZ3ALMDSAf9f+xjQdC9srxI+MFGQYQ78U/ln/B0biGHZxkIr+vcKH9iLuas=
+        skinName: Knight
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY4NTM1OTUwNzU0NCwKICAicHJvZmlsZUlkIiA6ICI0NTdiN2QyYzI1OGY0YTFiOTI0Mzc4ODM1ZTRmMWUyMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJLbmlnaHQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQxNTllMDY3YzEwMjgxM2I1MTVkZGU1ZjY5ZDI5ZGNmYThmY2NkYTM3MjRmMDc5ZmQxYTI5M2JhNTIyMzQxYyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9
+        updateSkins: false
+      controllable:
+        enabled: true
+        owner_required: false
+      gravity:
+        enabled: true
+      owner:
+        uuid: ''
+      horsemodifiers:
+        carryingChest: false
+        color: CREAMY
+        style: NONE
+        armor:
+          type: ''
+        saddle:
+          type: ''
+      waypoints:
+        linear:
+          cachePaths: false
+          cycle: false
+        provider: linear
+      followtrait:
+        active: false
+        followingUUID: 8ad9c176-b8d4-4ef8-b924-b5e1b10a1399
+        protect: true
+      bossbar:
+        color: PURPLE
+        range: -1
+        style: SOLID
+        title: ''
+        visible: false
+    traitnames: horsemodifiers,rotationtrait,lookclose,owner,scoreboardtrait,mounttrait,bossbar,type,inventory,hologramtrait,gravity,skintrait,spawned,waypoints,followtrait,location,controllable
+    navigator:
+      speedmodifier: '0.4000000059604645'
+      avoidwater: false
+      usedefaultstuckaction: true
+      pathfindingrange: '1.0'
+  '11':
+    metadata:
+      cached-skin-uuid: 457b7d2c-258f-4a1b-9243-78835e4f1e23
+      cached-skin-uuid-name: knight
+    name: §cno name selected
+    uuid: bc96cf8d-763d-4a48-9a55-ea8f7334d7a7
+    traits:
+      location:
+        bodyYaw: 107.32591
+        world: world
+        x: '-107.6279'
+        y: '66.0'
+        z: '301.319'
+        yaw: '122.1501'
+        pitch: '0.0'
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+      spawned: true
+      type: PLAYER
+      lookclose:
+        range: '5.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        headonly: false
+        perplayer: false
+        randomLookDelay: 60
+        randomSwitchTargets: false
+        realisticlooking: false
+        targetnpcs: false
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: Tus4w4RAQ/z4XaYFbSp6cjE/nVL4ROtijINeGIXpS1MisxpZjIeLyERdGX/YtXY9vSPXlrJCS+NEoOM89tJ2Aoa0EDOs/gDRhT6LyL5FSoklUzB4arDci362YV2MEVRCuVLlxG7ZGVioLf7i/C5iaKqCWKYM4PvlqQL/c6BSAImSN/wRNxjZVxnuVAzoPbzhFNh4PVKsLN0YDDyWvjzulXaNYbqpngZlxaGztJWUh4gzp6qv7LLb+Rzh/c59vouqDKOm3HDyG0BCOcvyczoe6V9Q9mSPJ1zmhBUdtYA2d6LgPiui8+ZR0H31ETKKs7u1ZOaLRa2ZVN66RGceqeHusoR/s2T1ivuD+imu4skcaV+JX9BHTlA2zGOJJwtJ64CHyuYTDHJuB9Y04PdcQMbO3X+8NfCRAqAQiK2nl+h1ZI3OXTZhZYV8FUw4lOsIRPbtSwtC6gvcBkuOgbWoNObns1V9v7uN/aXQ9WGigrj9CAQ0PI0OGDAkZQ3bqtuyiNAOSgIE4ziMu//hzpllJyf6zeNPpmM2aFFKa6jFZ46sZeVvAf9+SeyvFcbFVE6F5bF7f7K8zJiglGOCAs4gLf17hFRqpG7bSlJViWby6y7ZYjvvGBiOwZ3ALMDSAf9f+xjQdC9srxI+MFGQYQ78U/ln/B0biGHZxkIr+vcKH9iLuas=
+        skinName: Knight
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY4NTM1OTUwNzU0NCwKICAicHJvZmlsZUlkIiA6ICI0NTdiN2QyYzI1OGY0YTFiOTI0Mzc4ODM1ZTRmMWUyMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJLbmlnaHQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQxNTllMDY3YzEwMjgxM2I1MTVkZGU1ZjY5ZDI5ZGNmYThmY2NkYTM3MjRmMDc5ZmQxYTI5M2JhNTIyMzQxYyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9
+        updateSkins: false
+      owner:
+        uuid: ''
+    traitnames: hologramtrait,rotationtrait,skintrait,spawned,lookclose,owner,scoreboardtrait,mounttrait,location,type,inventory
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

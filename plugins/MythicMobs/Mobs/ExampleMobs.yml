@@ -1,0 +1,17 @@
+RABBIT1:
+  Type: SLIME
+  Display: '&aКролик &6[Ур. 1]'
+  Health: 8
+  Damage: 1
+  Drops:
+  - rabbit_hide1 1 1
+  - apple1 1 1
+  Options:
+    Silent: false
+    Size: 2
+    PreventSlimeSplit: true
+    AlwaysShowName: true
+    FollowRange: 10
+    PreventOtherDrops: true
+    MovementSpeed: 0.5
+  Disguise: RABBIT

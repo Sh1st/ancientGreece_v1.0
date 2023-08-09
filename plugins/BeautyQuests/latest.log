@@ -1,0 +1,216 @@
+[20:50:12] ---- BEAUTYQUESTS LOGGER - OPENED Wed Aug 02 20:50:12 MSK 2023 ----
+[20:50:34] [INFO] [BeautyQuests] Enabling BeautyQuests v0.20.1
+[20:50:34] [INFO] [BeautyQuests] ------------ BeautyQuests ------------
+[20:50:34] [WARNING] [BeautyQuests] You are not running the Paper software.
+It is highly recommended to use it for extended features and more stability.
+[20:50:34] [DEBUG] Hooked into [Citizens] v2.0.31-SNAPSHOT (build 2997)
+[20:50:34] [DEBUG] Hooked into [WorldGuard] v7.0.5+3827266
+[20:50:34] [DEBUG] Hooked into [MythicMobs] v5.2.6-0819d467
+[20:50:34] [DEBUG] Hooked into [Vault] v1.7.3-b131
+[20:50:34] [DEBUG] Hooked into [PlaceholderAPI] v2.11.3
+[20:50:34] [INFO] [BeautyQuests] Loaded valid Minecraft version 1_16_R3.
+[20:50:34] [DEBUG] Loading data file, last time edited : Wed Aug 02 20:47:52 MSK 2023
+[20:50:34] [DEBUG] Unavailable string in config for key inv.mobSelect.advancedSpawners
+[20:50:34] [INFO] [BeautyQuests] Loaded language ru_RU (0.088s)!
+[20:50:34] [INFO] [BeautyQuests] Loaded start particles: VILLAGER_HAPPY in shape NEAR
+[20:50:34] [INFO] [BeautyQuests] Loaded talk particles: VILLAGER_HAPPY in shape NEAR
+[20:50:34] [INFO] [BeautyQuests] Loaded next particles: VILLAGER_HAPPY in shape NEAR
+[20:50:34] [DEBUG] Initlializing default stage types.
+[20:50:34] [DEBUG] Stage registered (Talk, 0)
+[20:50:34] [DEBUG] Stage registered (Items, 1)
+[20:50:34] [DEBUG] Stage registered (Mobs, 2)
+[20:50:34] [DEBUG] Stage registered (Mine, 3)
+[20:50:34] [DEBUG] Stage registered (Place, 4)
+[20:50:34] [DEBUG] Stage registered (Chat, 5)
+[20:50:34] [DEBUG] Stage registered (Interact, 6)
+[20:50:34] [DEBUG] Stage registered (Fish, 7)
+[20:50:34] [DEBUG] Stage registered (Melt, 8)
+[20:50:34] [DEBUG] Stage registered (Enchant, 9)
+[20:50:34] [DEBUG] Stage registered (Craft, 10)
+[20:50:34] [DEBUG] Stage registered (Bucket, 11)
+[20:50:34] [DEBUG] Stage registered (Location, 12)
+[20:50:34] [DEBUG] Stage registered (PlayTime, 13)
+[20:50:34] [DEBUG] Stage registered (Breed, 14)
+[20:50:34] [DEBUG] Stage registered (Tame, 15)
+[20:50:34] [DEBUG] Stage registered (Death, 16)
+[20:50:34] [DEBUG] Stage registered (DealDamage, 17)
+[20:50:34] [DEBUG] Stage registered (EatDrink, 18)
+[20:50:34] [DEBUG] Initlializing default rewards.
+[20:50:34] [DEBUG] Quest object registered in registry rewards (id: commandReward, class: fr.skytasul.quests.rewards.CommandReward)
+[20:50:34] [DEBUG] Quest object registered in registry rewards (id: itemReward, class: fr.skytasul.quests.rewards.ItemReward)
+[20:50:34] [DEBUG] Quest object registered in registry rewards (id: removeItemsReward, class: fr.skytasul.quests.rewards.RemoveItemsReward)
+[20:50:34] [DEBUG] Quest object registered in registry rewards (id: textReward, class: fr.skytasul.quests.rewards.MessageReward)
+[20:50:34] [DEBUG] Quest object registered in registry rewards (id: tpReward, class: fr.skytasul.quests.rewards.TeleportationReward)
+[20:50:34] [DEBUG] Quest object registered in registry rewards (id: expReward, class: fr.skytasul.quests.rewards.XPReward)
+[20:50:34] [DEBUG] Quest object registered in registry rewards (id: checkpointReward, class: fr.skytasul.quests.rewards.CheckpointReward)
+[20:50:34] [DEBUG] Quest object registered in registry rewards (id: questStopReward, class: fr.skytasul.quests.rewards.QuestStopReward)
+[20:50:34] [DEBUG] Quest object registered in registry rewards (id: requirementDependentReward, class: fr.skytasul.quests.rewards.RequirementDependentReward)
+[20:50:34] [DEBUG] Quest object registered in registry rewards (id: randomReward, class: fr.skytasul.quests.rewards.RandomReward)
+[20:50:34] [DEBUG] Quest object registered in registry rewards (id: wait, class: fr.skytasul.quests.rewards.WaitReward)
+[20:50:34] [DEBUG] Quest object registered in registry rewards (id: titleReward, class: fr.skytasul.quests.rewards.TitleReward)
+[20:50:34] [DEBUG] Initlializing default requirements.
+[20:50:34] [DEBUG] Quest object registered in registry requirements (id: logicalOr, class: fr.skytasul.quests.requirements.logical.LogicalOrRequirement)
+[20:50:34] [DEBUG] Quest object registered in registry requirements (id: questRequired, class: fr.skytasul.quests.requirements.QuestRequirement)
+[20:50:34] [DEBUG] Quest object registered in registry requirements (id: levelRequired, class: fr.skytasul.quests.requirements.LevelRequirement)
+[20:50:34] [DEBUG] Quest object registered in registry requirements (id: permissionRequired, class: fr.skytasul.quests.requirements.PermissionsRequirement)
+[20:50:34] [DEBUG] Quest object registered in registry requirements (id: scoreboardRequired, class: fr.skytasul.quests.requirements.ScoreboardRequirement)
+[20:50:34] [DEBUG] Quest object registered in registry requirements (id: equipmentRequired, class: fr.skytasul.quests.requirements.EquipmentRequirement)
+[20:50:34] [DEBUG] Initlializing default quest options.
+[20:50:34] [DEBUG] Quest option registered (id: pool)
+[20:50:34] [DEBUG] Quest option registered (id: name)
+[20:50:34] [DEBUG] Quest option registered (id: description)
+[20:50:34] [DEBUG] Quest option registered (id: customItem)
+[20:50:34] [DEBUG] Quest option registered (id: confirmMessage)
+[20:50:34] [DEBUG] Quest option registered (id: hologramText)
+[20:50:34] [DEBUG] Quest option registered (id: bypassLimit)
+[20:50:34] [DEBUG] Quest option registered (id: startableFromGUI)
+[20:50:34] [DEBUG] Quest option registered (id: failOnDeath)
+[20:50:34] [DEBUG] Quest option registered (id: cancellable)
+[20:50:34] [DEBUG] Quest option registered (id: cancelActions)
+[20:50:34] [DEBUG] Quest option registered (id: hologramLaunch)
+[20:50:34] [DEBUG] Quest option registered (id: hologramLaunchNo)
+[20:50:34] [DEBUG] Quest option registered (id: scoreboard)
+[20:50:34] [DEBUG] Quest option registered (id: hideNoRequirements)
+[20:50:34] [DEBUG] Quest option registered (id: auto)
+[20:50:34] [DEBUG] Quest option registered (id: repeatable)
+[20:50:34] [DEBUG] Quest option registered (id: timer)
+[20:50:34] [DEBUG] Quest option registered (id: visibility)
+[20:50:34] [DEBUG] Quest option registered (id: endSound)
+[20:50:34] [DEBUG] Quest option registered (id: firework)
+[20:50:34] [DEBUG] Quest option registered (id: requirements)
+[20:50:34] [DEBUG] Quest option registered (id: startRewards)
+[20:50:34] [DEBUG] Quest option registered (id: startMessage)
+[20:50:34] [DEBUG] Quest option registered (id: starterNPC)
+[20:50:34] [DEBUG] Quest option registered (id: startDialog)
+[20:50:34] [DEBUG] Quest option registered (id: endRewards)
+[20:50:34] [DEBUG] Quest option registered (id: endMsg)
+[20:50:34] [DEBUG] Item comparison registered (id: bukkit)
+[20:50:34] [DEBUG] Item comparison registered (id: customBukkit)
+[20:50:34] [DEBUG] Item comparison registered (id: material)
+[20:50:34] [DEBUG] Item comparison registered (id: name)
+[20:50:34] [DEBUG] Item comparison registered (id: lore)
+[20:50:34] [DEBUG] Item comparison registered (id: enchants)
+[20:50:34] [DEBUG] Item comparison registered (id: repair)
+[20:50:34] [DEBUG] Mob factory registered (id: bukkitEntity)
+[20:50:34] [DEBUG] Bossbars manager has been registered: fr.skytasul.quests.api.bossbar.BQBossBarImplementation
+[20:50:35] [DEBUG] Brigadier registered!
+[20:50:35] [DEBUG] Mob factory registered (id: citizensNPC)
+[20:50:35] [DEBUG] Now using WorldGuard entry API.
+[20:50:35] [DEBUG] Stage registered (Find, 19)
+[20:50:35] [DEBUG] Quest object registered in registry requirements (id: regionRequired, class: fr.skytasul.quests.requirements.RegionRequirement)
+[20:50:35] [DEBUG] Mob factory registered (id: mythicMobs)
+[20:50:35] [DEBUG] Quest object registered in registry rewards (id: moneyReward, class: fr.skytasul.quests.rewards.MoneyReward)
+[20:50:35] [DEBUG] Quest object registered in registry rewards (id: permReward, class: fr.skytasul.quests.rewards.PermissionReward)
+[20:50:35] [DEBUG] Quest object registered in registry requirements (id: moneyRequired, class: fr.skytasul.quests.requirements.MoneyRequirement)
+[20:50:35] [INFO] [BeautyQuests] Placeholders registered !
+[20:50:35] [DEBUG] Quest object registered in registry requirements (id: placeholderRequired, class: fr.skytasul.quests.requirements.PlaceholderRequirement)
+[20:50:35] [DEBUG] Started bStats metrics
+[20:50:35] [DEBUG] Starting Spigot updater
+[20:50:36] [DEBUG] 0 accounts loaded and 1 identifiers.
+[20:50:36] [DEBUG] Registered 5 lines in scoreboard
+[20:50:36] [INFO] [BeautyQuests] 2 quests loaded (0.124s)!
+[20:50:36] [INFO] [BeautyQuests] Periodic saves task started (18000 ticks). Task ID: 90
+[20:50:36] [INFO] [BeautyQuests] You are using the latest version of BeautyQuests.
+[20:50:39] [DEBUG] SShist (8ad9c176-b8d4-4ef8-b924-b5e1b10a1399) joined the server
+[20:50:39] [DEBUG] Loading player SShist...
+[20:50:39] [DEBUG] New account registered for SShist (8ad9c176-b8d4-4ef8-b924-b5e1b10a1399), index 1 via f.s.q.players.PlayersManager.tryLoad 176 -> f.s.q.players.PlayersManager.tryLoad 176
+[20:50:39] [DEBUG] Completed load of SShist (8ad9c176-b8d4-4ef8-b924-b5e1b10a1399 (#1)) datas within 506 ms (0 quests, 0 pools)
+[20:50:39] [ADMIN]: SShist started the quest 1
+[20:50:39] [DEBUG] CONSOLE performed command effect give SShist minecraft:blindness 5 0 true
+[20:50:39] [DEBUG] CONSOLE performed command title SShist title {"text":"Лутраки","color":"gold"}
+[20:50:39] [DEBUG] CONSOLE performed command title SShist subtitle {"text":"Священное кладбище воинов","color":"yellow"}
+[20:50:42] [DEBUG] Next stage for player SShist (coming from stage 0(REGION) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[20:50:42] [ADMIN]: Player SShist has finished the stage 0 of quest 1
+[20:51:00] [DEBUG] Next stage for player SShist (coming from stage 1(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[20:51:00] [ADMIN]: Player SShist has finished the stage 1 of quest 1
+[20:51:33] [DEBUG] Next stage for player SShist (coming from stage 2(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[20:51:33] [ADMIN]: Player SShist has finished the stage 2 of quest 1
+[20:51:39] [DEBUG] Next stage for player SShist (coming from stage 3(INTERACT) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[20:51:39] [ADMIN]: Player SShist has finished the stage 3 of quest 1
+[20:51:39] [DEBUG] CONSOLE performed command effect give SShist minecraft:slowness 99999 3 true
+[20:51:39] [DEBUG] CONSOLE performed command effect give SShist minecraft:jump_boost 99999 200 true
+[20:51:52] [DEBUG] Next stage for player SShist (coming from stage 4(ITEMS) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[20:51:52] [ADMIN]: Player SShist has finished the stage 4 of quest 1
+[20:51:52] [DEBUG] CONSOLE performed command effect clear SShist
+[20:52:07] [DEBUG] Next stage for player SShist (coming from stage 5(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[20:52:07] [ADMIN]: Player SShist has finished the stage 5 of quest 1
+[20:52:25] [DEBUG] SShist executed command: quest 
+[20:52:25] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.quests.PlayerListGUI.
+[20:52:49] [DEBUG] SShist executed command: quest edit 1
+[20:52:49] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
+[20:53:38] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.FinishGUI.
+[20:54:16] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
+[20:54:39] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.FinishGUI.
+[20:54:40] [DEBUG] Editing quest 1 with keep datas: false
+[20:54:40] [WARNING] [BeautyQuests] CAUTION - BeautyQuests will now load every single player data into the server's memory. We HIGHLY recommend the server to be restarted at the end of the operation. Be prepared to experience some lags.
+[20:54:40] [INFO] [BeautyQuests] New quest created: Первые шаги, ID 1, by SShist
+[20:54:40] [INFO] [BeautyQuests] Total loaded accounts: 1
+[20:54:40] [INFO] [BeautyQuests] Quest Первые шаги has been edited
+[20:54:40] [DEBUG] Saving quest 1 into plugins\BeautyQuests\quests\1.yml
+[20:54:55] [DEBUG] SShist executed command: quest 
+[20:54:55] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.quests.PlayerListGUI.
+[20:55:38] [DEBUG] SShist executed command: quest start SShist 1
+[20:55:38] [ADMIN]: SShist started the quest 1
+[20:55:38] [DEBUG] CONSOLE performed command effect give SShist minecraft:blindness 5 0 true
+[20:55:38] [DEBUG] CONSOLE performed command title SShist title {"text":"Лутраки","color":"gold"}
+[20:55:38] [DEBUG] CONSOLE performed command title SShist subtitle {"text":"Священное кладбище воинов","color":"yellow"}
+[20:55:53] [DEBUG] Next stage for player SShist (coming from stage 0(REGION) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[20:55:53] [ADMIN]: Player SShist has finished the stage 0 of quest 1
+[20:55:55] [DEBUG] Next stage for player SShist (coming from stage 1(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[20:55:55] [ADMIN]: Player SShist has finished the stage 1 of quest 1
+[20:56:06] [DEBUG] Next stage for player SShist (coming from stage 2(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[20:56:06] [ADMIN]: Player SShist has finished the stage 2 of quest 1
+[20:56:09] [DEBUG] Next stage for player SShist (coming from stage 3(INTERACT) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[20:56:09] [ADMIN]: Player SShist has finished the stage 3 of quest 1
+[20:56:09] [DEBUG] CONSOLE performed command effect give SShist minecraft:slowness 99999 3 true
+[20:56:09] [DEBUG] CONSOLE performed command effect give SShist minecraft:jump_boost 99999 200 true
+[20:56:12] [DEBUG] Next stage for player SShist (coming from stage 4(ITEMS) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[20:56:12] [ADMIN]: Player SShist has finished the stage 4 of quest 1
+[20:56:12] [DEBUG] CONSOLE performed command effect clear SShist
+[20:56:16] [DEBUG] Next stage for player SShist (coming from stage 5(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[20:56:16] [ADMIN]: Player SShist has finished the stage 5 of quest 1
+[20:57:14] [DEBUG] SShist executed command: quest finish SShist 1
+[20:57:14] [ADMIN]: SShist is completing the quest 1
+[20:58:04] [DEBUG] SShist left the server
+[20:58:04] [DEBUG] Unloading player SShist... (1 quests, 0 pools)
+[20:58:05] [DEBUG] SShist (8ad9c176-b8d4-4ef8-b924-b5e1b10a1399) joined the server
+[20:58:05] [DEBUG] Loading player SShist...
+[20:58:05] [DEBUG] Completed load of SShist (8ad9c176-b8d4-4ef8-b924-b5e1b10a1399 (#1)) datas within 82 ms (1 quests, 0 pools) | Loaded from cached accounts pending unload
+[20:58:42] [DEBUG] CONSOLE executed command: quest start SShist 1
+[20:59:00] [DEBUG] CONSOLE executed command: quest start SShist 1 -overRequirements
+[20:59:08] [DEBUG] CONSOLE executed command: quest start SShist 1 -overRequirements
+[20:59:15] [DEBUG] CONSOLE executed command: quest start SShist 1 -overrequirements
+[20:59:27] [DEBUG] CONSOLE executed command: quest start SShist 1 -overrideRequirements
+[20:59:27] [ADMIN]: SShist started the quest 1
+[20:59:27] [DEBUG] CONSOLE performed command effect give SShist minecraft:blindness 5 0 true
+[20:59:27] [DEBUG] CONSOLE performed command title SShist title {"text":"Лутраки","color":"gold"}
+[20:59:27] [DEBUG] CONSOLE performed command title SShist subtitle {"text":"Священное кладбище воинов","color":"yellow"}
+[20:59:32] [DEBUG] Next stage for player SShist (coming from stage 0(REGION) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[20:59:32] [ADMIN]: Player SShist has finished the stage 0 of quest 1
+[20:59:50] [DEBUG] Next stage for player SShist (coming from stage 1(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[20:59:50] [ADMIN]: Player SShist has finished the stage 1 of quest 1
+[21:00:34] [DEBUG] Next stage for player SShist (coming from stage 2(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[21:00:34] [ADMIN]: Player SShist has finished the stage 2 of quest 1
+[21:00:41] [DEBUG] Next stage for player SShist (coming from stage 3(INTERACT) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[21:00:41] [ADMIN]: Player SShist has finished the stage 3 of quest 1
+[21:00:41] [DEBUG] CONSOLE performed command effect give SShist minecraft:slowness 99999 3 true
+[21:00:41] [DEBUG] CONSOLE performed command effect give SShist minecraft:jump_boost 99999 200 true
+[21:01:04] [DEBUG] Next stage for player SShist (coming from stage 4(ITEMS) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[21:01:04] [ADMIN]: Player SShist has finished the stage 4 of quest 1
+[21:01:04] [DEBUG] CONSOLE performed command effect clear SShist
+[21:01:31] [DEBUG] Next stage for player SShist (coming from stage 5(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[21:01:31] [ADMIN]: Player SShist has finished the stage 5 of quest 1
+[21:03:37] [DEBUG] Next stage for player SShist (coming from stage 6(ITEMS) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
+[21:03:37] [ADMIN]: Player SShist has finished the stage 6 of quest 1
+[21:03:37] [ADMIN]: SShist is completing the quest 1
+[21:05:35] [DEBUG] Saving 1 loaded accounts and 1 identifiers.
+[21:05:35] [DEBUG] Saved datas (0.007s)!
+[21:05:35] [INFO] [BeautyQuests] Datas saved ~ periodic save
+[21:15:46] [INFO] [BeautyQuests] Disabling BeautyQuests v0.20.1
+[21:15:46] [INFO] [BeautyQuests] Periodic saves task stopped.
+[21:15:46] [INFO] [BeautyQuests] 1 scoreboards deleted.
+[21:15:46] [DEBUG] Saving 1 loaded accounts and 1 identifiers.
+[21:15:46] [DEBUG] Saved datas (0.005s)!
+[21:15:46] [DEBUG] Unregistered from WorldGuard entry API.
+[21:15:46] Logger was open during 25 минут
+[21:15:46] ---- BEAUTYQUESTS LOGGER - CLOSED Wed Aug 02 21:15:46 MSK 2023 ----

@@ -1,0 +1,127 @@
+
+# GUI display name
+name: Ваш персонаж
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 27
+
+items:
+    boost-display:
+        slots: [1,10,19]
+        function: boost
+        item: BARRIER
+        no-boost:
+            item: GRAY_STAINED_GLASS_PANE
+            name: '&aБустеров нет'
+            lore: {}
+        
+        # Profession experience boosters
+        profession:
+            item: EXPERIENCE_BOTTLE
+            name: '&aEXP Boost'
+            lore:
+            - '&7Amount: &6+{value}%'
+            - '&7Time left: &6{left}'
+            - '&7Profession: &6{profession}'
+            - '&7'
+            - '&eStarted by {author}'
+        
+        # Main class experience boosters
+        main-level:
+            item: EXPERIENCE_BOTTLE
+            name: '&aEXP Boost'
+            lore:
+            - '&7Amount: &6+{value}%'
+            - '&7Time left: &6{left}'
+            - '&7'
+            - '&eStarted by {author}'
+    boost-next:
+        slots: [1]
+        function: boost-next
+        item: PLAYER_HEAD
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+        name: '&aNext'
+        lore: {}
+    boost-prev:
+        slots: [19]
+        function: boost-previous
+        item: PLAYER_HEAD
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+        name: '&aPrevious'
+        lore: {}
+    party:
+        slots: [7]
+        function: party
+        item: CAKE
+        name: '&aParty вайб'
+        lore:
+        - '&7&oС друзьями играть веселее и'
+        - '&7&oинтереснее!'
+        - ''
+        - '&7Party Бонус ({count}):'
+        - '&8- +{buff_additional_experience}% XP Бонус!'
+        - '&8- +{buff_health_regeneration}% Восстановление здоровья'
+    stats:
+        slots: [16]
+        function: profile
+        item: PLAYER_HEAD
+        name: '&fИнформация об {player}'
+        lore:
+        - ''
+        - '&7Текущий уровень: &f{level}'
+        - '&7Прогресс: &f{exp} / {next_level}'
+        - '&8[&a{progress}&8] &f{percent}%'
+        - '&7Класс: &c{class}'
+        - '&7Очков атрибутов: &f{skill_points}'
+    phys:
+        slots: [12]
+        function: stats
+        name: '&cСила'
+        item: GOLDEN_APPLE
+        hide-flags: true
+        lore:
+        - ''
+        - 'Текущая сила: &c&l{attribute_strength}'
+        - ''
+        - '✦ Урон от атаки: &c{attack_damage} &7(&c{attack_damage_base} &7+ &c{attack_damage_extra}&7)'
+        - ''
+        - '❤ Максимальное здоровье: &c{max_health} &7(&c{max_health_base} &7+ &c{max_health_extra}&7)'
+        - '❤ Восстановление здоровья: &c{health_regeneration} &7(&c{health_regeneration_base} &7+ &c{health_regeneration_extra}&7)'
+        - ''
+        - '✤ Максимальная выносливость: &9{max_stamina} &7(&9{max_stamina_base} &7+ &9{max_stamina_extra}&7)'
+        - '✤ Восстановление выносливости: &9{stamina_regeneration} &7(&9{stamina_regeneration_base} &7+ &9{stamina_regeneration_extra}&7)'
+    dex:
+        slots: [13]
+        function: stats
+        name: '&aЛовкость'
+        item: LEATHER_BOOTS
+        hide-flags: true
+        lore:
+        - ''
+        - 'Текущая ловкость: &a&l{attribute_dexterity}'
+        - ''
+        - '✦ Урон от снарядов: &c{projectile_damage}% &7(&c{projectile_damage_base}% &7+ &c{projectile_damage_extra}%&7)'
+        - '✦ Скорость атаки: &c{attack_speed} &7(&c{attack_speed_base} &7+ &c{attack_speed_extra}&7)'
+        - ''
+        - '❖ Броня: &c{armor} &7(&c{armor_base} &7+ &c{armor_extra}&7)'
+        - ''
+        - '✤ Сопротивление отбрасыванию: &f{knockback_resistance} &7(&f{knockback_resistance_base} &7+ &f{knockback_resistance_extra}&7)'
+        - '✤ Скорость передвижения: &f{movement_speed}% &7(&f{movement_speed_base}% &7+ &f{movement_speed_extra}%&7)'
+
+    int:
+        slots: [14]
+        function: stats
+        name: '&bИнтеллект'
+        item: BOOK
+        hide-flags: true
+        lore:
+        - ''
+        - 'Текущий интеллект: &b&l{attribute_intelligence}'
+        - ''
+        - '✤ Максимальная мана: &9{max_mana} &7(&9{max_mana_base} &7+ &9{max_mana_extra}&7)'
+        - '✤ Регенерация маны: &9{mana_regeneration} &7(&9{mana_regeneration_base} &7+ &9{mana_regeneration_extra}&7)'
+        - ''
+        - '✤ Снижение перезарядки умений: &9{cooldown_reduction} &7(&9{cooldown_reduction_base} &7+ &9{cooldown_reduction_extra}&7)'
+        - '✤ XP Бонус: &9{additional_experience}% &7(&9{additional_experience_base}% &7+ &9{additional_experience_extra}%&7)'
+

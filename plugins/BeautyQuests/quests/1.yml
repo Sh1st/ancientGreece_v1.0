@@ -1,0 +1,325 @@
+startRewards:
+- id: commandReward
+  commands:
+  - console: true
+    label: effect give {PLAYER} minecraft:blindness 5 0 true
+  - console: true
+    label: title {PLAYER} title {"text":"Лутраки","color":"gold"}
+  - console: true
+    label: title {PLAYER} subtitle {"text":"Священное кладбище воинов","color":"yellow"}
+auto: true
+name: Первые шаги
+cancellable: false
+description: Поговорите с незнакомцем
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          region: spawn
+          world: world
+          exit: false
+          stageType: REGION
+          customText: Поговорите с незнакомцем
+          text: '§7[1/1] §2Незнакомец: §aЭй! Откуда ты там взялся?'
+        '1':
+          npcID: 10
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: Здравствуй, я служитель этого храма, содержу храм и кладбище
+                  в чистоте, а ещё ты только что появился у меня на глазах!
+            - id: 1
+              message:
+                sender: PLAYER
+                text: Как я тут оказался? И где я?
+            - id: 2
+              message:
+                sender: NPC
+                text: Ты не понимаешь как появился здесь? Мне кажется всё предельно
+                  просто. Боги снизошли и дали тебе ещё один шанс!
+            - id: 3
+              message:
+                sender: NPC
+                text: А находишься ты на Священном кладбище воинов вблизи Лутраков.
+            - id: 4
+              message:
+                sender: NPC
+                text: Знаешь, немного не ловко, я тебе не могу помочь. Но, ты можешь
+                  сходить к нашему охотнику §nпрямо по этой тропинке§f§a, уверен,
+                  у него будет для тебя задание. Удачи!
+          stageType: NPC
+        '2':
+          npcID: 8
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aЗдравствуй путник! Не мог бы ты мне помочь? На мою повозку
+                  упало дерево, но я не в состоянии убрать его сам.
+            - id: 1
+              message:
+                sender: NPC
+                text: §aНе думай, что это бесплатно! Я обязательно тебе хорошенько
+                  отплачу.
+          stageType: NPC
+        '3':
+          leftClick: false
+          block: OAK_LOG|customname:Дубовое бревно
+          stageType: INTERACT
+          rewards:
+          - id: itemReward
+            items:
+            - v: 2586
+              type: OAK_LOG
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Дубовое
+                  бревно"}],"text":""}'
+                lore:
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Предмет
+                  для квеста"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"✣
+                  Физический урон: 1"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"+10%
+                  "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Физический
+                  урон"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Сырые
+                  и очень тяжелые."}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Видимо,
+                  их только что"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"срубили."}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обычный
+                  предмет"}],"text":""}'
+                attribute-modifiers:
+                  GENERIC_ATTACK_SPEED:
+                  - ==: org.bukkit.attribute.AttributeModifier
+                    amount: 0.0
+                    name: mmoitemsDecoy
+                    uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                    operation: 0
+                ItemFlags:
+                - HIDE_ATTRIBUTES
+                internal: H4sIAAAAAAAA/71TX2vTUBS/ESxBUPw/RYRLqH2xHWtX164vW2wubbBJSm+KlFLCVtona2XNyyiF/UH60MFAfBRFFHy1Y9XO2gj6Be79BuIn8CN4EtusUxGfDCTknPM7v3Pu79xzBiERXdI0QzWJRq0M0SxqGjqhCLcl0nhkb9IHTbslpcqVsJSpNVp282HNMzsiuuDnET2dlXWTolPliojO+v6cUSCoUZZCCfaS9/gW77EBZkPMHN5lAzbme5jv8H32DoyRG5yXwi74CRuyQ3g/MicMeP4YYMwByB77wBzMu67pQfk2sO6yPoBHbDgvQfk5v7yi0nxOLhHFMkt5goKhKnvBt6DWITAP+A6GnxHfx0B6APY2sL4V0UU/3/3+TD1N7xsFRUCX/VhRp6acviffzREhgK76ftl03ZYia3KGrHxH3jOriamSAgqkDXDoArox26xLZilENrOWUjDygojOn+xFVZAQE9H1P3VhFYsQDi4mYuvVeDIRqSUWYpF4LFmNLC/eWYjE4slodbleSy7V12fb0WWNoJuhOnvqyeiAEo47pL4n1AEbMyeArvx6PJonRFn5Oj3dcVwpAaGa9iYvzMHkq/8iOozSnebSt2evMHsNs3wPQ++6UUAN2RHmu0DhsHEKRyfYtdvRhVsY7srf4BPsf7t9XrnPb+rsOejXgypjoD3C7NOsAFIlgK75guWzJaqm5dzkxqwGp5qey1KzUDperdW2RO01W0pJUxfUMjLUbm5swkK2pd+20frSb9kbkFCuSJ1KB/0AJVh5UO0DAAA=
+          - id: commandReward
+            commands:
+            - console: true
+              label: effect give {PLAYER} minecraft:slowness 99999 3 true
+            - console: true
+              label: effect give {PLAYER} minecraft:jump_boost 99999 200 true
+        '4':
+          npcID: 8
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aО, я вижу ты уже управился. Не видел ещё в наших краях настолько
+                  сильных людей, перетащить дерево, так ещё и в одиночку! Да тебя
+                  можно сравнить с Гераклом! Хаха!
+            - id: 1
+              message:
+                sender: NPC
+                text: §aЗнаешь, ты мне нравишься малец, держи 5 обол.
+          items:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 2586
+            type: OAK_LOG
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Дубовое
+                бревно"}],"text":""}'
+              lore:
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Предмет
+                для квеста"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"✣
+                Физический урон: 1"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"+10%
+                "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Физический
+                урон"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Сырые
+                и очень тяжелые."}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Видимо,
+                их только что"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"срубили."}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обычный
+                предмет"}],"text":""}'
+              attribute-modifiers:
+                GENERIC_ATTACK_SPEED:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitemsDecoy
+                  uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              internal: H4sIAAAAAAAA/71TX2vTUBS/ESxBUPw/RYRLqH2xHWtX164vW2wubbBJSm+KlFLCVtona2XNyyiF/UH60MFAfBRFFHy1Y9XO2gj6Be79BuIn8CN4EtusUxGfDCTknPM7v3Pu79xzBiERXdI0QzWJRq0M0SxqGjqhCLcl0nhkb9IHTbslpcqVsJSpNVp282HNMzsiuuDnET2dlXWTolPliojO+v6cUSCoUZZCCfaS9/gW77EBZkPMHN5lAzbme5jv8H32DoyRG5yXwi74CRuyQ3g/MicMeP4YYMwByB77wBzMu67pQfk2sO6yPoBHbDgvQfk5v7yi0nxOLhHFMkt5goKhKnvBt6DWITAP+A6GnxHfx0B6APY2sL4V0UU/3/3+TD1N7xsFRUCX/VhRp6acviffzREhgK76ftl03ZYia3KGrHxH3jOriamSAgqkDXDoArox26xLZilENrOWUjDygojOn+xFVZAQE9H1P3VhFYsQDi4mYuvVeDIRqSUWYpF4LFmNLC/eWYjE4slodbleSy7V12fb0WWNoJuhOnvqyeiAEo47pL4n1AEbMyeArvx6PJonRFn5Oj3dcVwpAaGa9iYvzMHkq/8iOozSnebSt2evMHsNs3wPQ++6UUAN2RHmu0DhsHEKRyfYtdvRhVsY7srf4BPsf7t9XrnPb+rsOejXgypjoD3C7NOsAFIlgK75guWzJaqm5dzkxqwGp5qey1KzUDperdW2RO01W0pJUxfUMjLUbm5swkK2pd+20frSb9kbkFCuSJ1KB/0AJVh5UO0DAAA=
+          stageType: ITEMS
+          rewards:
+          - id: commandReward
+            commands:
+            - console: true
+              label: effect clear {PLAYER}
+          - id: itemReward
+            items:
+            - v: 2586
+              type: GOLD_NUGGET
+              amount: 5
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обол"}],"text":""}'
+                lore:
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Валюта"}],"text":""}'
+                attribute-modifiers:
+                  GENERIC_ATTACK_SPEED:
+                  - ==: org.bukkit.attribute.AttributeModifier
+                    amount: 0.0
+                    name: mmoitemsDecoy
+                    uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                    operation: 0
+                ItemFlags:
+                - HIDE_ATTRIBUTES
+                internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf1c/Zw9AsJZmCKjuVgEIeLu3gGB/g4Rrq6xIdEBrgy8KmZX5h0YcOF3Rf7LjZd2MDBIABXCSLjPV0YGA05GHjhon6Ovq4MHBfmXdh4Yd+F3RwMogiTI4Fyns7xPv5Brgwi0UpqyahmKwHdIYRqOtgJLD6hIa4cDHwewSFBkQh3O1QrBZcklihZKcGElHSU/N2DS/KLKpWsoquVMLwaf3hjcUkRUEN0rFJtbC0DAJQFdGESAQAA
+        '5':
+          npcID: 8
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aЭээ..почему ты держишь свои деньги в руках? У тебя что, мешка
+                  нет?!
+            - id: 1
+              message:
+                sender: PLAYER
+                text: §aА где же мне их держать!?
+            - id: 2
+              message:
+                sender: NPC
+                text: §aДа… ты как из леса вышел, но тебе крупно повезло! Если ты
+                  убьёшь 3 кролика, то я смогу тебе сшить мешок из их шкуры.
+            - id: 3
+              message:
+                sender: NPC
+                text: §aДержи кинжал, я пользовался им, когда был ещё ребёнком. Эх…
+                  были времена.
+            - id: 4
+              message:
+                sender: NPC
+                text: §aКролики находятся за моим домом. Но осторожно! Они хоть и
+                  миленькие, но могут и укусить.
+          stageType: NPC
+          rewards:
+          - id: itemReward
+            items:
+            - v: 2586
+              type: IRON_SWORD
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Кинжал
+                  ребёнка"}],"text":""}'
+                lore:
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Нормальная
+                  скорость атаки"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"✣
+                  Физический урон: 2"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"✔
+                  "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Мин.
+                  уровень: 1"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Ржавый,
+                  не чищенный"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обычный
+                  предмет"}],"text":""}'
+                attribute-modifiers:
+                  GENERIC_ATTACK_SPEED:
+                  - ==: org.bukkit.attribute.AttributeModifier
+                    amount: 0.0
+                    name: mmoitemsDecoy
+                    uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                    operation: 0
+                ItemFlags:
+                - HIDE_ATTRIBUTES
+                - HIDE_UNBREAKABLE
+                Unbreakable: true
+                internal: H4sIAAAAAAAA/61TTWsTURR9I1iCoPiBil/weIuugmBBhWzsc+Y5GTofcd5TCSEMRerKGmlmU0LAxkWRBkRwJVEE/QFJMRrTpi78A/ftXPcX+BO8k0mnkXQjOIuBd+6951zuufcEITlyzvMCRwlPRrbwIqkCX0hCG0ysPo/X5dNaXGeFSjXP7JXVelx7tjJ+NnPkTFYnfLPIfSXJsUo1R05muBuEgixV2Pxt+AhfoQvbegu+5ymMoE/1Jgz0K+jjY5TALM/mn8AH6OktDI0hCj/0C8z4ArvQ1y2G5BczcsuRJZeXhRWpckmQBRR5D3uYv4tCO7qNvF39muoNGI7hPb2hW7pNEW1hxhAGBrk0zcbvuiIyQ35POb5tHBWUnqOKSTBHzmbB5J+2cFw+CkJrjlzIYlwpbi5FFve4LRZJ+hnk8gxzKErcCVPq039TOxYxbhrk6kyN4ysRclM5gY/dXpmJT1xJSOem5haK+w+cEMfmiofCvfM7bWraNp97glxDM97BAKeYGLdDx0b09BsEhtDNkfOHemUscMzU7V/o9uN/twLNT/y/td/5ROEzyn7D5dhE05OSAW6CfpnUwahAFya5y/udtxSVOkmT1w8StpOF0u0CvTFJ+1+rd/Q+CFelpp0qShWWDy9hscFkvByzAjuAUCSwZVxbW8f7abCZ44l+9urxGhZUqqxZbZI/ktR+FJwDAAA=
+        '6':
+          npcID: 8
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aОтличные шкурки! Подожди немного.
+            - id: 1
+              message:
+                sender: NPC
+                text: §aВот твой мешочек. Спасибо за помощь, давно старик так не радовался.
+          items:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 2586
+            type: RABBIT_HIDE
+            amount: 4
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"italic":false,"color":"white","text":"Кроличья шкурка"}'
+              lore:
+              - '{"italic":false,"color":"gray","extra":[{"color":"green","text":"Кролик"}],"text":"Моб:
+                "}'
+              - '{"italic":false,"color":"white","text":""}'
+              - '{"italic":false,"color":"green","extra":[{"color":"gray","text":"Мин.
+                уровень: 1"}],"text":"✔ "}'
+              - '{"italic":false,"color":"white","text":""}'
+              - '{"italic":false,"color":"gray","text":"Используется для прохождения
+                квеста"}'
+              - '{"italic":false,"color":"red","text":"Квестовый предмет"}'
+              internal: H4sIAAAAAAAA/+NiYOBg4PaNDPHwdI4PiQxwZeApSkxKyiyJz8hMSTVkAADVfpBGIAAAAA==
+          stageType: ITEMS
+          rewards:
+          - id: itemReward
+            items:
+            - v: 2586
+              type: INK_SAC
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Мешочек
+                  для обол"}],"text":""}'
+                lore:
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Внутри
+                  5 Обол"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Простенький
+                  рукодельный мешочек"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"для
+                  хранения денег."}],"text":""}'
+                attribute-modifiers:
+                  GENERIC_ATTACK_SPEED:
+                  - ==: org.bukkit.attribute.AttributeModifier
+                    amount: 0.0
+                    name: mmoitemsDecoy
+                    uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                    operation: 0
+                ItemFlags:
+                - HIDE_ATTRIBUTES
+                internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf1c/Zw9AsJZmCKjuVg4IWL+/gHuTJkRSupmV+Yf7Hhwr6LjRebLmy9sPdiz4VdF3Zc2KlwseFiM5C578IWoPBuoPDei91A4Qt7Lmy92AFU3w4U3qWkAzJgC1C+X+FiK9CcDRf2gky5sAMoANYJ4m7WUwLaLQ6328UzOMDHMdLVJT4kMsCVQRJoxCSg8c0Xm4Am7FAwVbgw78JGoM27ORgE4JpAZLynCwOjEbI3/Bx9XRnkLsxBdpQC1EFAE6CmiCKsjgTq8HSGeL8b6P1knJYD/QbxHp3CRwjVq+CgYfEJDXHlYODzCA4JikTEpUO1UnBJYomSlRJMCGiRv3twSX5RpZJVdLUSRvTHH95YXFIE1BAdq1QbW8sAANJUtzcmAgAA
+      endingStages: {}
+id: 1
