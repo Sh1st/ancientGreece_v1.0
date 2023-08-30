@@ -80,13 +80,13 @@ additional-experience-woodcutting: '&7■ Additional Woodcutting Experience: &f<
 # Extra Options
 perm-effect: '&3 &7■ Permanent &f{effect}'
 command: '&3 &7■ Command: &f{format} &3 &7(&f{cooldown}&3 &7s)'
-item-cooldown: '&a<plus>{value}% &7Перезарядка предмета'
+item-cooldown: '&c<plus>{value} сек. &7Перезарядка предмета'
 arrow-potion-effects: '&3 &7■ Arrow Effect: &f{effect}'
 
 # Consumables
-restore-health: '&a<plus>{value}% &7Восстановление здоровья'
-restore-food: '&a<plus>{value}% &7Восстановление голода'
-restore-saturation: '&a<plus>{value}% &7Восстановление насыщения'
+restore-health: '&a<plus>{value} &7Восстановление здоровья'
+restore-food: '&a<plus>{value} &7Восстановление голода'
+restore-saturation: '&a<plus>{value} &7Восстановление насыщения'
 restore-mana: '&a<plus>{value}% &7Восстановление маны'
 restore-stamina: '&a<plus>{value}% &7Восстановление стамины'
 effect: '&3 &7■ Grants &f{effect} &7for &f{duration} &7s'
@@ -126,19 +126,16 @@ required-dexterity: '&a✔ &7Мин. ловкость: {value}'
 required-strength: '&a✔ &7Мин. сила: {value}'
 required-intelligence: '&a✔ &7Мин. интеллект: {value}'
 
-additional-dexterity: '&3 &7■ Extra Dexterity: &f<plus>{value}'
-additional-strength: '&3 &7■ Extra Strength: &f<plus>{value}'
-additional-intelligence: '&3 &7■ Extra Intelligence: &f<plus>{value}'
+additional-dexterity: '&e+ &7Доп. ловкость: &7<plus>{value}'
+additional-strength: '&e+ &7Доп. сила: &7<plus>{value}'
+additional-intelligence: '&e+ &7Доп. интеллект: &7<plus>{value}'
 
 # Professions
-profession-alchemy: '&eAlchemy Level: &c{value}'
-profession-enchanting: '&eEnchanting Level: &c{value}'
-profession-farming: '&eFarming Level: &c{value}'
-profession-fishing: '&eFishing Level: &c{value}'
-profession-mining: '&eMining Level: &c{value}'
-profession-smelting: '&eSmelting Level: &c{value}'
-profession-smithing: '&eSmithing Level: &c{value}'
-profession-woodcutting: '&eWoodcutting Level: &c{value}'
+profession-farming: '&a✔ &7Мин. уровень фермерства: {value}'
+profession-fishing: '&a✔ &7Мин. уровень рыбалки: {value}'
+profession-mining: '&a✔ &7Мин. уровень шахтерства: {value}'
+profession-woodcutting: '&a✔ &7Мин. уровень дровосечества: {value}'
+profession-gathering: '&a✔ &7Мин. уровень собирательства: {value}'
 
 # Elemental Stat Format
 elemental-damage: '{color}{icon} {element} &7урон: {value}'
@@ -148,4 +145,4 @@ elemental-defense-percent: '{color}{icon}&7 +{value}% {element} защита'
 elemental-weakness: '{color}{icon}&7 {value}% {element} слабость'
 
 # Custom stats
-custom-myluck: '&3 &7■ Luck: &f<plus>{value}'
+custom-myluck: '&6Скорость добычи: {value}'

@@ -1,0 +1,26 @@
+name: "&6Мир"
+discover_title:
+  title: "&6Святыня"
+  subtitle: "%name%"
+  fade_in: 20
+  stay: 60
+  fade_out: 20
+discover_message:
+- "{centered}&f&m00                                                 00"
+- " "
+- "{centered}&6Святыня"
+- "{centered}%name%"
+- " "
+- "{centered}&7Изменения смотрите в профиле"
+- " "
+- "{centered}&f&m00                                                 00"
+discover_sound:
+  name: BLOCK_GILDED_BLACKSTONE_STEP
+  volume: 10
+  pitch: 0.1
+discoveries:
+  1:
+    name: "&eФонтан воскрешения"
+    lore:
+    - "&7Святыня"
+    discovered_on_region: shrine

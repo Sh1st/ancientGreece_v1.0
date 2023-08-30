@@ -1,0 +1,720 @@
+[18:04:44] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[18:04:45] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[18:04:46] [Worker-Main-12/INFO]: Loaded 7 recipes
+[18:04:48] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[18:04:48] [Server thread/INFO]: Loading properties
+[18:04:48] [Server thread/INFO]: This server is running CraftBukkit version 3096a-Spigot-9fb885e-af1a232 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[18:04:48] [Server thread/INFO]: Debug logging is disabled
+[18:04:48] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:04:48] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:04:48] [Server thread/INFO]: Default game type: SURVIVAL
+[18:04:48] [Server thread/INFO]: Generating keypair
+[18:04:48] [Server thread/INFO]: Starting Minecraft server on *:25565
+[18:04:48] [Server thread/INFO]: Using default channel type
+[18:04:50] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[18:04:54] [Server thread/WARN]: Legacy plugin CustomDeathDrops v1.2 does not specify an api-version.
+[18:04:54] [Server thread/WARN]: Legacy plugin PermissionsEx v1.23.4 does not specify an api-version.
+[18:04:54] [Server thread/WARN]: Legacy plugin Vault v1.5.6-b49 does not specify an api-version.
+[18:04:54] [Server thread/WARN]: Legacy plugin Essentials v2.15.0.1 does not specify an api-version.
+[18:04:54] [Server thread/WARN]: Legacy plugin EssentialsChat v2.15.0.1 does not specify an api-version.
+[18:04:56] [Server thread/INFO]: [36m Downloaded from https://directleaks.net [0m
+[18:04:57] [Server thread/INFO]: [35m Downloaded from https://directleaks.net [0m
+[18:04:57] [Server thread/INFO]: [35m Downloaded from https://directleaks.net [0m
+[18:04:57] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.11.3
+[18:04:57] [Server thread/INFO]: [HolographicDisplays] Loading HolographicDisplays v3.0.2
+[18:04:57] [Server thread/INFO]: [LoneLibs] Loading LoneLibs v1.0.25
+[18:04:57] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.0.0
+[18:04:59] [Server thread/INFO]: [LibsDisguises] Loading LibsDisguises v10.0.37
+[18:04:59] [Server thread/INFO]: [CustomDeathDrops] Loading CustomDeathDrops v1.2
+[18:04:59] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
+[18:04:59] [Server thread/INFO]: [SmartHealthScale] Loading SmartHealthScale v1.1
+[18:04:59] [Server thread/INFO]: [Vault] Loading Vault v1.5.6-b49
+[18:04:59] [Server thread/INFO]: [PCGF_PluginLib] Loading PCGF_PluginLib v1.0.39.1-SNAPSHOT-T20230709145732
+[18:04:59] [Thread-4/WARN]: Exception in thread "Thread-4" java.lang.Error: java.net.UnknownHostException: first.throwable.in
+[18:04:59] [Thread-4/WARN]: 	at Updater.a(:144)
+[18:04:59] [Thread-4/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:831)
+[18:04:59] [Thread-4/WARN]: Caused by: java.net.UnknownHostException: first.throwable.in
+[18:04:59] [Thread-4/WARN]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+[18:04:59] [Thread-4/WARN]: 	at java.base/java.net.Socket.connect(Socket.java:645)
+[18:04:59] [Thread-4/WARN]: 	at java.base/java.net.Socket.connect(Socket.java:595)
+[18:04:59] [Thread-4/WARN]: 	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:182)
+[18:04:59] [Thread-4/WARN]: 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:497)
+[18:04:59] [Thread-4/WARN]: 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:600)
+[18:04:59] [Thread-4/WARN]: 	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+[18:04:59] [Thread-4/WARN]: 	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:351)
+[18:04:59] [Thread-4/WARN]: 	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:372)
+[18:04:59] [Thread-4/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1299)
+[18:04:59] [Thread-4/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1232)
+[18:04:59] [Thread-4/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1120)
+[18:04:59] [Thread-4/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1051)
+[18:04:59] [Thread-4/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1653)
+[18:04:59] [Thread-4/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1577)
+[18:04:59] [Thread-4/WARN]: 	at Updater.a(:81)
+[18:04:59] [Thread-4/WARN]: 	... 1 more
+[18:04:59] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v7.2.14+6360-094b734
+[18:05:00] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@52b76d9d]
+[18:05:00] [Server thread/INFO]: [Essentials] Loading Essentials v2.15.0.1
+[18:05:00] [Server thread/INFO]: [PiggyBank] Loading PiggyBank v1.3.5
+[18:05:00] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v7.0.5+3827266
+[18:05:00] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.31-SNAPSHOT (build 2997)
+[18:05:00] [Server thread/INFO]: [Drop2Inventory] Loading Drop2Inventory v4.9.5
+[18:05:00] [Server thread/INFO]: [Minepacks] Loading Minepacks v2.4.21.1-Release
+[18:05:00] [Server thread/INFO]: [Minepacks] PCGF-PluginLib installed. Switching to normal mode!
+[18:05:00] [Server thread/INFO]: [MythicMobs] Loading MythicMobs v5.1.4-3aa1b5d2
+[18:05:00] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[18:05:00] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat v2.15.0.1
+[18:05:00] [Server thread/INFO]: [ModelEngine] Loading ModelEngine vR2.5.3-LTS
+[18:05:00] [Server thread/INFO]: [MythicLib] Loading MythicLib v1.5.2
+[18:05:00] [Server thread/INFO]: [MythicLib] Detected Bukkit Version: v1_16_R3
+[18:05:00] [Server thread/INFO]: [MythicLib] Hooked onto WorldGuard
+[18:05:00] [Server thread/INFO]: [MMOCore] Loading MMOCore v1.11.3
+[18:05:00] [Server thread/INFO]: [MMOItems] Loading MMOItems v6.9.3
+[18:05:00] [Server thread/INFO]: [MMOItems] Hooked onto WorldEdit
+[18:05:01] [Server thread/INFO]: [ItemsAdder] Loading ItemsAdder v3.3.0-beta-r8
+[18:05:01] [Server thread/INFO]: [BanItem] Loading BanItem v3.4
+[18:05:01] [Server thread/INFO]: [ShopGUIPlus] Loading ShopGUIPlus v1.59.2
+[18:05:01] [Server thread/INFO]: [BeautyQuests] Loading BeautyQuests v0.20.1
+[18:05:01] [Server thread/INFO]: [LoneLibs] Enabling LoneLibs v1.0.25
+[18:05:01] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.0.0
+[18:05:01] [Server thread/INFO]: [SmartHealthScale] Enabling SmartHealthScale v1.1
+[18:05:01] [Server thread/INFO]: [0;32;1m[SmartHealthScale] Plugin has been Enabled![m
+[18:05:01] [Server thread/INFO]: [0;32;1mScaling has been enabled![m
+[18:05:01] [Server thread/INFO]: [Vault] Enabling Vault v1.5.6-b49
+[18:05:01] [Server thread/WARN]: [Vault] Loaded class com.earth2me.essentials.api.Economy from Essentials v2.15.0.1 which is not a depend, softdepend or loadbefore of this plugin.
+[18:05:01] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[18:05:01] [Server thread/WARN]: [Vault] Loaded class ru.tehkode.permissions.bukkit.PermissionsEx from PermissionsEx v1.23.4 which is not a depend, softdepend or loadbefore of this plugin.
+[18:05:01] [Server thread/INFO]: [Vault] [Permission] PermissionsEx found: Waiting
+[18:05:01] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[18:05:01] [Server thread/INFO]: [Vault] [Chat] PermissionsEx found: Waiting
+[18:05:01] [Server thread/INFO]: [Vault] Enabled Version 1.5.6-b49
+[18:05:01] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.14+6360-094b734
+[18:05:01] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[18:05:01] [Server thread/WARN]: [WorldEdit] Loaded class ru.tehkode.permissions.PermissionManager from PermissionsEx v1.23.4 which is not a depend, softdepend or loadbefore of this plugin.
+[18:05:01] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[18:05:01] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_16_R3 as the Bukkit adapter
+[18:05:02] [Server thread/INFO]: [WorldEdit] ====================================================
+[18:05:02] [Server thread/INFO]: [WorldEdit]  WorldEdit works better if you use Paper 
+[18:05:02] [Server thread/INFO]: [WorldEdit]  as your server software. 
+[18:05:02] [Server thread/INFO]: [WorldEdit]   
+[18:05:02] [Server thread/INFO]: [WorldEdit]  Paper offers significant performance improvements,
+[18:05:02] [Server thread/INFO]: [WorldEdit]  bug fixes, security enhancements and optional
+[18:05:02] [Server thread/INFO]: [WorldEdit]  features for server owners to enhance their server.
+[18:05:02] [Server thread/INFO]: [WorldEdit]   
+[18:05:02] [Server thread/INFO]: [WorldEdit]  Paper includes Timings v2, which is significantly
+[18:05:02] [Server thread/INFO]: [WorldEdit]  better at diagnosing lag problems over v1.
+[18:05:02] [Server thread/INFO]: [WorldEdit]   
+[18:05:02] [Server thread/INFO]: [WorldEdit]  All of your plugins should still work, and the
+[18:05:02] [Server thread/INFO]: [WorldEdit]  Paper community will gladly help you fix any issues.
+[18:05:02] [Server thread/INFO]: [WorldEdit]   
+[18:05:02] [Server thread/INFO]: [WorldEdit]  Join the Paper Community @ https://papermc.io
+[18:05:02] [Server thread/INFO]: [WorldEdit] ====================================================
+[18:05:02] [Server thread/INFO]: [PiggyBank] Enabling PiggyBank v1.3.5
+[18:05:02] [Server thread/INFO]: [PiggyBank] Using NMS version v1_16_R3
+[18:05:02] [Server thread/INFO]: [PiggyBank] Enabled Vault Economy support
+[18:05:02] [Server thread/INFO]: Preparing level "world"
+[18:05:02] [Server thread/INFO]: -------- World Settings For [world] --------
+[18:05:02] [Server thread/INFO]: Item Merge Radius: 2.5
+[18:05:02] [Server thread/INFO]: Item Despawn Rate: 6000
+[18:05:02] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[18:05:02] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[18:05:02] [Server thread/INFO]: View Distance: 10
+[18:05:02] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[18:05:02] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[18:05:02] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[18:05:02] [Server thread/INFO]: Mob Spawn Range: 6
+[18:05:02] [Server thread/INFO]: Experience Merge Radius: 3.0
+[18:05:02] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: Cane Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: Melon Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: Potato Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: Vine Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[18:05:02] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[18:05:02] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[18:05:02] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[18:05:02] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[18:05:02] [Server thread/INFO]: Max TNT Explosions: 100
+[18:05:03] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[18:05:03] [Server thread/INFO]: Item Merge Radius: 2.5
+[18:05:03] [Server thread/INFO]: Item Despawn Rate: 6000
+[18:05:03] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[18:05:03] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[18:05:03] [Server thread/INFO]: View Distance: 10
+[18:05:03] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[18:05:03] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[18:05:03] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[18:05:03] [Server thread/INFO]: Mob Spawn Range: 6
+[18:05:03] [Server thread/INFO]: Experience Merge Radius: 3.0
+[18:05:03] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Cane Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Melon Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Potato Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Vine Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[18:05:03] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[18:05:03] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[18:05:03] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[18:05:03] [Server thread/INFO]: Max TNT Explosions: 100
+[18:05:03] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[18:05:03] [Server thread/INFO]: Item Merge Radius: 2.5
+[18:05:03] [Server thread/INFO]: Item Despawn Rate: 6000
+[18:05:03] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[18:05:03] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[18:05:03] [Server thread/INFO]: View Distance: 10
+[18:05:03] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[18:05:03] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[18:05:03] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[18:05:03] [Server thread/INFO]: Mob Spawn Range: 6
+[18:05:03] [Server thread/INFO]: Experience Merge Radius: 3.0
+[18:05:03] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Cane Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Melon Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Potato Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Vine Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[18:05:03] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[18:05:03] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[18:05:03] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[18:05:03] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[18:05:03] [Server thread/INFO]: Max TNT Explosions: 100
+[18:05:03] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[18:05:03] [Server thread/INFO]: Preparing spawn area: 0%
+[18:05:03] [Server thread/INFO]: Preparing spawn area: 0%
+[18:05:04] [Server thread/INFO]: Time elapsed: 1045 ms
+[18:05:04] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[18:05:05] [Server thread/INFO]: Preparing spawn area: 0%
+[18:05:05] [Server thread/INFO]: Preparing spawn area: 0%
+[18:05:05] [Server thread/INFO]: Preparing spawn area: 0%
+[18:05:05] [Worker-Main-10/INFO]: Preparing spawn area: 83%
+[18:05:06] [Worker-Main-14/INFO]: Preparing spawn area: 83%
+[18:05:06] [Worker-Main-11/INFO]: Preparing spawn area: 83%
+[18:05:07] [Worker-Main-10/INFO]: Preparing spawn area: 90%
+[18:05:07] [Worker-Main-8/INFO]: Preparing spawn area: 99%
+[18:05:07] [Server thread/INFO]: Time elapsed: 3511 ms
+[18:05:07] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[18:05:07] [Server thread/INFO]: Preparing spawn area: 0%
+[18:05:08] [Worker-Main-12/INFO]: Preparing spawn area: 83%
+[18:05:08] [Server thread/INFO]: Time elapsed: 672 ms
+[18:05:08] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.3
+[18:05:08] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[18:05:08] [Server thread/INFO]: [HolographicDisplays] Enabling HolographicDisplays v3.0.2
+[18:05:08] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v10.0.37
+[18:05:08] [Server thread/INFO]: [LibsDisguises] File Name: LibsDisguises-10.0.34-Free.jar
+[18:05:08] [Server thread/INFO]: [LibsDisguises] Discovered nms version: v1_16_R3 (v1_16)
+[18:05:08] [Server thread/INFO]: [LibsDisguises] Jenkins Build: #1239
+[18:05:08] [Server thread/INFO]: [LibsDisguises] Build Date: 25/06/2023 07:08
+[18:05:08] [Server thread/INFO]: [LibsDisguises] If you own the plugin, place the premium jar downloaded from https://www.spigotmc.org/resources/libs-disguises.32453/ in plugins/LibsDisguises/
+[18:05:08] [Server thread/INFO]: [LibsDisguises] You are running the free version, commands limited to non-players and operators. (Console, Command Blocks, Admins)
+[18:05:09] [Server thread/INFO]: [LibsDisguises] Loaded custom disguise libraryaddict
+[18:05:09] [Server thread/INFO]: [LibsDisguises] Loaded 1 custom disguise
+[18:05:09] [Server thread/INFO]: [LibsDisguises] Config is up to date!
+[18:05:10] [Server thread/INFO]: [CustomDeathDrops] Enabling CustomDeathDrops v1.2
+[18:05:10] [Server thread/INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
+[18:05:10] [Server thread/INFO]: [PermissionsEx] Initializing file backend
+[18:05:10] [Server thread/INFO]: [PermissionsEx] Permissions file successfully reloaded
+[18:05:10] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+[18:05:10] [Server thread/INFO]: [Vault][Permission] PermissionsEx hooked.
+[18:05:10] [Server thread/INFO]: [Vault][Chat] PermissionsEx_Chat hooked.
+[18:05:10] [Server thread/INFO]: [PCGF_PluginLib] Enabling PCGF_PluginLib v1.0.39.1-SNAPSHOT-T20230709145732
+[18:05:10] [Server thread/INFO]: [PCGF_PluginLib] [32mConfig file successfully loaded.[0m
+[18:05:10] [Server thread/INFO]: [PCGF_PluginLib] [32mItem name language file successfully loaded. Language: english  Author: GeorgH93[0m
+[18:05:10] [Server thread/INFO]: [PCGF_PluginLib] Loading item translations ...
+[18:05:10] [Server thread/INFO]: [PCGF_PluginLib] Finished loading item translations for 829 items.
+[18:05:10] [Server thread/INFO]: [PCGF_PluginLib] [32mLanguage file successfully loaded. Language: english  Author: GeorgH93[0m
+[18:05:10] [Server thread/INFO]: [PCGF_PluginLib] [32m PCGF_PluginLib v1.0.39.1-SNAPSHOT-T20230709145732 has been enabled! [33m :) [0m
+[18:05:10] [Server thread/INFO]: [Essentials] Enabling Essentials v2.15.0.1
+[18:05:10] [Server thread/ERROR]: [Essentials] Failed to apply custom currency format: modifiers
+[18:05:10] [Server thread/INFO]: Attempting to convert old kits in config.yml to new kits.yml
+[18:05:10] [Server thread/INFO]: No kits found to migrate.
+[18:05:10] [Server thread/INFO]: [Essentials] Using 1.8.3+ BlockStateMeta provider as mob spawner provider.
+[18:05:10] [Server thread/INFO]: [Essentials] Using legacy item data provider as spawn egg provider.
+[18:05:10] [Server thread/INFO]: [Essentials] Using 1.9+ BasePotionData provider as potion meta provider.
+[18:05:10] [Server thread/ERROR]: [Essentials] Failed to apply custom currency format: modifiers
+[18:05:10] [Server thread/INFO]: Using locale ru_RU
+[18:05:10] [Server thread/INFO]: [Essentials] Using Spigot 1.7.10+ ServerListPingEvent iterator
+[18:05:10] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[18:05:10] [Server thread/INFO]: [Vault][Economy] Essentials Economy hooked.
+[18:05:10] [Server thread/INFO]: [Essentials] Using Vault based permissions (PermissionsEx)
+[18:05:10] [Server thread/INFO]: [Essentials] Payment method found (Vault - Economy: PiggyBank version: 1.5.6-b49)
+[18:05:10] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.5+3827266
+[18:05:10] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[18:05:10] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[18:05:10] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[18:05:10] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[18:05:10] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[18:05:10] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[18:05:10] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[18:05:10] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[18:05:10] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[18:05:10] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[18:05:10] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[18:05:10] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[18:05:10] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[18:05:10] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[18:05:10] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[18:05:10] [Server thread/INFO]: [WorldGuard] Loading region data...
+[18:05:10] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.31-SNAPSHOT (build 2997)
+[18:05:10] [Server thread/INFO]: [Citizens] Loading external libraries
+[18:05:10] [Server thread/INFO]: [Citizens] No translation for system language (ru_RU): defaulting to English
+[18:05:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: citizensplaceholder [1.0.0]
+[18:05:11] [Server thread/INFO]: [Citizens] Loaded economy handling via Vault.
+[18:05:11] [Server thread/INFO]: [Drop2Inventory] Enabling Drop2Inventory v4.9.5
+[18:05:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: drop2inventory [GENERIC]
+[18:05:11] [Server thread/INFO]: [Minepacks] Enabling Minepacks v2.4.21.1-Release
+[18:05:11] [Server thread/INFO]: [Minepacks] [32mConfig file successfully loaded.[0m
+[18:05:11] [Server thread/INFO]: [Minepacks] [32mLanguage file successfully loaded. Language: english  Author: GeorgH93[0m
+[18:05:11] [Server thread/INFO]: Minepacks-Connection-Pool - Starting...
+[18:05:11] [Server thread/INFO]: Minepacks-Connection-Pool - Start completed.
+[18:05:11] [Server thread/INFO]: [Minepacks] [32m Minepacks has been enabled! [33m :) [0m
+[18:05:11] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.1.4-3aa1b5d2
+[18:05:11] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Spigot (MC: 1.16.5)...[0m
+[18:05:11] [Server thread/INFO]: [MythicMobs] The server is running Spigot; disabled PaperSpigot exclusive functionality[0m
+[18:05:11] [Server thread/INFO]: Reflections took 74 ms to scan 1 urls, producing 3 keys and 21 values 
+[18:05:12] [Server thread/INFO]: Reflections took 10 ms to scan 1 urls, producing 3 keys and 27 values 
+[18:05:12] [Server thread/INFO]: Reflections took 7 ms to scan 1 urls, producing 0 keys and 0 values 
+[18:05:12] [Server thread/INFO]: Reflections took 8 ms to scan 1 urls, producing 3 keys and 12 values 
+[18:05:12] [Server thread/INFO]: [MythicMobs] MythicMobs HolographicDisplays Support has been enabled![0m
+[18:05:12] [Server thread/INFO]: [MythicMobs] MythicMobs LibsDisguises Support has been enabled![0m
+[18:05:12] [Server thread/INFO]: [MythicMobs] MythicMobs MMOItems Support has been enabled![0m
+[18:05:12] [Server thread/INFO]: [MythicMobs] MythicMobs MythicLib Support has been enabled![0m
+[18:05:12] [Server thread/INFO]: [MythicMobs] MythicMobs PlaceholderAPI Support has been enabled![0m
+[18:05:12] [Server thread/INFO]: [MythicMobs] MythicMobs ProtocolLib Support has been enabled![0m
+[18:05:12] [Server thread/INFO]: [MythicMobs] MythicMobs Vault Support has been enabled![0m
+[18:05:12] [Server thread/INFO]: [MythicMobs] MythicMobs WorldGuard Support has been enabled![0m
+[18:05:12] [Server thread/INFO]: [MythicMobs] Loading Mob Registry...[0m
+[18:05:12] [Server thread/INFO]: [MythicMobs] Base directory C:\Users\admin\Desktop\mdamda\plugins\MythicMobs\SavedData
+[18:05:12] [Server thread/INFO]: [MythicMobs] Module directory C:\Users\admin\Desktop\mdamda\plugins\MythicMobs\SavedData\worlds
+[18:05:12] [Server thread/INFO]: Reflections took 22 ms to scan 1 urls, producing 11 keys and 423 values 
+[18:05:12] [Server thread/INFO]: Reflections took 32 ms to scan 1 urls, producing 27 keys and 843 values 
+[18:05:12] [Server thread/INFO]: Reflections took 10 ms to scan 1 urls, producing 9 keys and 152 values 
+[18:05:12] [Server thread/INFO]: Reflections took 5 ms to scan 1 urls, producing 2 keys and 11 values 
+[18:05:12] [Server thread/INFO]: [MythicMobs] [36mLOADED[0m
+[18:05:12] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[18:05:12] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[18:05:12] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[18:05:13] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[18:05:13] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[18:05:13] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[18:05:13] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 41 mobs.[0m
+[18:05:13] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[18:05:13] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[18:05:13] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 274 skills.[0m
+[18:05:13] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 random spawns.[0m
+[18:05:13] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 10 mythic items.[0m
+[18:05:13] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[18:05:13] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 5 mob spawners.[0m
+[18:05:13] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.[0m
+[18:05:13] [Server thread/ERROR]: [MythicMobs] Plugin MythicMobs v5.1.4-3aa1b5d2 has failed to register events for class io.lumine.mythic.bukkit.adapters.BukkitSkillTriggers because com/destroystokyo/paper/event/entity/CreeperIgniteEvent does not exist.
+[18:05:13] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics[0m
+[18:05:13] [Server thread/INFO]: [MythicMobs] [32m? MythicMobs Premium v5.1.4 ( build 3aa1b5d2 ) has been successfully loaded![0m[0m
+[18:05:13] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.15.0.1
+[18:05:13] [Server thread/INFO]: [ModelEngine] Enabling ModelEngine vR2.5.3-LTS
+[18:05:14] [Server thread/INFO]: ?3Spigotunlocked.org
+[18:05:14] [Server thread/INFO]: [ModelEngine] Mythic Mobs v5 loaded
+[18:05:14] [Server thread/INFO]: [MythicMobs] External Model Engine compatibility loaded.[0m
+[18:05:14] [Server thread/INFO]: [0;36;1m[Model Engine] Engine Activated.[m
+[18:05:14] [Server thread/INFO]: [0;36;1m[Model Engine] Generator Activated.[m
+[18:05:14] [Server thread/INFO]: [0;36;1m[Model Engine] Resource Pack generated.[m
+[18:05:14] [Server thread/INFO]: [m
+[18:05:14] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mcerberus[0;34;1m.[m
+[18:05:14] [Server thread/INFO]: [m
+[18:05:14] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mcerberus_bowl[0;34;1m.[m
+[18:05:14] [Server thread/INFO]: [m
+[18:05:14] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mcerberus_bowl_empty[0;34;1m.[m
+[18:05:14] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: No-clip model.[m
+[18:05:14] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Missing hitbox.[m
+[18:05:14] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Unusual eye height.[m
+[18:05:14] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Eye height is under ground level. [0.0][m
+[18:05:14] [Server thread/INFO]: [m
+[18:05:14] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mcerberus_chains[0;34;1m.[m
+[18:05:14] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: No-clip model.[m
+[18:05:14] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Missing hitbox.[m
+[18:05:14] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Unusual eye height.[m
+[18:05:14] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Eye height is under ground level. [0.0][m
+[18:05:14] [Server thread/INFO]: [m
+[18:05:14] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mcerberus_groundfx[0;34;1m.[m
+[18:05:14] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: No-clip model.[m
+[18:05:14] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Missing hitbox.[m
+[18:05:14] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Unusual eye height.[m
+[18:05:14] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Eye height is under ground level. [0.0][m
+[18:05:14] [Server thread/INFO]: [m
+[18:05:14] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mcerberus_sleep[0;34;1m.[m
+[18:05:14] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: No-clip model.[m
+[18:05:14] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Missing hitbox.[m
+[18:05:14] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Unusual eye height.[m
+[18:05:14] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Eye height is under ground level. [0.0][m
+[18:05:14] [Server thread/INFO]: [m
+[18:05:14] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mgiant_turtle[0;34;1m.[m
+[18:05:14] [Server thread/INFO]: [m
+[18:05:14] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mgiant_turtle_coconut[0;34;1m.[m
+[18:05:14] [Server thread/INFO]: [m
+[18:05:14] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mgiant_turtle_parts[0;34;1m.[m
+[18:05:14] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: No-clip model.[m
+[18:05:14] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Missing hitbox.[m
+[18:05:14] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Unusual eye height.[m
+[18:05:14] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Eye height is under ground level. [0.0][m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mgigas[0;34;1m.[m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mgigasbabyblue[0;34;1m.[m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mgigasbabyred[0;34;1m.[m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mgui_bar[0;34;1m.[m
+[18:05:15] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: No-clip model.[m
+[18:05:15] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Missing hitbox.[m
+[18:05:15] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Unusual eye height.[m
+[18:05:15] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Eye height is under ground level. [0.0][m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mhellhound[0;34;1m.[m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mlr_gryffin[0;34;1m.[m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mlr_gryffin_corvid[0;34;1m.[m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mlr_gryffin_feather[0;34;1m.[m
+[18:05:15] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: No-clip model.[m
+[18:05:15] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Missing hitbox.[m
+[18:05:15] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Unusual eye height.[m
+[18:05:15] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Eye height is under ground level. [0.0][m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mlr_gryffin_nest[0;34;1m.[m
+[18:05:15] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Invalid cube [0;31;1mcube[0;33;22m in bone [0;31;1mnest[0;33;22m. Setting angle to 0.[m
+[18:05:15] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Cube is not rotated within -45 to 45, or not in 22.5 increment. [-3.1805547E-15][m
+[18:05:15] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Invalid cube [0;31;1mcube[0;33;22m in bone [0;31;1mnest[0;33;22m. Setting angle to 0.[m
+[18:05:15] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Cube is not rotated within -45 to 45, or not in 22.5 increment. [1.2722219E-14][m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mlr_gryffin_whirlwind[0;34;1m.[m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mmedusa[0;34;1m.[m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mmedusa_bits[0;34;1m.[m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mmedusa_snakehead[0;34;1m.[m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mmedusa_stone[0;34;1m.[m
+[18:05:15] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: No-clip model.[m
+[18:05:15] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Missing hitbox.[m
+[18:05:15] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Unusual eye height.[m
+[18:05:15] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Eye height is under ground level. [0.0][m
+[18:05:15] [Server thread/INFO]: [m
+[18:05:15] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mminotaur[0;34;1m.[m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mpalm_tree[0;34;1m.[m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mpalm_tree_parts[0;34;1m.[m
+[18:05:16] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: No-clip model.[m
+[18:05:16] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Missing hitbox.[m
+[18:05:16] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Unusual eye height.[m
+[18:05:16] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Eye height is under ground level. [0.0][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mphoenix[0;34;1m.[m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mphoenix_pet[0;34;1m.[m
+[18:05:16] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Unusual eye height.[m
+[18:05:16] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Eye height is under ground level. [0.0][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mphoenix_pet_parts[0;34;1m.[m
+[18:05:16] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: No-clip model.[m
+[18:05:16] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Missing hitbox.[m
+[18:05:16] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Unusual eye height.[m
+[18:05:16] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Eye height is under ground level. [0.0][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mphoenix_ash[0;34;1m.[m
+[18:05:16] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: No-clip model.[m
+[18:05:16] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Missing hitbox.[m
+[18:05:16] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Unusual eye height.[m
+[18:05:16] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Eye height is under ground level. [0.0][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mphoenix_egg[0;34;1m.[m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22msand_castle[0;34;1m.[m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22msand_castle_parts[0;34;1m.[m
+[18:05:16] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: No-clip model.[m
+[18:05:16] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Missing hitbox.[m
+[18:05:16] [Server thread/INFO]: [0;33;22m[Model Engine]----Warning: Unusual eye height.[m
+[18:05:16] [Server thread/INFO]: [0;33;1m[Model Engine]------Reason: Eye height is under ground level. [0.0][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;34;1m[Model Engine]--Generating [0;33;22mstone_player[0;34;1m.[m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mcerberus[0;32;1m [3.75, 3.75] (4.3125)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, walk, gallop, sleep, bite2, bite3, bite1, tail1, stomp, swipe, riverofstyx, flinch, flinch_hit, wakeup, death][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mcerberus_bowl[0;32;1m [1.375, 0.5625] (0.28125)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, hit, land][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mcerberus_bowl_empty[0;32;1m [0.0, 0.0] (0.0)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mcerberus_chains[0;32;1m [0.0, 0.0] (0.0)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mcerberus_groundfx[0;32;1m [0.0, 0.0] (0.0)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mcerberus_sleep[0;32;1m [0.0, 0.0] (0.0)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mgiant_turtle[0;32;1m [6.25, 6.25] (3.5)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, emerge, idle_awake, walk, attack1, attack2, combo1, retract, coconut_spin, extract, death][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mgiant_turtle_coconut[0;32;1m [1.0, 1.0] (8.125)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, land][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mgiant_turtle_parts[0;32;1m [0.0, 0.0] (0.0)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mgigas[0;32;1m [2.75, 1.5] (1.4375)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[blank, idle, walk, snip, threeslam, toss, death, crabrave][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mgigasbabyblue[0;32;1m [0.875, 0.46875] (0.22701423)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, walk, mount][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mgigasbabyred[0;32;1m [0.875, 0.46875] (0.22701423)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, walk, mount][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mgui_bar[0;32;1m [0.0, 0.0] (0.0)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mhellhound[0;32;1m [1.5, 1.4375] (0.8125)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, walk, bite, death, spawn][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mlr_gryffin[0;32;1m [3.125, 3.125] (3.125)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, walk, death, flying_death_fall, flying_death_land, flying_idle, flying_walk, attack_1, attack_2, attack_3, take_off, land, flying_death, feed][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mlr_gryffin_corvid[0;32;1m [3.125, 3.125] (3.125)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, walk, death, flying_death_fall, flying_death_land, flying_idle, flying_walk, attack_1, attack_2, attack_3, take_off, land, flying_death, feed][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mlr_gryffin_feather[0;32;1m [0.0, 0.0] (0.0)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mlr_gryffin_nest[0;32;1m [2.0, 1.3125] (0.65625)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, grab][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mlr_gryffin_whirlwind[0;32;1m [2.25, 2.25] (1.125)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, walk][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mmedusa[0;32;1m [1.6875, 3.5] (2.375)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, walk, run, gaze, death, smack, spinsmack, twinsnakes, bow_attack][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mmedusa_bits[0;32;1m [1.6875, 3.5] (2.375)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, walk, run, bow_attack, gaze, smack, death, spinsmack, twinsnakes][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mmedusa_snakehead[0;32;1m [1.9375, 1.8125] (0.5625)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, walk][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mmedusa_stone[0;32;1m [0.0, 0.0] (0.0)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mminotaur[0;32;1m [0.875, 4.0] (5.625)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, walk, v_smash, v_smash2, v_smash3, rush_attack, swing, uppercut, headbutt, stomp, death][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mmso_tornado[0;32;1m [2.5, 11.875] (2.8125)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mmso_zeus[0;32;1m [2.0, 4.0] (3.5625)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle_stand, idle_sit, walk, idle, knock, toss_bolt, summon_lightning, zap, shockwave, rebuke, storm_quake, summon, fly_idle, fly_walk, death][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mpalm_tree[0;32;1m [1.0, 3.5] (1.75)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, hit][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mpalm_tree_parts[0;32;1m [0.0, 0.0] (0.0)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, hit][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mphoenix[0;32;1m [2.75, 4.9375] (4.5625)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, walk, land, death, death_air, death_air_idle, take_off, attack_ground1, flinch, flinch_hit, attack_ground3, idle_air, attack_ground2, attack_air][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mphoenix_ash[0;32;1m [0.0, 0.0] (0.0)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mphoenix_egg[0;32;1m [1.0, 1.25] (0.625)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, idle_incubating_level1, idle_incubating_level2, hatch][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mphoenix_pet[0;32;1m [1.0, 1.0] (0.0)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[idle, idle_hatch, walk, spawn, pet, eat_wart][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mphoenix_pet_parts[0;32;1m [0.0, 0.0] (0.0)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22msand_castle[0;32;1m [1.0, 1.0] (0.5)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[remove][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22msand_castle_parts[0;32;1m [0.0, 0.0] (0.0)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]--Registered [0;33;22mstone_player[0;32;1m [1.0, 2.0] (1.5)[m
+[18:05:16] [Server thread/INFO]: [0;32;1m[Model Engine]----State Priority [lowest -> highest]: [0;33;22m[][m
+[18:05:16] [Server thread/INFO]: [m
+[18:05:16] [Server thread/INFO]: [MythicLib] Enabling MythicLib v1.5.2
+[18:05:16] [Server thread/INFO]: [MythicLib] Hooked onto HolographicDisplays
+[18:05:16] [Server thread/INFO]: [MythicLib] Hooked onto MythicMobs
+[18:05:16] [Server thread/INFO]: [MythicLib] Hooked onto ProtocolLib
+[18:05:16] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mythiclib [1.5.2]
+[18:05:16] [Server thread/INFO]: [MythicLib] Hooked onto PlaceholderAPI
+[18:05:16] [Server thread/INFO]: [MMOCore] Enabling MMOCore v1.11.3
+[18:05:16] [Server thread/INFO]: [MMOCore] Hooked onto Vault
+[18:05:16] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mmocore [1.11.3]
+[18:05:16] [Server thread/INFO]: [MMOCore] Hooked onto PlaceholderAPI
+[18:05:16] [Server thread/INFO]: [MMOCore] Hooked onto Citizens
+[18:05:16] [Server thread/INFO]: [WorldGuard] Registering session handler net.Indyuce.mmocore.comp.region.pvpmode.PvPModeHandler
+[18:05:16] [Server thread/INFO]: [WorldGuard] Registering session handler net.Indyuce.mmocore.comp.region.pvpmode.PvPFlagHandler
+[18:05:16] [Server thread/INFO]: [MMOCore] Hooked onto WorldGuard
+[18:05:16] [Server thread/INFO]: [MMOCore] Hooked onto MythicMobs
+[18:05:16] [Server thread/WARN]: [MMOCore] Could not find damage cause called 'SONIC_BOOM'
+[18:05:16] [Server thread/WARN]: [MMOCore] Hooked parties onto MMOCore
+[18:05:16] [Server thread/WARN]: [MMOCore] Hooked guilds onto MMOCore
+[18:05:17] [Server thread/INFO]: [MMOItems] Enabling MMOItems v6.9.3
+[18:05:17] [Server thread/INFO]: [MMOItems] Hooked onto MythicMobs
+[18:05:17] [Server thread/INFO]: [MMOItems] Hooked onto MMOCore
+[18:05:17] [Server thread/INFO]: [MMOItems] Now using MMOCore as RPG core plugin
+[18:05:17] [Server thread/INFO]: [0;30;1m[[0;33;1mMMOItems [0;33;22m[3mItem Templates[0;30;1m] [0;37;22mLoading template modifiers, please wait..[m
+[18:05:17] [Server thread/INFO]: [0;30;1m[[0;33;1mMMOItems [0;33;22m[3mItem Templates[0;30;1m] [0;37;22mLoading item templates, please wait...[m
+[18:05:17] [Server thread/INFO]: [MMOItems] Hooked onto Vault
+[18:05:17] [Server thread/INFO]: [MMOItems] Hooked onto Vault
+[18:05:17] [Server thread/INFO]: [MMOItems] Loading crafting stations, please wait..
+[18:05:17] [Server thread/WARN]: [MMOItems] Could not post-load station 'mythical-forge': Could not find parent station with ID 'arcane-forge'
+[18:05:17] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mmoitems [6.9.3]
+[18:05:17] [Server thread/INFO]: [MMOItems] Hooked onto PlaceholderAPI
+[18:05:17] [Server thread/INFO]: [MMOItems] Loading recipes, please wait...
+[18:05:17] [Server thread/INFO]: [0;30;1m[[0;33;22mMythicLib [0;31;1m[3mIngredient [0;36;1mv amethyst_block - 1.0..[0;30;1m] [0;37;22mExpected a vanilla material instead of [0;33;1mamethyst_block[0;37;22m. [m
+[18:05:17] [Server thread/INFO]: [0;30;1m[[0;33;22mMythicLib [0;31;1m[3mIngredient [0;36;1mv amethyst_block - 1.0..[0;30;1m] [0;37;22mExpected a vanilla material instead of [0;33;1mamethyst_block[0;37;22m. [m
+[18:05:17] [Server thread/INFO]: [0;30;1m[[0;33;22mMythicLib [0;31;1m[3mIngredient [0;36;1mv amethyst_block - 1.0..[0;30;1m] [0;37;22mExpected a vanilla material instead of [0;33;1mamethyst_block[0;37;22m. [m
+[18:05:17] [Server thread/INFO]: [0;30;1m[[0;33;22mMythicLib [0;31;1m[3mIngredient [0;36;1mv amethyst_shard - 1.0..[0;30;1m] [0;37;22mExpected a vanilla material instead of [0;33;1mamethyst_shard[0;37;22m. [m
+[18:05:17] [Server thread/INFO]: [0;30;1m[[0;33;22mMythicLib [0;31;1m[3mIngredient [0;36;1mv amethyst_block - 1.0..[0;30;1m] [0;37;22mExpected a vanilla material instead of [0;33;1mamethyst_block[0;37;22m. [m
+[18:05:17] [Server thread/INFO]: [0;30;1m[[0;33;22mMythicLib [0;31;1m[3mIngredient [0;36;1mv copper_block - 1.0..[0;30;1m] [0;37;22mExpected a vanilla material instead of [0;33;1mcopper_block[0;37;22m. [m
+[18:05:17] [Server thread/INFO]: [0;30;1m[[0;33;22mMythicLib [0;31;1m[3mIngredient [0;36;1mv copper_ingot - 1.0..[0;30;1m] [0;37;22mExpected a vanilla material instead of [0;33;1mcopper_ingot[0;37;22m. [m
+[18:05:17] [Server thread/INFO]: [ItemsAdder] Enabling ItemsAdder v3.3.0-beta-r8
+[18:05:17] [Server thread/INFO]: [NBTAPI] Found Spigot: v1_16_R3! Trying to find NMS support
+[18:05:17] [Server thread/INFO]: [NBTAPI] NMS support 'MC1_16_R3' loaded!
+[18:05:17] [Server thread/INFO]: [NBTAPI] Found Gson: class com.google.gson.Gson
+[18:05:17] [Server thread/WARN]: [ItemsAdder] [0m[38;5;11mCustom player emotes require Minecraft 1.17+. Feature disabled.[0m
+[18:05:17] [Server thread/INFO]: [ItemsAdder] [0m[38;5;51m
+[38;5;51m  ___  ___        __        __   __   ___  __  [38;5;2m    ItemsAdder[38;5;246m 3.3.0-beta-r8
+[38;5;51m|  |  |__   |\/| /__`  /\  |  \ |  \ |__  |__) [38;5;2m    LoneLibs[38;5;246m 1.0.25
+[38;5;51m|  |  |___  |  | .__/ /--\ |__/ |__/ |___ |  \ [38;5;8m    CraftBukkit 3096a-Spigot-9fb885e-af1a232 (MC: 1.16.5)
+[38;5;51m                                               [0m
+[18:05:17] [Server thread/INFO]: [ItemsAdder] [0m[38;5;11mLightAPI not installed, please install it to see blocks emitting light: https://a.devs.beer/lightapi-old[0m
+[18:05:17] [Server thread/WARN]: [ItemsAdder] [0m[38;5;11mCustom player emotes require Minecraft 1.17+. Feature disabled.[0m
+[18:05:18] [Server thread/INFO]: [ItemsAdder] [0mRegistered Citizens NPC Trait: customentity[0m
+[18:05:18] [Server thread/INFO]: [BanItem] Enabling BanItem v3.4
+[18:05:18] [Server thread/INFO]: [ShopGUIPlus] Enabling ShopGUIPlus v1.59.2
+[18:05:18] [Server thread/INFO]: [BeautyQuests] Enabling BeautyQuests v0.20.1
+[18:05:18] [Server thread/INFO]: [BeautyQuests] ------------ BeautyQuests ------------
+[18:05:18] [Server thread/WARN]: [BeautyQuests] You are not running the Paper software.
+It is highly recommended to use it for extended features and more stability.
+[18:05:18] [Server thread/INFO]: [BeautyQuests] Loaded valid Minecraft version 1_16_R3.
+[18:05:18] [Server thread/INFO]: [BeautyQuests] Loaded language ru_RU (0.05s)!
+[18:05:18] [Server thread/INFO]: [BeautyQuests] Loaded start particles: VILLAGER_HAPPY in shape NEAR
+[18:05:18] [Server thread/INFO]: [BeautyQuests] Loaded talk particles: VILLAGER_HAPPY in shape NEAR
+[18:05:18] [Server thread/INFO]: [BeautyQuests] Loaded next particles: VILLAGER_HAPPY in shape NEAR
+[18:05:19] [Server thread/INFO]: [WorldGuard] Registering session handler fr.skytasul.quests.utils.compatibility.worldguard.WorldGuardEntryHandler
+[18:05:19] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: beautyquests [0.20.1]
+[18:05:19] [Server thread/INFO]: [BeautyQuests] Placeholders registered !
+[18:05:19] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:05:19] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[18:05:19] [Server thread/INFO]: Done (16.897s)! For help, type "help"
+[18:05:19] [Server thread/INFO]: [PiggyBank] Found PlaceholderAPI plugin
+[18:05:19] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: piggybank [1.3.5]
+[18:05:19] [Server thread/INFO]: [PiggyBank] Registered PlaceholderAPI placeholders
+[18:05:19] [Craft Scheduler Thread - 2/INFO]: [0;32;1m[Model Engine] Generating zipped resource pack.[m
+[18:05:19] [Server thread/INFO]: [ItemsAdder] [0m[38;5;51m[Pack] Extracting internal contents from .jar[0m
+[18:05:19] [Craft Scheduler Thread - 5/INFO]: [ItemsAdder] [0m[38;5;10m[License] Store product licensed to: [38;5;51mGamesofFreak (364390)[0m
+[18:05:19] [Server thread/INFO]: [ItemsAdder] [0m[38;5;10m[Pack] DONE extracting internal contents from .jar[0m
+[18:05:19] [Craft Scheduler Thread - 4/INFO]: [MMOItems] A new build is available: 6.9.4 (you are running 6.9.3)
+[18:05:19] [Craft Scheduler Thread - 0/INFO]: [MMOCore] A new build is available: 1.12 (you are running 1.11.3)
+[18:05:19] [Craft Scheduler Thread - 4/INFO]: [MMOItems] Download it here: https://www.spigotmc.org/resources/39267/
+[18:05:19] [Craft Scheduler Thread - 0/INFO]: [MMOCore] Download it here: https://www.spigotmc.org/resources/70575/
+[18:05:19] [Craft Scheduler Thread - 3/INFO]: [MythicLib] A new build is available: 1.6.1 (you are running 1.5.2)
+[18:05:19] [Craft Scheduler Thread - 3/INFO]: [MythicLib] Download it here: https://www.spigotmc.org/resources/90306/
+[18:05:20] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: statistic [2.0.1]
+[18:05:20] [Server thread/INFO]: [0;32;1m1 placeholder hook(s) registered![m
+[18:05:20] [Craft Scheduler Thread - 2/INFO]: [0;32;1m[Model Engine] Resource pack zipped.[m
+[18:05:20] [Server thread/INFO]: [Citizens] Loaded 17 NPCs.
+[18:05:20] [Server thread/INFO]: [MythicMobs] [32m?Using HolographicDisplays plugin for holograms[0m
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] ================================[ ShopGUI+ 1.59.2 ]================================
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus]  
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Vault economy registered.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Vault economy enabled.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Using Vault as default economy provider.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Permissions support enabled.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Enabled item provider for MMOItems.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] No external spawner plugins registered, using built-in spawners support.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Loaded 10 main menu items.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'armor' with 24 items.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'blocks' with 37 items.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'drops' with 18 items.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'dyes' with 16 items.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'farming' with 18 items.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'food' with 19 items.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'miscellaneous' with 9 items.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'ores' with 8 items.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Loaded shop 'tools' with 15 items.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] Loaded 9 shops with total of 164 items.
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus]  
+[18:05:20] [Server thread/INFO]: [ShopGUIPlus] ====================================================================================
+[18:05:20] [Server thread/INFO]: [BeautyQuests] 1 quests loaded (0.051s)!
+[18:05:20] [Server thread/INFO]: [BeautyQuests] Periodic saves task started (18000 ticks). Task ID: 615
+[18:05:20] [Server thread/INFO]: [BeautyQuests] You are using the latest version of BeautyQuests.
+[18:05:20] [Craft Scheduler Thread - 4/ERROR]: [ItemsAdder] [0m[38;5;9mCave decorators are supported only on Spigot 1.17+.[0m
+[18:05:20] [Craft Scheduler Thread - 4/INFO]: [ItemsAdder] [0m[38;5;11mLoaded [38;5;51m15[38;5;11m items[0m
+[18:05:20] [Craft Scheduler Thread - 4/INFO]: [ItemsAdder] [0m[38;5;11mUsed [38;5;51m0[38;5;11m/[38;5;51m188[38;5;11m REAL block IDs[0m
+[18:05:20] [Craft Scheduler Thread - 4/INFO]: [ItemsAdder] [0m[38;5;11mUsed [38;5;51m0[38;5;11m/[38;5;51m750[38;5;11m REAL_NOTE block IDs[0m
+[18:05:20] [Craft Scheduler Thread - 4/INFO]: [ItemsAdder] [0m[38;5;11mUsed [38;5;51m0[38;5;11m/[38;5;51m63[38;5;11m REAL_TRANSPARENT block IDs[0m
+[18:05:20] [Craft Scheduler Thread - 4/INFO]: [ItemsAdder] [0m[38;5;11mUsed [38;5;51m0[38;5;11m/[38;5;51m127[38;5;11m REAL_WIRE block IDs[0m
+[18:05:20] [Craft Scheduler Thread - 4/INFO]: [ItemsAdder] [0m[38;5;11mUsed [38;5;51m0[38;5;11m/[38;5;51m14[38;5;11m FIRE block IDs[0m
+[18:05:20] [Craft Scheduler Thread - 4/INFO]: [ItemsAdder] [0m[38;5;11mUsed [38;5;51m6[38;5;11m/[38;5;51m6608[38;5;11m font_images[0m
+[18:05:20] [Craft Scheduler Thread - 4/INFO]: [ItemsAdder] [0m[38;5;10m[Init] Loaded [38;5;51m2[38;5;11m categories[0m
+[18:05:20] [Craft Scheduler Thread - 4/INFO]: [ItemsAdder] [0m[38;5;10m[Init] Loaded [38;5;51m15[38;5;10m items and stuff in [38;5;51m1141ms[0m
+[18:05:20] [Craft Scheduler Thread - 4/INFO]: [ItemsAdder] [0m[38;5;51m[Pack] Checking resourcepack url... [0m
+[18:05:20] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: img [1.0.1]
+[18:05:20] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iaplayerstat [1.0.1]
+[18:05:20] [Craft Scheduler Thread - 4/INFO]: [ItemsAdder] [0m[38;5;10m[Pack] Resourcepack URL (self-host): http://127.0.0.1:8163/generated.zip[0m
+[18:05:21] [Server thread/INFO]: [BanItem] Successfully loaded 1 blacklisted & 0 whitelisted item(s).[m
+[18:05:21] [Server thread/INFO]: [Drop2Inventory] You are using the latest version of Drop2Inventory.
+[18:09:47] [User Authenticator #1/INFO]: UUID of player SShist is 8ad9c176-b8d4-4ef8-b924-b5e1b10a1399
+[18:09:48] [Server thread/INFO]: SShist[/89.109.1.55:2972] logged in with entity id 237 at ([world]4.533981891090042, 49.0, -14.49678924583726)
+[18:09:58] [Server thread/INFO]: SShist issued server command: /shop
+[18:10:11] [Server thread/INFO]: [NBTAPI] Found Spigot: v1_16_R3! Trying to find NMS support
+[18:10:11] [Server thread/INFO]: [NBTAPI] NMS support 'MC1_16_R3' loaded!
+[18:10:11] [Server thread/INFO]: [NBTAPI] Found Gson: class com.google.gson.Gson
+[18:10:11] [Thread-17/WARN]: [NBTAPI] The NBT-API at 'package shaded.de.tr7zw.changeme.nbtapi' seems to be outdated!
+[18:10:11] [Thread-17/WARN]: [NBTAPI] Current Version: '2.6.1' Newest Version: 2.11.3'
+[18:10:11] [Thread-17/WARN]: [NBTAPI] Please update the nbt-api or the plugin that contains the api!
+[18:10:27] [Server thread/INFO]: SShist lost connection: Disconnected
+[18:10:27] [Server thread/INFO]: SShist left the game
+[18:11:37] [User Authenticator #2/INFO]: UUID of player SShist is 8ad9c176-b8d4-4ef8-b924-b5e1b10a1399
+[18:11:38] [Server thread/INFO]: SShist[/89.109.1.55:3039] logged in with entity id 304 at ([world]4.533981891090042, 49.0, -14.49678924583726)
+[18:11:46] [Server thread/INFO]: SShist issued server command: /shop
+[18:11:49] [Server thread/INFO]: [ShopGUIPlus] SShist bought 10 x Melon for $30 from food shop

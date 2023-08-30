@@ -1,14 +1,14 @@
 class-points: 0
-skill-points: 0
+skill-points: 6
 skill-reallocation-points: 0
-attribute-points: 68
+attribute-points: 0
 attribute-realloc-points: 0
-level: 1
-experience: 28.856540404071904
-class: HUMAN
+level: 11
+experience: 609.0
+class: PALADIN
 waypoints: []
 friends: []
-last-login: 1690999085870
+last-login: 1693433070921
 skill-tree-points:
   general: 0
   mage-arcane-mage: 0
@@ -17,7 +17,7 @@ skill-tree-points:
   combat: 0
   global: 0
 skill-tree-reallocation-points: 0
-health: 20.0
+health: 25.0
 mana: 20.0
 stellium: 20.0
 stamina: 20.0
@@ -133,10 +133,121 @@ skill-tree-level:
   general_b3: 0
   mage-arcane-mage_d2: 0
   mage-arcane-mage_d1: 0
+  global_a3: 0
+  global_a2: 0
+  global_a1: 0
+  global_b3: 0
+  global_b2: 0
+  global_b1: 0
+  global_j1: 0
+  global_c3: 0
+  global_c2: 0
+  global_c1: 0
+  global_d3: 0
+  global_d2: 0
+  global_d1: 0
+  global_e3: 0
+  global_e2: 0
+  global_e1: 0
+  global_f3: 0
+  global_f2: 0
+  global_f1: 0
+  global_g1: 0
+  global_h1: 0
 bound-skills: []
+times-claimed:
+  class:
+    ROGUE:
+      class_exp_table: 0
+    MARKSMAN:
+      class_exp_table: 0
+    MAGE:
+      class_exp_table: 0
+    PALADIN:
+      class_exp_table: 0
+    WARRIOR:
+      class_exp_table: 0
+  node:general_g1:
+    skilltree_lifesteal3:
+      lifesteal: 0
+  node:general_f2:
+    skilltree_weapon_damage2:
+      weapon_damage: 0
+  node:general_a1:
+    skilltree_mana_regeneration1:
+      mana_regeneration: 0
+  node:general_a3:
+    skilltree_mana_regeneration2:
+      mana_regeneration: 0
+  node:general_d2:
+    skilltree_critical_strike_chance2:
+      critical_strike_chance: 0
+  node:general_f3:
+    skilltree_weapon_damage2:
+      weapon_damage: 0
+  node:general_d1:
+    skilltree_critical_strike_chance1:
+      critical_strike_chance: 0
+  node:general_f1:
+    skilltree_weapon_damage1:
+      weapon_damage: 0
+  node:general_d3:
+    skilltree_critical_strike_chance5:
+      critical_strike_chance: 0
+  node:general_a2:
+    skilltree_mana_regeneration2:
+      mana_regeneration: 0
+  node:general_j1:
+    skilltree_max_health5:
+      max_health: 0
+  node:general_c1:
+    skilltree_cooldown_reduction5:
+      cooldown_reduction: 0
+  node:general_c3:
+    skilltree_cooldown_reduction15:
+      cooldown_reduction: 0
+  node:general_e2:
+    skilltree_damage_reduction2:
+      weapon_damage: 0
+  node:general_e3:
+    skilltree_damage_reduction2:
+      weapon_damage: 0
+  node:general_h1:
+    skilltree_magic_damage3:
+      magic_damage: 0
+  node:general_b1:
+    skilltree_health_regeneration1:
+      health_regeneration: 0
+  node:general_c2:
+    skilltree_cooldown_reduction10:
+      cooldown_reduction: 0
+  node:general_b3:
+    skilltree_health_regeneration2:
+      health_regeneration: 0
+  node:general_b2:
+    skilltree_health_regeneration2:
+      health_regeneration: 0
+  node:general_e1:
+    skilltree_damage_reduction1:
+      weapon_damage: 0
 attribute:
   dexterity: 0
   strength: 0
   intelligence: 0
-profession: {}
+profession:
+  woodcutting:
+    exp: 170.0
+    level: 2
+  fishing:
+    exp: 530.0
+    level: 14
+  farming:
+    exp: 390.0
+    level: 4
+  mining:
+    exp: 270.0
+    level: 3
+  gathering:
+    exp: 10.0
+    level: 0
 quest: {}

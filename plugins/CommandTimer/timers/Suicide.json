@@ -1,0 +1,59 @@
+{
+  "name": "Suicide",
+  "commands": [
+    {
+      "command": "say This is my command",
+      "gender": "CONSOLE",
+      "interval": {
+        "days": 0,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0
+      },
+      "delay": {
+        "days": 0,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0
+      }
+    }
+  ],
+  "interval": {
+    "days": 0,
+    "hours": 1,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "times": [],
+  "random": 1.0,
+  "days": [
+    "MONDAY",
+    "TUESDAY",
+    "WEDNESDAY",
+    "THURSDAY",
+    "FRIDAY",
+    "SATURDAY",
+    "SUNDAY"
+  ],
+  "executionLimit": -1,
+  "timesExecuted": 0,
+  "lastExecutedCommandIndex": 0,
+  "lastExecuted": "Aug 28, 2023, 10:58:02 PM",
+  "commandExecutionMode": "ALL",
+  "commandExecutionInterval": {
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 1
+  },
+  "active": false,
+  "resetExecutionsAfterRestart": false,
+  "condition": {
+    "conditionType": "SIMPLE",
+    "conditions": [],
+    "simpleCondition": {
+      "conditionParamFields": []
+    }
+  },
+  "events": []
+}

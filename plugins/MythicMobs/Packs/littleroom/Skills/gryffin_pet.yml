@@ -1,0 +1,63 @@
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+lr_gryffin_DESPAWN:
+  Skills:
+  - delay 5
+  - effect:particles{particle=poof;amount=200;hS=1;vS=1;speed=5} @self
+  - model{m=lr_gryffin;r=true} @self
+  - model{m=lr_gryffin_corvid;r=true} @self
+  - remove @self
+  
+  
+lr_gryffin_mount:
+  TriggerConditions:
+  - holding{m=warped_fungus} false
+  Skills:
+  - mountmodel{mode=flying_v16} @trigger
+  
+  
+  
+  
+  
+lr_gryffin_AIR:
+  Cooldown: 1
+  TargetConditions:
+  - blocktype{type=air} true
+  Conditions:
+  - stance{s=ground}
+  - onground false
+  Skills:
+  - setstance{stance=inair} @self
+  - setspeed{speed=1.5;type=walking} @self
+  - defaultstate{m=lr_gryffin;t=idle;s=flying_idle} @self
+  - defaultstate{m=lr_gryffin;t=walk;s=flying_walk} @self
+  - defaultstate{m=lr_gryffin_corvid;t=idle;s=flying_idle} @self
+  - defaultstate{m=lr_gryffin_corvid;t=walk;s=flying_walk} @self
+  
+
+lr_gryffin_LAND:
+  Cooldown: 1
+  TargetConditions:
+  - blocktype{type=air} false
+  Conditions:
+  - stance{s=inair}
+  - onground true
+  Skills:
+  - setstance{stance=ground} @self
+  - setspeed{speed=.5;type=walking} @self
+  - velocity{m=set;x=0;y=0;z=0} @self
+  - state{s=land} @self
+  - defaultstate{m=lr_gryffin;t=walk;s=walk} @self
+  - defaultstate{m=lr_gryffin_corvid;t=walk;s=walk} @self
+  - delay 10
+  - defaultstate{m=lr_gryffin;t=idle;s=idle} @self
+  - defaultstate{m=lr_gryffin_corvid;t=idle;s=idle} @self
+  
+  
+lr_gryffin_dropfeather:
+  Conditions:
+  - onground false
+  Skills:
+  - summon{t=LR_GRYFFIN_feather;r=2}

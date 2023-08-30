@@ -1,0 +1,34 @@
+toro_minotaur_vsmash_knockback:
+    Skills:
+        - delay 1
+        - throw{v=0;vy=4}
+        
+toro_minotaur_vsmash2_knockback:
+    Skills:
+        - delay 1
+        - throw{v=0;vy=6}
+toro_minotaur_vsmash3_uppercut_knockback:
+    Skills:
+        - delay 1
+        - throw{v=8;vy=3}
+
+toro_minotaur_swing_uppercut_knockback:
+    Skills:
+        - delay 1
+        - throw{v=2;vy=8}
+
+toro_minotaur_swing_knockback:
+    Skills:
+        - delay 1
+        - throw{v=3;vy=1}
+        
+toro_minotaur_headbutt_knockback:
+    Skills:
+        - delay 1
+        - throw{v=10}
+
+toro_minotaur_stomp_knockback:
+    Skills:
+        - delay 1
+        - throw{v=10;v=2}
+# 184469353509931687529782

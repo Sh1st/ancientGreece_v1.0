@@ -1,0 +1,654 @@
+#
+# Requirements tutorial menu v1.0
+# authors: clip
+#
+# contributor: Andre_601
+#
+# In this tutorial you will learn all about menu requirements
+# Requirements allow you to restrict actions or even an entire menu to specific players.
+#
+# You can read more about requirements here:
+#   https://wiki.helpch.at/clips-plugins/deluxemenus/options-and-configurations/requirements
+#
+menu_title: 'Купец'
+open_command: ssss
+size: 54
+items:
+  'fr1':
+    material: fishing_rod
+    enchantments:
+    - PROTECTION_FIRE;1
+    hide_enchantments: true 
+    slot: 10
+    display_name: '&fСтарый крючок'
+    lore:
+      - '&7Тир 1'
+      - ''
+      - '&6Скорость добычи: Медленная'
+      - ''
+      - '&a✔ &7Мин. уровень рыбалки: 1'
+      - ''
+      - '&7Изношенный временем, молчаливый'
+      - '&7свидетель десятков рыбацких'
+      - '&7историй, пропитанных временем'
+      - '&7и опытом'
+      - '&fОбычный предмет'
+      - ''
+      - '&6Цена:'
+      - ' &6- &f2&7ὀ'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 2
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give TOOL 5 %player_name% 1'
+      - '[takemoney] 2'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, удачного улова!'
+  'fr2':
+    material: fishing_rod
+    enchantments:
+    - PROTECTION_FIRE;1
+    hide_enchantments: true 
+    slot: 11
+    display_name: '&fПростой крючок'
+    lore:
+      - '&7Тир 2'
+      - ''
+      - '&6Скорость добычи: Средняя'
+      - ''
+      - '&a✔ &7Мин. уровень рыбалки: 3'
+      - ''
+      - §7Удочка – связь между человеком
+      - §7и водой, деревянная рукоять,
+      - §7обтянутая льняной нитью,
+      - §7раскрывающая морские тайны.
+      - §fОбычный предмет
+      - ''
+      - '&6Цена:'
+      - ' &6- &f10&7ὀ'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 10
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give TOOL 6 %player_name% 1'
+      - '[takemoney] 10'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, удачного улова!'
+  'fr3':
+    material: fishing_rod
+    enchantments:
+    - PROTECTION_FIRE;1
+    hide_enchantments: true 
+    slot: 12
+    display_name: '&dРедкий крючок'
+    lore:
+      - '&7Тир 3'
+      - ''
+      - '&6Скорость добычи: Быстрая'
+      - ''
+      - '&a✔ &7Мин. уровень рыбалки: 5'
+      - ''
+      - §7С деревянной рукоятью, обрамленной
+      - §7нитями ожидания, и уловительным
+      - §7крючком, она была мостом между
+      - §7человеком и миром волн,
+      - §7свидетельствуя о древней связи с
+      - §7морем и его бесконечными загадками.
+      - §dРедкий предмет
+      - ''
+      - '&6Цена:'
+      - ' &6- &f32&7ὀ'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 32
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give TOOL 7 %player_name% 1'
+      - '[takemoney] 32'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, отличного улова!'
+  'fr4':
+    material: fishing_rod
+    enchantments:
+    - PROTECTION_FIRE;1
+    hide_enchantments: true 
+    slot: 13
+    display_name: '&bЛегендарный уловитель'
+    lore:
+      - '&7Тир 4'
+      - ''
+      - '&6Скорость добычи: Очень Быстрая'
+      - ''
+      - '&a✔ &7Мин. уровень рыбалки: 10'
+      - ''
+      - §7Словно дар богов Олимпа, переплетает
+      - §7нити реальности и мифа в мастерской
+      - §7времени. Его древний деревянный
+      - §7стержень хранит тайны морей, а
+      - §7золотой крючок, как дар от Посейдона,
+      - §7притягивает судьбоносные сокровища
+      - §7из волн.
+      - §bЛегендарный предмет
+      - ''
+      - '&6Цена:'
+      - ' &6- &f128&7ὀ'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 128
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give TOOL 8 %player_name% 1'
+      - '[takemoney] 128'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, божественного улова!'
+  'fish1':
+    material: COD
+    slot: 28
+    display_name: '&fСырой тунец'
+    lore:
+      - '&7Пища'
+      - ''
+      - '&a✔ &7Мин. уровень: 1'
+      - ''
+      - '&a+1 &7Восстановление голода'
+      - '&a+1 &7Восстановление насыщения'
+      - ''
+      - '&7Используется для утоления голода'
+      - '&fОбычный предмет'
+      - ''
+      - '&6Цена:'
+      - ' &6- &f1&7ὀ'
+      - '&6Продать:'
+      - ' &6- &f1&7ὀ&f/5&7шт'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 1
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+        
+    left_click_commands:
+      - '[console] mi give CONSUMABLE 34 %player_name% 1'
+      - '[takemoney] 1'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, приходи еще!'
+
+    right_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырой тунец,amt:5%'
+          output: 'yes'
+      deny_commands:
+        - '[close]'
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно рыбы для продажи даже на обол!'
+    right_click_commands:
+        - '[console] mi take CONSUMABLE 34 %player_name% 5'
+        - '[console] eco give %player_name% 1'
+        - '[player] withdraw all'
+        - '[message] &2Торговец удочками: &aБлагодарю за продажу, приходи еще!'
+
+    shift_left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырой тунец%'
+          output: 'yes'
+        has_money:
+          type: has money
+          amount: 10
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+
+    shift_left_click_commands:
+      - '[console] mi give CONSUMABLE 34 %player_name% 10'
+      - '[takemoney] 10'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, приходи еще!'
+
+    shift_right_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырой тунец,amt:50%'
+          output: 'yes'
+        has_item:
+          type: has item
+          material: COD
+          amount: 50
+      deny_commands:
+        - '[message] &2Торговец удочками: &aДля такой крупной продажи, тебе нужно как минимум 50 рыб!'
+
+    shift_right_click_commands:
+        - '[console] mi take CONSUMABLE 34 %player_name% 50'
+        - '[console] eco give %player_name% 10'
+        - '[player] withdraw all'
+        - '[message] &2Торговец удочками: &aБлагодарю за продажу, приходи еще!'
+  'fish2':
+    material: COD
+    slot: 29
+    display_name: '&fСырая скумбрия'
+    lore:
+      - '&7Пища'
+      - ''
+      - '&a✔ &7Мин. уровень: 1'
+      - ''
+      - '&a+1 &7Восстановление голода'
+      - '&a+1 &7Восстановление насыщения'
+      - ''
+      - '&7Используется для утоления голода'
+      - '&fОбычный предмет'
+      - ''
+      - '&6Цена:'
+      - ' &6- &f1&7ὀ'
+      - '&6Продать:'
+      - ' &6- &f1&7ὀ&f/5&7шт'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 1
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+        
+    left_click_commands:
+      - '[console] mi give CONSUMABLE 35 %player_name% 1'
+      - '[takemoney] 1'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, приходи еще!'
+
+    right_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырая скумбрия,amt:5%'
+          output: 'yes'
+      deny_commands:
+        - '[close]'
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно рыбы для продажи даже на обол!'
+    right_click_commands:
+        - '[console] mi take CONSUMABLE 35 SShist 5'
+        - '[console] eco give %player_name% 1'
+        - '[player] withdraw all'
+        - '[message] &2Торговец удочками: &aБлагодарю за продажу, приходи еще!'
+
+    shift_left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырой тунец%'
+          output: 'yes'
+        has_money:
+          type: has money
+          amount: 10
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+
+    shift_left_click_commands:
+      - '[console] mi give CONSUMABLE 35 %player_name% 10'
+      - '[takemoney] 10'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, приходи еще!'
+
+    shift_right_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырой тунец,amt:50%'
+          output: 'yes'
+        has_item:
+          type: has item
+          material: COD
+          amount: 50
+      deny_commands:
+        - '[message] &2Торговец удочками: &aДля такой крупной продажи, тебе нужно как минимум 50 рыб!'
+
+    shift_right_click_commands:
+        - '[console] mi take CONSUMABLE 35 %player_name% 50'
+        - '[console] eco give %player_name% 10'
+        - '[player] withdraw all'
+        - '[message] &2Торговец удочками: &aБлагодарю за продажу, приходи еще!'
+  'fish3':
+    material: COD
+    slot: 30
+    display_name: '&fСырой анчоус'
+    lore:
+      - '&7Пища'
+      - ''
+      - '&a✔ &7Мин. уровень: 1'
+      - ''
+      - '&a+1.5 &7Восстановление голода'
+      - '&a+1 &7Восстановление насыщения'
+      - ''
+      - '&7Используется для утоления голода'
+      - '&fОбычный предмет'
+      - ''
+      - '&6Цена:'
+      - ' &6- &f1&7ὀ'
+      - '&6Продать:'
+      - ' &6- &f1&7ὀ&f/4&7шт'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 1
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+        
+    left_click_commands:
+      - '[console] mi give CONSUMABLE 37 %player_name% 1'
+      - '[takemoney] 1'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, приходи еще!'
+
+    right_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырой анчоус,amt:4%'
+          output: 'yes'
+      deny_commands:
+        - '[close]'
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно рыбы для продажи даже на обол!'
+    right_click_commands:
+        - '[console] mi take CONSUMABLE 37 SShist 4'
+        - '[console] eco give %player_name% 1'
+        - '[player] withdraw all'
+        - '[message] &2Торговец удочками: &aБлагодарю за продажу, приходи еще!'
+
+    shift_left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырой анчоус%'
+          output: 'yes'
+        has_money:
+          type: has money
+          amount: 10
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+
+    shift_left_click_commands:
+      - '[console] mi give CONSUMABLE 37 %player_name% 10'
+      - '[takemoney] 10'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, приходи еще!'
+
+    shift_right_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырой анчоус,amt:40%'
+          output: 'yes'
+        has_item:
+          type: has item
+          material: COD
+          amount: 40
+      deny_commands:
+        - '[message] &2Торговец удочками: &aДля такой крупной продажи, тебе нужно как минимум 40 рыб!'
+
+    shift_right_click_commands:
+        - '[console] mi take CONSUMABLE 37 %player_name% 40'
+        - '[console] eco give %player_name% 10'
+        - '[player] withdraw all'
+        - '[message] &2Торговец удочками: &aБлагодарю за продажу, приходи еще!'
+  'fish4':
+    material: COD
+    slot: 31
+    display_name: '&fСырая сардина'
+    lore:
+      - '&7Пища'
+      - ''
+      - '&a✔ &7Мин. уровень: 1'
+      - ''
+      - '&a+1.5 &7Восстановление голода'
+      - '&a+1 &7Восстановление насыщения'
+      - ''
+      - '&7Используется для утоления голода'
+      - '&fОбычный предмет'
+      - ''
+      - '&6Цена:'
+      - ' &6- &f1&7ὀ'
+      - '&6Продать:'
+      - ' &6- &f1&7ὀ&f/4&7шт'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 1
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+        
+    left_click_commands:
+      - '[console] mi give CONSUMABLE 38 %player_name% 1'
+      - '[takemoney] 1'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, приходи еще!'
+
+    right_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырая сардина,amt:4%'
+          output: 'yes'
+      deny_commands:
+        - '[close]'
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно рыбы для продажи даже на обол!'
+    right_click_commands:
+        - '[console] mi take CONSUMABLE 38 SShist 4'
+        - '[console] eco give %player_name% 1'
+        - '[player] withdraw all'
+        - '[message] &2Торговец удочками: &aБлагодарю за продажу, приходи еще!'
+
+    shift_left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырая сардина%'
+          output: 'yes'
+        has_money:
+          type: has money
+          amount: 10
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+
+    shift_left_click_commands:
+      - '[console] mi give CONSUMABLE 38 %player_name% 10'
+      - '[takemoney] 10'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, приходи еще!'
+
+    shift_right_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырая сардина,amt:40%'
+          output: 'yes'
+        has_item:
+          type: has item
+          material: COD
+          amount: 40
+      deny_commands:
+        - '[message] &2Торговец удочками: &aДля такой крупной продажи, тебе нужно как минимум 40 рыб!'
+
+    shift_right_click_commands:
+        - '[console] mi take CONSUMABLE 38 %player_name% 40'
+        - '[console] eco give %player_name% 10'
+        - '[player] withdraw all'
+        - '[message] &2Торговец удочками: &aБлагодарю за продажу, приходи еще!'
+  'fish5':
+    material: COD
+    slot: 32
+    display_name: '&fСырая камбала'
+    lore:
+      - '&7Пища'
+      - ''
+      - '&a✔ &7Мин. уровень: 1'
+      - ''
+      - '&a+2 &7Восстановление голода'
+      - '&a+2 &7Восстановление насыщения'
+      - ''
+      - '&7Используется для утоления голода'
+      - '&fОбычный предмет'
+      - ''
+      - '&6Цена:'
+      - ' &6- &f1&7ὀ'
+      - '&6Продать:'
+      - ' &6- &f1&7ὀ&f/3&7шт'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 1
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+        
+    left_click_commands:
+      - '[console] mi give CONSUMABLE 36 %player_name% 1'
+      - '[takemoney] 1'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, приходи еще!'
+
+    right_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырая камбала,amt:3%'
+          output: 'yes'
+      deny_commands:
+        - '[close]'
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно рыбы для продажи даже на обол!'
+    right_click_commands:
+        - '[console] mi take CONSUMABLE 36 SShist 3'
+        - '[console] eco give %player_name% 1'
+        - '[player] withdraw all'
+        - '[message] &2Торговец удочками: &aБлагодарю за продажу, приходи еще!'
+
+    shift_left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырая камбала%'
+          output: 'yes'
+        has_money:
+          type: has money
+          amount: 10
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+
+    shift_left_click_commands:
+      - '[console] mi give CONSUMABLE 36 %player_name% 10'
+      - '[takemoney] 10'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, приходи еще!'
+
+    shift_right_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&fСырая камбала,amt:30%'
+          output: 'yes'
+        has_item:
+          type: has item
+          material: COD
+          amount: 30
+      deny_commands:
+        - '[message] &2Торговец удочками: &aДля такой крупной продажи, тебе нужно как минимум 30 рыб!'
+
+    shift_right_click_commands:
+        - '[console] mi take CONSUMABLE 36 %player_name% 30'
+        - '[console] eco give %player_name% 10'
+        - '[player] withdraw all'
+        - '[message] &2Торговец удочками: &aБлагодарю за продажу, приходи еще!'
+  'fish6':
+    material: COD
+    slot: 33
+    display_name: '&dНебольшая акула'
+    lore:
+      - '&7Пища'
+      - ''
+      - '&a✔ &7Мин. уровень: 1'
+      - ''
+      - '&a+5 &7Восстановление здоровья'
+      - '&a+10 &7Восстановление голода'
+      - '&a+2 &7Восстановление насыщения'
+      - ''
+      - '&7Используется для утоления голода'
+      - '&dРедкий предмет'
+      - ''
+      - '&6Цена:'
+      - ' &6- &f5&7ὀ'
+      - '&6Продать:'
+      - ' &6- &f1&7ὀ&f/2&7шт'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 5
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+        
+    left_click_commands:
+      - '[console] mi give CONSUMABLE 39 %player_name% 1'
+      - '[takemoney] 5'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, приходи еще!'
+
+    right_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&dНебольшая акула,amt:2%'
+          output: 'yes'
+      deny_commands:
+        - '[close]'
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно рыбы для продажи даже на обол!'
+    right_click_commands:
+        - '[console] mi take CONSUMABLE 39 SShist 2'
+        - '[console] eco give %player_name% 1'
+        - '[player] withdraw all'
+        - '[message] &2Торговец удочками: &aБлагодарю за продажу, приходи еще!'
+
+    shift_left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&dНебольшая акула'
+          output: 'yes'
+        has_money:
+          type: has money
+          amount: 50
+      deny_commands:
+        - '[message] &2Торговец удочками: &aУ тебя недостаточно обол!'
+
+    shift_left_click_commands:
+      - '[console] mi give CONSUMABLE 39 %player_name% 10'
+      - '[takemoney] 50'
+      - '[message] &2Торговец удочками: &aБлагодарю за покупку, приходи еще!'
+
+    shift_right_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_namecontains:&dНебольшая акула,amt:20%'
+          output: 'yes'
+        has_item:
+          type: has item
+          material: COD
+          amount: 20
+      deny_commands:
+        - '[message] &2Торговец удочками: &aДля такой крупной продажи, тебе нужно как минимум 20 рыб!'
+
+    shift_right_click_commands:
+        - '[console] mi take CONSUMABLE 39 %player_name% 20'
+        - '[console] eco give %player_name% 10'
+        - '[player] withdraw all'
+        - '[message] &2Торговец удочками: &aБлагодарю за продажу, приходи еще!'

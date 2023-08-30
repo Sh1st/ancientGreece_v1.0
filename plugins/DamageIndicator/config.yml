@@ -1,0 +1,58 @@
+# Config wiki and help can be found at https://github.com/Insprill/Damage-Indicator/wiki
+# For internal reference only, do not change the config version
+config-version: 3
+
+# How many decimal places to truncate indicator values
+# A value of 2 means that all damage indicators will show as x.xx
+indicator-decimals: 0
+
+# How many blocks should indicators spawn above the player
+# It is best to keep this value nonzero to prevent indicators from blocking the player view
+hologram-offset: 0.01
+# How fast should indicators float upwards
+hologram-speed: 0.01
+# How long (in ticks) should indicators stay for
+hologram-duration: 25
+
+# Whether or not all damage indicators should be bold
+bold-indicators: false
+
+# Whether or not all damage indicators should be italicised
+italic-indicators: false
+
+# Whether or not all damage indicators should be underlined
+underline-indicators: false
+
+# Format used when players take damage
+# Each damage value represents half a heart (20 points = 10 hearts)
+# The closest rounded down value will be used
+damage-format:
+  1: "%44444%-%value% ❤"
+
+# Format used when players heal
+# Each heal value represents half a heart (20 points = 10 hearts)
+# The closest rounded down value will be used
+heal-format:
+  0: "%22222%+%value% ❤"
+
+# Feature to display player health below their name
+health-indicators: true
+
+# DamageIndicator will not display any (damage) indicators in the following worlds
+# World names are cAsE sEnSiTiVe
+disabled-worlds:
+  - nodelay
+  - testworld
+
+# If enabled, damage indicators will only be shown if it was caused by a player.
+only-show-entity-damage-from-players: true
+
+# Toggles the below entity type whitelist/blacklist.
+entity-type-list-enabled: true
+# If true, the following list will act as a whitelist instead of a blacklist.
+entity-type-list-as-whitelist: false
+entity-type-list:
+  - ARMOR_STAND
+
+# DamageIndicator will not display any (damage) indicators for entities whom name is in this list.
+ignored-entities: [ ]

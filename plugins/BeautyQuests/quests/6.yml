@@ -1,0 +1,580 @@
+name: §6Оружейник
+starterNPC: 19
+description: ''
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          npcID: 19
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aДобро пожаловать в мою мастерскую, путник.
+            - id: 1
+              message:
+                sender: NPC
+                text: §aО, что это у вас в руках? Маленький ржавый кинжал?
+            - id: 2
+              message:
+                sender: PLAYER
+                text: §aЗдравствуйте. Я получил этот старый кинжал у охотника недалеко
+                  отсюда.
+            - id: 3
+              message:
+                sender: PLAYER
+                text: §aМне интересно, что можно сделать с таким оружием.
+            - id: 4
+              message:
+                sender: NPC
+                text: §aВидимо, время не щадит никого. Лезвие этого кинжала засорено
+                  ржавчиной.
+            - id: 5
+              message:
+                sender: NPC
+                text: §aЕсли вы согласны, я готов почистить его и придать ему некоторое
+                  величие.
+            - id: 6
+              message:
+                sender: NPC
+                text: §aНо в обмен, мне нужна ваша помощь. Моя мастерская стоит на
+                  грани закрытия.
+            - id: 7
+              message:
+                sender: NPC
+                text: §aВоры украли все материалы, которые я использовал для изготовления
+                  оружия.
+            - id: 8
+              message:
+                sender: NPC
+                text: §aМой брат работает в шахте недалеко отсюда, и я уверен, что
+                  он может помочь нам добыть новые материалы.
+            - id: 9
+              message:
+                sender: PLAYER
+                text: §aЯ готов помочь вам и вашему брату. Что мне нужно сделать?
+            - id: 10
+              message:
+                sender: NPC
+                text: §aСпасибо за ваше согласие. Мой брат работает в Глубокой Шахте,
+                  которая находится к северу отсюда.
+            - id: 11
+              message:
+                sender: NPC
+                text: §aОн ждёт наших с вами рук помощи для добычи новых материалов.
+            - id: 12
+              message:
+                sender: NPC
+                text: §aПройдите к нему или подождите его за моей палаткой, он расскажет
+                  вам, какие материалы нам нужны.
+            - id: 13
+              message:
+                sender: NPC
+                text: §aКак только мы вернём ресурсы, я с удовольствием помогу вам
+                  с вашим кинжалом.
+            - id: 14
+              message:
+                sender: PLAYER
+                text: §aБез проблем. Я помогу добыть новые материалы. Спасибо за предложение.
+            - id: 15
+              message:
+                sender: NPC
+                text: §aВам спасибо за ваше согласие помочь.
+          stageType: NPC
+      endingStages:
+        '0':
+          npcID: 39
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: PLAYER
+                text: §aЗдравствуйте, меня направил оружейник.
+            - id: 1
+              message:
+                sender: PLAYER
+                text: §aОн сказал, что вы можете рассказать, как помочь с материалами.
+            - id: 2
+              message:
+                sender: NPC
+                text: §aПривет, мы рады помощи. Воры украли всё, что нам нужно для
+                  оружия.
+            - id: 3
+              message:
+                sender: PLAYER
+                text: §aЯ готов помочь вам восстановить запасы материалов. Что мне
+                  нужно сделать?
+            - id: 4
+              message:
+                sender: NPC
+                text: §aСпасибо за вашу готовность помочь. Нам нужны руды для плавки
+                  и камни для изготовления оружия.
+            - id: 5
+              message:
+                sender: NPC
+                text: §aВ шахте, глубоко под землей, находятся места с особенно ценными
+                  ресурсами.
+            - id: 6
+              message:
+                sender: NPC
+                text: '§aВот список материалов, которые нам нужны: 10 единиц руды
+                  Стального Сердца и 15 камней Чародейского Ока.'
+            - id: 7
+              message:
+                sender: PLAYER
+                text: §aСтальное Сердце и Чародейское Око. Звучит интересно. Где именно
+                  мне их искать?
+            - id: 8
+              message:
+                sender: NPC
+                text: §aДля добычи руды Стального Сердца вам нужно будет искать в
+                  глубоких пещерах, где она обычно находится.
+            - id: 9
+              message:
+                sender: NPC
+                text: §aКамни Чародейского Ока можно найти в каменных образованиях.
+            - id: 10
+              message:
+                sender: PLAYER
+                text: §aСпасибо за информацию. Я отправлюсь в шахту и постараюсь добыть
+                  необходимые материалы.
+            - id: 11
+              message:
+                sender: NPC
+                text: §aБлагодарим вас за ваше решение помочь. Удачи вам в шахте,
+                  и будьте бдительны!
+          stageType: NPC
+          rewards:
+          - id: itemReward
+            items:
+            - v: 2586
+              type: STONE_PICKAXE
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Простой
+                  камнетес"}],"text":""}'
+                lore:
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Тир
+                  1"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"⌚
+                  Скорость добычи: Медленная"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"✔
+                  "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Мин.
+                  уровень шахтерства: 1"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Инструмент
+                  с древковой рукояткой"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"и
+                  двумя металлическими лезвиями."}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Одно
+                  лезвие имеет форму острия, а"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"другое
+                  плоское для более легкого"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"рубления
+                  и обработки грунта."}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обычный
+                  предмет"}],"text":""}'
+                custom-model-data: 1000
+                attribute-modifiers:
+                  GENERIC_ATTACK_SPEED:
+                  - ==: org.bukkit.attribute.AttributeModifier
+                    amount: 0.0
+                    name: mmoitemsDecoy
+                    uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                    operation: 0
+                ItemFlags:
+                - HIDE_ATTRIBUTES
+                internal: H4sIAAAAAAAA/+1UzWsTQRSfqEhQFBVU1Mu4h5xKwYuVXHRNps3S/Qg720MIYSlCPQo1FymFTaIoNJCLB5Gi6KXXzRdurbuF+g/M/As9efTgH+Cbt5sPaU+CNxNY9s17v49582YvEJInVy3LMTxmcZ/ZpYpue5ycqTfy5NJ03XRclnta1472lsQ7EcuWbMtAdsQ3MYaoTWWLipEMIBqIryKBZyL2KZZAKHuyjcv72gJSRFAtBgove1SRQD4UB/CP5GuIWlAdwTrUHQDnF+CLZE8tLGYMH4AgFslcXowpYsaKjcqXIBsAf4fCC9pVFAtUhBnDCN0NwRUAD4EnQVkMR+JAGetDpPjHqcwQ04BIGRDfx0ysuKmym4g+KIUKinuGpSEWxmqLqfsNcN+XO7DTWO5Am8Qhdm6UNkKDxt+cNr5s8Kqp11jZ92pVRi4q559BLaD3cuTWfJn+2GR+ydWXPcNeyeXJjWmytMY9x/KtmrlWWiUPjvbuH3ffU/EJjybI2tNVu04yX1GRil20lO4uFqHsnabHLcOrpHrXpkn1TO2e8xzHPE9uT1NV11lmnBuO7VuGDcCHPwn+zs4VTfw6ZWb6Zd3TIf0jN1cwUXdZVTfcVP7Kn/JGmeRXdctmHuM5cucENBv0FDubc1u3GLlb2BAfJ43BQYZOhXA6MQ4qjGeeXJ8x1gBklNIr8quuFZ7MnRGcNx7533U8RRfWj3ff0sIS5CMRL1LZURQw8urqdal8A6Wv0FeAhgciLM6U/9/Xf35fT78YzMym63KFe25t9ml9tKXx5npTK2qTJVBxVnjz2eYLrVjf0k58jf3v/efNTQDUG9p2Y5v8BsLIcau1BQAA
+          branchLinked: 1
+        '1':
+          npcID: 24
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aПойдем, я тебя отведу к шахте
+          stageType: NPC
+          branchLinked: 2
+    '1':
+      stages:
+        '0':
+          npcID: 39
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: PLAYER
+                text: §aВот материалы, которые вы просили.
+            - id: 1
+              message:
+                sender: NPC
+                text: §aОтлично, вы быстро справились. Давайте посмотрим, что у вас
+                  есть.
+          items:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 2586
+            type: PLAYER_HEAD
+            amount: 15
+            meta:
+              ==: ItemMeta
+              meta-type: SKULL
+              display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Чародейское
+                око"}],"text":""}'
+              lore:
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Материал"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Ярко-красный
+                дешёвый драгоценный"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"камушек,
+                при этом он привлекает"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"внимание
+                своей красотой."}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Необычный
+                предмет"}],"text":""}'
+              attribute-modifiers:
+                GENERIC_ATTACK_SPEED:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitemsDecoy
+                  uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              internal: H4sIAAAAAAAA/91US08TURS+EI1DFSMaY3RjMwtXaFpJSyAxYWiv7W06M2VmKMw0pCllSFumQMoUmRISxERJiAsTEze6csFSqDSBUkqif+DeuPUvuHbrubwN/gI393HO953H/c6MDyEB9ciySgws61msROKSYuioMzMhoO4ze1LVMPqZER/10y9slTZp+zFtwmGLvaQHbIPu+ekObbB19o7WT67cS7/SNntNG/TgGCX28ghNcLTYK7YOjmavnx4CdNfP3rI12qYtPywHJ0Zap/scBIQGWztm1yHYLm2Bie8NP1RQB0qDJz0tqX0Uau8JMDjJpp/A36bbbIO9Oa2XJ2hA1a2j0NDtvbNuo0RPJSUTR7OGmcLozrfNMP0IgdcAyqvaovsd6MFFuDScxFkNpySiESXW4UM39Jmq46Qqc9NFx76OOskUQujKtfKPw+5FsvwBD/163/m5x4d8AJm3K27RXuhCgmsvudWKveADcIeArqZzTtVGO7aXCFjjhcDUeMLJeyQMd0MPOCopzfeT2bQ3GSFhUgZ/XAonvYEL2JCbGws5Zl+iYM2OVCfL6UCyT3PsuBbMl0cXLcPsk0szQdWQPDVmekpNK8q1fMiKjtTkmPlCKRXKsC8pYzhglfIh+Wm6YNawZ45ZRdXQCpYxXFRio0E5ppTV6EzQAo5VTAxMjwee8Q7Q/UtvFNGk5wZ/IgHdOnPyNUuiqEvSIpKCTWxenD1FkjF6CCJuggSrIOMOFxtUbnLZ+bjAQUB3z3OZQCGR46H9DUOb/4eAJ6PxH8/z7b/f92iUBVkysEakpIBuxnVDM8+/+KFlUXdzrjgonpoglRrT3bmKJw5mlsVLP4ns9+0FtwKEzIS4MrGC/gBjgZasTAQAAA==
+          - ==: org.bukkit.inventory.ItemStack
+            v: 2586
+            type: QUARTZ
+            amount: 10
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Стальное
+                cердце"}],"text":""}'
+              lore:
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Материал"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Руда
+                с молочно-белыми кристаллами,"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"доступная
+                по цене, но обладающая"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"хорошей
+                прочностью."}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обычный
+                предмет"}],"text":""}'
+              attribute-modifiers:
+                GENERIC_ATTACK_SPEED:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitemsDecoy
+                  uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              internal: H4sIAAAAAAAA/91TzUrDQBDeeoqC4g8iepCwB0/Vo0JPru3aBpK0JLmEUIIUvArai5RCW/GPlvoCInry2kID1f4I+gKz+B4+g7NpbSv1CTxkSWa+75uZb7JzhChkyTDSmsMN2+dmPMVMxyYzXlYh86O4nrY4+fTo1h48igtoQUMVZRW60IcO9MU19KC/DU0IoCOqGG6r8CpK0BZlUYEGYjp4YjhKo1KjhRzMoNIbMhviTsWXviquUKAHQVSVeiqKN0MilhN1cSuBIV9cIr+Ezw3iX5AbfoRNhLI1Ud9BoMQewwM0RVUmsbEhNkDFLgSiQnHItdGQCc3O6MzlCd9xM5ysvD/vwj0WrSAUZ5FzRMjGJJwd6Ny3eIZplmYmIxGyPpWNW+zQkUmFLI6S8vS1BJnVrLSZ4sxyJs02mcHJJrb+NDBP1ORkEKi5sJGWtEkhq+NSLjK0+GBJX7ik3B+dD/34f/tb/u1quDrFYA63NKYrZCFlO5Y7/rH3C9TOH+VpjP6EsEw6aedPTs9pzCvQqbvgfzTP8qdI8LK0mC2SbwZ6eHQzAwAA
+          stageType: ITEMS
+        '1':
+          npcID: 39
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aВеликолепно! Вы действительно помогли нам.
+            - id: 1
+              message:
+                sender: NPC
+                text: §aЭти материалы будут очень полезны для создания оружия и инструментов.
+                  Большое спасибо за вашу помощь.
+            - id: 2
+              message:
+                sender: PLAYER
+                text: §aРад был помочь. Обращайтесь, если у вас будут какие-либо сложности.
+            - id: 3
+              message:
+                sender: NPC
+                text: §aБудем держать вас в курсе. Возьмите это, оружейник знает как
+                  с этим обращаться.
+          stageType: NPC
+          rewards:
+          - id: itemReward
+            items:
+            - v: 2586
+              type: FLINT
+              amount: 5
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Точило"}],"text":""}'
+                lore:
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Материал"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Маленькое
+                  точило для мечей,"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"чтобы
+                  поддерживать и улучшать"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"их
+                  остроту и эффективность."}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обычный
+                  предмет"}],"text":""}'
+                attribute-modifiers:
+                  GENERIC_ATTACK_SPEED:
+                  - ==: org.bukkit.attribute.AttributeModifier
+                    amount: 0.0
+                    name: mmoitemsDecoy
+                    uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                    operation: 0
+                ItemFlags:
+                - HIDE_ATTRIBUTES
+                internal: H4sIAAAAAAAA/91SzUoCURS+tmkIkn6IqNVwF62kZYGrbuNNB2YcmZnNIDJE0DYwNyGCjYaBRi8QLdq01XDCnzSoFzj3OXqJzlVTw54gLswdvvN95zs/d4UQhaybpqW73HR8ntZSLO06ZCmbU8jqFDcsmxPI0r1DeIAm9CGEgWhAD4YQqiKAoahBB+GhCm3oi3sV3iBELIRujMZQJmqSBS1RV+Edf9p4QlGGV5S9QFMEoqFCRxUVVFeQfDvGRlroiBsVLa4RKeMdiMqIeyeqoooWPUwtswwmnMY+yqTyHB6lI9YxEHXoojPqQ3SWxQUUO9yedpjQnYzBPJ7wXS/DyebH84FsFVPLMjuy6QjZnaezY4P7Ns8w3dbTyUiE7CxENZuduDKokLVpUH59PUGWXUtL6YY1P+c0MzmJYuFPs5EqZGuW2EOGro338YX7OPujzkn3/2xVG78HONqSYjKX2zozFBJNOa7tzR7wUZE6hdMCjdMfCG2spFO4yF/ReLZIF968/9m6LORRkM3RUq5EvgEIm9YbGwMAAA==
+      endingStages: {}
+    '2':
+      stages:
+        '0':
+          npcID: 39
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: PLAYER
+                text: §aЗдравствуйте, меня направил оружейник.
+            - id: 1
+              message:
+                sender: PLAYER
+                text: §aОн сказал, что вы можете рассказать, как помочь с материалами.
+            - id: 2
+              message:
+                sender: NPC
+                text: §aПривет, мы рады помощи. Воры украли всё, что нам нужно для
+                  оружия.
+            - id: 3
+              message:
+                sender: PLAYER
+                text: §aЯ готов помочь вам восстановить запасы материалов. Что мне
+                  нужно сделать?
+            - id: 4
+              message:
+                sender: NPC
+                text: §aСпасибо за вашу готовность помочь. Нам нужны руды для плавки
+                  и камни для изготовления оружия.
+            - id: 5
+              message:
+                sender: NPC
+                text: §aВ шахте, глубоко под землей, находятся места с особенно ценными
+                  ресурсами.
+            - id: 6
+              message:
+                sender: NPC
+                text: '§aВот список материалов, которые нам нужны: 10 единиц руды
+                  Стального Сердца и 15 камней Чародейского Ока.'
+            - id: 7
+              message:
+                sender: PLAYER
+                text: §aСтальное Сердце и Чародейское Око. Звучит интересно. Где именно
+                  мне их искать?
+            - id: 8
+              message:
+                sender: NPC
+                text: §aДля добычи руды Стального Сердца вам нужно будет искать в
+                  глубоких пещерах, где она обычно находится.
+            - id: 9
+              message:
+                sender: NPC
+                text: §aКамни Чародейского Ока можно найти в каменных образованиях.
+            - id: 10
+              message:
+                sender: PLAYER
+                text: §aСпасибо за информацию. Я отправлюсь в шахту и постараюсь добыть
+                  необходимые материалы.
+            - id: 11
+              message:
+                sender: NPC
+                text: §aБлагодарим вас за ваше решение помочь. Удачи вам в шахте,
+                  и будьте бдительны!
+          stageType: NPC
+          rewards:
+          - id: itemReward
+            items:
+            - v: 2586
+              type: STONE_PICKAXE
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Простой
+                  камнетес"}],"text":""}'
+                lore:
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Тир
+                  1"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"⌚
+                  Скорость добычи: Медленная"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"✔
+                  "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Мин.
+                  уровень шахтерства: 1"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Инструмент
+                  с древковой рукояткой"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"и
+                  двумя металлическими лезвиями."}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Одно
+                  лезвие имеет форму острия, а"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"другое
+                  плоское для более легкого"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"рубления
+                  и обработки грунта."}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обычный
+                  предмет"}],"text":""}'
+                custom-model-data: 1000
+                attribute-modifiers:
+                  GENERIC_ATTACK_SPEED:
+                  - ==: org.bukkit.attribute.AttributeModifier
+                    amount: 0.0
+                    name: mmoitemsDecoy
+                    uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                    operation: 0
+                ItemFlags:
+                - HIDE_ATTRIBUTES
+                internal: H4sIAAAAAAAA/+1UzWsTQRSfqEhQFBVU1Mu4h5xKwYuVXHRNps3S/Qg720MIYSlCPQo1FymFTaIoNJCLB5Gi6KXXzRdurbuF+g/M/As9efTgH+Cbt5sPaU+CNxNY9s17v49582YvEJInVy3LMTxmcZ/ZpYpue5ycqTfy5NJ03XRclnta1472lsQ7EcuWbMtAdsQ3MYaoTWWLipEMIBqIryKBZyL2KZZAKHuyjcv72gJSRFAtBgove1SRQD4UB/CP5GuIWlAdwTrUHQDnF+CLZE8tLGYMH4AgFslcXowpYsaKjcqXIBsAf4fCC9pVFAtUhBnDCN0NwRUAD4EnQVkMR+JAGetDpPjHqcwQ04BIGRDfx0ysuKmym4g+KIUKinuGpSEWxmqLqfsNcN+XO7DTWO5Am8Qhdm6UNkKDxt+cNr5s8Kqp11jZ92pVRi4q559BLaD3cuTWfJn+2GR+ydWXPcNeyeXJjWmytMY9x/KtmrlWWiUPjvbuH3ffU/EJjybI2tNVu04yX1GRil20lO4uFqHsnabHLcOrpHrXpkn1TO2e8xzHPE9uT1NV11lmnBuO7VuGDcCHPwn+zs4VTfw6ZWb6Zd3TIf0jN1cwUXdZVTfcVP7Kn/JGmeRXdctmHuM5cucENBv0FDubc1u3GLlb2BAfJ43BQYZOhXA6MQ4qjGeeXJ8x1gBklNIr8quuFZ7MnRGcNx7533U8RRfWj3ff0sIS5CMRL1LZURQw8urqdal8A6Wv0FeAhgciLM6U/9/Xf35fT78YzMym63KFe25t9ml9tKXx5npTK2qTJVBxVnjz2eYLrVjf0k58jf3v/efNTQDUG9p2Y5v8BsLIcau1BQAA
+        '1':
+          npcID: 39
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: PLAYER
+                text: §aВот материалы, которые вы просили.
+            - id: 1
+              message:
+                sender: NPC
+                text: §aОтлично, вы быстро справились. Давайте посмотрим, что у вас
+                  есть.
+          items:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 2586
+            type: PLAYER_HEAD
+            amount: 15
+            meta:
+              ==: ItemMeta
+              meta-type: SKULL
+              display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Чародейское
+                око"}],"text":""}'
+              lore:
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Материал"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Ярко-красный
+                дешёвый драгоценный"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"камушек,
+                при этом он привлекает"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"внимание
+                своей красотой."}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Необычный
+                предмет"}],"text":""}'
+              attribute-modifiers:
+                GENERIC_ATTACK_SPEED:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitemsDecoy
+                  uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              internal: H4sIAAAAAAAA/91US08TURS+EI1DFSMaY3RjMwtXaFpJSyAxYWiv7W06M2VmKMw0pCllSFumQMoUmRISxERJiAsTEze6csFSqDSBUkqif+DeuPUvuHbrubwN/gI393HO953H/c6MDyEB9ciySgws61msROKSYuioMzMhoO4ze1LVMPqZER/10y9slTZp+zFtwmGLvaQHbIPu+ekObbB19o7WT67cS7/SNntNG/TgGCX28ghNcLTYK7YOjmavnx4CdNfP3rI12qYtPywHJ0Zap/scBIQGWztm1yHYLm2Bie8NP1RQB0qDJz0tqX0Uau8JMDjJpp/A36bbbIO9Oa2XJ2hA1a2j0NDtvbNuo0RPJSUTR7OGmcLozrfNMP0IgdcAyqvaovsd6MFFuDScxFkNpySiESXW4UM39Jmq46Qqc9NFx76OOskUQujKtfKPw+5FsvwBD/163/m5x4d8AJm3K27RXuhCgmsvudWKveADcIeArqZzTtVGO7aXCFjjhcDUeMLJeyQMd0MPOCopzfeT2bQ3GSFhUgZ/XAonvYEL2JCbGws5Zl+iYM2OVCfL6UCyT3PsuBbMl0cXLcPsk0szQdWQPDVmekpNK8q1fMiKjtTkmPlCKRXKsC8pYzhglfIh+Wm6YNawZ45ZRdXQCpYxXFRio0E5ppTV6EzQAo5VTAxMjwee8Q7Q/UtvFNGk5wZ/IgHdOnPyNUuiqEvSIpKCTWxenD1FkjF6CCJuggSrIOMOFxtUbnLZ+bjAQUB3z3OZQCGR46H9DUOb/4eAJ6PxH8/z7b/f92iUBVkysEakpIBuxnVDM8+/+KFlUXdzrjgonpoglRrT3bmKJw5mlsVLP4ns9+0FtwKEzIS4MrGC/gBjgZasTAQAAA==
+          - ==: org.bukkit.inventory.ItemStack
+            v: 2586
+            type: QUARTZ
+            amount: 10
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Стальное
+                cердце"}],"text":""}'
+              lore:
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Материал"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Руда
+                с молочно-белыми кристаллами,"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"доступная
+                по цене, но обладающая"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"хорошей
+                прочностью."}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обычный
+                предмет"}],"text":""}'
+              attribute-modifiers:
+                GENERIC_ATTACK_SPEED:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitemsDecoy
+                  uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              internal: H4sIAAAAAAAA/91TzUrDQBDeeoqC4g8iepCwB0/Vo0JPru3aBpK0JLmEUIIUvArai5RCW/GPlvoCInry2kID1f4I+gKz+B4+g7NpbSv1CTxkSWa+75uZb7JzhChkyTDSmsMN2+dmPMVMxyYzXlYh86O4nrY4+fTo1h48igtoQUMVZRW60IcO9MU19KC/DU0IoCOqGG6r8CpK0BZlUYEGYjp4YjhKo1KjhRzMoNIbMhviTsWXviquUKAHQVSVeiqKN0MilhN1cSuBIV9cIr+Ezw3iX5AbfoRNhLI1Ud9BoMQewwM0RVUmsbEhNkDFLgSiQnHItdGQCc3O6MzlCd9xM5ysvD/vwj0WrSAUZ5FzRMjGJJwd6Ny3eIZplmYmIxGyPpWNW+zQkUmFLI6S8vS1BJnVrLSZ4sxyJs02mcHJJrb+NDBP1ORkEKi5sJGWtEkhq+NSLjK0+GBJX7ik3B+dD/34f/tb/u1quDrFYA63NKYrZCFlO5Y7/rH3C9TOH+VpjP6EsEw6aedPTs9pzCvQqbvgfzTP8qdI8LK0mC2SbwZ6eHQzAwAA
+          stageType: ITEMS
+        '2':
+          npcID: 39
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aВеликолепно! Вы действительно помогли нам.
+            - id: 1
+              message:
+                sender: NPC
+                text: §aЭти материалы будут очень полезны для создания оружия и инструментов.
+                  Большое спасибо за вашу помощь.
+            - id: 2
+              message:
+                sender: PLAYER
+                text: §aРад был помочь. Обращайтесь, если у вас будут какие-либо сложности.
+            - id: 3
+              message:
+                sender: NPC
+                text: §aБудем держать вас в курсе. Возьмите это, оружейник знает как
+                  с этим обращаться.
+          stageType: NPC
+          rewards:
+          - id: itemReward
+            items:
+            - v: 2586
+              type: FLINT
+              amount: 5
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Точило"}],"text":""}'
+                lore:
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Материал"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Маленькое
+                  точило для мечей,"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"чтобы
+                  поддерживать и улучшать"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"их
+                  остроту и эффективность."}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обычный
+                  предмет"}],"text":""}'
+                attribute-modifiers:
+                  GENERIC_ATTACK_SPEED:
+                  - ==: org.bukkit.attribute.AttributeModifier
+                    amount: 0.0
+                    name: mmoitemsDecoy
+                    uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                    operation: 0
+                ItemFlags:
+                - HIDE_ATTRIBUTES
+                internal: H4sIAAAAAAAA/91SzUoCURS+tmkIkn6IqNVwF62kZYGrbuNNB2YcmZnNIDJE0DYwNyGCjYaBRi8QLdq01XDCnzSoFzj3OXqJzlVTw54gLswdvvN95zs/d4UQhaybpqW73HR8ntZSLO06ZCmbU8jqFDcsmxPI0r1DeIAm9CGEgWhAD4YQqiKAoahBB+GhCm3oi3sV3iBELIRujMZQJmqSBS1RV+Edf9p4QlGGV5S9QFMEoqFCRxUVVFeQfDvGRlroiBsVLa4RKeMdiMqIeyeqoooWPUwtswwmnMY+yqTyHB6lI9YxEHXoojPqQ3SWxQUUO9yedpjQnYzBPJ7wXS/DyebH84FsFVPLMjuy6QjZnaezY4P7Ns8w3dbTyUiE7CxENZuduDKokLVpUH59PUGWXUtL6YY1P+c0MzmJYuFPs5EqZGuW2EOGro338YX7OPujzkn3/2xVG78HONqSYjKX2zozFBJNOa7tzR7wUZE6hdMCjdMfCG2spFO4yF/ReLZIF968/9m6LORRkM3RUq5EvgEIm9YbGwMAAA==
+      endingStages: {}
+id: 6

@@ -1,0 +1,27 @@
+visibility: []
+endSound: none
+repeatable: true
+requirements:
+- id: questRequired
+  questID: 11
+name: ПчеловодВыбор
+timer: 0
+starterNPC: 30
+scoreboard: false
+cancellable: false
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          npcID: 30
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aНакопи для начала обол себе на трапезу, а только потом приходи
+                  за лакомством!
+          stageType: NPC
+      endingStages: {}
+id: 12

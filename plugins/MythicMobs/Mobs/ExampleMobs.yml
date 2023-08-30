@@ -1,3 +1,6 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
 RABBIT1:
   Type: SLIME
   Display: '&aКролик &6[Ур. 1]'
@@ -15,3 +18,17 @@ RABBIT1:
     PreventOtherDrops: true
     MovementSpeed: 0.5
   Disguise: RABBIT
+FOX1:
+  Type: SILVERFISH
+  Display: '&aЛисица &6[Ур. 3]'
+  Health: 20
+  Damage: 2
+  Drops:
+  - apple1 1 1
+  Options:
+    Silent: false
+    AlwaysShowName: true
+    FollowRange: 16
+    PreventOtherDrops: true
+    MovementSpeed: 0.5
+  Disguise: FOX

@@ -2,14 +2,55 @@
 # http://www.mythicmobs.net
 #  
 
-CAVE_SPIDER:
+PIG:
+  Type: PIG
+  Display: '&aКабан &6[Ур. 1]'
+  Health: 20
+  Damage: 1
+  Drops:
+  - rabbit_hide1 0 0
+  Options:
+    Silent: false
+    AlwaysShowName: true
+    FollowRange: 10
+    PreventOtherDrops: true
+    MovementSpeed: 0.35
+COW:
+  Type: COW
+  Display: '&aБык &6[Ур. 1]'
   Health: 30
-  Damage: 7
-WITHER_SKELETON:
-  Health: 50
-  Damage: 10
-GIANT:
-  Health: 1000
-  Damage: 20
-  Skills:
-  - potion{type=POISON;duration=100;lvl=1} @target ~onAttack
+  Damage: 1
+  Drops:
+  - rabbit_hide1 0 0
+  Options:
+    Silent: false
+    AlwaysShowName: true
+    FollowRange: 10
+    PreventOtherDrops: true
+    MovementSpeed: 0.30
+CHICKEN:
+  Type: CHICKEN
+  Display: '&aКурица &6[Ур. 1]'
+  Health: 10
+  Damage: 1
+  Drops:
+  - rabbit_hide1 0 0
+  Options:
+    Silent: false
+    AlwaysShowName: true
+    FollowRange: 10
+    PreventOtherDrops: true
+    MovementSpeed: 0.30
+SHEEP:
+  Type: SHEEP
+  Display: '&aБаран &6[Ур. 1]'
+  Health: 20
+  Damage: 1
+  Drops:
+  - rabbit_hide1 0 0
+  Options:
+    Silent: false
+    AlwaysShowName: true
+    FollowRange: 10
+    PreventOtherDrops: true
+    MovementSpeed: 0.30

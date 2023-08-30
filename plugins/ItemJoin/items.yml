@@ -1,0 +1,59 @@
+# --{ =-=-=-=-=-=-=-=-=-= ItemJoin's Custom Item Configurations, by RockinChaos =-=-=-=-=-=-=-=-=-= }--
+# See the tutorial page for a more in-depth explanation; https://github.com/RockinChaos/ItemJoin/wiki
+# Join the discord for easy plugin support; https://discord.gg/D5FnJ7C
+# 
+# Modifying the Version will cause this file to break and regenerate.
+items-Version: 8
+items-Delay: 2
+items-Overwrite: false
+items-Spamming: false
+items-RestrictCount: false
+items:
+  profile:
+    id: PLAYER_HEAD
+    skull-owner: '%player%'
+    slot: 8
+    name: '&b%player%'
+    lore:
+    - '&7Изучайте и прокачивайте'
+    - '&7свои атрибуты'
+    interact-right:
+    - 'player:attributes'
+    itemflags: inventory-modify, hide-attributes, death-drops, self-drops
+    triggers: join, respawn, world-switch
+    permission-node: itemjoin.bungee
+    enabled-worlds: ALL
+  questbook:
+    id: book
+    slot: 7
+    name: '&dКвестовая книга'
+    lore:
+    - '&7Возьмите и нажмите ПКМ'
+    - '&7чтобы увидеть контент.'
+    - ''
+    - '&5Квесты: &d%beautyquests_player_finished_amount%/%beautyquests_total_amount%'
+    - ''
+    - '&5Открытия:'
+    - '&5– &7Территории: &f%codex_total_discoveries_regions%/2 &7[%codex_total_discoveries_percentage_regions%]'
+    - '&5– &6Мир: &e%codex_total_discoveries_history%/2 &6[%codex_total_discoveries_percentage_history%]'
+    - '&5– &3Секреты: &b%codex_total_discoveries_monsters%/2 &3[%codex_total_discoveries_percentage_monsters%]'
+    interact-right:
+    - 'player:beautyquests:quests'
+    itemflags: inventory-modify, hide-attributes, death-drops, self-drops
+    triggers: join, respawn, world-switch
+    permission-node: itemjoin.bungee
+    enabled-worlds: ALL
+  attributes:
+    id: compass
+    slot: 6
+    name: '&bИнформация о персонаже'
+    lore:
+    - '&7Смотрите на свою статистику'
+    - '&7и управляйте своими навыками'
+    interact-right:
+    - 'player:profile'
+    itemflags: inventory-modify, hide-attributes, death-drops, self-drops
+    triggers: join, respawn, world-switch
+    permission-node: itemjoin.bungee
+    enabled-worlds: ALL
+  

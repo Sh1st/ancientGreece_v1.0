@@ -1,4 +1,3 @@
-
 # Template ID, only used as reference. This is the
 # text you need to enter in the edition GUI in order
 # to setup item upgrading for a specific item.
@@ -14,6 +13,11 @@ weapon-default:
     
     pve-damage: 1%
 
+testweapon:
+    attack-damage: 15%
+    critical-strike-chance: 1
+    lifesteal: 1
+    
 armor-template-example:
     armor: 3%
     armor-toughness: 2%

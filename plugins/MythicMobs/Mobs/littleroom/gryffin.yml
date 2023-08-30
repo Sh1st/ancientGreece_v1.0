@@ -1,0 +1,101 @@
+
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+
+
+LR_GRYFFIN:
+  Type: IRON_GOLEM
+  Display: 'Gryffin' 
+  Health: 500
+  Modules:
+    ThreatTable: true
+  AITargetSelectors:
+  - players
+  Options:
+    MovementSpeed: .3
+    PreventOtherDrops: true
+    Despawn: true
+    Persistent: false
+    KnockbackResistance: 1
+    Collidable: true
+    Silent: true
+    FollowRange: 32
+  Skills:
+  - skill{s=LR_GRYFFIN_spawn} @self ~onSpawn
+  - skill{s=LR_GRYFFIN_air_bomb} @self ~onTimer:40
+  - randomskill{skills=LR_GRYFFIN_melee_1_sync,LR_GRYFFIN_melee_2_sync;sync=true} @self ~onAttack
+  - skill{s=LR_GRYFFIN_DEATH} @self ~onDeath
+  - skill{s=LR_GRYFFIN_DEATH_air} @self ~onDeath
+  - skill{s=LR_GRYFFIN_land} @self ~onTimer:1
+  - skill{s=LR_GRYFFIN_fly_idle} @self ~onTimer:1
+  - skill{s=LR_GRYFFIN_fly_start} @self ~onTimer:120
+  - bodyclamp{mh=15;mb=15;s=0} @self ~onSpawn
+  #- skill{s=LR_GRYFFIN_stun_hit} @self ~onDamaged
+  - skill{s=LR_GRYFFIN_bossbar_damage} @self ~onDamaged
+  - barCreate{name="GRYFFIN";display="<caster.name>";value=1.0;color=RED;style=SEGMENTED_6} @self ~onSpawn
+  - model{mid=lr_gryffin;d=false;i=true;step=1} @self ~onSpawn
+  - model{mid=lr_gryffin;d=false;i=true;step=1} @self ~onLoad  
+  - skill{s=LR_GRYFFIN_DEATH} @self ~onDeath
+  
+  
+  
+LR_GRYFFIN_nest:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+  Skills:
+  - skill{s=LR_GRYFFIN_grab_egg} @self ~onInteract
+  - model{mid=lr_gryffin_nest;d=false;i=true;step=1} @self ~onSpawn
+  - model{mid=lr_gryffin_nest;d=false;i=true;step=1} @self ~onLoad  
+  
+LR_GRYFFIN_feather:
+  Type: ARMOR_STAND
+  Options:
+    Invincible: true
+  Skills:
+  - skill{s=LR_GRYFFIN_feather} @self ~onSpawn
+  - model{mid=lr_gryffin_feather;d=false;i=true;step=1} @self ~onSpawn
+  - model{mid=lr_gryffin_feather;d=false;i=true;step=1} @self ~onLoad  
+  
+  
+  
+LR_GRYFFIN_falling_death:
+  Type: ARMOR_STAND
+  Options:
+    Invicible: true
+  Skills:
+  - skill{s=LR_GRYFFIN_falling_death_ground} @self ~onTimer:1
+  - skill{s=LR_GRYFFIN_falling_death_spawn} @self ~onSpawn
+  - model{mid=lr_gryffin;d=false;i=true;step=1} @self ~onSpawn
+  - model{mid=lr_gryffin;d=false;i=true;step=1} @self ~onLoad  
+
+  
+
+LR_GRYFFIN_concussion:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+  Skills:
+  #- skill{s=LR_GRYFFIN_concussion} @self ~onSpawn
+  - model{mid=concussion;d=false;i=true} @self ~onSpawn
+  - model{mid=concussion;d=false;i=true} @self ~onLoad  
+  
+  
+LR_GRYFFIN_whirlwind:
+  Type: HORSE
+  AITargetSelectors:
+  - clear
+  AIGoalSelectors:
+  - clear
+  Options:
+    Invincible: true
+    Silent: true
+    Collidable: false
+    #Marker: true
+  Skills:
+  - BodyClamp{hu=true;mh=360;mb=360;s=360} @self ~onSpawn
+  - skill{s=LR_GRYFFIN_whirlwind_spawn} @self ~onSpawn
+  - model{mid=lr_gryffin_whirlwind;d=false;i=true;step=1} @self ~onSpawn
+  - model{mid=lr_gryffin_whirlwind;d=false;i=true;step=1} @self ~onLoad  

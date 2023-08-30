@@ -227,3 +227,41 @@ QUEST:
                     WEAPON_POWDER: 100,1-1,0
     # This tier has no generation options specified.
     # In that case, it'll use the default values set in config.yml
+UNIQUE:
+    name: '&4UNIQUE'
+    unidentification:
+        name: 'Epic'
+        prefix: '&4'
+        range: 6
+    deconstruct-item:
+        success:
+            coef: 1
+            items:
+                MATERIAL:
+                    EPIC_WEAPON_ESSENCE: 100,1-1,0
+        lose:
+            coef: 6
+            items:
+                MATERIAL:
+                    WEAPON_POWDER: 100,1-1,0
+    # This tier has no generation options specified.
+    # In that case, it'll use the default values set in config.yml
+MAGICAL:
+    name: '&4ЭMAGICAL'
+    unidentification:
+        name: 'Epic'
+        prefix: '&4'
+        range: 6
+    deconstruct-item:
+        success:
+            coef: 1
+            items:
+                MATERIAL:
+                    EPIC_WEAPON_ESSENCE: 100,1-1,0
+        lose:
+            coef: 6
+            items:
+                MATERIAL:
+                    WEAPON_POWDER: 100,1-1,0
+    # This tier has no generation options specified.
+    # In that case, it'll use the default values set in config.yml

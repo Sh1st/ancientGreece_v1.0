@@ -4,7 +4,7 @@ config-version: 8
 # Notifies players with the 'mmoitems.update-notify' perm node when
 # they join the server if a new update is available for download.
 # Requires /reload when changed.
-update-notify: true
+update-notify: false
 
 # Enable/disable the plugin iterating over the whole player inventory
 # instead of just the players armor and held items.
@@ -86,7 +86,7 @@ op-item-stats:
 item-upgrading:
 
     # Display name suffix for upgraded items.
-    name-suffix: ' &8(&e+#lvl#&8)'
+    name-suffix: ' &8(&c+#lvl#&8)'
 
     # Whether to display in Item Name or Lore
     # Disable if item renaming is available to players.

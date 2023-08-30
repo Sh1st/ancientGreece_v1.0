@@ -1,0 +1,48 @@
+# Display options
+name: Собирательство
+
+# Experience given to the main level
+# when leveling up this profession
+experience:
+  base: 10
+  per-level: 2
+
+# Must match an existing exp curve filename from the 'expcurves' folder
+exp-curve: levels
+on-mine:
+    raspberry:
+        material: 'skull{value="eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODI2MmM0NDViYzJkZDFjNWJiYzhiOTNmMjQ4MmY5ZmRiZWY0OGE3MjQ1ZTFiZGIzNjFkNGE1NjgxOTBkOWI1In19fQ=="}'
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BERRY} 1 1'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 250
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=gathering;amount=10}'
+    grapes:
+        material: 'skull{value="eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTVhMjYzZDY1NTE2N2YwMDA4NTFhMDVhMTgzMTcyNmU3ZGI5ZTFmZjgzZDg3YzQyMzkzMmIzZTMxNzY5YWE4OSJ9fX0="}'
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BERRY} 1 1-2'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 400
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=gathering;amount=15}'
+    blackberry:
+        material: 'skull{value="eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjc2OWY4Yjc4YzQyZTI3MmE2NjlkNmU2ZDE5YmE4NjUxYjcxMGFiNzZmNmI0NmQ5MDlkNmEzZDQ4Mjc1NCJ9fX0="}'
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BERRY} 1 1-3'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 500
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=gathering;amount=20}'

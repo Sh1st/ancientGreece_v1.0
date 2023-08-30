@@ -1,0 +1,126 @@
+#
+# Requirements tutorial menu v1.0
+# authors: clip
+#
+# contributor: Andre_601
+#
+# In this tutorial you will learn all about menu requirements
+# Requirements allow you to restrict actions or even an entire menu to specific players.
+#
+# You can read more about requirements here:
+#   https://wiki.helpch.at/clips-plugins/deluxemenus/options-and-configurations/requirements
+#
+menu_title: 'Лавка винодела Авла'
+open_command: sssss
+size: 9
+items:
+  'vine':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7ImlkIjoiMzA5N2I4ZmNiNDM5NDYxNjg1ODIxMjdmOWFkZGZlNGUiLCJ0eXBlIjoiU0tJTiIsInVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWNmMDBlMzQwNDkwZjEzZmQ0ODhiYzFhYTNhZGZlYTVkMjQ3MzdiMmY1YjFlNWFkZTA0Nzk4MTYxYmE1MzE5MyIsInByb2ZpbGVJZCI6IjgwMThhYjAwYjJhZTQ0Y2FhYzliZjYwZWY5MGY0NWU1IiwidGV4dHVyZUlkIjoiYWNmMDBlMzQwNDkwZjEzZmQ0ODhiYzFhYTNhZGZlYTVkMjQ3MzdiMmY1YjFlNWFkZTA0Nzk4MTYxYmE1MzE5MyJ9fSwic2tpbiI6eyJpZCI6IjMwOTdiOGZjYjQzOTQ2MTY4NTgyMTI3ZjlhZGRmZTRlIiwidHlwZSI6IlNLSU4iLCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2FjZjAwZTM0MDQ5MGYxM2ZkNDg4YmMxYWEzYWRmZWE1ZDI0NzM3YjJmNWIxZTVhZGUwNDc5ODE2MWJhNTMxOTMiLCJwcm9maWxlSWQiOiI4MDE4YWIwMGIyYWU0NGNhYWM5YmY2MGVmOTBmNDVlNSIsInRleHR1cmVJZCI6ImFjZjAwZTM0MDQ5MGYxM2ZkNDg4YmMxYWEzYWRmZWE1ZDI0NzM3YjJmNWIxZTVhZGUwNDc5ODE2MWJhNTMxOTMifSwiY2FwZSI6bnVsbH0=
+    slot: 0
+    display_name: '&dВиноградное вино'
+    lore:
+      - '&7Пища'
+      - ''
+      - '&a✔ &7Мин. уровень: 1'
+      - ''
+      - '&a+20 &7Восстановление здоровья'
+      - '&a+1 &7Восстановление голода'
+      - '&a+2 &7Восстановление насыщения'
+      - '&c+30 сек. &7Восстановление предмета'
+      - ''
+      - '&7Используется для утоления голода,'
+      - '&7позволяет на короткое время'
+      - '&7захмелеть и расслабиться'
+      - '&dРедкий предмет'
+      - ''
+      - '&6Цена:'
+      - ' &6- &f10&7ὀ.'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 10
+      deny_commands:
+        - '[message] &2Винодел Авл: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give CONSUMABLE BERRYVINE %player_name% 1'
+      - '[takemoney] 10'
+      - '[message] &2Винодел Авл: &aБлагодарю за покупку, приходи еще!'
+      
+  'berry':
+    material: sweet_berries
+    slot: 1
+    display_name: '&fВиноград'
+    lore:
+      - '&7Пища'
+      - ''
+      - '&a✔ &7Мин. уровень: 1'
+      - ''
+      - '&a+0.5 &7Восстановление голода'
+      - '&a+0.3 &7Восстановление насыщения'
+      - ''
+      - '&7Используется для утоления голода,'
+      - '&7а также в виноделии'
+      - '&fОбычный предмет'
+      - ''
+      - '&6Цена:'
+      - ' &6- &f1&7ὀ.'
+      - '&6Продать:'
+      - ' &6- &f1&7ὀ&f/5&7шт'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 1
+      deny_commands:
+        - '[message] &2Винодел Авл: &7У тебя недостаточно обол!'
+        
+    left_click_commands:
+      - '[console] mi give CONSUMABLE BERRY %player_name% 1'
+      - '[takemoney] 1'
+      - '[message] &2Винодел Авл: &aБлагодарю за покупку, приходи еще!'
+
+    right_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_mat:sweet_berries%' #Проверка на наличие камня
+          output: 'yes'
+      deny_commands:
+        - '[close]'
+        - '[message] &2Винодел Авл: &7У тебя недостаточно ягод для продажи даже на обол!'
+    right_click_commands:
+        - '[console] minecraft:clear %player_name% sweet_berries 5'
+        - '[console] eco give %player_name% 1'
+        - '[player] withdraw all'
+        - '[message] &2Винодел Авл: &aБлагодарю за продажу, приходи еще!'
+
+    shift_left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 10
+      deny_commands:
+        - '[message] &2Винодел Авл: &7У тебя недостаточно обол!'
+
+    shift_left_click_commands:
+      - '[console] mi give CONSUMABLE BERRY %player_name% 10'
+      - '[takemoney] 10'
+      - '[message] &2Винодел Авл: &aБлагодарю за покупку, приходи еще!'
+
+    shift_right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: sweet_berries
+          amount: 50
+      deny_commands:
+        - '[message] &2Винодел Авл: &7Для такой крупной продажи, тебе нужно как минимум 50 ягод!'
+
+    shift_right_click_commands:
+        - '[console] minecraft:clear %player_name% sweet_berries 50'
+        - '[console] eco give %player_name% 10'
+        - '[player] withdraw all'
+        - '[message] &2Винодел Авл: &aБлагодарю за продажу, приходи еще!'

@@ -1,0 +1,43 @@
+visibility: []
+endSound: none
+name: ПчеловодНачало
+starterNPC: 30
+scoreboard: false
+cancellable: false
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          npcID: 30
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aТы че уставился?
+          stageType: NPC
+        '1':
+          npcID: 30
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aДа да, ты, я к тебе обращаюсь!
+          stageType: NPC
+        '2':
+          npcID: 30
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aТы смотришь на таинственный божественный продукт!
+            - id: 1
+              message:
+                sender: NPC
+                text: §aА теперь посмотри на себя! Ты нищий, это не для твоего рта!
+          stageType: NPC
+      endingStages: {}
+id: 11

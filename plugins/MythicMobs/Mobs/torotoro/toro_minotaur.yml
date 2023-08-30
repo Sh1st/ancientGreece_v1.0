@@ -1,0 +1,41 @@
+toro_minotaur:
+  Type: HUSK
+  Display: '&9&lMinotaur'
+  Faction: Minotaur
+  Health: 1000
+  KillMessages:
+  - '&7&l<target.name> is killed by Minotaur'
+  Damage: 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 1 players
+  Modules:
+    ThreatTable: true
+  Options:
+    NoDamageTicks: 1
+    MovementSpeed: 0.15
+    FollowRange: 30
+    KnockbackResistance: 0.7
+    Silent: true
+    Despawn: true
+    Invincible: false
+    PreventBlockInfection: true
+    PreventOtherDrops: true
+    MaxCombatDistance: 20
+  BossBar:
+    Enabled: true
+    Title: '&9&lMinotaur'
+    Range: 40
+    Color: RED
+    Style: SEGMENTED_10
+  Skills:
+  - skill{s=toro_minotaur_hit} @self ~onDamaged
+  - skill{s=toro_minotaur_death} @self ~onDeath
+  - randomskill{s=toro_minotaur_stomp,toro_minotaur_swing,toro_minotaur_vsmash,toro_minotaur_vsmash3,toro_minotaur_rush,toro_minotaur_headbutt;sync=true} @target ~onTimer:25
+  - skill{s=CancelEventSkill;sync=true} @self ~onAttack
+  - model{mid=minotaur;n=false;tint=false} @self ~onSpawn
+
+# 184469353509931687529782

@@ -1,55 +1,55 @@
 CONFIRM:
-  name: '&aConfirm'
+  name: '&aПодтвердить'
   lore: []
 FILL:
   name: '&8'
   lore: []
 PREVIOUS_PAGE:
-  name: '&aPrevious Page'
+  name: '&aПредыдущая страница'
   lore: []
 NEXT_PAGE:
-  name: '&aNext Page'
+  name: '&aСледущая страница'
   lore: []
 PREVIOUS_IN_QUEUE:
-  name: '&aPrevious'
+  name: '&aПредыдущий'
   lore: []
 NEXT_IN_QUEUE:
-  name: '&aNext'
+  name: '&aСледующий'
   lore: []
 BACK:
-  name: '&aBack'
+  name: '&aНазад'
   lore: []
 CRAFTING_RECIPE_DISPLAY:
-  name: '&a&lCraft&f #name#'
+  name: '&a&lСоздать&f #name#'
   lore:
   - '{conditions}'
-  - '{conditions}&8Conditions:'
+  - '{conditions}&8Условия:'
   - '{crafting_time}'
-  - '{crafting_time}&7Crafting Time: &c#crafting-time#&7s'
+  - '{crafting_time}&7Время изготовления: &c#crafting-time# &7сек.'
   - ''
-  - '&8Ingredients:'
+  - '&8Ингредиенты:'
   - '#ingredients#'
   - ''
-  - '&eLeft-Click to craft!'
-  - '&eRight-Click to preview!'
+  - '&eЛевый-Клик чтобы создать!'
+  - '&eПравый-Клик для просмотра!'
 UPGRADING_RECIPE_DISPLAY:
-  name: '&e&lUpgrade&f #name#'
+  name: '&e&lУлучшение&f #name#'
   lore:
+  - '{conditions}&8Условия:'
   - '{conditions}'
-  - '{conditions}&8Conditions:'
   - ''
-  - '&8Ingredients:'
+  - '&8Ингредиенты:'
   - '#ingredients#'
   - ''
-  - '&eLeft-Click to craft!'
-  - '&eRight-Click to preview!'
+  - '&eЛевый-Клик чтобы создать!'
+  - '&eПравый-Клик для просмотра!'
 QUEUE_ITEM_DISPLAY:
-  name: '&6&lQueue&f #name#'
+  name: '&6&lОчередь&f #name#'
   lore:
-  - '{ready}&7&oThis item was successfully crafted.'
-  - '{queue}&7&oThis item is in the crafting queue.'
+  - '{ready}&7&oЭтот предмет был успешно создан.'
+  - '{queue}&7&oЭтот предмет находится в очереди на создание.'
   - '{queue}'
-  - '{queue}&7Time Left: &c#left#'
+  - '{queue}&7Оставшееся время: &c#left#'
   - ''
-  - '{ready}&eClick to claim!'
-  - '{queue}&eClick to cancel.'
+  - '{ready}&eНажмите, чтобы забрать!'
+  - '{queue}&eНажмите, чтобы отменить.'

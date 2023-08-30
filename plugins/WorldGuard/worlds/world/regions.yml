@@ -10,27 +10,291 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    spawn2:
-        min: {x: -68, y: 65, z: 266}
-        max: {x: -68, y: 68, z: 266}
+    hoe1:
+        min: {x: -2, y: 51, z: -92}
+        max: {x: 1, y: 51, z: -90}
         members: {}
         flags: {}
         owners: {}
         type: cuboid
         priority: 0
-    spawn:
-        min: {x: -89, y: 66, z: 258}
-        max: {x: -71, y: 67, z: 271}
+    ore32:
+        min: {x: 21, y: 21, z: -178}
+        max: {x: 21, y: 21, z: -178}
         members: {}
-        flags: {}
+        flags: {block-break: allow}
         owners: {}
         type: cuboid
         priority: 0
-    spawn1:
-        min: {x: -82, y: 65, z: 260}
-        max: {x: -78, y: 75, z: 264}
+    ore31:
+        min: {x: 21, y: 20, z: -169}
+        max: {x: 21, y: 20, z: -169}
         members: {}
-        flags: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore34:
+        min: {x: 14, y: 25, z: -183}
+        max: {x: 14, y: 25, z: -183}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore33:
+        min: {x: 16, y: 20, z: -181}
+        max: {x: 16, y: 20, z: -181}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex10:
+        min: {x: 5, y: 24, z: -185}
+        max: {x: 5, y: 24, z: -185}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex11:
+        min: {x: 6, y: 26, z: -184}
+        max: {x: 6, y: 26, z: -184}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex12:
+        min: {x: 5, y: 28, z: -183}
+        max: {x: 5, y: 28, z: -183}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex13:
+        min: {x: 3, y: 27, z: -181}
+        max: {x: 3, y: 27, z: -181}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex14:
+        min: {x: 1, y: 24, z: -179}
+        max: {x: 1, y: 24, z: -179}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex15:
+        min: {x: -2, y: 26, z: -181}
+        max: {x: -2, y: 26, z: -181}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex16:
+        min: {x: -3, y: 28, z: -180}
+        max: {x: -3, y: 28, z: -180}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry9:
+        min: {x: 49, y: 51, z: 10}
+        max: {x: 49, y: 51, z: 10}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex17:
+        min: {x: -1, y: 25, z: -177}
+        max: {x: -1, y: 25, z: -177}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry8:
+        min: {x: 50, y: 50, z: 9}
+        max: {x: 50, y: 50, z: 9}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex18:
+        min: {x: 0, y: 27, z: -178}
+        max: {x: 0, y: 27, z: -178}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry7:
+        min: {x: 50, y: 50, z: 5}
+        max: {x: 50, y: 50, z: 5}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex19:
+        min: {x: 6, y: 20, z: -181}
+        max: {x: 6, y: 20, z: -181}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry6:
+        min: {x: 49, y: 51, z: 4}
+        max: {x: 49, y: 51, z: 4}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry5:
+        min: {x: 51, y: 51, z: 4}
+        max: {x: 51, y: 51, z: 4}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore6:
+        min: {x: 1, y: 28, z: -173}
+        max: {x: 1, y: 28, z: -173}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry4:
+        min: {x: 51, y: 51, z: -3}
+        max: {x: 51, y: 51, z: -3}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore7:
+        min: {x: -4, y: 26, z: -174}
+        max: {x: -4, y: 26, z: -174}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry3:
+        min: {x: 51, y: 50, z: -2}
+        max: {x: 51, y: 50, z: -2}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore8:
+        min: {x: 6, y: 29, z: -166}
+        max: {x: 6, y: 29, z: -166}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry2:
+        min: {x: 50, y: 51, z: -1}
+        max: {x: 50, y: 51, z: -1}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore9:
+        min: {x: 6, y: 35, z: -170}
+        max: {x: 6, y: 35, z: -170}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry1:
+        min: {x: 49, y: 50, z: -2}
+        max: {x: 49, y: 50, z: -2}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore2:
+        min: {x: 0, y: 34, z: -164}
+        max: {x: 0, y: 34, z: -164}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore3:
+        min: {x: -4, y: 29, z: -162}
+        max: {x: -4, y: 29, z: -162}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore4:
+        min: {x: -2, y: 31, z: -165}
+        max: {x: -2, y: 31, z: -165}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore5:
+        min: {x: -2, y: 25, z: -170}
+        max: {x: -2, y: 25, z: -170}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    shrine:
+        min: {x: 3, y: 49, z: -50}
+        max: {x: 20, y: 60, z: -32}
+        members: {}
+        flags: {use: allow, interact: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    cart1:
+        min: {x: 35, y: 49, z: -47}
+        max: {x: 40, y: 51, z: -44}
+        members: {}
+        flags: {use: allow, interact: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
+    cart2:
+        min: {x: 32, y: 49, z: -25}
+        max: {x: 37, y: 50, z: -22}
+        members: {}
+        flags: {interact: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
+    cart3:
+        min: {x: -19, y: 48, z: -62}
+        max: {x: -14, y: 51, z: -59}
+        members: {}
+        flags: {interact: deny}
         owners: {}
         type: cuboid
         priority: 0
@@ -42,9 +306,361 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
-    __global__:
+    ore1:
+        min: {x: 3, y: 35, z: -166}
+        max: {x: 3, y: 35, z: -166}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    loutraki:
+        min: {x: -198, y: 19, z: -163}
+        max: {x: 282, y: 255, z: 433}
+        members: {}
+        flags: {other-explosion: deny, mi-tools: allow, use: allow, interact: allow,
+            enderman-grief: deny, chest-access: allow, enderdragon-block-damage: deny,
+            creeper-explosion: deny, exp-drops: deny, item-frame-rotation: deny, damage-animals: allow,
+            ravager-grief: deny, ghast-fireball: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry13:
+        min: {x: 49, y: 51, z: 15}
+        max: {x: 49, y: 51, z: 15}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry14:
+        min: {x: 49, y: 52, z: 17}
+        max: {x: 49, y: 52, z: 17}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry15:
+        min: {x: 51, y: 52, z: 16}
+        max: {x: 51, y: 52, z: 16}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    lesorub1:
+        min: {x: -59, y: 49, z: 0}
+        max: {x: -45, y: 52, z: 24}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex1:
+        min: {x: 8, y: 24, z: -179}
+        max: {x: 8, y: 24, z: -179}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    lesorub2:
+        min: {x: -68, y: 49, z: 18}
+        max: {x: -54, y: 54, z: 35}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex3:
+        min: {x: 4, y: 25, z: -177}
+        max: {x: 4, y: 25, z: -177}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry10:
+        min: {x: 50, y: 49, z: 11}
+        max: {x: 50, y: 49, z: 11}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex2:
+        min: {x: 7, y: 24, z: -177}
+        max: {x: 7, y: 24, z: -177}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry11:
+        min: {x: 51, y: 50, z: 11}
+        max: {x: 51, y: 50, z: 11}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex5:
+        min: {x: 5, y: 22, z: -180}
+        max: {x: 5, y: 22, z: -180}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    berry12:
+        min: {x: 50, y: 50, z: 15}
+        max: {x: 50, y: 50, z: 15}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex4:
+        min: {x: 5, y: 23, z: -178}
+        max: {x: 5, y: 23, z: -178}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore10:
+        min: {x: 10, y: 34, z: -171}
+        max: {x: 10, y: 34, z: -171}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore12:
+        min: {x: 7, y: 28, z: -173}
+        max: {x: 7, y: 28, z: -173}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore11:
+        min: {x: 8, y: 27, z: -171}
+        max: {x: 8, y: 27, z: -171}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore14:
+        min: {x: 12, y: 27, z: -177}
+        max: {x: 12, y: 27, z: -177}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore13:
+        min: {x: 11, y: 27, z: -172}
+        max: {x: 11, y: 27, z: -172}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore16:
+        min: {x: 16, y: 29, z: -175}
+        max: {x: 16, y: 29, z: -175}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore15:
+        min: {x: 13, y: 31, z: -170}
+        max: {x: 13, y: 31, z: -170}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore18:
+        min: {x: 18, y: 30, z: -171}
+        max: {x: 18, y: 30, z: -171}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore17:
+        min: {x: 15, y: 27, z: -169}
+        max: {x: 15, y: 27, z: -169}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore19:
+        min: {x: 19, y: 28, z: -169}
+        max: {x: 19, y: 28, z: -169}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore30:
+        min: {x: 24, y: 19, z: -172}
+        max: {x: 24, y: 19, z: -172}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore21:
+        min: {x: 17, y: 21, z: -174}
+        max: {x: 17, y: 21, z: -174}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex7:
+        min: {x: 4, y: 22, z: -182}
+        max: {x: 4, y: 22, z: -182}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    farm1:
+        min: {x: 35, y: 49, z: -195}
+        max: {x: 103, y: 63, z: -126}
+        members: {}
+        flags: {block-break: allow, crop-growth: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore20:
+        min: {x: 20, y: 27, z: -174}
+        max: {x: 20, y: 27, z: -174}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex6:
+        min: {x: 7, y: 22, z: -182}
+        max: {x: 7, y: 22, z: -182}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore23:
+        min: {x: 22, y: 23, z: -175}
+        max: {x: 22, y: 23, z: -175}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex9:
+        min: {x: 3, y: 23, z: -184}
+        max: {x: 3, y: 23, z: -184}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    spawn:
+        min: {x: 79, y: 39, z: 246}
+        max: {x: 84, y: 61, z: 254}
         members: {}
         flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore22:
+        min: {x: 18, y: 20, z: -176}
+        max: {x: 18, y: 20, z: -176}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    orex8:
+        min: {x: 8, y: 24, z: -183}
+        max: {x: 8, y: 24, z: -183}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore25:
+        min: {x: 25, y: 22, z: -171}
+        max: {x: 25, y: 22, z: -171}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore24:
+        min: {x: 25, y: 24, z: -173}
+        max: {x: 25, y: 24, z: -173}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    door1:
+        min: {x: 84, y: 55, z: -17}
+        max: {x: 84, y: 56, z: -17}
+        members: {}
+        flags: {use: deny, interact: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore27:
+        min: {x: 19, y: 21, z: -171}
+        max: {x: 19, y: 21, z: -171}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore26:
+        min: {x: 22, y: 23, z: -169}
+        max: {x: 22, y: 23, z: -169}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore29:
+        min: {x: 25, y: 22, z: -171}
+        max: {x: 25, y: 22, z: -171}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    ore28:
+        min: {x: 23, y: 21, z: -175}
+        max: {x: 23, y: 21, z: -175}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    __global__:
+        members: {}
+        flags: {other-explosion: deny, wither-damage: deny, mi-tools: allow, block-trampling: deny,
+            leaf-decay: deny, enderman-grief: deny, enderdragon-block-damage: deny,
+            sleep: deny, creeper-explosion: deny, exp-drops: deny, vine-growth: deny,
+            snowman-trails: deny, item-frame-rotation: deny, block-break: deny, ravager-grief: deny,
+            entity-painting-destroy: deny, ghast-fireball: deny, entity-item-frame-destroy: deny,
+            grass-growth: deny, use-anvil: deny}
         owners: {}
         type: global
         priority: 0

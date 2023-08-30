@@ -1,0 +1,42 @@
+{
+  "name": "1",
+  "commands": [],
+  "interval": {
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 5
+  },
+  "times": [],
+  "random": 1.0,
+  "days": [
+    "MONDAY",
+    "TUESDAY",
+    "WEDNESDAY",
+    "THURSDAY",
+    "FRIDAY",
+    "SATURDAY",
+    "SUNDAY"
+  ],
+  "executionLimit": -1,
+  "timesExecuted": 0,
+  "lastExecutedCommandIndex": 0,
+  "lastExecuted": "Aug 23, 2023, 4:25:34 PM",
+  "commandExecutionMode": "ALL",
+  "commandExecutionInterval": {
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 1
+  },
+  "active": false,
+  "resetExecutionsAfterRestart": false,
+  "condition": {
+    "conditionType": "SIMPLE",
+    "conditions": [],
+    "simpleCondition": {
+      "conditionParamFields": []
+    }
+  },
+  "events": []
+}

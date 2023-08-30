@@ -1226,6 +1226,7 @@ SHADOWBOOTS:
     material: IRON_CHESTPLATE
     additional-strength: 2.0
     additional-intelligence: 10.0
+    max-health: 9980.0
 '3':
   base:
     material: LEATHER_HELMET
@@ -1243,8 +1244,6 @@ SHADOWBOOTS:
     required-intelligence: 1.0
     required-level: 10.0
     lifesteal: 10.0
-    health-regeneration: 10.0
-    max-health-regeneration: 10.0
     critical-strike-chance: 20.0
     critical-strike-power: 500.0
     tier: LEGENDARY
@@ -1256,3 +1255,7 @@ SHADOWBOOTS:
     dodge-cooldown-reduction: 99.0
     parry-rating: 99.0
     parry-cooldown-reduction: 99.0
+'6':
+  base:
+    material: IRON_CHESTPLATE
+    max-health: 10000.0

@@ -1,0 +1,78 @@
+
+# Name which will be displayed
+# when opening the station
+name: 'Оружейник (#page#/#max#)'
+
+# The maximum amount of items in the crafting queue ie. the
+# max number of items players are able to craft simultaneously.
+# Must be between 1 and 64.
+max-queue-size: 10
+
+# The sound that plays whenever an action is
+# completed in the crafting station.
+# GET SOUND NAMES HERE:
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+sound: ENTITY_EXPERIENCE_ORB_PICKUP
+
+# This is how the gui looks. You can define your own
+# in crafting-stations/layouts by creating a new
+# file with the name of the file as the id.
+layout: default
+
+# Configure GUI items here
+items:
+    fill:
+        material: AIR
+    no-recipe:
+        material: GRAY_STAINED_GLASS_PANE
+        name: '&aNo Recipe'
+    no-queue-item:
+        material: GRAY_STAINED_GLASS_PANE
+        name: '&aNo Item in Queue'
+
+# Station recipes
+recipes:
+    newby_sword:
+    
+        # The item which the recipe gives
+        output:
+            type: SWORD
+            id: 6
+            amount: 1
+        
+        # Time it takes to craft the item
+        crafting-time: 3
+        
+        # Recipe options
+        options:
+            output-item: true # Set to false to give no item
+            silent-craft: false # No sound when item is claimed
+            hide-when-locked: false # Hide in the GUI when conditions are not met
+        
+        # Conditions to unlock the recipe
+        conditions:
+        - level{level=1}
+        
+        # Ingredients needed for the recipe
+        # Available properties: type, id, amount, display, level (optional)
+        ingredients:
+        - mmoitem{type=MATERIAL,id=TOCHILO,amount=1,display="Точило"}
+        - mmoitem{type=SWORD,id=5,amount=1,display="Ржавый кинжал"}
+    newby_sword_plus:
+        item:
+            type: SWORD
+            id: 6
+        conditions:
+        - level{level=1}
+        ingredients:
+        - mmoitem{type=MATERIAL,id=TOCHILO,amount=2,display="Точило"}
+        
+    steel-ingot:
+        output:
+            type: MATERIAL
+            id: TOCHILO
+            amount: 1
+        crafting-time: 2
+        ingredients:
+        - mmoitem{type=MATERIAL,id=IRONHEART,amount=5,display="Стальное cердце"}
+        - mmoitem{type=MATERIAL,id=ARCANEYEY,amount=1,display="&eЧародейское око"}

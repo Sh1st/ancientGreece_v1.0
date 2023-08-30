@@ -1,0 +1,42 @@
+timer: 0
+scoreboard: false
+repeatable: true
+name: Святыня Лутраки
+visibility: []
+bypassLimit: true
+startRewards:
+- id: commandReward
+  commands: []
+starterNPC: 29
+cancellable: false
+endSound: none
+startMessage: none
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          npcID: 29
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aЗдравствуй, странник, ты попал в святыню!
+            - id: 1
+              message:
+                sender: NPC
+                text: §aЕсли вдруг ты погибнешь, то боги переместят твоё тело в последний
+                  посещенный фонтан
+            - id: 2
+              message:
+                sender: NPC
+                text: §aДа хранит тебя Осирис!
+          stageType: NPC
+          rewards:
+          - id: commandReward
+            commands:
+            - console: true
+              label: spawnpoint {PLAYER} 11 51 -46
+      endingStages: {}
+id: 10

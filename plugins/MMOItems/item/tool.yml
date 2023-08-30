@@ -32,14 +32,14 @@ CRACK_PICKAXE:
     pickaxe-power: 4.0
     bouncing-crack: true
     lore:
-      - §cWill break adjacent blocks!
+    - §cWill break adjacent blocks!
 AUTOSMELT_PICKAXE:
   base:
     material: NETHERITE_PICKAXE
     name: §cAutosmelt pickaxe
     lore:
-      - §7Will §csmelt§7 ores, like it
-      - §7implies. Works with enchantments.
+    - §7Will §csmelt§7 ores, like it
+    - §7implies. Works with enchantments.
     attack-damage: 7.5
     attack-speed: 1.6
     tier: UNCOMMON
@@ -50,17 +50,278 @@ AUTOSMELT_PICKAXE:
       shaped:
         '1':
           input:
-            - v magma_cream - 1.0..|v netherite_block - 1.0..|v magma_cream - 1.0..
-            - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
-            - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v magma_cream - 1.0..|v netherite_block - 1.0..|v magma_cream - 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
 UNBREAKABLE_SHEARS:
   base:
     material: SHEARS
     enchants:
       silk_touch: 1.0
     lore:
-      - §7If you're tired to craft new shears,
-      - §7try out this one! It can also
-      - §7pick up §9glass§7 or §2grass§7!
+    - §7If you're tired to craft new shears,
+    - §7try out this one! It can also
+    - §7pick up §9glass§7 or §2grass§7!
     tier: UNCOMMON
     required-level: 5.0
+'1':
+  base:
+    material: STONE_AXE
+    bouncing-crack: 0.0
+    unbreakable: true
+    disable-death-drop: true
+    commands: {}
+    autosmelt: 0.0
+    enchants:
+      silk_touch: 1.0
+    custom-nbt: []
+    hide-enchants: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+'2':
+  base:
+    material: STONE_AXE
+    custom-nbt: []
+'3':
+  base:
+    material: STONE_HOE
+'4':
+  base:
+    material: IRON_PICKAXE
+'5':
+  base:
+    material: FISHING_ROD
+    enchants:
+      protection: 1.0
+    hide-enchants: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    profession-fishing: 1.0
+    name: Старый крючок
+    displayed-type: §7Тир 1
+    lore:
+    - §7Изношенный временем, молчаливый
+    - §7свидетель десятков рыбацких
+    - §7историй, пропитанных временем
+    - §7и опытом.
+    - §fОбычный предмет
+    custom-myluck: '§6⌚ Скорость добычи: Медленная'
+'6':
+  base:
+    material: FISHING_ROD
+    enchants:
+      lure: 1.0
+    hide-enchants: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    profession-fishing: 3.0
+    name: Простой крючок
+    displayed-type: §7Тир 2
+    lore:
+    - §7Удочка – связь между человеком
+    - §7и водой, деревянная рукоять,
+    - §7обтянутая льняной нитью,
+    - §7раскрывающая морские тайны.
+    - §fОбычный предмет
+    custom-myluck: '§6⌚ Скорость добычи: Средняя'
+    max-durability: 128.0
+'7':
+  base:
+    material: FISHING_ROD
+    enchants:
+      lure: 2.0
+    hide-enchants: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    profession-fishing: 5.0
+    name: '&dРедкий крючок'
+    displayed-type: §7Тир 3
+    lore:
+    - §7С деревянной рукоятью, обрамленной
+    - §7нитями ожидания, и уловительным
+    - §7крючком, она была мостом между
+    - §7человеком и миром волн,
+    - §7свидетельствуя о древней связи с
+    - §7морем и его бесконечными загадками.
+    - §dРедкий предмет
+    custom-myluck: '§6⌚ Скорость добычи: Быстрая'
+    max-durability: 256.0
+'8':
+  base:
+    material: FISHING_ROD
+    enchants:
+      lure: 3.0
+    hide-enchants: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    profession-fishing: 10.0
+    name: '&bЛегендарный уловитель'
+    displayed-type: §7Тир 4
+    lore:
+    - §7Словно дар богов Олимпа, переплетает
+    - §7нити реальности и мифа в мастерской
+    - §7времени. Его древний деревянный
+    - §7стержень хранит тайны морей, а
+    - §7золотой крючок, как дар от Посейдона,
+    - §7притягивает судьбоносные сокровища
+    - §7из волн.
+    - §bЛегендарный предмет
+    custom-myluck: '§6⌚ Скорость добычи: Очень Быстрая'
+    max-durability: 512.0
+KAMNETES:
+  base:
+    material: STONE_PICKAXE
+    custom-model-data: 1000.0
+    disable-smelting: true
+    disable-crafting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    name: '&fПростой камнетес'
+    displayed-type: §7Тир 1
+    lore:
+    - §7Инструмент с древковой рукояткой
+    - §7и двумя металлическими лезвиями.
+    - §7Одно лезвие имеет форму острия, а
+    - §7другое плоское для более легкого
+    - §7рубления и обработки грунта.
+    - §fОбычный предмет
+    custom-myluck: '§6⌚ Скорость добычи: Медленная'
+    profession-mining: 1.0
+    attack-damage: 3.0
+KAMNETES2:
+  base:
+    material: IRON_PICKAXE
+    custom-model-data: 1000.0
+    disable-smelting: true
+    disable-crafting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    name: '&dКамнетес'
+    displayed-type: §7Тир 2
+    lore:
+    - §7Инструмент с древковой рукояткой
+    - §7и двумя металлическими лезвиями.
+    - §7изогнуто для эффективной копки,
+    - §7другое заостренное для обработки
+    - §7горных пород.
+    - §dРедкий предмет
+    custom-myluck: '§6⌚ &f&6Скорость добычи: Средняя'
+    profession-mining: 5.0
+    attack-damage: 4.0
+KAMNETES3:
+  base:
+    material: IRON_PICKAXE
+    custom-model-data: 1000.0
+    disable-smelting: true
+    disable-crafting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    name: '&dКамнетес'
+    displayed-type: §7Тир 2
+    lore:
+    - §7Инструмент с древковой рукояткой
+    - §7и двумя металлическими лезвиями.
+    - §7изогнуто для эффективной копки,
+    - §7другое заостренное для обработки
+    - §7горных пород.
+    - §dРедкий предмет
+    custom-myluck: '§6⌚ &f&6Скорость добычи: Средняя'
+    profession-mining: 5.0
+    attack-damage: 4.0
+TESAK:
+  base:
+    material: STONE_AXE
+    custom-model-data: 1000.0
+    disable-smelting: true
+    disable-crafting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    name: '&fТесак'
+    displayed-type: §7Тир 1
+    lore:
+    - §7Инструмент для добычи дерева.
+    - §7Каменное острие на деревянной
+    - §7рукоятке позволяет добывать
+    - §7и обрабатывать древесину.
+    - §fОбычный предмет
+    custom-myluck: '§6⌚ &f&6Скорость добычи: Медленная'
+    profession-woodcutting: 1.0
+    attack-damage: 4.0
+IAXE:
+  base:
+    material: IRON_AXE
+    custom-model-data: 1000.0
+    disable-smelting: true
+    disable-crafting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    name: '&dТопор'
+    displayed-type: §7Тир 2
+    lore:
+    - §7Инструмент для обработки и
+    - §7добычи дерева. Его прочное
+    - §7Его прочное железное лезвие
+    - §7обеспечивает эффективную
+    - §7работу с древесиной.
+    - §dРедкий предмет
+    custom-myluck: '§6⌚ &f&6Скорость добычи: Средняя'
+    profession-woodcutting: 5.0
+    attack-damage: 6.0
+HOE1:
+  base:
+    material: STONE_HOE
+    custom-model-data: 1000.0
+    disable-smelting: true
+    disable-crafting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    name: '&fМотыга'
+    displayed-type: §7Тир 1
+    lore:
+    - §7Простенькая мотыга прекрасно 
+    - §7подходит для сбора ячменя на
+    - §7небольших участках земли.
+    - §fОбычный предмет
+    custom-myluck: '§6⌚ &f&6Скорость добычи: Мгновенная'
+    profession-farming: 1.0
+    attack-damage: 2.0
+HOE2:
+  base:
+    material: IRON_HOE
+    custom-model-data: 1000.0
+    disable-smelting: true
+    disable-crafting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    name: '&dМотыга'
+    displayed-type: §7Тир 2
+    lore:
+    - §7Улучшенная мотыга обладает
+    - §7повышенной прочностью,
+    - §7обеспечивает долговечность
+    - §7и эффективность работы.
+    - §dРедкий предмет
+    custom-myluck: '§6⌚ &f&6Скорость добычи: Мгновенная'
+    profession-farming: 5.0
+    attack-damage: 3.0

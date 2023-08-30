@@ -1,0 +1,74 @@
+﻿#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+
+lr_gryffin_pet:
+  Type: HORSE
+  Faction: <caster.owner.uuid>
+  AIGoalSelectors:
+  - 0 clear
+  - 1 lookatplayers
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  Drops: []
+  Equipment: []
+  Skills: 
+  - skill{s=lr_gryffin_dropfeather} @self ~onTimer:20 .5
+  - skill{s=lr_gryffin_mount} @trigger ~onInteract
+  - setstance{stance=ground} @self ~onSpawn 
+  - skill{s=lr_gryffin_LAND} @selflocation{y=-1} ~onTimer:1
+  - skill{s=lr_gryffin_AIR} @selflocation{y=-1} ~onTimer:1
+  - model{mid=lr_gryffin;n=false;step=1;drive=true} @self ~onSpawn
+  - model{mid=lr_gryffin;n=false;step=1;drive=true} @self ~onLoad
+  - bodyclamp{mh=15;mb=15;s=0} @self ~onSpawn
+  Health: 100
+  Damage: 0
+  Options:
+    Collidable: false
+    #Invincible: true
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    FollowRange: 20
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: .15
+    
+lr_gryffin_corvid_pet:
+  Type: HORSE
+  Faction: <caster.owner.uuid>
+  AIGoalSelectors:
+  - 0 clear
+  - 1 lookatplayers
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  Drops: []
+  Equipment: []
+  Skills: 
+  - skill{s=lr_gryffin_mount} @trigger ~onInteract
+  - setstance{stance=ground} @self ~onSpawn 
+  - effect:particles{particle=squid_ink;amount=5;hS=1;vS=1} @self ~onTimer:1
+  - skill{s=lr_gryffin_LAND} @selflocation{y=-1} ~onTimer:1
+  - skill{s=lr_gryffin_AIR} @selflocation{y=-1} ~onTimer:1
+  - model{mid=lr_gryffin_corvid;n=false;step=1;drive=true} @self ~onSpawn
+  - model{mid=lr_gryffin_corvid;n=false;step=1;drive=true} @self ~onLoad
+  - bodyclamp{mh=15;mb=15;s=0} @self ~onSpawn
+  Health: 100
+  Damage: 0
+  Options:
+    Collidable: false
+    #Invincible: true
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    FollowRange: 20
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: .15

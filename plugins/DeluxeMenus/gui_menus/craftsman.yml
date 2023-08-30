@@ -1,0 +1,364 @@
+#
+# Requirements tutorial menu v1.0
+# authors: clip
+#
+# contributor: Andre_601
+#
+# In this tutorial you will learn all about menu requirements
+# Requirements allow you to restrict actions or even an entire menu to specific players.
+#
+# You can read more about requirements here:
+#   https://wiki.helpch.at/clips-plugins/deluxemenus/options-and-configurations/requirements
+#
+menu_title: 'Ремесленник'
+open_command: sssx
+size: 54
+items:
+  'ka1':
+    material: stone_pickaxe
+    hide_attributes: true
+    slot: 10
+    display_name: '&fПростой камнетес'
+    lore:
+      - '&7Тир 1'
+      - ''
+      - '&6✣ Физический урон: 3'
+      - '&6⌚ Скорость добычи: Медленная'
+      - ''
+      - '&a✔ &7Мин. уровень шахтерства: 1'
+      - ''
+      - §7Инструмент с древковой рукояткой
+      - §7и двумя металлическими лезвиями.
+      - §7Одно лезвие имеет форму острия, а
+      - §7другое плоское для более легкого
+      - §7рубления и обработки грунта.
+      - §fОбычный предмет
+      - ''
+      - '&6Цена:'
+      - ' &6- &f3&7ὀ'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 3
+      deny_commands:
+        - '[message] &2Ремесленник: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give TOOL KAMNETES %player_name% 1'
+      - '[takemoney] 3'
+      - '[message] &2Ремесленник: &aБлагодарю за покупку, благославят тебя боги!'
+  'ka2':
+    material: iron_pickaxe
+    hide_attributes: true
+    slot: 11
+    display_name: '&dКамнетес'
+    lore:
+      - '&7Тир 2'
+      - ''
+      - '&6✣ Физический урон: 4'
+      - '&6⌚ Скорость добычи: Средняя'
+      - ''
+      - '&a✔ &7Мин. уровень шахтерства: 5'
+      - ''
+      - §7Инструмент с древковой рукояткой
+      - §7и двумя металлическими лезвиями.
+      - §7изогнуто для эффективной копки,
+      - §7другое заостренное для обработки
+      - §7горных пород.
+      - §dРедкий предмет
+      - ''
+      - '&6Цена:'
+      - ' &6- &f16&7ὀ'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 16
+      deny_commands:
+        - '[message] &2Ремесленник: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give TOOL KAMNETES2 %player_name% 1'
+      - '[takemoney] 16'
+      - '[message] &2Ремесленник: &aБлагодарю за покупку, благославят тебя боги!'
+  'axe1':
+    material: stone_axe
+    hide_attributes: true
+    slot: 19
+    display_name: '&fТесак'
+    lore:
+      - '&7Тир 1'
+      - ''
+      - '&6✣ Физический урон: 4'
+      - '&6⌚ Скорость добычи: Медленная'
+      - ''
+      - '&a✔ &7Мин. уровень дровосечества: 1'
+      - ''
+      - §7Инструмент для добычи дерева.
+      - §7Каменное острие на деревянной
+      - §7рукоятке позволяет добывать
+      - §7и обрабатывать древесину.
+      - §fОбычный предмет
+      - ''
+      - '&6Цена:'
+      - ' &6- &f4&7ὀ'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 4
+      deny_commands:
+        - '[message] &2Ремесленник: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give TOOL TESAK %player_name% 1'
+      - '[takemoney] 4'
+      - '[message] &2Ремесленник: &aБлагодарю за покупку, благославят тебя боги!'
+  'axe2':
+    material: iron_axe
+    hide_attributes: true
+    slot: 20
+    display_name: '&dТопор'
+    lore:
+      - '&7Тир 2'
+      - ''
+      - '&6✣ Физический урон: 6'
+      - '&6⌚ Скорость добычи: Средняя'
+      - ''
+      - '&a✔ &7Мин. уровень дровосечества: 5'
+      - ''
+      - §7Инструмент для обработки и 
+      - §7добычи дерева. Его прочное 
+      - §7Его прочное железное лезвие
+      - §7обеспечивает эффективную 
+      - §7работу с древесиной.
+      - §dРедкий предмет
+      - ''
+      - '&6Цена:'
+      - ' &6- &f16&7ὀ'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 16
+      deny_commands:
+        - '[message] &2Ремесленник: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give TOOL IAXE %player_name% 1'
+      - '[takemoney] 16'
+      - '[message] &2Ремесленник: &aБлагодарю за покупку, благославят тебя боги!'
+  'axe2':
+    material: iron_axe
+    hide_attributes: true
+    slot: 20
+    display_name: '&dТопор'
+    lore:
+      - '&7Тир 2'
+      - ''
+      - '&6✣ Физический урон: 6'
+      - '&6⌚ Скорость добычи: Средняя'
+      - ''
+      - '&a✔ &7Мин. уровень дровосечества: 5'
+      - ''
+      - §7Инструмент для обработки и 
+      - §7добычи дерева. Его прочное 
+      - §7Его прочное железное лезвие
+      - §7обеспечивает эффективную 
+      - §7работу с древесиной.
+      - §dРедкий предмет
+      - ''
+      - '&6Цена:'
+      - ' &6- &f16&7ὀ'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 16
+      deny_commands:
+        - '[message] &2Ремесленник: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give TOOL IAXE %player_name% 1'
+      - '[takemoney] 16'
+      - '[message] &2Ремесленник: &aБлагодарю за покупку, благославят тебя боги!'
+  'HOE1':
+    material: STONE_HOE
+    hide_attributes: true
+    slot: 28
+    display_name: '&fМотыга'
+    lore:
+      - '&7Тир 1'
+      - ''
+      - '&6✣ Физический урон: 2'
+      - '&6⌚ Скорость добычи: Мгновенная'
+      - ''
+      - '&a✔ &7Мин. уровень фермерства: 1'
+      - ''
+      - §7Простенькая мотыга прекрасно 
+      - §7подходит для сбора ячменя на
+      - §7небольших участках земли.
+      - §fОбычный предмет
+      - ''
+      - '&6Цена:'
+      - ' &6- &f2&7ὀ'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 2
+      deny_commands:
+        - '[message] &2Ремесленник: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give TOOL HOE1 %player_name% 1'
+      - '[takemoney] 2'
+      - '[message] &2Ремесленник: &aБлагодарю за покупку, благославит тебя Деметр!'
+  'HOE2':
+    material: IRON_HOE
+    hide_attributes: true
+    slot: 29
+    display_name: '&dМотыга'
+    lore:
+      - '&7Тир 2'
+      - ''
+      - '&6✣ Физический урон: 3'
+      - '&6⌚ Скорость добычи: Мгновенная'
+      - ''
+      - '&a✔ &7Мин. уровень фермерства: 5'
+      - ''
+      - §7Улучшенная мотыга обладает
+      - §7повышенной прочностью,
+      - §7обеспечивает долговечность
+      - §7и эффективность работы.
+      - §dРедкий предмет
+      - ''
+      - '&6Цена:'
+      - ' &6- &f8&7ὀ'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 8
+      deny_commands:
+        - '[message] &2Ремесленник: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give TOOL HOE2 %player_name% 1'
+      - '[takemoney] 8'
+      - '[message] &2Ремесленник: &aБлагодарю за покупку, благославит тебя Деметр!'
+  'fr1':
+    material: fishing_rod
+    enchantments:
+    - PROTECTION_FIRE;1
+    hide_enchantments: true 
+    slot: 37
+    display_name: '&fСтарый крючок'
+    lore:
+      - '&7Тир 1'
+      - ''
+      - '&6⌚ Скорость добычи: Медленная'
+      - ''
+      - '&a✔ &7Мин. уровень рыбалки: 1'
+      - ''
+      - '&7Изношенный временем, молчаливый'
+      - '&7свидетель десятков рыбацких'
+      - '&7историй, пропитанных временем'
+      - '&7и опытом'
+      - '&fОбычный предмет'
+      - ''
+      - '&6Цена:'
+      - ' &6- &f3&7ὀ'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 3
+      deny_commands:
+        - '[message] &2Ремесленник: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give TOOL 5 %player_name% 1'
+      - '[takemoney] 3'
+      - '[message] &2Ремесленник: &aБлагодарю за покупку, удачного улова!'
+  'fr2':
+    material: fishing_rod
+    enchantments:
+    - PROTECTION_FIRE;1
+    hide_enchantments: true 
+    slot: 38
+    display_name: '&fПростой крючок'
+    lore:
+      - '&7Тир 2'
+      - ''
+      - '&6⌚ Скорость добычи: Средняя'
+      - ''
+      - '&a✔ &7Мин. уровень рыбалки: 3'
+      - ''
+      - §7Удочка – связь между человеком
+      - §7и водой, деревянная рукоять,
+      - §7обтянутая льняной нитью,
+      - §7раскрывающая морские тайны.
+      - §fОбычный предмет
+      - ''
+      - '&6Цена:'
+      - ' &6- &f16&7ὀ'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 16
+      deny_commands:
+        - '[message] &2Ремесленник: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give TOOL 6 %player_name% 1'
+      - '[takemoney] 16'
+      - '[message] &2Ремесленник: &aБлагодарю за покупку, удачного улова!'
+  'fr3':
+    material: fishing_rod
+    enchantments:
+    - PROTECTION_FIRE;1
+    hide_enchantments: true 
+    slot: 39
+    display_name: '&dРедкий крючок'
+    lore:
+      - '&7Тир 3'
+      - ''
+      - '&6⌚ Скорость добычи: Быстрая'
+      - ''
+      - '&a✔ &7Мин. уровень рыбалки: 5'
+      - ''
+      - §7С деревянной рукоятью, обрамленной
+      - §7нитями ожидания, и уловительным
+      - §7крючком, она была мостом между
+      - §7человеком и миром волн,
+      - §7свидетельствуя о древней связи с
+      - §7морем и его бесконечными загадками.
+      - §dРедкий предмет
+      - ''
+      - '&6Цена:'
+      - ' &6- &f48&7ὀ'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 48
+      deny_commands:
+        - '[message] &2Ремесленник: &aУ тебя недостаточно обол!'
+        - '[close]'
+        
+    left_click_commands:
+      - '[console] mi give TOOL 7 %player_name% 1'
+      - '[takemoney] 48'
+      - '[message] &2Ремесленник: &aБлагодарю за покупку, отличного улова!'

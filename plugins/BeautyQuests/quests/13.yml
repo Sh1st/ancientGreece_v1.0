@@ -1,0 +1,152 @@
+starterNPC: 15
+name: §6Садовод и собирательство
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          npcID: 15
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aО боги! Хватит меня отвлекать!
+          stageType: NPC
+        '1':
+          npcID: 15
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aСейчас я занят!
+          stageType: NPC
+        '2':
+          npcID: 15
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aНу сколько можно меня трогать!?
+          stageType: NPC
+        '3':
+          npcID: 15
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aБездельник значит! Коль до честных домогаешься, илот, я тебя
+                  научу как себе на хлеб заработать!
+            - id: 1
+              message:
+                sender: NPC
+                text: §aПозади меня, за моей лавкой располагается агора с садом, ограды
+                  там нет
+            - id: 2
+              message:
+                sender: NPC
+                text: §aПоди в сад и оббери мой виноград, я и так ничего не успеваю!
+            - id: 3
+              message:
+                sender: NPC
+                text: §aЕсли поторопишься, возможно, я даже тебе заплачу!
+          stageType: NPC
+        '4':
+          npcID: 15
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aО, мой илот, ты уже тут!
+            - id: 1
+              message:
+                sender: NPC
+                text: §aЧудесно, это на прилавок, это в сундук, а эту в рот... Ммм...
+                  Божественно!
+            - id: 2
+              message:
+                sender: NPC
+                text: §a...
+            - id: 3
+              message:
+                sender: NPC
+                text: §aТы еще тут?
+            - id: 4
+              message:
+                sender: PLAYER
+                text: §aДа, я еще здесь. Вы мне обещали вознаграждение за труд!
+            - id: 5
+              message:
+                sender: NPC
+                text: §aАха-ха-хха! Возьму тебя в качестве шута, держи два медяка
+                  и не путайся под ногами!
+          items:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 2586
+            type: SWEET_BERRIES
+            amount: 32
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Виноград"}],"text":""}'
+              lore:
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Пища"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"✔
+                "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Мин.
+                уровень: 1"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"+0.5
+                "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Восстановление
+                голода"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"+0.3
+                "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Восстановление
+                насыщения"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Используется
+                для утоления голода,"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"а
+                также в виноделии"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обычный
+                предмет"}],"text":""}'
+              attribute-modifiers:
+                GENERIC_ATTACK_SPEED:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitemsDecoy
+                  uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              internal: H4sIAAAAAAAA/81TT2sTQRSfFSyhoLSCFPWyzMGLpShFhFziNjttBvZPOjMpLCEsRfAq1FykFJr2IJJioXjwUPQrbNtEo23Sg1/gDX4B6SfoR+ibzSZdScGrw7Iw7/3e+70/v5kmpEBmfT/kivkyZkG54gRKklv1RoHcGdu9UDDysU4fv4DPugXnMIBTvQff9S509Y5u6X0bOmjat/Wu3jFe6EIfesZ+kl4H6E/m6bxJkdiISeAnfIOuDcf4QQ/RBtJFaA96BvcavsCRbuv30Ndt+GHDud5GfwfODCfF+ubG9blcVj0nYm6soioj00jyFdk/QGKRB3mUs+SxuCycZcWDFWuK3B87BZMKu4yXw9At/SHpuSlY+lxVTHCB3Bs7zT+jLoeBrPkGOkUeTWSXjqoJR/EwKP1eTI9FHk5wCFZ1uBiSzPxNwl1ye4kJEVm57KO4bH3D1uZy5Ks1LnA4HltjXuly2Fx+v4HjMzIDB9keTnDSCXQKufG4EWJ4OVWCVUQlvLqeMW7LLGz94vCTjdZDk2XBKGEbcx0bJei9ov1sBHvydOG5wR3AAJXTSrXQT5GZaowqcqoZBS3+M6gPCbraWFOmvozyP1LtzZJinhpu+25FKhFdv8OXm1Q215u0SEcmJAlXZPPNxjtarG/Siacb/zp629zAgHqDbjW2yBVrQrEd4gMAAA==
+          stageType: ITEMS
+          rewards:
+          - id: itemReward
+            items:
+            - v: 2586
+              type: GOLD_NUGGET
+              amount: 2
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Бронзовый
+                  обол"}],"text":""}'
+                lore:
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Валюта"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":""}],"text":""}'
+                - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":true,"obfuscated":false,"color":"gold","text":"───"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"[
+                  1ὀ ]"},{"bold":false,"italic":false,"underlined":false,"strikethrough":true,"obfuscated":false,"color":"gold","text":"───"}],"text":""}'
+                custom-model-data: 1
+                ItemFlags:
+                - HIDE_ENCHANTS
+                - HIDE_ATTRIBUTES
+                - HIDE_UNBREAKABLE
+                - HIDE_DESTROYS
+                - HIDE_PLACED_ON
+                - HIDE_POTION_EFFECTS
+      endingStages: {}
+id: 13

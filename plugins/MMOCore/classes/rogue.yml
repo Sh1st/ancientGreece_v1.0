@@ -50,7 +50,7 @@ cast-particle:
     particle: SPELL_WITCH
 
 skills:
-    DEEP_WOUND:
+    LEAP:
         level: 1
         max-level: 30
     WEAKEN:

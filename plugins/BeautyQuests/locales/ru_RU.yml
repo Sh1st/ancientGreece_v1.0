@@ -61,7 +61,7 @@ msg:
     skill: '§cВаш уровень навыка &a{1}§c должен быть {0}!'
     combatLevel: '§cВаш уровень боя должен быть {0}!'
     money: '§cВы должны иметь {0}!'
-    waitTime: '{0} минут(ы), прежде чем вы сможете перезапустить задание!'
+    waitTime: '{0}, прежде чем вы сможете перезапустить задание!'
   experience:
     edited: '§aВы изменили добычу опыта с {0} до {1} очков.'
   selectNPCToKill: '§aВыберите NPC для удаления.'
@@ -679,7 +679,7 @@ scoreboard:
   noLaunched: '§cНет заданий в процессе выполнения.'
   noLaunchedName: '§c§lЗагрузка'
   noLaunchedDescription: '§cЗагрузка'
-  textBetwteenBranch: '&a или'
+  textBetwteenBranch: '&aили'
   asyncEnd: '§бывший'
   stage:
     region: '&aНайти регион §6{0}'
@@ -725,7 +725,7 @@ misc:
     days: '{0} дней'
     hours: '{0} часов'
     minutes: '{0} минут'
-    lessThanAMinute: 'меньше минуты'
+    lessThanAMinute: 'Меньше минуты'
   stageType:
     region: Найти регион
     npc: Найти NPC
@@ -775,7 +775,7 @@ misc:
     shift-left: Shift+щелчок левой
   ticks: '{0} тиков'
   questItemLore: '&aКвестовый предмет'
-  hologramText: '§8§lКвестовый NPC'
+  hologramText: ''
   poolHologramText: '&aДоступно новое задание!'
   mobsProgression: '§6§l{0}: §r&a{1}/{2}'
   entityType: '&aТип объекта: {0}'

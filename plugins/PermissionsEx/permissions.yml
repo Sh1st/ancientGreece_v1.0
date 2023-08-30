@@ -1,0 +1,64 @@
+groups:
+  default:
+    permissions:
+    - essentials.chat.question
+    - essentials.chat.shout
+    - customdeathdrops.sample
+    - essentials.ignore
+    - essentials.suicide
+    - essentials.info
+    - essentials.list
+    - essentials.msg
+    - essentials.w
+    - essentials.r
+    - deluxemenu.open.*
+    - -bukkit.command.auction
+    - -essentials.who
+    - -bukkit.command.who
+    - -bukkit.command.players
+    - -bukkit.command.plugins
+    - -bukkit.command.pl
+    - -bukkit.command.help
+    options:
+      prefix: '&7'
+      default: true
+  GRAPE:
+    permissions:
+    - essentials.chat.question
+    - essentials.chat.shout
+    - customdeathdrops.sample
+    - essentials.ignore
+    - essentials.suicide
+    - essentials.info
+    - essentials.list
+    - essentials.msg
+    - essentials.w
+    - essentials.r
+    - deluxemenu.open.*
+    - -bukkit.command.auction
+    - -essentials.who
+    - -bukkit.command.who
+    - -bukkit.command.players
+    - -bukkit.command.plugins
+    - -bukkit.command.pl
+    - -bukkit.command.help
+    options:
+      prefix: '[] '
+      default: false
+  OWN:
+    permissions:
+    - '*'
+    options:
+      prefix: '&c[&f&c] '
+      suffix: '&c'
+      default: false
+  user:
+    worlds:
+      OWN:
+        permissions: []
+schema-version: 1
+users:
+  8ad9c176-b8d4-4ef8-b924-b5e1b10a1399:
+    group: []
+    options:
+      name: SShist

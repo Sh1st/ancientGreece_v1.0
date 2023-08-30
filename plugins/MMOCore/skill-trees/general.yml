@@ -10,7 +10,7 @@ nodes:
 
 #### A
   a1:
-    name: 'Mana Regeneration'
+    name: '&eРегенерация маны'
     coordinates:
       x: -3
       y: -2
@@ -22,11 +22,11 @@ nodes:
     experience-table: skilltree_mana_regeneration1
     lores:
       0:
-        - "&eMana regen in pts/sec +1"
+        - "&eРегенерация маны в сек +1"
       1:
-        - "&eMana regen in pts/sec +1"
+        - "&eРегенерация маны в сек +1"
   a2:
-    name: 'Mana Regeneration'
+    name: '&eРегенерация маны'
     coordinates:
       x: -2
       y: -2
@@ -42,11 +42,11 @@ nodes:
     experience-table: skilltree_mana_regeneration2
     lores:
       0:
-        - "&eMana regen in pts/sec +2"
+        - "&eРегенерация маны в сек +2"
       1:
-        - "&eMana regen in pts/sec +2"
+        - "&eРегенерация маны в сек +2"
   a3:
-    name: 'Mana Regeneration'
+    name: '&eРегенерация маны'
     coordinates:
       x: -1
       y: -1
@@ -62,9 +62,9 @@ nodes:
     experience-table: skilltree_mana_regeneration2
     lores:
       0:
-        - "&eMana regen in pts/sec +2"
+        - "&eРегенерация маны в сек +2"
       1:
-        - "&eMana regen in pts/sec +2"
+        - "&eРегенерация маны в сек +2"
         
 #### B
   b1:

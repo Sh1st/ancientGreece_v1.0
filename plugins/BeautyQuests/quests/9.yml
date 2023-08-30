@@ -1,0 +1,66 @@
+endSound: none
+name: §2Гай
+starterNPC: 17
+cancellable: false
+timer: 0
+visibility: []
+scoreboard: false
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          npcID: 17
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: PLAYER
+                text: §aЗдравствуйте! Что вы продае... Вы в порядке?
+            - id: 1
+              message:
+                sender: NPC
+                text: §aКхэ... дэа. Уходи..те...
+          stageType: NPC
+        '1':
+          npcID: 17
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: PLAYER
+                text: §aВам определенно нездоровится, может, я найду для вас лекарство?
+            - id: 1
+              message:
+                sender: NPC
+                text: §aНэ-е н'ужн-о... Уходи.
+          stageType: NPC
+        '2':
+          npcID: 17
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aКХ-ПРОВАЛИВАЙ, Я СКАЗАЛ!
+          stageType: NPC
+        '3':
+          npcID: 17
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §c§lПРОЧЬ!
+          stageType: NPC
+          rewards:
+          - id: commandReward
+            commands:
+            - console: true
+              label: particle minecraft:elder_guardian 30 49 -67 0 0 0 1 1 normal
+                {PLAYER}
+            - console: true
+              label: playsound minecraft:entity.elder_guardian.ambient hostile {PLAYER}
+                ~ ~ ~ 1 1 1
+      endingStages: {}
+id: 9

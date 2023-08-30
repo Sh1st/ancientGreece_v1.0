@@ -4,7 +4,7 @@ level-up:
   - '&eПоздравляем, Вы достигли &6{level}&e уровня!'
   - ''
 profession-level-up:
-  - '&eYou are now level &6{level}&e in &6{profession}&e!'
+  - '&eВы достигли &6{level} уровня&e в &6{profession}&e!'
 exp-notification: '%&f{profession} &e{progress} &e{ratio}%'
 exp-hologram: '&e+{exp} XP!'
 class-select: '&eYou are now a &6{class}&e!'
@@ -20,13 +20,13 @@ not-enough-perms: '&cYou do not have enough permissions.'
 # Experience boosters
 booster-main:
   - '&e'
-  - '&eA &6{multiplier}x&e EXP бустер активирован!'
+  - '&e[✰] &6x{multiplier} бустер опыта &eактивирован!'
   - '&e'
 booster-skill:
   - '&e'
-  - '&eA &6{multiplier}x&e &6{profession} &eEXP multiplier is now active!'
+  - '&e[✰] &6x{multiplier} бустер опыта &eдля &6{profession} &eактивирован!'
   - '&e'
-booster-expired: '&cЗакончился!'
+booster-expired: '&cБустер закончился!'
 
 # PvP Mode
 pvp-mode:
@@ -57,9 +57,9 @@ pvp-mode:
     pvp-mode-off: '&aYou entered a PVP zone. You may use /pvpmode to fight other players.'
 
 # Fishing Profession
-caught-fish: '&cYou caught a fish!'
-fish-out-water: '&aWell done!'
-fish-out-water-crit: '&aCritical Fish!'
+caught-fish: '&cКлюёт!'
+fish-out-water: '&aВы поймали рыбу!'
+fish-out-water-crit: '&aВы мастерски поймали рыбу!'
 
 # Player Input
 player-input:
@@ -116,7 +116,7 @@ not-enough-money: '&cYou don''t have enough money, you need {left} more gold.'
 stand-near-enderchest: '&cYou must be standing near a bank to do that.'
 
 # Blocks
-cannot-break: '%&cYou do not have the right tool in order to break that block.'
+cannot-break: '%&cУ вас нет подходящего инструмента, чтобы сломать этот блок.'
 
 # Friends
 no-longer-friends: '&cYou and {unfriend} are no longer friends.'

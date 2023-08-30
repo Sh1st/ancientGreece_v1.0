@@ -1,22 +1,22 @@
 condition:
   profession:
-    positive: '&a✔ Requires #level# in #profession#'
-    negative: '&c✖ Requires #level# in #profession#'
+    positive: '&a✔ Нужен #level# в #profession#'
+    negative: '&c✖ Нужен #level# в #profession#'
   mana:
-    positive: '&a✔ Requires #mana# Mana'
-    negative: '&c✖ Requires #mana# Mana'
+    positive: '&a✔ Нужно #mana# Маны'
+    negative: '&c✖ Нужно #mana# Маны'
   money:
-    positive: '&a✔ Requires $#money#'
-    negative: '&c✖ Requires $#money#'
+    positive: '&a✔ Нужно $#money#'
+    negative: '&c✖ Нужно $#money#'
   level:
-    positive: '&a✔ Requires Level #level#'
-    negative: '&c✖ Requires Level #level#'
+    positive: '&a✔ Требуется уровень #level#'
+    negative: '&c✖ Требуется уровень #level#'
   stellium:
-    positive: '&a✔ Requires #stellium# Stellium'
-    negative: '&c✖ Requires #stellium# Stellium'
+    positive: '&a✔ Нужен #stellium# Stellium'
+    negative: '&c✖ Нужен #stellium# Stellium'
   stamina:
-    positive: '&a✔ Requires #stamina# Stamina'
-    negative: '&c✖ Requires #stamina# Stamina'
+    positive: '&a✔ Нужен #stamina# Stamina'
+    negative: '&c✖ Нужен #stamina# Stamina'
   permission:
     positive: '&a✔ #display#'
     negative: '&c✖ #display#'
@@ -24,18 +24,18 @@ condition:
     positive: '&a✔ #display#'
     negative: '&c✖ #display#'
   attribute:
-    positive: '&a✔ Requires #points# #attribute#'
-    negative: '&c✖ Requires #points# #attribute#'
+    positive: '&a✔ Нужно #points# #attribute#'
+    negative: '&c✖ Нужно #points# #attribute#'
   class:
-    positive: '&a✔ Required Class: #class#'
-    negative: '&c✖ Required Class: #class#'
+    positive: '&a✔ Требуется класс: #class#'
+    negative: '&c✖ Требуется класс: #class#'
   food:
-    positive: '&a✔ Requires #food# Food'
-    negative: '&c✖ Requires #food# Food'
+    positive: '&a✔ Требуется #food# еда'
+    negative: '&c✖ Требуется #food# еда'
 ingredient:
   mmoitem:
-    positive: '&8✔ &7#amount# #level##item#'
+    positive: '&a✔ &7#amount# #level##item#'
     negative: '&c✖ &7#amount# #level##item#'
   vanilla:
-    positive: '&8✔ &7#amount# #item#'
+    positive: '&a✔ &7#amount# #item#'
     negative: '&c✖ &7#amount# #item#'

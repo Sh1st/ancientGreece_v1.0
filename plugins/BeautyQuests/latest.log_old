@@ -1,641 +1,121 @@
-[19:33:01] ---- BEAUTYQUESTS LOGGER - OPENED Wed Aug 02 19:33:01 MSK 2023 ----
-[19:33:19] [INFO] [BeautyQuests] Enabling BeautyQuests v0.20.1
-[19:33:19] [INFO] [BeautyQuests] ------------ BeautyQuests ------------
-[19:33:19] [WARNING] [BeautyQuests] You are not running the Paper software.
+[01:00:11] ---- BEAUTYQUESTS LOGGER - OPENED Thu Aug 31 01:00:11 MSK 2023 ----
+[01:00:25] [INFO] [BeautyQuests] Enabling BeautyQuests v0.20.1
+[01:00:25] [INFO] [BeautyQuests] ------------ BeautyQuests ------------
+[01:00:25] [WARNING] [BeautyQuests] You are not running the Paper software.
 It is highly recommended to use it for extended features and more stability.
-[19:33:19] [DEBUG] Hooked into [Citizens] v2.0.31-SNAPSHOT (build 2997)
-[19:33:19] [DEBUG] Hooked into [WorldGuard] v7.0.5+3827266
-[19:33:19] [DEBUG] Hooked into [MythicMobs] v5.2.6-0819d467
-[19:33:19] [DEBUG] Hooked into [Vault] v1.7.3-b131
-[19:33:19] [DEBUG] Hooked into [PlaceholderAPI] v2.11.3
-[19:33:19] [INFO] [BeautyQuests] Loaded valid Minecraft version 1_16_R3.
-[19:33:19] [DEBUG] Loading data file, last time edited : Wed Aug 02 19:31:58 MSK 2023
-[19:33:19] [DEBUG] Unavailable string in config for key inv.mobSelect.advancedSpawners
-[19:33:19] [INFO] [BeautyQuests] Loaded language ru_RU (0.075s)!
-[19:33:19] [INFO] [BeautyQuests] Loaded start particles: VILLAGER_HAPPY in shape NEAR
-[19:33:19] [INFO] [BeautyQuests] Loaded talk particles: VILLAGER_HAPPY in shape NEAR
-[19:33:19] [INFO] [BeautyQuests] Loaded next particles: VILLAGER_HAPPY in shape NEAR
-[19:33:19] [DEBUG] Initlializing default stage types.
-[19:33:19] [DEBUG] Stage registered (Talk, 0)
-[19:33:19] [DEBUG] Stage registered (Items, 1)
-[19:33:19] [DEBUG] Stage registered (Mobs, 2)
-[19:33:19] [DEBUG] Stage registered (Mine, 3)
-[19:33:19] [DEBUG] Stage registered (Place, 4)
-[19:33:19] [DEBUG] Stage registered (Chat, 5)
-[19:33:19] [DEBUG] Stage registered (Interact, 6)
-[19:33:19] [DEBUG] Stage registered (Fish, 7)
-[19:33:19] [DEBUG] Stage registered (Melt, 8)
-[19:33:19] [DEBUG] Stage registered (Enchant, 9)
-[19:33:19] [DEBUG] Stage registered (Craft, 10)
-[19:33:19] [DEBUG] Stage registered (Bucket, 11)
-[19:33:19] [DEBUG] Stage registered (Location, 12)
-[19:33:19] [DEBUG] Stage registered (PlayTime, 13)
-[19:33:19] [DEBUG] Stage registered (Breed, 14)
-[19:33:19] [DEBUG] Stage registered (Tame, 15)
-[19:33:19] [DEBUG] Stage registered (Death, 16)
-[19:33:19] [DEBUG] Stage registered (DealDamage, 17)
-[19:33:19] [DEBUG] Stage registered (EatDrink, 18)
-[19:33:19] [DEBUG] Initlializing default rewards.
-[19:33:19] [DEBUG] Quest object registered in registry rewards (id: commandReward, class: fr.skytasul.quests.rewards.CommandReward)
-[19:33:19] [DEBUG] Quest object registered in registry rewards (id: itemReward, class: fr.skytasul.quests.rewards.ItemReward)
-[19:33:19] [DEBUG] Quest object registered in registry rewards (id: removeItemsReward, class: fr.skytasul.quests.rewards.RemoveItemsReward)
-[19:33:19] [DEBUG] Quest object registered in registry rewards (id: textReward, class: fr.skytasul.quests.rewards.MessageReward)
-[19:33:19] [DEBUG] Quest object registered in registry rewards (id: tpReward, class: fr.skytasul.quests.rewards.TeleportationReward)
-[19:33:19] [DEBUG] Quest object registered in registry rewards (id: expReward, class: fr.skytasul.quests.rewards.XPReward)
-[19:33:19] [DEBUG] Quest object registered in registry rewards (id: checkpointReward, class: fr.skytasul.quests.rewards.CheckpointReward)
-[19:33:19] [DEBUG] Quest object registered in registry rewards (id: questStopReward, class: fr.skytasul.quests.rewards.QuestStopReward)
-[19:33:19] [DEBUG] Quest object registered in registry rewards (id: requirementDependentReward, class: fr.skytasul.quests.rewards.RequirementDependentReward)
-[19:33:19] [DEBUG] Quest object registered in registry rewards (id: randomReward, class: fr.skytasul.quests.rewards.RandomReward)
-[19:33:19] [DEBUG] Quest object registered in registry rewards (id: wait, class: fr.skytasul.quests.rewards.WaitReward)
-[19:33:19] [DEBUG] Quest object registered in registry rewards (id: titleReward, class: fr.skytasul.quests.rewards.TitleReward)
-[19:33:19] [DEBUG] Initlializing default requirements.
-[19:33:19] [DEBUG] Quest object registered in registry requirements (id: logicalOr, class: fr.skytasul.quests.requirements.logical.LogicalOrRequirement)
-[19:33:19] [DEBUG] Quest object registered in registry requirements (id: questRequired, class: fr.skytasul.quests.requirements.QuestRequirement)
-[19:33:19] [DEBUG] Quest object registered in registry requirements (id: levelRequired, class: fr.skytasul.quests.requirements.LevelRequirement)
-[19:33:19] [DEBUG] Quest object registered in registry requirements (id: permissionRequired, class: fr.skytasul.quests.requirements.PermissionsRequirement)
-[19:33:19] [DEBUG] Quest object registered in registry requirements (id: scoreboardRequired, class: fr.skytasul.quests.requirements.ScoreboardRequirement)
-[19:33:19] [DEBUG] Quest object registered in registry requirements (id: equipmentRequired, class: fr.skytasul.quests.requirements.EquipmentRequirement)
-[19:33:19] [DEBUG] Initlializing default quest options.
-[19:33:19] [DEBUG] Quest option registered (id: pool)
-[19:33:19] [DEBUG] Quest option registered (id: name)
-[19:33:19] [DEBUG] Quest option registered (id: description)
-[19:33:19] [DEBUG] Quest option registered (id: customItem)
-[19:33:19] [DEBUG] Quest option registered (id: confirmMessage)
-[19:33:19] [DEBUG] Quest option registered (id: hologramText)
-[19:33:19] [DEBUG] Quest option registered (id: bypassLimit)
-[19:33:19] [DEBUG] Quest option registered (id: startableFromGUI)
-[19:33:19] [DEBUG] Quest option registered (id: failOnDeath)
-[19:33:19] [DEBUG] Quest option registered (id: cancellable)
-[19:33:19] [DEBUG] Quest option registered (id: cancelActions)
-[19:33:19] [DEBUG] Quest option registered (id: hologramLaunch)
-[19:33:19] [DEBUG] Quest option registered (id: hologramLaunchNo)
-[19:33:19] [DEBUG] Quest option registered (id: scoreboard)
-[19:33:19] [DEBUG] Quest option registered (id: hideNoRequirements)
-[19:33:19] [DEBUG] Quest option registered (id: auto)
-[19:33:19] [DEBUG] Quest option registered (id: repeatable)
-[19:33:19] [DEBUG] Quest option registered (id: timer)
-[19:33:19] [DEBUG] Quest option registered (id: visibility)
-[19:33:19] [DEBUG] Quest option registered (id: endSound)
-[19:33:19] [DEBUG] Quest option registered (id: firework)
-[19:33:19] [DEBUG] Quest option registered (id: requirements)
-[19:33:19] [DEBUG] Quest option registered (id: startRewards)
-[19:33:19] [DEBUG] Quest option registered (id: startMessage)
-[19:33:19] [DEBUG] Quest option registered (id: starterNPC)
-[19:33:19] [DEBUG] Quest option registered (id: startDialog)
-[19:33:19] [DEBUG] Quest option registered (id: endRewards)
-[19:33:19] [DEBUG] Quest option registered (id: endMsg)
-[19:33:19] [DEBUG] Item comparison registered (id: bukkit)
-[19:33:19] [DEBUG] Item comparison registered (id: customBukkit)
-[19:33:19] [DEBUG] Item comparison registered (id: material)
-[19:33:19] [DEBUG] Item comparison registered (id: name)
-[19:33:19] [DEBUG] Item comparison registered (id: lore)
-[19:33:19] [DEBUG] Item comparison registered (id: enchants)
-[19:33:19] [DEBUG] Item comparison registered (id: repair)
-[19:33:19] [DEBUG] Mob factory registered (id: bukkitEntity)
-[19:33:19] [DEBUG] Bossbars manager has been registered: fr.skytasul.quests.api.bossbar.BQBossBarImplementation
-[19:33:20] [DEBUG] Brigadier registered!
-[19:33:20] [DEBUG] Mob factory registered (id: citizensNPC)
-[19:33:20] [DEBUG] Now using WorldGuard entry API.
-[19:33:20] [DEBUG] Stage registered (Find, 19)
-[19:33:20] [DEBUG] Quest object registered in registry requirements (id: regionRequired, class: fr.skytasul.quests.requirements.RegionRequirement)
-[19:33:20] [DEBUG] Mob factory registered (id: mythicMobs)
-[19:33:20] [DEBUG] Quest object registered in registry rewards (id: moneyReward, class: fr.skytasul.quests.rewards.MoneyReward)
-[19:33:20] [DEBUG] Quest object registered in registry rewards (id: permReward, class: fr.skytasul.quests.rewards.PermissionReward)
-[19:33:20] [DEBUG] Quest object registered in registry requirements (id: moneyRequired, class: fr.skytasul.quests.requirements.MoneyRequirement)
-[19:33:20] [INFO] [BeautyQuests] Placeholders registered !
-[19:33:20] [DEBUG] Quest object registered in registry requirements (id: placeholderRequired, class: fr.skytasul.quests.requirements.PlaceholderRequirement)
-[19:33:20] [DEBUG] Started bStats metrics
-[19:33:20] [DEBUG] Starting Spigot updater
-[19:33:21] [DEBUG] 0 accounts loaded and 1 identifiers.
-[19:33:21] [DEBUG] Registered 5 lines in scoreboard
-[19:33:21] [INFO] [BeautyQuests] 2 quests loaded (0.131s)!
-[19:33:21] [INFO] [BeautyQuests] Periodic saves task started (18000 ticks). Task ID: 87
-[19:33:21] [INFO] [BeautyQuests] You are using the latest version of BeautyQuests.
-[19:33:23] [DEBUG] SShist (8ad9c176-b8d4-4ef8-b924-b5e1b10a1399) joined the server
-[19:33:23] [DEBUG] Loading player SShist...
-[19:33:23] [DEBUG] New account registered for SShist (8ad9c176-b8d4-4ef8-b924-b5e1b10a1399), index 1 via f.s.q.players.PlayersManager.tryLoad 176 -> f.s.q.players.PlayersManager.tryLoad 176
-[19:33:23] [DEBUG] Completed load of SShist (8ad9c176-b8d4-4ef8-b924-b5e1b10a1399 (#1)) datas within 523 ms (0 quests, 0 pools)
-[19:33:23] [ADMIN]: SShist started the quest 1
-[19:33:23] [DEBUG] CONSOLE performed command effect give SShist minecraft:blindness 5 0 true
-[19:33:23] [DEBUG] CONSOLE performed command title SShist title {"text":"Лутраки","color":"gold"}
-[19:33:23] [DEBUG] CONSOLE performed command title SShist subtitle {"text":"Священное кладбище воинов","color":"yellow"}
-[19:33:37] [DEBUG] Next stage for player SShist (coming from stage 0(REGION) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[19:33:37] [ADMIN]: Player SShist has finished the stage 0 of quest 1
-[19:33:57] [DEBUG] Next stage for player SShist (coming from stage 1(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[19:33:57] [ADMIN]: Player SShist has finished the stage 1 of quest 1
-[19:34:27] [DEBUG] Next stage for player SShist (coming from stage 2(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[19:34:27] [ADMIN]: Player SShist has finished the stage 2 of quest 1
-[19:34:42] [DEBUG] Next stage for player SShist (coming from stage 3(INTERACT) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[19:34:42] [ADMIN]: Player SShist has finished the stage 3 of quest 1
-[19:34:42] [DEBUG] CONSOLE performed command effect give SShist minecraft:slowness 99999 3 true
-[19:34:42] [DEBUG] CONSOLE performed command effect give SShist minecraft:jump_boost 99999 200 true
-[19:36:04] [DEBUG] SShist executed command: quest resetplayerquest SShist 2
-[19:36:35] [DEBUG] SShist executed command: quest resetplayerquest SShist 2
-[19:36:37] [DEBUG] SShist executed command: quest resetplayerquest SShist 1
-[19:36:37] [DEBUG] Resetting quest 1 for player SShist (# 1)
-[19:37:08] [DEBUG] SShist executed command: quest start SShist 1
-[19:37:08] [ADMIN]: SShist started the quest 1
-[19:37:08] [DEBUG] CONSOLE performed command effect give SShist minecraft:blindness 5 0 true
-[19:37:08] [DEBUG] CONSOLE performed command title SShist title {"text":"Лутраки","color":"gold"}
-[19:37:08] [DEBUG] CONSOLE performed command title SShist subtitle {"text":"Священное кладбище воинов","color":"yellow"}
-[19:37:11] [DEBUG] Next stage for player SShist (coming from stage 0(REGION) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[19:37:11] [ADMIN]: Player SShist has finished the stage 0 of quest 1
-[19:37:13] [DEBUG] Next stage for player SShist (coming from stage 1(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[19:37:13] [ADMIN]: Player SShist has finished the stage 1 of quest 1
-[19:37:24] [DEBUG] Next stage for player SShist (coming from stage 2(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[19:37:24] [ADMIN]: Player SShist has finished the stage 2 of quest 1
-[19:37:36] [DEBUG] Next stage for player SShist (coming from stage 3(INTERACT) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[19:37:36] [ADMIN]: Player SShist has finished the stage 3 of quest 1
-[19:37:36] [DEBUG] CONSOLE performed command effect give SShist minecraft:slowness 99999 3 true
-[19:37:36] [DEBUG] CONSOLE performed command effect give SShist minecraft:jump_boost 99999 200 true
-[19:43:04] [DEBUG] Next stage for player SShist (coming from stage 4(ITEMS) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[19:43:04] [ADMIN]: Player SShist has finished the stage 4 of quest 1
-[19:43:04] [DEBUG] CONSOLE performed command effect clear SShist
-[19:43:04] [ADMIN]: SShist is completing the quest 1
-[19:45:33] [DEBUG] SShist executed command: quest edit 2
-[19:45:33] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
-[19:45:40] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[19:45:59] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[19:46:17] [DEBUG] SShist entered "cancel" (6 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[19:46:24] [DEBUG] SShist executed command: quest textEditor
-[19:46:29] [DEBUG] SShist executed command: quest exiteditor 
-[19:46:29] [DEBUG] SShist has left the editor.
-[19:46:37] [DEBUG] SShist executed command: quest exiteditor 
-[19:46:39] [DEBUG] SShist executed command: quest edit 2
-[19:46:39] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
-[19:46:59] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[19:47:00] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI$1.
-[19:47:04] [DEBUG] SShist has opened inventory fr.skytasul.quests.rewards.CommandReward$1.
-[19:47:50] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.mobs.MobsListGUI.
-[19:47:50] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.mobs.MobSelectionGUI.
-[19:47:53] [DEBUG] SShist has opened inventory fr.skytasul.quests.utils.compatibility.mobs.MythicMobs5$1.
-[19:48:04] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.TextEditor.
-[19:48:19] [DEBUG] SShist entered "4" (1 characters) in an editor. (name: fr.skytasul.quests.editors.TextEditor)
-[19:48:19] [DEBUG] SShist has left the editor.
-[19:48:20] [DEBUG] Saving 1 loaded accounts and 1 identifiers.
-[19:48:20] [DEBUG] Saved datas (0.006s)!
-[19:48:20] [INFO] [BeautyQuests] Datas saved ~ periodic save
-[19:48:39] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[19:48:46] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.npc.SelectGUI.
-[19:48:48] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.SelectNPC.
-[19:48:48] [DEBUG] SShist has left the editor.
-[19:49:08] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.FinishGUI.
-[19:49:17] [DEBUG] Editing quest 2 with keep datas: false
-[19:49:17] [WARNING] [BeautyQuests] CAUTION - BeautyQuests will now load every single player data into the server's memory. We HIGHLY recommend the server to be restarted at the end of the operation. Be prepared to experience some lags.
-[19:49:17] [INFO] [BeautyQuests] New quest created: test, ID 2, by SShist
-[19:49:17] [INFO] [BeautyQuests] Quest test has been edited
-[19:49:17] [INFO] [BeautyQuests] Total loaded accounts: 1
-[19:49:17] [DEBUG] Saving quest 2 into plugins\BeautyQuests\quests\2.yml
-[19:50:00] [DEBUG] SShist executed command: quest edit 2
-[19:50:00] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
-[19:50:02] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[19:50:10] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI$1.
-[19:50:13] [DEBUG] SShist has opened inventory fr.skytasul.quests.rewards.CommandReward$1.
-[19:50:20] [DEBUG] SShist has opened inventory fr.skytasul.quests.rewards.CommandReward$1.
-[19:50:21] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.CommandGUI.
-[19:50:26] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.TextEditor.
-[19:50:35] [DEBUG] SShist entered "mi give SWORD 5 {PLAYER}" (24 characters) in an editor. (name: fr.skytasul.quests.editors.TextEditor)
-[19:50:35] [DEBUG] SShist has left the editor.
-[19:50:55] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[19:51:02] [DEBUG] SShist entered "help" (4 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[19:54:31] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[19:54:31] [DEBUG] SShist has left the editor.
-[19:54:33] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.FinishGUI.
-[19:54:34] [DEBUG] Editing quest 2 with keep datas: false
-[19:54:34] [WARNING] [BeautyQuests] CAUTION - BeautyQuests will now load every single player data into the server's memory. We HIGHLY recommend the server to be restarted at the end of the operation. Be prepared to experience some lags.
-[19:54:34] [INFO] [BeautyQuests] New quest created: test, ID 2, by SShist
-[19:54:34] [INFO] [BeautyQuests] Total loaded accounts: 1
-[19:54:34] [INFO] [BeautyQuests] Quest test has been edited
-[19:54:34] [DEBUG] Saving quest 2 into plugins\BeautyQuests\quests\2.yml
-[19:54:55] [DEBUG] SShist executed command: quest start SShist 1
-[19:55:03] [DEBUG] SShist executed command: quest start SShist 1 -overrideRequirements
-[19:55:03] [ADMIN]: SShist started the quest 1
-[19:55:03] [DEBUG] CONSOLE performed command effect give SShist minecraft:blindness 5 0 true
-[19:55:03] [DEBUG] CONSOLE performed command title SShist title {"text":"Лутраки","color":"gold"}
-[19:55:03] [DEBUG] CONSOLE performed command title SShist subtitle {"text":"Священное кладбище воинов","color":"yellow"}
-[19:55:10] [DEBUG] Next stage for player SShist (coming from stage 0(REGION) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[19:55:10] [ADMIN]: Player SShist has finished the stage 0 of quest 1
-[19:55:13] [DEBUG] Next stage for player SShist (coming from stage 1(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[19:55:13] [ADMIN]: Player SShist has finished the stage 1 of quest 1
-[19:55:23] [DEBUG] Next stage for player SShist (coming from stage 2(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[19:55:23] [ADMIN]: Player SShist has finished the stage 2 of quest 1
-[19:55:33] [DEBUG] SShist executed command: quest edit 2
-[19:55:33] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
-[19:55:37] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[19:56:44] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[19:56:44] [DEBUG] SShist has left the editor.
-[19:57:14] [DEBUG] SShist executed command: quest edit 2
-[19:57:14] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
-[19:57:34] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.FinishGUI.
-[19:57:34] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.misc.ConfirmGUI.
-[19:57:42] [DEBUG] SShist executed command: quest finish SShist 2
-[19:57:47] [DEBUG] SShist executed command: quest start SShist 2
-[19:57:47] [ADMIN]: SShist started the quest 2
-[19:58:16] [DEBUG] SShist executed command: quest finishall SShist
-[19:58:16] [ADMIN]: SShist is completing the quest 1
-[19:58:16] [ADMIN]: SShist is completing the quest 2
-[19:58:19] [DEBUG] SShist executed command: quest start SShist 2
-[19:58:22] [DEBUG] SShist executed command: quest start SShist 2 -overrideRequirements
-[19:58:22] [ADMIN]: SShist started the quest 2
-[19:58:24] [DEBUG] SShist executed command: quest finishall SShist
-[19:58:24] [ADMIN]: SShist is completing the quest 2
-[19:58:29] [DEBUG] SShist executed command: quest start SShist 1
-[19:58:31] [DEBUG] SShist executed command: quest start SShist 1 -overrideRequirements
-[19:58:31] [ADMIN]: SShist started the quest 1
-[19:58:31] [DEBUG] CONSOLE performed command effect give SShist minecraft:blindness 5 0 true
-[19:58:31] [DEBUG] CONSOLE performed command title SShist title {"text":"Лутраки","color":"gold"}
-[19:58:31] [DEBUG] CONSOLE performed command title SShist subtitle {"text":"Священное кладбище воинов","color":"yellow"}
-[19:58:57] [DEBUG] Next stage for player SShist (coming from stage 0(REGION) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[19:58:57] [ADMIN]: Player SShist has finished the stage 0 of quest 1
-[19:58:58] [DEBUG] Next stage for player SShist (coming from stage 1(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[19:58:58] [ADMIN]: Player SShist has finished the stage 1 of quest 1
-[19:59:13] [DEBUG] SShist executed command: quest edit 1
-[19:59:13] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
-[19:59:33] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[19:59:35] [DEBUG] SShist has opened inventory fr.skytasul.quests.rewards.CommandReward$1.
-[19:59:59] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[20:00:22] [DEBUG] SShist entered "npc &aЗдравствуй путник! Не мог бы ты мне помочь? На мою повозку упало дерево, но я не в состоянии убрать его сам." (114 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:00:43] [DEBUG] SShist entered "npc &aНе думай, что это бесплатно! Я обязательно тебе хорошенько отплачу." (73 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:00:45] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:00:45] [DEBUG] SShist has left the editor.
-[20:00:58] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:01:00] [DEBUG] SShist has opened inventory fr.skytasul.quests.rewards.CommandReward$1.
-[20:01:08] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:01:13] [DEBUG] SShist has opened inventory fr.skytasul.quests.rewards.CommandReward$1.
-[20:01:17] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:01:27] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:01:28] [DEBUG] SShist has opened inventory fr.skytasul.quests.rewards.CommandReward$1.
-[20:01:35] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[20:02:17] [DEBUG] SShist entered "npc &aО, я вижу ты уже управился. Не видел ещё в наших краях настолько сильных людей, перетащить дерево, так ещё и в одиночку! Да тебя можно сравнить с Гераклом! Хаха!" (167 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:02:29] [DEBUG] SShist entered "npc &aЗнаешь, ты мне нравишься малец, держи 5 обол." (51 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:02:46] [DEBUG] SShist entered "npc &aЭээ..почему ты держишь свои деньги в руках? У тебя что, мешка нет?!" (73 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:03:20] [DEBUG] Saving 1 loaded accounts and 1 identifiers.
-[20:03:20] [DEBUG] Saved datas (0.011s)!
-[20:03:20] [INFO] [BeautyQuests] Datas saved ~ periodic save
-[20:03:22] [DEBUG] SShist entered "help" (4 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:03:36] [DEBUG] SShist entered "player &aА где же мне их держать!?" (34 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:03:53] [DEBUG] SShist entered "npc &aДа… ты как из леса вышел, но тебе крупно повезло! Если ты убьёшь 3 кролика, то я смогу тебе сшить мешок из их шкуры." (122 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:04:02] [DEBUG] SShist entered "npc &aДержи кинжал, я пользовался им, когда был ещё ребёнком. Эх… были времена." (79 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:04:12] [DEBUG] SShist entered "npc &aКролики находятся за моим домом. Но осторожно! Они хоть и миленькие, но могут и укусить." (94 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:04:19] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:04:19] [DEBUG] SShist has left the editor.
-[20:04:33] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:04:40] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.FinishGUI.
-[20:04:41] [DEBUG] Editing quest 1 with keep datas: false
-[20:04:41] [INFO] [BeautyQuests] New quest created: Первые шаги, ID 1, by SShist
-[20:04:41] [WARNING] [BeautyQuests] CAUTION - BeautyQuests will now load every single player data into the server's memory. We HIGHLY recommend the server to be restarted at the end of the operation. Be prepared to experience some lags.
-[20:04:41] [INFO] [BeautyQuests] Quest Первые шаги has been edited
-[20:04:41] [INFO] [BeautyQuests] Total loaded accounts: 1
-[20:04:41] [DEBUG] Saving quest 1 into plugins\BeautyQuests\quests\1.yml
-[20:05:01] [DEBUG] SShist executed command: quest 
-[20:05:01] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.quests.PlayerListGUI.
-[20:05:27] [DEBUG] SShist executed command: quest finish SShist
-[20:05:28] [DEBUG] SShist executed command: quest finish SShist 1
-[20:05:29] [DEBUG] SShist executed command: quest finish SShist 1
-[20:05:34] [DEBUG] SShist executed command: quest start SShist 1 -overrideRequirements
-[20:05:34] [ADMIN]: SShist started the quest 1
-[20:05:34] [DEBUG] CONSOLE performed command effect give SShist minecraft:blindness 5 0 true
-[20:05:34] [DEBUG] CONSOLE performed command title SShist title {"text":"Лутраки","color":"gold"}
-[20:05:34] [DEBUG] CONSOLE performed command title SShist subtitle {"text":"Священное кладбище воинов","color":"yellow"}
-[20:05:43] [DEBUG] Next stage for player SShist (coming from stage 0(REGION) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:05:43] [ADMIN]: Player SShist has finished the stage 0 of quest 1
-[20:05:47] [DEBUG] Next stage for player SShist (coming from stage 1(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:05:47] [ADMIN]: Player SShist has finished the stage 1 of quest 1
-[20:05:58] [DEBUG] Next stage for player SShist (coming from stage 2(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:05:58] [ADMIN]: Player SShist has finished the stage 2 of quest 1
-[20:06:05] [DEBUG] Next stage for player SShist (coming from stage 3(INTERACT) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:06:05] [ADMIN]: Player SShist has finished the stage 3 of quest 1
-[20:06:05] [DEBUG] CONSOLE performed command effect give SShist minecraft:slowness 99999 3 true
-[20:06:05] [DEBUG] CONSOLE performed command effect give SShist minecraft:jump_boost 99999 200 true
-[20:06:18] [DEBUG] Next stage for player SShist (coming from stage 4(ITEMS) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:06:18] [ADMIN]: Player SShist has finished the stage 4 of quest 1
-[20:06:18] [DEBUG] CONSOLE performed command effect clear SShist
-[20:06:18] [ADMIN]: SShist is completing the quest 1
-[20:06:27] [DEBUG] SShist executed command: quest edit 1
-[20:06:27] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
-[20:06:30] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[20:06:34] [DEBUG] SShist entered "help" (4 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:06:36] [DEBUG] SShist entered "clear" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:06:39] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:06:39] [DEBUG] SShist has left the editor.
-[20:06:53] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:06:56] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.npc.SelectGUI.
-[20:06:58] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.FinishGUI.
-[20:06:59] [DEBUG] Editing quest 1 with keep datas: false
-[20:06:59] [WARNING] [BeautyQuests] CAUTION - BeautyQuests will now load every single player data into the server's memory. We HIGHLY recommend the server to be restarted at the end of the operation. Be prepared to experience some lags.
-[20:06:59] [INFO] [BeautyQuests] New quest created: Первые шаги, ID 1, by SShist
-[20:06:59] [INFO] [BeautyQuests] Total loaded accounts: 1
-[20:06:59] [INFO] [BeautyQuests] Quest Первые шаги has been edited
-[20:06:59] [DEBUG] Saving quest 1 into plugins\BeautyQuests\quests\1.yml
-[20:07:09] [DEBUG] SShist executed command: quest edit 1
-[20:07:09] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
-[20:07:13] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:07:16] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.npc.SelectGUI.
-[20:07:17] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.SelectNPC.
-[20:07:17] [DEBUG] SShist has left the editor.
-[20:07:19] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[20:07:34] [DEBUG] SShist entered "npc &aО, я вижу ты уже управился. Не видел ещё в наших краях настолько сильных людей, перетащить дерево, так ещё и в одиночку! Да тебя можно сравнить с Гераклом! Хаха!" (167 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:07:44] [DEBUG] SShist entered "npc &aЗнаешь, ты мне нравишься малец, держи 5 обол." (51 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:07:53] [DEBUG] SShist entered "npc &aЭээ..почему ты держишь свои деньги в руках? У тебя что, мешка нет?!" (73 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:08:11] [DEBUG] SShist entered "player &aА где же мне их держать!?" (34 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:08:20] [DEBUG] SShist entered "npc &aДа… ты как из леса вышел, но тебе крупно повезло! Если ты убьёшь 3 кролика, то я смогу тебе сшить мешок из их шкуры." (122 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:08:32] [DEBUG] SShist entered "npc &aДержи кинжал, я пользовался им, когда был ещё ребёнком. Эх… были времена." (79 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:08:40] [DEBUG] SShist entered "npc &aКролики находятся за моим домом. Но осторожно! Они хоть и миленькие, но могут и укусить." (94 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:08:44] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:08:44] [DEBUG] SShist has left the editor.
-[20:09:03] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:09:04] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI$1.
-[20:09:07] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:10:03] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:10:23] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:10:45] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.npc.SelectGUI.
-[20:10:46] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.SelectNPC.
-[20:10:46] [DEBUG] SShist has left the editor.
-[20:10:48] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[20:10:58] [DEBUG] SShist entered "npc &aО, я вижу ты уже управился. Не видел ещё в наших краях настолько сильных людей, перетащить дерево, так ещё и в одиночку! Да тебя можно сравнить с Гераклом! Хаха!" (167 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:11:05] [DEBUG] SShist entered "npc &aЗнаешь, ты мне нравишься малец, держи 5 обол." (51 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:11:11] [DEBUG] SShist entered "npc &aЭээ..почему ты держишь свои деньги в руках? У тебя что, мешка нет?!" (73 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:11:17] [DEBUG] SShist entered "player &aА где же мне их держать!?" (34 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:11:22] [DEBUG] SShist entered "npc &aДа… ты как из леса вышел, но тебе крупно повезло! Если ты убьёшь 3 кролика, то я смогу тебе сшить мешок из их шкуры." (122 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:11:31] [DEBUG] SShist entered "npc &aДержи кинжал, я пользовался им, когда был ещё ребёнком. Эх… были времена." (79 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:11:35] [DEBUG] SShist entered "npc &aКролики находятся за моим домом. Но осторожно! Они хоть и миленькие, но могут и укусить." (94 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:11:40] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:11:40] [DEBUG] SShist has left the editor.
-[20:12:00] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:12:01] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:12:10] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:12:11] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI$1.
-[20:12:12] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:12:24] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:12:28] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.npc.SelectGUI.
-[20:12:29] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.SelectNPC.
-[20:12:29] [DEBUG] SShist has left the editor.
-[20:12:34] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[20:12:48] [DEBUG] SShist entered "npc &aОтличные шкурки! Подожди немного." (39 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:13:00] [DEBUG] SShist entered "npc &aВот твой мешочек. Спасибо за помощь, давно старик так не радовался." (73 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:13:10] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:13:10] [DEBUG] SShist has left the editor.
-[20:13:11] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.FinishGUI.
-[20:13:12] [DEBUG] Editing quest 1 with keep datas: false
-[20:13:12] [WARNING] [BeautyQuests] CAUTION - BeautyQuests will now load every single player data into the server's memory. We HIGHLY recommend the server to be restarted at the end of the operation. Be prepared to experience some lags.
-[20:13:12] [INFO] [BeautyQuests] New quest created: Первые шаги, ID 1, by SShist
-[20:13:12] [INFO] [BeautyQuests] Total loaded accounts: 1
-[20:13:12] [INFO] [BeautyQuests] Quest Первые шаги has been edited
-[20:13:12] [DEBUG] Saving quest 1 into plugins\BeautyQuests\quests\1.yml
-[20:13:26] [DEBUG] SShist executed command: quest start SShist 1
-[20:13:26] [ADMIN]: SShist started the quest 1
-[20:13:26] [DEBUG] CONSOLE performed command effect give SShist minecraft:blindness 5 0 true
-[20:13:26] [DEBUG] CONSOLE performed command title SShist title {"text":"Лутраки","color":"gold"}
-[20:13:26] [DEBUG] CONSOLE performed command title SShist subtitle {"text":"Священное кладбище воинов","color":"yellow"}
-[20:13:29] [DEBUG] Next stage for player SShist (coming from stage 0(REGION) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:13:29] [ADMIN]: Player SShist has finished the stage 0 of quest 1
-[20:13:31] [DEBUG] Next stage for player SShist (coming from stage 1(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:13:31] [ADMIN]: Player SShist has finished the stage 1 of quest 1
-[20:13:43] [DEBUG] Next stage for player SShist (coming from stage 2(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:13:43] [ADMIN]: Player SShist has finished the stage 2 of quest 1
-[20:13:46] [DEBUG] Next stage for player SShist (coming from stage 3(INTERACT) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:13:46] [ADMIN]: Player SShist has finished the stage 3 of quest 1
-[20:13:46] [DEBUG] CONSOLE performed command effect give SShist minecraft:slowness 99999 3 true
-[20:13:46] [DEBUG] CONSOLE performed command effect give SShist minecraft:jump_boost 99999 200 true
-[20:13:50] [DEBUG] Next stage for player SShist (coming from stage 4(ITEMS) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:13:50] [ADMIN]: Player SShist has finished the stage 4 of quest 1
-[20:13:50] [DEBUG] CONSOLE performed command effect clear SShist
-[20:14:27] [DEBUG] Next stage for player SShist (coming from stage 5(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:14:27] [ADMIN]: Player SShist has finished the stage 5 of quest 1
-[20:18:20] [DEBUG] Saving 1 loaded accounts and 1 identifiers.
-[20:18:20] [DEBUG] Saved datas (0.005s)!
-[20:18:20] [INFO] [BeautyQuests] Datas saved ~ periodic save
-[20:19:31] [DEBUG] SShist executed command: quest edit 1
-[20:19:31] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
-[20:20:13] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:20:17] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:20:18] [DEBUG] SShist has opened inventory fr.skytasul.quests.rewards.CommandReward$1.
-[20:20:33] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:20:34] [DEBUG] SShist has opened inventory fr.skytasul.quests.rewards.CommandReward$1.
-[20:20:53] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[20:21:07] [DEBUG] SShist entered "npc &aО, я вижу ты уже управился. Не видел ещё в наших краях настолько сильных людей, перетащить дерево, так ещё и в одиночку! Да тебя можно сравнить с Гераклом! Хаха!" (167 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:21:23] [DEBUG] SShist entered "npc &aЗнаешь, ты мне нравишься малец, держи 5 обол." (51 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:21:49] [DEBUG] SShist executed command: quest start SShist 1
-[20:21:51] [DEBUG] SShist executed command: quest start SShist 1 -overrideRequirements
-[20:21:53] [DEBUG] SShist executed command: quest start SShist 1 -overrideRequirements
-[20:21:58] [DEBUG] SShist executed command: quest finish SShist 1
-[20:21:58] [ADMIN]: SShist is completing the quest 1
-[20:21:59] [DEBUG] SShist executed command: quest start SShist 1 -overrideRequirements
-[20:21:59] [ADMIN]: SShist started the quest 1
-[20:21:59] [DEBUG] CONSOLE performed command effect give SShist minecraft:blindness 5 0 true
-[20:21:59] [DEBUG] CONSOLE performed command title SShist title {"text":"Лутраки","color":"gold"}
-[20:21:59] [DEBUG] CONSOLE performed command title SShist subtitle {"text":"Священное кладбище воинов","color":"yellow"}
-[20:22:09] [DEBUG] Next stage for player SShist (coming from stage 0(REGION) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:22:09] [ADMIN]: Player SShist has finished the stage 0 of quest 1
-[20:22:11] [DEBUG] Next stage for player SShist (coming from stage 1(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:22:11] [ADMIN]: Player SShist has finished the stage 1 of quest 1
-[20:22:21] [DEBUG] Next stage for player SShist (coming from stage 2(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:22:21] [ADMIN]: Player SShist has finished the stage 2 of quest 1
-[20:22:24] [DEBUG] Next stage for player SShist (coming from stage 3(INTERACT) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:22:24] [ADMIN]: Player SShist has finished the stage 3 of quest 1
-[20:22:24] [DEBUG] CONSOLE performed command effect give SShist minecraft:slowness 99999 3 true
-[20:22:24] [DEBUG] CONSOLE performed command effect give SShist minecraft:jump_boost 99999 200 true
-[20:22:33] [DEBUG] Next stage for player SShist (coming from stage 4(ITEMS) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:22:33] [ADMIN]: Player SShist has finished the stage 4 of quest 1
-[20:22:33] [DEBUG] CONSOLE performed command effect clear SShist
-[20:22:53] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:22:53] [DEBUG] SShist has left the editor.
-[20:22:58] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:22:59] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI$1.
-[20:23:01] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:23:15] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[20:23:18] [DEBUG] SShist entered "clear" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:23:33] [DEBUG] SShist entered "npc &aЭээ..почему ты держишь свои деньги в руках? У тебя что, мешка нет?!" (73 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:23:46] [DEBUG] SShist entered "player &aА где же мне их держать!?" (34 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:23:56] [DEBUG] SShist entered "npc &aДа… ты как из леса вышел, но тебе крупно повезло! Если ты убьёшь 3 кролика, то я смогу тебе сшить мешок из их шкуры." (122 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:24:17] [DEBUG] SShist entered "npc &aДержи кинжал, я пользовался им, когда был ещё ребёнком. Эх… были времена." (79 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:25:43] [DEBUG] SShist entered "npc &aКролики находятся за моим домом. Но осторожно! Они хоть и миленькие, но могут и укусить." (94 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:25:47] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:25:47] [DEBUG] SShist has left the editor.
-[20:25:54] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:25:56] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:26:11] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:26:17] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:26:21] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.FinishGUI.
-[20:26:27] [DEBUG] Editing quest 1 with keep datas: false
-[20:26:27] [WARNING] [BeautyQuests] CAUTION - BeautyQuests will now load every single player data into the server's memory. We HIGHLY recommend the server to be restarted at the end of the operation. Be prepared to experience some lags.
-[20:26:27] [INFO] [BeautyQuests] New quest created: Первые шаги, ID 1, by SShist
-[20:26:27] [INFO] [BeautyQuests] Total loaded accounts: 1
-[20:26:27] [INFO] [BeautyQuests] Quest Первые шаги has been edited
-[20:26:27] [DEBUG] Saving quest 1 into plugins\BeautyQuests\quests\1.yml
-[20:26:46] [DEBUG] SShist executed command: quest edit 1
-[20:26:46] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
-[20:27:17] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:27:18] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:28:18] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.FinishGUI.
-[20:28:19] [DEBUG] Editing quest 1 with keep datas: false
-[20:28:19] [WARNING] [BeautyQuests] CAUTION - BeautyQuests will now load every single player data into the server's memory. We HIGHLY recommend the server to be restarted at the end of the operation. Be prepared to experience some lags.
-[20:28:19] [INFO] [BeautyQuests] New quest created: Первые шаги, ID 1, by SShist
-[20:28:19] [INFO] [BeautyQuests] Quest Первые шаги has been edited
-[20:28:19] [INFO] [BeautyQuests] Total loaded accounts: 1
-[20:28:19] [DEBUG] Quest 1 was up-to-date.
-[20:28:26] [DEBUG] SShist executed command: quest create -id 3
-[20:28:26] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
-[20:28:34] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:28:38] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.npc.SelectGUI.
-[20:28:39] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.SelectNPC.
-[20:28:40] [DEBUG] SShist has left the editor.
-[20:28:46] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[20:29:05] [DEBUG] SShist entered "npc &aОтличные шкурки! Подожди немного." (39 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:29:25] [DEBUG] SShist entered "npc &aВот твой мешочек. Спасибо за помощь, давно старик так не радовался." (73 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:29:30] [DEBUG] SShist entered "cancel" (6 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:29:34] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:29:34] [DEBUG] SShist has left the editor.
-[20:29:39] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.FinishGUI.
-[20:30:01] [DEBUG] SShist has opened inventory fr.skytasul.quests.options.OptionQuestPool$1.
-[20:30:07] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.TextEditor.
-[20:30:17] [DEBUG] SShist entered "Кроличьи шкурки" (15 characters) in an editor. (name: fr.skytasul.quests.editors.TextEditor)
-[20:30:17] [DEBUG] SShist has left the editor.
-[20:30:44] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:30:45] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI$1.
-[20:30:55] [DEBUG] SShist has opened inventory fr.skytasul.quests.requirements.QuestRequirement$1.
-[20:31:19] [WARNING] [BeautyQuests] A quest will be created with custom ID 3.
-[20:31:19] [INFO] [BeautyQuests] New quest created: Кроличьи шкурки, ID 3, by SShist
-[20:31:19] [DEBUG] Saving quest 3 into plugins\BeautyQuests\quests\3.yml
-[20:31:43] [DEBUG] SShist executed command: quest start SShist 1 -overrideRequirements
-[20:31:43] [ADMIN]: SShist started the quest 1
-[20:31:43] [DEBUG] CONSOLE performed command effect give SShist minecraft:blindness 5 0 true
-[20:31:43] [DEBUG] CONSOLE performed command title SShist title {"text":"Лутраки","color":"gold"}
-[20:31:43] [DEBUG] CONSOLE performed command title SShist subtitle {"text":"Священное кладбище воинов","color":"yellow"}
-[20:31:54] [DEBUG] Next stage for player SShist (coming from stage 0(REGION) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:31:54] [ADMIN]: Player SShist has finished the stage 0 of quest 1
-[20:31:55] [DEBUG] Next stage for player SShist (coming from stage 1(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:31:55] [ADMIN]: Player SShist has finished the stage 1 of quest 1
-[20:33:20] [DEBUG] Saving 1 loaded accounts and 1 identifiers.
-[20:33:20] [DEBUG] Saved datas (0.005s)!
-[20:33:20] [INFO] [BeautyQuests] Datas saved ~ periodic save
-[20:33:39] [DEBUG] Next stage for player SShist (coming from stage 2(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:33:39] [ADMIN]: Player SShist has finished the stage 2 of quest 1
-[20:33:43] [DEBUG] Next stage for player SShist (coming from stage 3(INTERACT) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:33:43] [ADMIN]: Player SShist has finished the stage 3 of quest 1
-[20:33:43] [DEBUG] CONSOLE performed command effect give SShist minecraft:slowness 99999 3 true
-[20:33:43] [DEBUG] CONSOLE performed command effect give SShist minecraft:jump_boost 99999 200 true
-[20:33:47] [DEBUG] Next stage for player SShist (coming from stage 4(ITEMS) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:33:47] [ADMIN]: Player SShist has finished the stage 4 of quest 1
-[20:33:47] [DEBUG] CONSOLE performed command effect clear SShist
-[20:33:57] [DEBUG] Next stage for player SShist (coming from stage 5(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:33:57] [ADMIN]: Player SShist has finished the stage 5 of quest 1
-[20:33:57] [ADMIN]: SShist is completing the quest 1
-[20:34:36] [DEBUG] SShist executed command: quest remove 3
-[20:34:36] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.misc.ConfirmGUI.
-[20:34:38] [WARNING] [BeautyQuests] CAUTION - BeautyQuests will now load every single player data into the server's memory. We HIGHLY recommend the server to be restarted at the end of the operation. Be prepared to experience some lags.
-[20:34:38] [INFO] [BeautyQuests] Total loaded accounts: 1
-[20:34:38] [INFO] [BeautyQuests] The quest "Кроличьи шкурки" has been removed
-[20:34:48] [DEBUG] SShist executed command: quest edit 1
-[20:34:48] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
-[20:34:55] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[20:35:24] [DEBUG] SShist entered "clear" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:35:35] [DEBUG] SShist entered "npc &aЭээ..почему ты держишь свои деньги в руках? У тебя что, мешка нет?!" (73 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:35:54] [DEBUG] SShist entered "player &aА где же мне их держать!?" (34 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:36:09] [DEBUG] SShist entered "npc &aДа… ты как из леса вышел, но тебе крупно повезло! Если ты убьёшь 3 кролика, то я смогу тебе сшить мешок из их шкуры." (122 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:36:20] [DEBUG] SShist entered "npc &aДержи кинжал, я пользовался им, когда был ещё ребёнком. Эх… были времена." (79 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:36:24] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:36:24] [DEBUG] SShist has left the editor.
-[20:36:31] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:36:33] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:36:45] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:36:52] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.npc.SelectGUI.
-[20:36:54] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.SelectNPC.
-[20:36:55] [DEBUG] SShist has left the editor.
-[20:37:04] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[20:37:16] [DEBUG] SShist entered "npc &aКролики находятся за моим домом. Но осторожно! Они хоть и миленькие, но могут и укусить." (94 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:37:18] [DEBUG] SShist entered "cancel" (6 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:37:21] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:37:21] [DEBUG] SShist has left the editor.
-[20:38:24] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.FinishGUI.
-[20:38:24] [DEBUG] Editing quest 1 with keep datas: false
-[20:38:24] [WARNING] [BeautyQuests] CAUTION - BeautyQuests will now load every single player data into the server's memory. We HIGHLY recommend the server to be restarted at the end of the operation. Be prepared to experience some lags.
-[20:38:24] [INFO] [BeautyQuests] New quest created: Первые шаги, ID 1, by SShist
-[20:38:24] [INFO] [BeautyQuests] Quest Первые шаги has been edited
-[20:38:24] [INFO] [BeautyQuests] Total loaded accounts: 1
-[20:38:24] [DEBUG] Saving quest 1 into plugins\BeautyQuests\quests\1.yml
-[20:38:45] [DEBUG] SShist executed command: quest start SShist 1
-[20:38:45] [ADMIN]: SShist started the quest 1
-[20:38:45] [DEBUG] CONSOLE performed command effect give SShist minecraft:blindness 5 0 true
-[20:38:45] [DEBUG] CONSOLE performed command title SShist title {"text":"Лутраки","color":"gold"}
-[20:38:45] [DEBUG] CONSOLE performed command title SShist subtitle {"text":"Священное кладбище воинов","color":"yellow"}
-[20:38:49] [DEBUG] Next stage for player SShist (coming from stage 0(REGION) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:38:49] [ADMIN]: Player SShist has finished the stage 0 of quest 1
-[20:38:51] [DEBUG] Next stage for player SShist (coming from stage 1(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:38:51] [ADMIN]: Player SShist has finished the stage 1 of quest 1
-[20:39:02] [DEBUG] Next stage for player SShist (coming from stage 2(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:39:02] [ADMIN]: Player SShist has finished the stage 2 of quest 1
-[20:39:06] [DEBUG] Next stage for player SShist (coming from stage 3(INTERACT) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:39:06] [ADMIN]: Player SShist has finished the stage 3 of quest 1
-[20:39:06] [DEBUG] CONSOLE performed command effect give SShist minecraft:slowness 99999 3 true
-[20:39:06] [DEBUG] CONSOLE performed command effect give SShist minecraft:jump_boost 99999 200 true
-[20:39:12] [DEBUG] Next stage for player SShist (coming from stage 4(ITEMS) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:39:12] [ADMIN]: Player SShist has finished the stage 4 of quest 1
-[20:39:12] [DEBUG] CONSOLE performed command effect clear SShist
-[20:39:15] [DEBUG] Next stage for player SShist (coming from stage 5(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:39:15] [ADMIN]: Player SShist has finished the stage 5 of quest 1
-[20:39:30] [DEBUG] SShist executed command: quest edit 1
-[20:39:30] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
-[20:39:34] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[20:39:39] [DEBUG] SShist entered "npc &aКролики находятся за моим домом. Но осторожно! Они хоть и миленькие, но могут и укусить." (94 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:39:43] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:39:43] [DEBUG] SShist has left the editor.
-[20:39:47] [DEBUG] SShist has entered editor fr.skytasul.quests.editors.DialogEditor.
-[20:39:49] [DEBUG] SShist entered "clear" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:39:59] [DEBUG] SShist entered "npc &aОтличные шкурки! Подожди немного." (39 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:40:07] [DEBUG] SShist entered "npc &aВот твой мешочек. Спасибо за помощь, давно старик так не радовался." (73 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:40:10] [DEBUG] SShist entered "cancel" (6 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:40:12] [DEBUG] SShist entered "close" (5 characters) in an editor. (name: fr.skytasul.quests.editors.DialogEditor)
-[20:40:12] [DEBUG] SShist has left the editor.
-[20:40:19] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:40:20] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI$1.
-[20:40:46] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:40:53] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.FinishGUI.
-[20:40:53] [DEBUG] Editing quest 1 with keep datas: false
-[20:40:53] [WARNING] [BeautyQuests] CAUTION - BeautyQuests will now load every single player data into the server's memory. We HIGHLY recommend the server to be restarted at the end of the operation. Be prepared to experience some lags.
-[20:40:53] [INFO] [BeautyQuests] New quest created: Первые шаги, ID 1, by SShist
-[20:40:53] [INFO] [BeautyQuests] Total loaded accounts: 1
-[20:40:53] [INFO] [BeautyQuests] Quest Первые шаги has been edited
-[20:40:53] [DEBUG] Saving quest 1 into plugins\BeautyQuests\quests\1.yml
-[20:41:11] [DEBUG] SShist executed command: quest start SShist 1
-[20:41:11] [ADMIN]: SShist started the quest 1
-[20:41:11] [DEBUG] CONSOLE performed command effect give SShist minecraft:blindness 5 0 true
-[20:41:11] [DEBUG] CONSOLE performed command title SShist title {"text":"Лутраки","color":"gold"}
-[20:41:11] [DEBUG] CONSOLE performed command title SShist subtitle {"text":"Священное кладбище воинов","color":"yellow"}
-[20:41:13] [DEBUG] Next stage for player SShist (coming from stage 0(REGION) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:41:13] [ADMIN]: Player SShist has finished the stage 0 of quest 1
-[20:41:14] [DEBUG] Next stage for player SShist (coming from stage 1(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:41:14] [ADMIN]: Player SShist has finished the stage 1 of quest 1
-[20:41:19] [DEBUG] Next stage for player SShist (coming from stage 2(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:41:19] [ADMIN]: Player SShist has finished the stage 2 of quest 1
-[20:41:23] [DEBUG] Next stage for player SShist (coming from stage 3(INTERACT) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:41:23] [ADMIN]: Player SShist has finished the stage 3 of quest 1
-[20:41:23] [DEBUG] CONSOLE performed command effect give SShist minecraft:slowness 99999 3 true
-[20:41:23] [DEBUG] CONSOLE performed command effect give SShist minecraft:jump_boost 99999 200 true
-[20:41:29] [DEBUG] Next stage for player SShist (coming from stage 4(ITEMS) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:41:29] [ADMIN]: Player SShist has finished the stage 4 of quest 1
-[20:41:29] [DEBUG] CONSOLE performed command effect clear SShist
-[20:41:31] [DEBUG] Next stage for player SShist (coming from stage 5(NPC) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:41:31] [ADMIN]: Player SShist has finished the stage 5 of quest 1
-[20:41:41] [DEBUG] Next stage for player SShist (coming from stage 6(ITEMS) of quest 1, branch 0) via f.s.q.utils.DebugUtils.stackTraces 20 -> f.s.q.utils.DebugUtils.stackTraces 20
-[20:41:41] [ADMIN]: Player SShist has finished the stage 6 of quest 1
-[20:41:41] [ADMIN]: SShist is completing the quest 1
-[20:45:36] [DEBUG] SShist executed command: quest edit 1
-[20:45:36] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
-[20:45:40] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.QuestObjectGUI.
-[20:45:43] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.ItemsGUI.
-[20:45:56] [DEBUG] SShist has opened inventory fr.skytasul.quests.gui.creation.FinishGUI.
-[20:45:58] [DEBUG] Editing quest 1 with keep datas: false
-[20:45:58] [WARNING] [BeautyQuests] CAUTION - BeautyQuests will now load every single player data into the server's memory. We HIGHLY recommend the server to be restarted at the end of the operation. Be prepared to experience some lags.
-[20:45:58] [INFO] [BeautyQuests] New quest created: Первые шаги, ID 1, by SShist
-[20:45:58] [INFO] [BeautyQuests] Quest Первые шаги has been edited
-[20:45:58] [INFO] [BeautyQuests] Total loaded accounts: 1
-[20:45:58] [DEBUG] Saving quest 1 into plugins\BeautyQuests\quests\1.yml
-[20:47:52] [INFO] [BeautyQuests] Disabling BeautyQuests v0.20.1
-[20:47:52] [INFO] [BeautyQuests] Periodic saves task stopped.
-[20:47:52] [INFO] [BeautyQuests] 1 scoreboards deleted.
-[20:47:52] [DEBUG] Saving 1 loaded accounts and 1 identifiers.
-[20:47:52] [DEBUG] Saved datas (0.004s)!
-[20:47:52] [DEBUG] Unregistered from WorldGuard entry API.
-[20:47:52] Logger was open during 1 часов 14 минут
-[20:47:52] ---- BEAUTYQUESTS LOGGER - CLOSED Wed Aug 02 20:47:52 MSK 2023 ----
+[01:00:25] [DEBUG] Hooked into [Citizens] v2.0.31-SNAPSHOT (build 2997)
+[01:00:25] [DEBUG] Hooked into [WorldGuard] v7.0.5+3827266
+[01:00:25] [DEBUG] Hooked into [MythicMobs] v5.1.4-3aa1b5d2
+[01:00:25] [DEBUG] Hooked into [Vault] v1.5.6-b49
+[01:00:25] [DEBUG] Hooked into [PlaceholderAPI] v2.11.3
+[01:00:25] [DEBUG] Hooked into [HolographicDisplays] v3.0.2
+[01:00:25] [INFO] [BeautyQuests] Loaded valid Minecraft version 1_16_R3.
+[01:00:25] [DEBUG] Loading data file, last time edited : Thu Aug 31 00:59:42 MSK 2023
+[01:00:25] [DEBUG] Unavailable string in config for key inv.mobSelect.advancedSpawners
+[01:00:25] [INFO] [BeautyQuests] Loaded language ru_RU (0.047s)!
+[01:00:25] [INFO] [BeautyQuests] Loaded start particles: VILLAGER_HAPPY in shape NEAR
+[01:00:25] [INFO] [BeautyQuests] Loaded talk particles: VILLAGER_HAPPY in shape NEAR
+[01:00:25] [INFO] [BeautyQuests] Loaded next particles: VILLAGER_HAPPY in shape NEAR
+[01:00:25] [DEBUG] Initlializing default stage types.
+[01:00:25] [DEBUG] Stage registered (Talk, 0)
+[01:00:25] [DEBUG] Stage registered (Items, 1)
+[01:00:25] [DEBUG] Stage registered (Mobs, 2)
+[01:00:25] [DEBUG] Stage registered (Mine, 3)
+[01:00:25] [DEBUG] Stage registered (Place, 4)
+[01:00:25] [DEBUG] Stage registered (Chat, 5)
+[01:00:25] [DEBUG] Stage registered (Interact, 6)
+[01:00:25] [DEBUG] Stage registered (Fish, 7)
+[01:00:25] [DEBUG] Stage registered (Melt, 8)
+[01:00:25] [DEBUG] Stage registered (Enchant, 9)
+[01:00:25] [DEBUG] Stage registered (Craft, 10)
+[01:00:26] [DEBUG] Stage registered (Bucket, 11)
+[01:00:26] [DEBUG] Stage registered (Location, 12)
+[01:00:26] [DEBUG] Stage registered (PlayTime, 13)
+[01:00:26] [DEBUG] Stage registered (Breed, 14)
+[01:00:26] [DEBUG] Stage registered (Tame, 15)
+[01:00:26] [DEBUG] Stage registered (Death, 16)
+[01:00:26] [DEBUG] Stage registered (DealDamage, 17)
+[01:00:26] [DEBUG] Stage registered (EatDrink, 18)
+[01:00:26] [DEBUG] Initlializing default rewards.
+[01:00:26] [DEBUG] Quest object registered in registry rewards (id: commandReward, class: fr.skytasul.quests.rewards.CommandReward)
+[01:00:26] [DEBUG] Quest object registered in registry rewards (id: itemReward, class: fr.skytasul.quests.rewards.ItemReward)
+[01:00:26] [DEBUG] Quest object registered in registry rewards (id: removeItemsReward, class: fr.skytasul.quests.rewards.RemoveItemsReward)
+[01:00:26] [DEBUG] Quest object registered in registry rewards (id: textReward, class: fr.skytasul.quests.rewards.MessageReward)
+[01:00:26] [DEBUG] Quest object registered in registry rewards (id: tpReward, class: fr.skytasul.quests.rewards.TeleportationReward)
+[01:00:26] [DEBUG] Quest object registered in registry rewards (id: expReward, class: fr.skytasul.quests.rewards.XPReward)
+[01:00:26] [DEBUG] Quest object registered in registry rewards (id: checkpointReward, class: fr.skytasul.quests.rewards.CheckpointReward)
+[01:00:26] [DEBUG] Quest object registered in registry rewards (id: questStopReward, class: fr.skytasul.quests.rewards.QuestStopReward)
+[01:00:26] [DEBUG] Quest object registered in registry rewards (id: requirementDependentReward, class: fr.skytasul.quests.rewards.RequirementDependentReward)
+[01:00:26] [DEBUG] Quest object registered in registry rewards (id: randomReward, class: fr.skytasul.quests.rewards.RandomReward)
+[01:00:26] [DEBUG] Quest object registered in registry rewards (id: wait, class: fr.skytasul.quests.rewards.WaitReward)
+[01:00:26] [DEBUG] Quest object registered in registry rewards (id: titleReward, class: fr.skytasul.quests.rewards.TitleReward)
+[01:00:26] [DEBUG] Initlializing default requirements.
+[01:00:26] [DEBUG] Quest object registered in registry requirements (id: logicalOr, class: fr.skytasul.quests.requirements.logical.LogicalOrRequirement)
+[01:00:26] [DEBUG] Quest object registered in registry requirements (id: questRequired, class: fr.skytasul.quests.requirements.QuestRequirement)
+[01:00:26] [DEBUG] Quest object registered in registry requirements (id: levelRequired, class: fr.skytasul.quests.requirements.LevelRequirement)
+[01:00:26] [DEBUG] Quest object registered in registry requirements (id: permissionRequired, class: fr.skytasul.quests.requirements.PermissionsRequirement)
+[01:00:26] [DEBUG] Quest object registered in registry requirements (id: scoreboardRequired, class: fr.skytasul.quests.requirements.ScoreboardRequirement)
+[01:00:26] [DEBUG] Quest object registered in registry requirements (id: equipmentRequired, class: fr.skytasul.quests.requirements.EquipmentRequirement)
+[01:00:26] [DEBUG] Initlializing default quest options.
+[01:00:26] [DEBUG] Quest option registered (id: pool)
+[01:00:26] [DEBUG] Quest option registered (id: name)
+[01:00:26] [DEBUG] Quest option registered (id: description)
+[01:00:26] [DEBUG] Quest option registered (id: customItem)
+[01:00:26] [DEBUG] Quest option registered (id: confirmMessage)
+[01:00:26] [DEBUG] Quest option registered (id: hologramText)
+[01:00:26] [DEBUG] Quest option registered (id: bypassLimit)
+[01:00:26] [DEBUG] Quest option registered (id: startableFromGUI)
+[01:00:26] [DEBUG] Quest option registered (id: failOnDeath)
+[01:00:26] [DEBUG] Quest option registered (id: cancellable)
+[01:00:26] [DEBUG] Quest option registered (id: cancelActions)
+[01:00:26] [DEBUG] Quest option registered (id: hologramLaunch)
+[01:00:26] [DEBUG] Quest option registered (id: hologramLaunchNo)
+[01:00:26] [DEBUG] Quest option registered (id: scoreboard)
+[01:00:26] [DEBUG] Quest option registered (id: hideNoRequirements)
+[01:00:26] [DEBUG] Quest option registered (id: auto)
+[01:00:26] [DEBUG] Quest option registered (id: repeatable)
+[01:00:26] [DEBUG] Quest option registered (id: timer)
+[01:00:26] [DEBUG] Quest option registered (id: visibility)
+[01:00:26] [DEBUG] Quest option registered (id: endSound)
+[01:00:26] [DEBUG] Quest option registered (id: firework)
+[01:00:26] [DEBUG] Quest option registered (id: requirements)
+[01:00:26] [DEBUG] Quest option registered (id: startRewards)
+[01:00:26] [DEBUG] Quest option registered (id: startMessage)
+[01:00:26] [DEBUG] Quest option registered (id: starterNPC)
+[01:00:26] [DEBUG] Quest option registered (id: startDialog)
+[01:00:26] [DEBUG] Quest option registered (id: endRewards)
+[01:00:26] [DEBUG] Quest option registered (id: endMsg)
+[01:00:26] [DEBUG] Item comparison registered (id: bukkit)
+[01:00:26] [DEBUG] Item comparison registered (id: customBukkit)
+[01:00:26] [DEBUG] Item comparison registered (id: material)
+[01:00:26] [DEBUG] Item comparison registered (id: name)
+[01:00:26] [DEBUG] Item comparison registered (id: lore)
+[01:00:26] [DEBUG] Item comparison registered (id: enchants)
+[01:00:26] [DEBUG] Item comparison registered (id: repair)
+[01:00:26] [DEBUG] Mob factory registered (id: bukkitEntity)
+[01:00:26] [DEBUG] Bossbars manager has been registered: fr.skytasul.quests.api.bossbar.BQBossBarImplementation
+[01:00:26] [DEBUG] Brigadier registered!
+[01:00:26] [DEBUG] Mob factory registered (id: citizensNPC)
+[01:00:26] [DEBUG] Now using WorldGuard entry API.
+[01:00:26] [DEBUG] Stage registered (Find, 19)
+[01:00:26] [DEBUG] Quest object registered in registry requirements (id: regionRequired, class: fr.skytasul.quests.requirements.RegionRequirement)
+[01:00:26] [DEBUG] Mob factory registered (id: mythicMobs)
+[01:00:26] [DEBUG] Quest object registered in registry rewards (id: moneyReward, class: fr.skytasul.quests.rewards.MoneyReward)
+[01:00:26] [DEBUG] Quest object registered in registry rewards (id: permReward, class: fr.skytasul.quests.rewards.PermissionReward)
+[01:00:26] [DEBUG] Quest object registered in registry requirements (id: moneyRequired, class: fr.skytasul.quests.requirements.MoneyRequirement)
+[01:00:26] [INFO] [BeautyQuests] Placeholders registered !
+[01:00:26] [DEBUG] Quest object registered in registry requirements (id: placeholderRequired, class: fr.skytasul.quests.requirements.PlaceholderRequirement)
+[01:00:26] [DEBUG] Holograms manager has been registered: fr.skytasul.quests.utils.compatibility.BQHolographicDisplays3
+[01:00:26] [DEBUG] Started bStats metrics
+[01:00:26] [DEBUG] Starting Spigot updater
+[01:00:29] [DEBUG] 0 accounts loaded and 1 identifiers.
+[01:00:29] [DEBUG] Registered 5 lines in scoreboard
+[01:00:29] [INFO] [BeautyQuests] 9 quests loaded (0.155s)!
+[01:00:29] [INFO] [BeautyQuests] Periodic saves task started (18000 ticks). Task ID: 689
+[01:00:29] [INFO] [BeautyQuests] You are using the latest version of BeautyQuests.
+[01:00:32] [DEBUG] SShist (8ad9c176-b8d4-4ef8-b924-b5e1b10a1399) joined the server
+[01:00:32] [DEBUG] Loading player SShist...
+[01:00:32] [DEBUG] Loading account #1. Last file edition: Thu Aug 31 00:59:42 MSK 2023
+[01:00:32] [DEBUG] Completed load of SShist (8ad9c176-b8d4-4ef8-b924-b5e1b10a1399 (#1)) datas within 289 ms (8 quests, 0 pools) | Loaded from file from index
+[01:00:47] [DEBUG] SShist left the server
+[01:00:47] [DEBUG] Unloading player SShist... (8 quests, 0 pools)

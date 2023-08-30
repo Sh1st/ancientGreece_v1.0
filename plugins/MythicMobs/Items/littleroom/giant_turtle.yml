@@ -1,0 +1,21 @@
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+palm_coconut:
+  Id: PIG_SPAWN_EGG
+  NBT:
+    MYTHIC_EGG: palm_coconut
+  Display: '&r&fCoconut'
+  Model: 1
+  
+coconut_milk:
+  Id: MILK_BUCKET
+  Display: '&r&fCoconut Milk'
+  Model: 1
+  
+giant_turtle_shield:
+  Id: SHIELD
+  Display: '&r&fTortus Shield'
+  Model: 1
+# 613604376509931687530002

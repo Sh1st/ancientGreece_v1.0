@@ -1,0 +1,23 @@
+# +----------------------------------------------------+ #
+# <         Gear is armor and the item in hand         > #
+# <           'Inventory' is everything else           > #
+# +----------------------------------------------------+ #
+
+debug: false
+keep-inventory-message: ''
+keep-gear-message: ''
+keep-partial-inventory-message: ''
+keep-partial-gear-message: ''
+groups:
+  sample:
+    permission: customdeathdrops.sample
+    inventory-keep-percent: 50
+    gear-keep-percent: 100
+    inventory-partial-keep-percent: 100
+    gear-partial-keep-percent: 100
+    always-drop:
+    - apple
+    - rabbit_hide
+    never-drop:
+    - iron_sword
+    - ink_sac

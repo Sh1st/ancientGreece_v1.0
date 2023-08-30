@@ -142,7 +142,7 @@ NETHER_GEM:
     tier: RARE
 RAINBOW_GEM:
   base:
-    material: AMETHYST_SHARD
+    material: CLAY_BALL
     name: §c§lR§6§la§e§li§a§ln§2§lb§9§lo§3§lw §c§lG§6§le§e§lm
     lore:
       - §eThe rainbow gem allows you to

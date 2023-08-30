@@ -81,6 +81,7 @@ FALCON_BLADE:
     upgrade:
       workbench: false
     hide-enchants: true
+    mana-cost: 2.0
 KATANA:
   base:
     material: IRON_SWORD
@@ -145,7 +146,7 @@ STEEL_SWORD:
     - '&7May be upgraded.'
     required-level: 6.0
     upgrade:
-      template: weapon-default
+      template: testweapon
 SILVER_SWORD:
   base:
     material: IRON_SWORD
@@ -541,10 +542,59 @@ YANISDARK_SWORD:
     disable-repairing: true
     required-level: 1.0
     attack-damage: 2.0
-    name: '&fКинжал ребёнка'
+    name: Ржавый кинжал
     lore:
     - '&7Ржавый, не чищенный'
     - '&fОбычный предмет'
     displayed-type: '&7Нормальная скорость атаки'
     gem-sockets: []
     unbreakable: true
+    upgrade:
+      template: testweapon
+      max: 10
+      success: 80.0
+    custom-model-data: 4000.0
+    disable-attack-passive: true
+    disable-death-drop: true
+'6':
+  base:
+    material: IRON_SWORD
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    required-level: 1.0
+    attack-damage: 3.0
+    name: Кинжал
+    lore:
+    - '&7Как новый, чищенный'
+    - '&fОбычный предмет'
+    displayed-type: '&7Нормальная скорость атаки'
+    gem-sockets: []
+    unbreakable: true
+    upgrade:
+      template: testweapon
+      max: 10
+      success: 80.0
+    custom-model-data: 4001.0
+    disable-attack-passive: true
+    disable-death-drop: true
+'4':
+  base:
+    material: STONE_HOE
+    ability:
+      ability1:
+        type: EVADE
+        duration: 5.0
+        timer: 1.0
+        delay: 1.0
+        mana: 1.0
+        stamina: 1.0
+        cooldown: 1.0
+        mode: RIGHT_CLICK
+'7':
+  base:
+    material: IRON_SWORD
+    attack-speed: 1.8

@@ -1,5 +1,5 @@
 @echo off
+title MythOfAncientGreece
 color a
-title myths of Ancient Greece
-java -Xms2G -Xmx3G -Dfile.encoding=cp866 -jar spigot-1.16.5.jar nogui
-pause
+java -Xms4G -Xmx6G -Dfile.encoding=cp866 -jar spigot.jar nogui
+stop

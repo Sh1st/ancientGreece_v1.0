@@ -1,0 +1,288 @@
+CancelEventSkill:
+    Skills:
+        - CancelEvent
+        
+toro_minotaur_death:
+    Skills:
+        - delay 105
+        - effect:particles{particle=end_rod;a=50;hs=3;vs=3;s=0.1} @origin
+
+toro_minotaur_hit:
+    Conditions:
+        - lasthitbox{h=headhitbox} castinstead toro_minotaur_headhit
+    Skills:
+        - effect:particles{p=block_crack;m=brown_stained_glass_pane;amount=15;speed=0.25;hs=2;vs=2} @origin{y=2}
+        - effect:sound{s=item.armor.equip_leather;v=3;p=0} @self
+
+toro_minotaur_headhit:
+    Skills:
+        - sound{s=entity.player.attack.crit;v=3} @self
+        - effect:particles{p=lava;amount=5;hs=1;vs=1} @ModelPart{mid=minotaur;part=head}
+        - effect:particles{p=crit;amount=40;hs=0.5;vs=0.5;s=2} @ModelPart{mid=minotaur;part=head}
+        - damage{a=10} @self
+        
+#===== vertical smash======
+toro_minotaur_vsmash:
+    Conditions:
+        - incombat true
+        - offgcd
+    TargetConditions:
+        - distance{d=0to10} true
+    Skills:
+        - gcd{ticks=100} @self
+        - state{s=v_smash} @self
+        - setAI{ai=false} @self
+        - delay 26
+        - setAI{ai=true} @self
+        - lunge{v=1} @target
+        - delay 8
+        - setAI{ai=false} @self
+        - delay 8
+        - effect:sound{s=entity.zombie.break_wooden_door;v=4;p=0} @self
+        - effect:sound{s=entity.generic.explode;v=2;p=1} @self
+        - effect:particles{p=lava;amount=100;hs=1;vs=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - effect:particles{particle=reddust;color=#F56A31;amount=100;speed=0.25;hs=1.5;vs=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - totem{ch=1;onStart=toro_minotaur_vsmash_damage;int=1;hR=3;md=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - randomskill{s=toro_minotaur_vsmash_finish,toro_minotaur_vsmash_cont;sync=true}
+        
+toro_minotaur_vsmash_damage:
+    Skills:
+        - damage{a=4} @ENO{r=5}
+        - skill{s=toro_minotaur_vsmash_knockback} @ENO{r=5}
+        #- effect:particlering{p=endrod;r=5;a=1;points=32} @origin{y=-1}
+
+toro_minotaur_vsmash_finish:
+    Skills:
+        - delay 58
+        - setAI{ai=true} @self
+
+#===== vertical smash cont======
+toro_minotaur_vsmash_cont:
+    Skills:
+        - delay 22
+        - gcd{ticks=90} @self
+        - state{s=v_smash2} @self
+        - delay 16
+        - setAI{ai=true} @self
+        - lunge{v=1} @target
+        - delay 8
+        - setAI{ai=false} @self
+        - delay 4
+        - effect:sound{s=entity.zombie.break_wooden_door;v=4;p=0} @self
+        - effect:sound{s=entity.generic.explode;v=2;p=1} @self
+        - effect:particles{p=lava;amount=100;hs=1;vs=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - effect:particles{particle=reddust;color=#F56A31;amount=100;speed=0.25;hs=1.5;vs=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - totem{ch=1;onStart=toro_minotaur_vsmash2_damage;int=1;hR=3;md=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - delay 42
+        - setAI{ai=true} @self
+
+toro_minotaur_vsmash2_damage:
+    Skills:
+        - damage{a=8} @ENO{r=5}
+        - skill{s=toro_minotaur_vsmash2_knockback} @ENO{r=5}
+        #- effect:particlering{p=endrod;r=5;a=1;points=32} @origin{y=-1}
+
+#==== vertical smash 3======
+toro_minotaur_vsmash3:
+    Conditions:
+        - incombat true
+        - offgcd
+    TargetConditions:
+        - distance{d=0to10} true
+    Skills:
+        - gcd{ticks=84} @self
+        - state{s=v_smash3} @self
+        - delay 10
+        - setAI{ai=false} @self
+        - delay 14
+        - effect:sound{s=entity.zombie.break_wooden_door;v=4;p=0} @self
+        - effect:sound{s=entity.generic.explode;v=2;p=1} @self
+        - effect:particles{p=lava;amount=100;hs=1;vs=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - effect:particles{particle=reddust;color=#F56A31;amount=100;speed=0.25;hs=1.5;vs=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - totem{ch=1;onStart=toro_minotaur_vsmash3_downcut_damage;int=1;hR=3;md=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - delay 16
+        - effect:sound{s=entity.zombie.break_wooden_door;v=4;p=1} @self
+        - effect:particles{p=lava;amount=20;hs=1;vs=1;repeat=1;repeatInterval=4} @ModelPart{mid=minotaur;part=axe_vfx}
+        - effect:particles{particle=reddust;color=#F56A31;amount=100;speed=0.25;hs=1.5;vs=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - totem{ch=1;onStart=toro_minotaur_vsmash3_uppercut_damage;int=1;hR=3;md=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - delay 44
+        - setAI{ai=true} @self
+        
+toro_minotaur_vsmash3_downcut_damage:
+    Skills:
+        - damage{a=4} @ENO{r=5}
+        - skill{s=toro_minotaur_vsmash_knockback} @ENO{r=5}
+        #- effect:particlering{p=endrod;r=5;a=1;points=32} @origin{y=-1}
+
+toro_minotaur_vsmash3_uppercut_damage:
+    Skills:
+        - damage{a=3} @ENO{r=7}
+        - skill{s=toro_minotaur_vsmash3_uppercut_knockback} @ENO{r=7}
+        #- effect:particlering{p=endrod;r=7;a=1;points=32} @origin{y=-1}
+
+#==== swing======
+toro_minotaur_swing:
+    Conditions:
+        - incombat true
+        - offgcd
+    TargetConditions:
+        - distance{d=0to10} true
+    Skills:
+        - gcd{ticks=70} @self
+        - state{s=swing} @self
+        - setspeed{s=1} @self
+        - delay 30
+        - setspeed{s=3} @self
+        - delay 6
+        - totem{ch=1;onStart=toro_minotaur_swing_damage;int=1;hR=3;md=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - delay 2
+        - effect:sound{s=entity.ender_dragon.flap;v=4;p=1} @self
+        - effect:particles{p=lava;amount=100;hs=2;vs=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - effect:particles{particle=reddust;color=#F56A31;amount=100;speed=0.25;hs=2;vs=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - totem{ch=1;onStart=toro_minotaur_swing_damage;int=1;hR=3;md=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - delay 2
+        - setspeed{s=0.75} @self
+        - setAI{ai=false} @self
+        - randomskill{s=toro_minotaur_swing_finish,toro_minotaur_swing_cont;sync=true}
+        
+toro_minotaur_swing_damage:
+    Skills:
+        - damage{a=4} @ENO{r=7}
+        - skill{s=toro_minotaur_swing_knockback} @ENO{r=7}
+
+toro_minotaur_swing_finish:
+    Skills:
+        - delay 30
+        - setAI{ai=true} @self
+
+#===== SWING cont (Uppercut) ========
+toro_minotaur_swing_cont:
+    Skills:
+        - delay 15
+        - gcd{ticks=94} @self
+        - state{s=uppercut} @self
+        - delay 35
+        - effect:sound{s=entity.zombie.break_wooden_door;v=4;p=0} @self
+        - effect:particles{p=lava;amount=100;hs=1;vs=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - effect:particles{particle=reddust;color=#F56A31;amount=100;speed=0.25;hs=1.5;vs=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - totem{ch=1;onStart=toro_minotaur_swing_uppercut_damage;int=1;hR=3;md=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - delay 20
+        - projectile{oT=toro_minotaur_uppercut_shockwave;i=5;v=20;sE=false;sB=false;hs=true;sfo=2;d=25} @target
+        - delay 38
+        - setAI{ai=true} @self
+
+toro_minotaur_swing_uppercut_damage:
+    Skills:
+        - damage{a=5} @ENO{r=6}
+        - skill{s=toro_minotaur_swing_uppercut_knockback} @ENO{r=6}
+        #- effect:particlering{p=endrod;r=6;a=1;points=32} @origin{y=-1}
+
+toro_minotaur_uppercut_shockwave:
+    Skills:
+        - effect:particlering{particle=block_crack;m=brown_terracotta;a=5;radius=4;points=32;vs=0.1;hs=0.2} @origin
+        - effect:particlering{particle=reddust;color=#F56A31;a=5;radius=3;points=16;vs=0.4;hs=0.1} @origin
+        - effect:particles{particle=lava;a=50;hs=0.7;vs=2} @origin{y=1}
+        - effect:sound{s=entity.generic.explode;v=2;p=2} @origin
+        - damage{a=5} @ENO{r=5}
+
+#===== rush attack =====
+toro_minotaur_rush:
+    Conditions:
+        - offgcd
+        - incombat true
+    TargetConditions:
+        - distance{d=10to20}
+    Skills:
+        - gcd{ticks=120}
+        - lunge{v=0.5} @target
+        - state{s=rush_attack} @self
+        - setspeed{s=2.5} @self
+        - delay 1
+        - setAI{ai=false} @self
+        - delay 32
+        - effect:sound{s=entity.horse.breathe;v=5;p=1} @self
+        - effect:particles{particle=campfire;amount=15;speed=0.05;hs=1} @ModelPart{mid=minotaur;part=jaw}
+        - delay 8
+        - effect:particles{particle=block_crack;m=brown_terracotta;amount=10;speed=0.1;hs=1;v=0.5;repeat=9;repeatInterval=4} @ModelPart{mid=minotaur;part=left_foot}
+        - effect:particles{particle=block_crack;m=brown_terracotta;amount=10;speed=0.1;hs=1;v=0.5;repeat=9;repeatInterval=4} @ModelPart{mid=minotaur;part=right_foot}
+        - setAI{ai=true} @self
+        - delay 40
+        - effect:sound{s=entity.ender_dragon.flap;v=4;p=1} @self
+        - effect:particles{p=lava;amount=100;hs=2;vs=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - effect:particles{particle=reddust;color=#F56A31;amount=100;speed=0.25;hs=2;vs=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - totem{ch=1;onStart=toro_minotaur_rushattack_damage;int=1;hR=3;md=1} @ModelPart{mid=minotaur;part=axe_vfx}
+        - setspeed{s=0.75} @self
+        - setAI{ai=false} @self
+        - delay 40
+        - setAI{ai=true} @self
+
+toro_minotaur_rushattack_damage:
+    Skills:
+        - damage{a=5} @ENO{r=7}
+        #- effect:particlering{p=endrod;r=7;a=1;points=32} @origin{y=-1}
+
+#==== Headbutt =====
+toro_minotaur_headbutt:
+    Conditions:
+        - incombat true
+        - offgcd
+    TargetConditions:
+        - distance{d=0to10} true
+    Skills:
+        - gcd{ticks=60} @self
+        - state{s=headbutt} @self
+        - setAI{ai=false} @self
+        - delay 10
+        - effect:sound{s=entity.horse.breathe;v=5;p=1} @self
+        - effect:particles{particle=campfire;amount=15;speed=0.05;hs=1} @ModelPart{mid=minotaur;part=jaw}
+        - delay 12
+        - effect:sound{s=entity.ender_dragon.flap;v=4;p=0} @self
+        - effect:particles{p=lava;amount=10;hs=1;vs=1} @ModelPart{mid=minotaur;part=head}
+        - effect:particles{particle=reddust;color=#F56A31;amount=10;speed=0.25;hs=1.5;vs=1} @ModelPart{mid=minotaur;part=head}
+        - totem{ch=1;onStart=toro_minotaur_headbutt_damage;int=1;hR=3;md=1} @ModelPart{mid=minotaur;part=head;off=LOCAL;z=-1;y=3}
+        - delay 44
+        - setAI{ai=true} @self
+        
+toro_minotaur_headbutt_damage:
+    Skills:
+        - damage{a=3} @ENO{r=4}
+        - sudoskill{s=toro_minotaur_headbutt_bleeding} @ENO{r=4}
+        - skill{s=toro_minotaur_headbutt_knockback} @ENO{r=4}
+        #- effect:particlering{p=endrod;r=4;a=1;points=32} @origin{y=-1}
+
+toro_minotaur_headbutt_bleeding:
+    Skills:
+        - delay 20
+        - damage{a=1;ia=true;repeat=4;repeatInterval=20} @self{targetself=true;targetplayers=true}
+        - effect:particles{p=block_crack;m=redstone_block;a=10;hs=0.4,vs=0.2;yOffset=1;speed=0.2;repeat=4;repeatInterval=20} @self
+        - effect:sound{s=block.slime_block.break;v=4;p=0;repeat=4;repeatInterval=20} @self
+
+#==== stomp ======
+toro_minotaur_stomp:
+    Conditions:
+        - incombat true
+        - offgcd
+    TargetConditions:
+        - distance{d=0to10} true
+    Skills:
+        - gcd{ticks=50} @self
+        - state{s=stomp} @self
+        - setAI{ai=false} @self
+        - delay 18
+        - effect:sound{s=entity.generic.explode;v=2;p=1} @self
+        - effect:particles{p=lava;amount=100;hs=3} @origin
+        - effect:particles{particle=reddust;color=#F56A31;amount=100;hs=3} @origin
+        - effect:particlering{p=block_crack;m=brown_terracotta;r=8;a=10;points=32;hs=0.5;vs=0.3} @origin
+        - skill{s=toro_minotaur_stomp_damage} @ENO{r=10}
+        - delay 32
+        - setAI{ai=true} @self
+        
+toro_minotaur_stomp_damage:
+    TargetConditions:
+        - onground{} true
+    Skills:
+        - damage{a=4}
+        - skill{s=toro_minotaur_stomp_knockback}
+        
+
+# 184469353509931687529782

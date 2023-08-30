@@ -1,0 +1,108 @@
+Inventories:
+  main:
+    slots: 45
+    title: '&8Все категории'
+    '22':
+      type: history
+      item: BOOK
+      name: '%name%'
+      lore:
+      - '&eВ ваших приключениях вы найдете'
+      - '&eинтересные структуры.'
+      - ''
+      - '&7Найдено: %unlocked% &8[%progress_bar%&8] &8(&7%percentage%&8)'
+      open_inventory: history_discoveries
+    '21':
+      type: regions
+      item: MAP
+      name: '%name%'
+      lore:
+      - '&fРазличные регионы, которые вы'
+      - '&fисследовали, будут отображены'
+      - '&fздесь.'
+      - ''
+      - '&7Найдено: %unlocked% &8[%progress_bar%&8] &8(&7%percentage%&8)'
+      open_inventory: regions_discoveries
+    '23':
+      type: monsters
+      item: DIAMOND
+      name: '%name%'
+      lore:
+      - '&bИнформация о различных секретах'
+      - '&bи тайнах, с которыми вы столкнетесь.'
+      - ''
+      - '&7Найдено: %unlocked% &8[%progress_bar%&8] &8(&7%percentage%&8)'
+      open_inventory: monsters_discoveries
+    0;8;36;44:
+      item: RED_STAINED_GLASS_PANE
+      name: ' '
+    1;7;9;17;27;35;37;43:
+      item: BLACK_STAINED_GLASS_PANE
+      name: ' '
+    '40':
+      item: BARRIER
+      name: '&7Close'
+      open_inventory: close
+  history_discoveries:
+    slots: 45
+    title: '&8История'
+    '11':
+      type: history;1
+      item: PAPER
+      name: '&6Открытие: %name%'
+      lore:
+      - '%lore%'
+    '39':
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+      name: '&7Вернуться'
+      open_inventory: main
+    0;8;36;44:
+      item: BLUE_STAINED_GLASS_PANE
+      name: ' '
+    1;7;9;17;27;35;37;43:
+      item: BLACK_STAINED_GLASS_PANE
+      name: ' '
+  regions_discoveries:
+    slots: 45
+    title: '&8Регионы'
+    '11':
+      type: regions;1
+      item: PAPER
+      name: '&6Открытие: %name%'
+      lore:
+      - '%lore%'
+    '12':
+      type: regions;2
+      item: PAPER
+      name: '&6Открытие: %name%'
+      lore:
+      - '%lore%'
+    '39':
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+      name: '&7Вернуться'
+      open_inventory: main
+    0;8;36;44:
+      item: BLUE_STAINED_GLASS_PANE
+      name: ' '
+    1;7;9;17;27;35;37;43:
+      item: BLACK_STAINED_GLASS_PANE
+      name: ' '
+  monsters_discoveries:
+    slots: 45
+    title: '&3Секреты'
+    '11':
+      type: monsters;1
+      item: PAPER
+      name: '&6Открытие: %name%'
+      lore:
+      - '%lore%'
+    '39':
+      skull_data: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+      name: '&7Вернуться'
+      open_inventory: main
+    0;8;36;44:
+      item: BLUE_STAINED_GLASS_PANE
+      name: ' '
+    1;7;9;17;27;35;37;43:
+      item: BLACK_STAINED_GLASS_PANE
+      name: ' '

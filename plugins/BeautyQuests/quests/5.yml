@@ -1,0 +1,243 @@
+starterNPC: 25
+name: §6Рыбак
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          npcID: 25
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: PLAYER
+                text: §aПривет, путник! Вижу, что ты разбираешься в рыболовстве. Мог
+                  бы ты научить меня этому искусству?
+            - id: 1
+              message:
+                sender: NPC
+                text: §aЗдравствуй! Рыболовство – это навык, который стоит освоить.
+                  Однако, я вижу, у тебя нет удочки.
+            - id: 2
+              message:
+                sender: NPC
+                text: §aОбратись к торговцу удочками рядом, он живет на берегу, а
+                  крышу его жилища украшает огромная деревянная рыба
+            - id: 3
+              message:
+                sender: PLAYER
+                text: §aБлагодарю за совет! Я сейчас куплю удочку и вернусь сюда.
+          stageType: NPC
+        '1':
+          npcID: 25
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: PLAYER
+                text: §aВернулся, как и обещал! Теперь у меня есть удочка, и я готов
+                  учиться.
+          items:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 2586
+            type: FISHING_ROD
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Старый
+                крючок"}],"text":""}'
+              lore:
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Тир
+                1"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Скорость
+                добычи: Медленная"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"✔
+                "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Мин.
+                уровень рыбалки: 1"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Изношенный
+                временем, молчаливый"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"свидетель
+                десятков рыбацких"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"историй,
+                пропитанных временем"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"и
+                опытом."}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обычный
+                предмет"}],"text":""}'
+              enchants:
+                PROTECTION_ENVIRONMENTAL: 1
+              attribute-modifiers:
+                GENERIC_ATTACK_SPEED:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitemsDecoy
+                  uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                  operation: 0
+              ItemFlags:
+              - HIDE_ENCHANTS
+              - HIDE_ATTRIBUTES
+              internal: H4sIAAAAAAAA/+VUT2sTQRSfBZGgKFVQqV6GOeRUCgW1kIusyaZZ3M0uO9tD2IalFAUvRtL1IKWQRGoFxV48eChCvfTahBbTpNlA/QJvvoKfQPwEvplNNinpxbN72J197/f7vb/MNUIy5JZtO6Zv2Dw0yvmSXvY5mQvY63oter4Rvay9okusmiE3UpTleAb5E7Dzw2X4Cj9gALH4ACf4HYiPcEqhIxr4e6ZM+F2geI6hL3bhCPrQRT/C2IIUEE3ooOUYTkQLsX3xiaqfpthDQw9pHSoaiG/DkXiPhq7YSZh4aiIkxlhdOMUYQzzFMER7C+OoZMTOTDJjMpVYRKACnC0q6wv4Bm007Y7rGCrqsSSLluzBvbQHBZO7ll4xCqFfcQ1yXWp+x9ANuqSR+WmY/tQywrynF32zvKJlyN3UmV/lvmOHdsVazT8jD88PH8OBLFnWIWtLehGPcurmKOyrdPpJr7Ehe5fF4rbpl5JYt1OnfCepXvEdx7pKHqQu13OKBuemUw6LJpfMJ7+JejRyf0bdM1zd9BL5uYvyZoFoj7Qp5TFntFYJabJHZd02yDwcyHmpGWPLe3j4jNXG0MuQOxOlCoLNvFo97U3AshtTDcfhqfn9e/sSZnb91/4Xml1GfxcGi1S8U5vUkTgUGa8fEntSJo33f23/5atmWKOx3ixx36tMbhB3i/FoPWI5NjZhFGeFR7X6W5YLttjMpRP+bG9GdSQEaxcunzVWZdvVbfIXZpDm96wEAAA=
+          stageType: ITEMS
+          rewards:
+          - id: itemReward
+            items:
+            - v: 2586
+              type: FISHING_ROD
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Старый
+                  крючок"}],"text":""}'
+                lore:
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Тир
+                  1"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Скорость
+                  добычи: Медленная"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"✔
+                  "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Мин.
+                  уровень рыбалки: 1"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Изношенный
+                  временем, молчаливый"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"свидетель
+                  десятков рыбацких"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"историй,
+                  пропитанных временем"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"и
+                  опытом."}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обычный
+                  предмет"}],"text":""}'
+                enchants:
+                  PROTECTION_ENVIRONMENTAL: 1
+                attribute-modifiers:
+                  GENERIC_ATTACK_SPEED:
+                  - ==: org.bukkit.attribute.AttributeModifier
+                    amount: 0.0
+                    name: mmoitemsDecoy
+                    uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                    operation: 0
+                ItemFlags:
+                - HIDE_ENCHANTS
+                - HIDE_ATTRIBUTES
+                internal: H4sIAAAAAAAA/+VUT2sTQRSfBZGgKFVQqV6GOeRUCgW1kIusyaZZ3M0uO9tD2IalFAUvRtL1IKWQRGoFxV48eChCvfTahBbTpNlA/QJvvoKfQPwEvplNNinpxbN72J197/f7vb/MNUIy5JZtO6Zv2Dw0yvmSXvY5mQvY63oter4Rvay9okusmiE3UpTleAb5E7Dzw2X4Cj9gALH4ACf4HYiPcEqhIxr4e6ZM+F2geI6hL3bhCPrQRT/C2IIUEE3ooOUYTkQLsX3xiaqfpthDQw9pHSoaiG/DkXiPhq7YSZh4aiIkxlhdOMUYQzzFMER7C+OoZMTOTDJjMpVYRKACnC0q6wv4Bm007Y7rGCrqsSSLluzBvbQHBZO7ll4xCqFfcQ1yXWp+x9ANuqSR+WmY/tQywrynF32zvKJlyN3UmV/lvmOHdsVazT8jD88PH8OBLFnWIWtLehGPcurmKOyrdPpJr7Ehe5fF4rbpl5JYt1OnfCepXvEdx7pKHqQu13OKBuemUw6LJpfMJ7+JejRyf0bdM1zd9BL5uYvyZoFoj7Qp5TFntFYJabJHZd02yDwcyHmpGWPLe3j4jNXG0MuQOxOlCoLNvFo97U3AshtTDcfhqfn9e/sSZnb91/4Xml1GfxcGi1S8U5vUkTgUGa8fEntSJo33f23/5atmWKOx3ixx36tMbhB3i/FoPWI5NjZhFGeFR7X6W5YLttjMpRP+bG9GdSQEaxcunzVWZdvVbfIXZpDm96wEAAA=
+        '2':
+          npcID: 25
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aОтлично, видно, что ты серьёзно настроен! Давай начнем. Когда
+                  рыба клюёт, важно быстро реагировать, чтобы она не сорвалась.
+            - id: 1
+              message:
+                sender: NPC
+                text: §aНажимай несколько раз быстро на правую кнопку мыши, чтобы
+                  затянуть леску и удержать рыбу.
+            - id: 2
+              message:
+                sender: NPC
+                text: §aЧем сложнее и дольше рыба ловится, тем лучше улов!
+            - id: 3
+              message:
+                sender: PLAYER
+                text: §aПонял, буду стараться. Но как понять, когда рыба клюнула?
+            - id: 4
+              message:
+                sender: NPC
+                text: §aХороший вопрос! Обрати внимание на поплавок. Если он резко
+                  ушёл под воду или начал дёргаться, это знак, что рыба зацепила крючок.
+            - id: 5
+              message:
+                sender: NPC
+                text: §aНо помни, реакция должна быть быстрой, иначе рыба может сорваться.
+            - id: 6
+              message:
+                sender: PLAYER
+                text: §aСпасибо за советы и терпение! Буду стараться не упустить ни
+                  одного улова.
+            - id: 7
+              message:
+                sender: NPC
+                text: §aНе за что! Рыболовство – это искусство, требующее практики.
+                  Теперь приступай, попробуй поймать свою первую рыбу.
+          stageType: NPC
+        '3':
+          npcID: 25
+          items:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 2586
+            type: COD
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"рыбой"}'
+              lore:
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Пища"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"✔
+                "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Мин.
+                уровень: 1"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"+1.5
+                "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Восстановление
+                голода"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"+1
+                "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Восстановление
+                насыщения"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Используется
+                для утоления голода"}],"text":""}'
+              - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обычный
+                предмет"}],"text":""}'
+              attribute-modifiers:
+                GENERIC_ATTACK_SPEED:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitemsDecoy
+                  uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              internal: H4sIAAAAAAAA/71Su0oDQRSdpAhLwCeIiM0yhY0SEBElTVyzY1zYh+5shBDCIqKtENNICCSxEIkQEAsLUfyD+Agqmlj4A3d+wS+wtPROzEtS2LnFLnvvOXPPOXfChChkzLIcw2MW95kdX9dsj5NgOhMi0926y7jnuMznmpd0Nc9w7NgnaT0BMtlFbWm2YZqazxBhJwIKGeq2TGST3TSdWYILUYI3aMKLOIVHcQR1URYlUVXhAUtVVRyJsuxCHRrwJOv3rd8m9mt0js7swRXcioo4hoaowLMKb6KI4Ad4lUfRjNKnSDf4hqmlmO57qQ1Gwjj+Gg89gZpCRrso+fYNnQQXlkN9ZJdtJg0XuSbbYmbHcIhMDMSy5jh67Oun3+/a1ixGpuAG1RahJs2V8FNErU9oDjX0jtJTCDbiraACIxjUTk8rupbGtz8uz1WsXkp2RAZVxFTuZFDiNKrOd2Cz85FFiTuDJgZbwjhrOE0i26FCfSBUJP1JQcXYqqCi9mraA/9jpeO/l/Wzzbhj86SlrZpMIcPr3HNTvQu8kqc8t52jUdop4SAnwXP72UMaTefpwJ33328PclkkpDO0kCmQb0FNUQkbAwAA
+          itemComparisons:
+            material: true
+            bukkit: false
+          stageType: ITEMS
+        '4':
+          npcID: 25
+          msg:
+            msgs:
+            - id: 0
+              message:
+                sender: NPC
+                text: §aОтлично справился! Вижу, что ты быстро научился реагировать.
+                  Это только начало, и ты уже делаешь успехи.
+            - id: 1
+              message:
+                sender: PLAYER
+                text: §aСпасибо за обучение! Это был незабываемый момент.
+            - id: 2
+              message:
+                sender: NPC
+                text: §aРад был помочь. Помни, что рыболовство – это искусство терпения
+                  и практики. Практикуйся дальше, и ты станешь настоящим мастером.
+            - id: 3
+              message:
+                sender: NPC
+                text: §aУдачи в твоих будущих рыболовных приключениях!
+          stageType: NPC
+          rewards:
+          - id: commandReward
+            commands:
+            - console: true
+              label: mmocore admin exp give {PLAYER} fishing 100
+          - id: textReward
+            text: §eВы получили §6+100 XP §eв Рыбалке.
+      endingStages: {}
+id: 5

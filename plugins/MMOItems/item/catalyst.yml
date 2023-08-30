@@ -152,7 +152,7 @@ LUCK_CHARM:
     disable-smelting: true
     disable-interaction: true
     handworn: true
-    additional-experience-enchanting: 50.0
+    additional-experience-farming: 50.0
     crafting:
       shaped:
         '1':

@@ -1,0 +1,77 @@
+# 
+# The Piggy Bank
+locale: en_us
+decimal_format: '#,##0'
+allow_item_use: false
+balance_maximum: 0
+withdraw_maximum: 186624
+fake_accounts: true
+resource_pack: true
+sql:
+  enabled: false
+  driver: mysql
+  host: 127.0.0.1
+  port: 3306
+  database: piggybank
+  use-ssl: true
+  username: piggybank
+  password: piggybank
+configVersion: 7
+currency:
+  bronze_coin:
+    item: minecraft:gold_nugget
+    name: '&6Бронзовый обол'
+    lore:
+    - '&7Валюта'
+    - '&7'
+    - '&6&l&m───&6[ 1ὀ ]&m───'
+    enchantments:
+    damage: 0
+    unbreakable: true
+    custom_model_data: 1
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_DESTROYS
+    - HIDE_ENCHANTS
+    - HIDE_PLACED_ON
+    - HIDE_POTION_EFFECTS
+    - HIDE_UNBREAKABLE
+    value: 1.0
+  silver_coin:
+    item: minecraft:gold_nugget
+    name: '&6Серебряный обол'
+    lore:
+    - '&7Валюта'
+    - '&7'
+    - '&6&l&m───&6[ 64ὀ ]&m───'
+    enchantments:
+    damage: 0
+    unbreakable: true
+    custom_model_data: 2
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_DESTROYS
+    - HIDE_ENCHANTS
+    - HIDE_PLACED_ON
+    - HIDE_POTION_EFFECTS
+    - HIDE_UNBREAKABLE
+    value: 64.0
+  gold_obol:
+    item: minecraft:gold_nugget
+    name: '&6Золотой обол'
+    lore:
+    - '&7Валюта'
+    - '&7'
+    - '&6&l&m───&6[ 4096ὀ ]&m───'
+    enchantments:
+    damage: 0
+    unbreakable: true
+    custom_model_data: 3
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_DESTROYS
+    - HIDE_ENCHANTS
+    - HIDE_PLACED_ON
+    - HIDE_POTION_EFFECTS
+    - HIDE_UNBREAKABLE
+    value: 4096.0

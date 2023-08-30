@@ -7,6 +7,78 @@ name: Ваш персонаж
 slots: 27
 
 items:
+    mining-profession:
+        slots: [26]
+        function: profession_mining
+        item: IRON_PICKAXE
+        name: '&aШахтерство'
+        hide-flags: true
+        lore:
+        - ''
+        - '&7Текущий уровень: &f{level}'
+        - '&8[&a{progress}&8] &f{percent}%'
+        - ''
+        - '&7&oMining unlocks rare ores and raw materials.'
+        - '&7&oThis is vital to your rise in power and strength,'
+        - '&7&omine frequently for unique and rare drops.'
+    woodcutting-profession:
+        slots: [17]
+        function: profession_woodcutting
+        item: IRON_AXE
+        name: '&aДровосечество'
+        hide-flags: true
+        lore:
+        - ''
+        - '&7Текущий уровень: &f{level}'
+        - '&8[&a{progress}&8] &f{percent}%'
+        - ''
+        - '&7&oThough it may seem like a boring task, woodcutting'
+        - '&7&ois vital to obtaining materials used for crafting and trade,'
+        - '&7&oand will help give you the upper hand in the arcane ways.'
+    farming-profession:
+        slots: [8]
+        function: profession_farming
+        item: IRON_HOE
+        name: '&aФермерство'
+        hide-flags: true
+        lore:
+        - ''
+        - '&7Текущий уровень: &f{level}'
+        - '&8[&a{progress}&8] &f{percent}%'
+        - ''
+        - '&7&oWith tons of new food and consumable recipes,'
+        - '&7&oyou will need to stay on top of the crops in order'
+        - '&7&oto obtain the best food and drinks to keep yourself healthy.'
+    fishing-profession:
+        slots: [25]
+        function: profession_fishing
+        item: FISHING_ROD
+        name: '&aРыбалка'
+        hide-flags: true
+        lore:
+        - ''
+        - '&7Текущий уровень: &f{level}'
+        - '&8[&a{progress}&8] &f{percent}%'
+        - ''
+        - '&7&oРыбалка - популярное занятие для'
+        - '&7&oдобычи собственного пропитания,'
+        - '&7&oа так же на продажу.'
+        - ''
+        - '&7Мастерство рыбалки: &c{fishing_strength}%'
+        - '&7Вероятность мгновенно поймать: &c{critical_fishing_chance}%'
+        - '&7Вероятность что рыба сорвётся: &c{critical_fishing_failure_chance}%'
+    gathering-profession:
+        slots: [16]
+        function: profession_gathering
+        item: SWEET_BERRIES
+        name: '&aСобирательство'
+        hide-flags: true
+        lore:
+        - ''
+        - '&7Текущий уровень: &f{level}'
+        - '&8[&a{progress}&8] &f{percent}%'
+        - ''
+        - '&7&oОписание бро'
     boost-display:
         slots: [1,10,19]
         function: boost
@@ -19,39 +91,39 @@ items:
         # Profession experience boosters
         profession:
             item: EXPERIENCE_BOTTLE
-            name: '&aEXP Boost'
+            name: '&aXP Буст'
             lore:
-            - '&7Amount: &6+{value}%'
-            - '&7Time left: &6{left}'
-            - '&7Profession: &6{profession}'
+            - '&7Множитель: &6+{value}%'
+            - '&7Время осталось: &6{left}'
+            - '&7Профессия: &6{profession}'
             - '&7'
-            - '&eStarted by {author}'
+            - '&eАктивировал {author}'
         
         # Main class experience boosters
         main-level:
             item: EXPERIENCE_BOTTLE
-            name: '&aEXP Boost'
+            name: '&aXP Буст'
             lore:
-            - '&7Amount: &6+{value}%'
-            - '&7Time left: &6{left}'
+            - '&7Множитель: &6+{value}%'
+            - '&7Время осталось: &6{left}'
             - '&7'
-            - '&eStarted by {author}'
+            - '&eАктивировал {author}'
     boost-next:
         slots: [1]
         function: boost-next
         item: PLAYER_HEAD
         texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
-        name: '&aNext'
+        name: '&aСледующий'
         lore: {}
     boost-prev:
         slots: [19]
         function: boost-previous
         item: PLAYER_HEAD
         texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
-        name: '&aPrevious'
+        name: '&aПредыдущий'
         lore: {}
     party:
-        slots: [7]
+        slots: [4]
         function: party
         item: CAKE
         name: '&aParty вайб'
@@ -63,7 +135,7 @@ items:
         - '&8- +{buff_additional_experience}% XP Бонус!'
         - '&8- +{buff_health_regeneration}% Восстановление здоровья'
     stats:
-        slots: [16]
+        slots: [7]
         function: profile
         item: PLAYER_HEAD
         name: '&fИнформация об {player}'
@@ -78,7 +150,7 @@ items:
         slots: [12]
         function: stats
         name: '&cСила'
-        item: GOLDEN_APPLE
+        item: LIGHT_BLUE_DYE
         hide-flags: true
         lore:
         - ''
@@ -95,7 +167,7 @@ items:
         slots: [13]
         function: stats
         name: '&aЛовкость'
-        item: LEATHER_BOOTS
+        item: YELLOW_DYE
         hide-flags: true
         lore:
         - ''
@@ -113,7 +185,7 @@ items:
         slots: [14]
         function: stats
         name: '&bИнтеллект'
-        item: BOOK
+        item: LIME_DYE
         hide-flags: true
         lore:
         - ''

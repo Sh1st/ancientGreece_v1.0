@@ -24,10 +24,14 @@
     block-id: 3.0
 '4':
   base:
-    material: OAK_LOG
-    min-xp: 10.0
-    max-xp: 20.0
-    required-power: 10.0
+    material: HAY_BLOCK
+    require-power-to-break: 0.0
+    displayed-type: '10'
+    disable-crafting: true
+    hide-enchants: true
+    disable-smelting: true
+    disable-smithing: true
+    unbreakable: true
 '5':
   base:
     material: OAK_LOG
@@ -37,3 +41,10 @@
     disable-death-drop: true
     unstackable: true
     custom-nbt: []
+BERRY:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTFlN2ViMmU0NjFlOTZlNjMxY2JhMGMwY2RhYTU0NDg4MDYzMDJlZGFlOTFiNjFkYWZjMjgxYWU1ODRkOCJ9fX0=
+      uuid: 701aa558-c1b0-4eb7-81e4-79b1af25283c
+    name: '&fЯгода'

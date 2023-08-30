@@ -1,3 +1,4 @@
+auto: true
 startRewards:
 - id: commandReward
   commands:
@@ -7,10 +8,9 @@ startRewards:
     label: title {PLAYER} title {"text":"Лутраки","color":"gold"}
   - console: true
     label: title {PLAYER} subtitle {"text":"Священное кладбище воинов","color":"yellow"}
-auto: true
-name: Первые шаги
-cancellable: false
 description: Поговорите с незнакомцем
+cancellable: false
+name: §6Кладбище
 manager:
   branches:
     '0':
@@ -18,7 +18,7 @@ manager:
         '0':
           region: spawn
           world: world
-          exit: false
+          exit: true
           stageType: REGION
           customText: Поговорите с незнакомцем
           text: '§7[1/1] §2Незнакомец: §aЭй! Откуда ты там взялся?'
@@ -181,19 +181,21 @@ manager:
               meta:
                 ==: ItemMeta
                 meta-type: UNSPECIFIC
-                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обол"}],"text":""}'
+                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Бронзовый
+                  обол"}],"text":""}'
                 lore:
                 - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Валюта"}],"text":""}'
-                attribute-modifiers:
-                  GENERIC_ATTACK_SPEED:
-                  - ==: org.bukkit.attribute.AttributeModifier
-                    amount: 0.0
-                    name: mmoitemsDecoy
-                    uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
-                    operation: 0
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":""}],"text":""}'
+                - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":true,"obfuscated":false,"color":"gold","text":"───"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"[
+                  1ὀ ]"},{"bold":false,"italic":false,"underlined":false,"strikethrough":true,"obfuscated":false,"color":"gold","text":"───"}],"text":""}'
+                custom-model-data: 1
                 ItemFlags:
+                - HIDE_ENCHANTS
                 - HIDE_ATTRIBUTES
-                internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf1c/Zw9AsJZmCKjuVgEIeLu3gGB/g4Rrq6xIdEBrgy8KmZX5h0YcOF3Rf7LjZd2MDBIABXCSLjPV0YGA05GHjhon6Ovq4MHBfmXdh4Yd+F3RwMogiTI4Fyns7xPv5Brgwi0UpqyahmKwHdIYRqOtgJLD6hIa4cDHwewSFBkQh3O1QrBZcklihZKcGElHSU/N2DS/KLKpWsoquVMLwaf3hjcUkRUEN0rFJtbC0DAJQFdGESAQAA
+                - HIDE_UNBREAKABLE
+                - HIDE_DESTROYS
+                - HIDE_PLACED_ON
+                - HIDE_POTION_EFFECTS
         '5':
           npcID: 8
           msg:
@@ -231,8 +233,8 @@ manager:
               meta:
                 ==: ItemMeta
                 meta-type: UNSPECIFIC
-                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Кинжал
-                  ребёнка"}],"text":""}'
+                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Ржавый
+                  кинжал"}],"text":""}'
                 lore:
                 - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Нормальная
                   скорость атаки"}],"text":""}'
@@ -248,6 +250,7 @@ manager:
                   не чищенный"}],"text":""}'
                 - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Обычный
                   предмет"}],"text":""}'
+                custom-model-data: 4000
                 attribute-modifiers:
                   GENERIC_ATTACK_SPEED:
                   - ==: org.bukkit.attribute.AttributeModifier
@@ -259,7 +262,11 @@ manager:
                 - HIDE_ATTRIBUTES
                 - HIDE_UNBREAKABLE
                 Unbreakable: true
-                internal: H4sIAAAAAAAA/61TTWsTURR9I1iCoPiBil/weIuugmBBhWzsc+Y5GTofcd5TCSEMRerKGmlmU0LAxkWRBkRwJVEE/QFJMRrTpi78A/ftXPcX+BO8k0mnkXQjOIuBd+6951zuufcEITlyzvMCRwlPRrbwIqkCX0hCG0ysPo/X5dNaXGeFSjXP7JXVelx7tjJ+NnPkTFYnfLPIfSXJsUo1R05muBuEgixV2Pxt+AhfoQvbegu+5ymMoE/1Jgz0K+jjY5TALM/mn8AH6OktDI0hCj/0C8z4ArvQ1y2G5BczcsuRJZeXhRWpckmQBRR5D3uYv4tCO7qNvF39muoNGI7hPb2hW7pNEW1hxhAGBrk0zcbvuiIyQ35POb5tHBWUnqOKSTBHzmbB5J+2cFw+CkJrjlzIYlwpbi5FFve4LRZJ+hnk8gxzKErcCVPq039TOxYxbhrk6kyN4ysRclM5gY/dXpmJT1xJSOem5haK+w+cEMfmiofCvfM7bWraNp97glxDM97BAKeYGLdDx0b09BsEhtDNkfOHemUscMzU7V/o9uN/twLNT/y/td/5ROEzyn7D5dhE05OSAW6CfpnUwahAFya5y/udtxSVOkmT1w8StpOF0u0CvTFJ+1+rd/Q+CFelpp0qShWWDy9hscFkvByzAjuAUCSwZVxbW8f7abCZ44l+9urxGhZUqqxZbZI/ktR+FJwDAAA=
+                internal: H4sIAAAAAAAA/61TW2sTQRidVSxB8I5KVXCZhz6F0ha8sC92zI7J0r3EnUlLCGGJcYtibiTrpYSArQ9FGvDFxyoF/QFtsdpb6oN/YObN5/4Cf4LfJuk2kL4I7sOyc86Z78x+c76zCMXQFctyDE4t5iWp5THu2JQhtYlpuRYssFI1aGAtl4/jpF9uBNWK3122YuhStI/aiRSxOUOncvkYOhfhpuNSNJPDY/fEmvgu1sWmXBE7cVV0xJYql8W2fC+2YNEJYRzHY/Pis9iQK0B1IVX8lG9B8U3siy25hKH49ai4brC0SbJU93g2TdEUmHwSB6DfB6M92Ya66/KDKhfFbhc+kItySbZVQJdAsSu2FTQ6WI08NKmXcMkjbthJ5SSSWQZPhWQMXY7I8N07whk257j6CLoWcYRzkpjxdGKRJJ1Gvec0uhEJEhnot+VZjk5NkHGC0IU1ZUBwZO3SNDHcnvfFiM2kky7RKXraxNwv10qFwMcaDvxG8Nov1KoV6Olctf7iiV8pPsPafKHU8ONYB7peXYjWpv/KL2FtIo6twhusTYYfzytdgL0sFv0GXPjE+P3WoHH3pw0dKXcUdGvosIbNqUsS3HBs6OPNIb6fl/BvRgZu1KWPM4YLF2rSWWo++NNrl4JuDxXo9zVNGDNmqTKYOZtYFI0O5k0N7xrSEAJ7MXT1uFoWxEaiF9PfENPiv2cIOhwG9+7h6hdVfAWfH5DqZUjrYtd1R5Xvwn2io6lTfW3hcPWjCk6r4anGjwSb4STItqZO9mX/a2ZODjI1eS9M51OMu9njEZ5uYhYUAojREQQmTpIF1TpEJtfEQ1Pv/dqAQMGGXB638i30FzYVGR1VBAAA
+          - id: commandReward
+            commands:
+            - console: true
+              label: spawnpoint {PLAYER} -50 57 192
         '6':
           npcID: 8
           msg:
@@ -272,6 +279,10 @@ manager:
               message:
                 sender: NPC
                 text: §aВот твой мешочек. Спасибо за помощь, давно старик так не радовался.
+            - id: 2
+              message:
+                sender: NPC
+                text: §aЕсли захочешь попасть в город, иди прямо по дороге
           items:
           - ==: org.bukkit.inventory.ItemStack
             v: 2586
@@ -291,7 +302,7 @@ manager:
               - '{"italic":false,"color":"gray","text":"Используется для прохождения
                 квеста"}'
               - '{"italic":false,"color":"red","text":"Квестовый предмет"}'
-              internal: H4sIAAAAAAAA/+NiYOBg4PaNDPHwdI4PiQxwZeApSkxKyiyJz8hMSTVkAADVfpBGIAAAAA==
+              internal: H4sIAAAAAAAA/+NiYOBg4PaNDPHwdI4PiQxwZeApSkxKyiyJz8hMSTVkZhCGynmGuPrGh7kGBXv6+zEwMDAyAABPEnJJOgAAAA==
           stageType: ITEMS
           rewards:
           - id: itemReward
@@ -301,16 +312,17 @@ manager:
               meta:
                 ==: ItemMeta
                 meta-type: UNSPECIFIC
-                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Мешочек
+                display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Мешочек
                   для обол"}],"text":""}'
                 lore:
-                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Внутри
-                  5 Обол"}],"text":""}'
+                - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Уровень
+                  1"}],"text":""}'
                 - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":""}],"text":""}'
                 - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Простенький
                   рукодельный мешочек"}],"text":""}'
                 - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"для
                   хранения денег."}],"text":""}'
+                custom-model-data: 4000
                 attribute-modifiers:
                   GENERIC_ATTACK_SPEED:
                   - ==: org.bukkit.attribute.AttributeModifier
@@ -320,6 +332,6 @@ manager:
                     operation: 0
                 ItemFlags:
                 - HIDE_ATTRIBUTES
-                internal: H4sIAAAAAAAA/+NiYOBgEPT19fcMcfUNjnf1c/Zw9AsJZmCKjuVg4IWL+/gHuTJkRSupmV+Yf7Hhwr6LjRebLmy9sPdiz4VdF3Zc2KlwseFiM5C578IWoPBuoPDei91A4Qt7Lmy92AFU3w4U3qWkAzJgC1C+X+FiK9CcDRf2gky5sAMoANYJ4m7WUwLaLQ6328UzOMDHMdLVJT4kMsCVQRJoxCSg8c0Xm4Am7FAwVbgw78JGoM27ORgE4JpAZLynCwOjEbI3/Bx9XRnkLsxBdpQC1EFAE6CmiCKsjgTq8HSGeL8b6P1knJYD/QbxHp3CRwjVq+CgYfEJDXHlYODzCA4JikTEpUO1UnBJYomSlRJMCGiRv3twSX5RpZJVdLUSRvTHH95YXFIE1BAdq1QbW8sAANJUtzcmAgAA
+                internal: H4sIAAAAAAAA/71Sy0rDQBS96iYI9QUiuAqzcFVKu1HoypAMGsgkpZMuSikh1rjQvmjjQqTgEwUFf0BQ8Ad8tKCt7cYfmPkjb622FfcuZpg5c++559y50wAKzDPmmC5l3NMdxjTb4KDnDoleKZX88jZJki2/sFfFpVaqQZlEiREU/QOSjMfiUYwq1yvFgCR3/GI9iBKnSpJhbT9o5MeJqa1varbLYTKHeGSIW06awm6OrKyJO3kkevJYnoiW6Mpr0Rav4k2VR/IUjz3RRLiDcFdeISzeRUteYvwFwm2UhARNfL9R5TnyPIpun0W8IvCV2b++xEh+CpZHZjPcdZjHHINanqG5GsDsvQJLwwDD5ClLy1LDc7MpCgtY46EvUjwPJKoJBeaG0f3dMw2YSIwbtDVGQV1ZFbfjgtVvscj1hKujwOKoahZzTH3QmjNsTeFvXTQ88PwvTVNg4bfLr3ZEmMl1almaTZ0MV2Bmk7vp7Oin1w8JD/0Qx+cHworOBg8rNZwdnK8/w+F9PNXDGibk8qSRb8An7dUK050CAAA=
       endingStages: {}
 id: 1

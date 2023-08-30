@@ -1,0 +1,11 @@
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+
+sand_castleDROPTABLE:
+  TotalItems: 1
+  Drops:
+  - arrow 1 0.75
+
+# 613604376509931687530002

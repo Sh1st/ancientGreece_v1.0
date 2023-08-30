@@ -1,0 +1,418 @@
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+  
+giant_turtleIDLEsound:
+  Conditions:
+  - stance awake
+  Skills:
+  - randomskill{s=giant_turtleIDLE1,giant_turtleIDLE2,giant_turtleIDLE3} @self
+
+giant_turtleIDLE1:
+  Skills:
+  - sound{s=littleroom_tortus:littleroom.tortus.idle1;v=5;sc=HOSTILE} @self
+
+giant_turtleIDLE2:
+  Skills:
+  - sound{s=littleroom_tortus:littleroom.tortus.idle2;v=5;sc=HOSTILE} @self
+
+giant_turtleIDLE3:
+  Skills:
+  - sound{s=littleroom_tortus:littleroom.tortus.idle3;v=5;sc=HOSTILE} @self
+  
+  
+  
+giant_turtleSWINGsound:
+  Skills:
+  - randomskill{s=giant_turtleSWING1,giant_turtleSWING2} @self
+
+giant_turtleSWING1:
+  Skills:
+  - sound{s=littleroom_tortus:littleroom.tortus.swing1;v=5;sc=HOSTILE} @self
+
+giant_turtleSWING2:
+  Skills:
+  - sound{s=littleroom_tortus:littleroom.tortus.swing2;v=5;sc=HOSTILE} @self
+  
+  
+giant_turtleIMPACTsound:
+  Skills:
+  - randomskill{s=giant_turtleIMPACT1,giant_turtleIMPACT2,giant_turtleIMPACT3,giant_turtleIMPACT4} @self
+
+giant_turtleIMPACT1:
+  Skills:
+  - sound{s=littleroom_tortus:littleroom.tortus.impact;v=5;sc=HOSTILE} @self
+
+giant_turtleIMPACT2:
+  Skills:
+  - sound{s=littleroom_tortus:littleroom.tortus.impact2;v=5;sc=HOSTILE} @self
+
+giant_turtleIMPACT3:
+  Skills:
+  - sound{s=littleroom_tortus:littleroom.tortus.impact3;v=5;sc=HOSTILE} @self
+
+giant_turtleIMPACT4:
+  Skills:
+  - sound{s=littleroom_tortus:littleroom.tortus.impact4;v=5;sc=HOSTILE} @self
+
+giant_turtleSHAKE:
+  Skills:
+  - throw{velocity=1;velocityY=5} @PIR{r=12}
+  - potion{type=SLOW;duration=60;level=1} @pir{r=12}
+  - delay 2
+  - recoil{r=15;pitch=-.5} @pir{r=12}
+  - delay 2
+  - recoil{r=15;pitch=.4} @pir{r=12}
+  - delay 2
+  - recoil{r=15;pitch=-.3} @pir{r=12}
+  - delay 2
+  - recoil{r=15;pitch=.2} @pir{r=12}
+
+giant_turtleSPAWN:
+  Skills:
+  - delay 1
+  - setAI{ai=false} @self
+
+giant_turtlePUSHPLAYERS:
+  Conditions:
+  - stance{s=awake}
+  Skills:  
+  - throw{velocity=2;velocityY=-1} @PIR{r=5}
+
+
+giant_turtleEMERGE:
+  Conditions:
+  - stance{s=awake} false
+  - playerwithin{d=3}
+  Skills:
+  - gcd{ticks=160}
+  - skill{s=giant_turtleEMERGEFX} @self
+  - skill{s=giant_turtleEMERGESHAKE;repeat=16;repeatInterval=8} @pir{r=12}
+  - setstance{stance=awake} @self
+  - state{s=emerge} @self
+  - delay 60
+  - delay 100
+  - setAI{ai=true} @self
+  - defaultstate{m=giant_turtle;t=idle;s=idle_awake} @self
+
+giant_turtleEMERGEFX:
+  Skills:
+  - sound{s=littleroom_tortus:littleroom.tortus.emerge;v=5;sc=HOSTILE} @self
+  - effect:particles{particle=block;m=sand;amount=50;hS=1.5;vS=.25;repeat=80;repeatInterval=1} @self
+  - delay 60
+  - effect:particles{particle=falling_dust;amount=25;hS=1.2;vS=.25;repeat=20;repeatInterval=5} @modelpart{m=giant_turtle;p=body}
+  - delay 5
+  - skill{s=giant_turtleIMPACTsound} @self
+  - totem{ch=1;oS=giantTURTLEEMERGEFX;oH=giantTURTLEEMERGETHROW;int=1;hR=2;md=10;hnp=false} @modelpart{m=giant_turtle;p=front_left_foot;offset=LOCAL;z=1}
+  - delay 10
+  - ChangePart{model=giant_turtle;part=body;newmodel=giant_turtle_parts;newpart=body} @self
+  - submodel{model=giant_turtle;subpart=castle;remove=true} @self
+  - totem{ch=1;oS=giantTURTLEEMERGEFX;oH=giantTURTLEEMERGETHROW;int=1;hR=2;md=10;hnp=false} @modelpart{m=giant_turtle;p=head;offset=LOCAL;z=1}
+  - delay 30
+  - skill{s=giant_turtleIMPACTsound} @self
+  - totem{ch=1;oS=giantTURTLEEMERGEFX;oH=giantTURTLEEMERGETHROW;int=1;hR=2;md=10;hnp=false} @modelpart{m=giant_turtle;p=front_right_foot;offset=LOCAL}
+  - delay 15
+  - skill{s=giant_turtleIMPACTsound} @self
+  - totem{ch=1;oS=giantTURTLEEMERGEFX;oH=giantTURTLEEMERGETHROW;int=1;hR=2;md=10;hnp=false} @modelpart{m=giant_turtle;p=front_right_foot2;offset=LOCAL}
+  - delay 10
+  - skill{s=giant_turtleIMPACTsound} @self
+  - totem{ch=1;oS=giantTURTLEEMERGEFX;oH=giantTURTLEEMERGETHROW;int=1;hR=2;md=10;hnp=false} @modelpart{m=giant_turtle;p=front_left_foot2;offset=LOCAL}
+
+giant_turtleEMERGESHAKE:
+  Skills:
+  - delay 2
+  - recoil{r=5;pitch=-.3}
+  - delay 2
+  - recoil{r=10;pitch=.2}
+  - delay 2
+  - recoil{r=5;pitch=-.1}
+  - delay 2
+  - recoil{r=15;pitch=.1}
+
+giantTURTLEEMERGEFX:
+  Skills:
+  - effect:particles{particle=block;m=sand;amount=75;hS=.5;vS=.5;repeat=2;repeatInterval=2} 
+
+giantTURTLEEMERGETHROW:
+  Skills:
+  - throw{velocity=4;velocityY=8}
+
+giant_turtleSTOMP1sync:
+  Skills:
+  - CancelEvent
+  - skill{s=giant_turtleSTOMP1} @self
+  
+giant_turtleSTOMP1:
+  Conditions:
+  - offgcd
+  - targetwithin{d=8}
+  Skills:
+  - setAI{ai=false} @self
+  - gcd{ticks=50} @self
+  #- look{headOnly=false;immediately=true;repeat=40;repeatInterval=1} @Target
+  - setspeed{speed=0;type=walking} @self
+  - state{s=attack1} @self
+  - delay 40
+  - delay 10  
+  - lunge{v=1} @forward{f=5}
+  - skill{s=giant_turtleSWINGsound} @self
+  - delay 5
+  - skill{s=giant_turtleIMPACTsound} @self
+  - skill{s=giant_turtleSHAKE} @modelpart{m=giant_turtle;p=front_left_foot;offset=LOCAL;y=-2}
+  - totem{ch=10;oH=giantTURTLEDAMAGE;int=1;hR=1.5;md=2;hnp=false;repeat=5;repeatInterval=1} @modelpart{m=giant_turtle;p=front_left_foot;offset=LOCAL;y=-2}
+  - delay 26
+  - setspeed{speed=.5;type=walking} @self
+  - setAI{ai=true} @self
+
+giant_turtleSTOMP2sync:
+  Skills:
+  - CancelEvent
+  - skill{s=giant_turtleSTOMP2} @self
+  
+giant_turtleSTOMP2:
+  Conditions:
+  - offgcd
+  - targetwithin{d=8}
+  Skills:
+  - setAI{ai=false} @self
+  - gcd{ticks=50} @self
+  #- look{headOnly=false;immediately=true;repeat=40;repeatInterval=1} @Target
+  - setspeed{speed=0;type=walking} @self
+  - state{s=attack2} @self
+  - delay 40
+  - delay 10  
+  - lunge{v=1} @forward{f=5}
+  - skill{s=giant_turtleSWINGsound} @self
+  - delay 5
+  - skill{s=giant_turtleIMPACTsound} @self
+  - skill{s=giant_turtleSHAKE} @modelpart{m=giant_turtle;p=front_right_foot;offset=LOCAL;y=-2}
+  - totem{ch=10;oH=giantTURTLEDAMAGE;int=1;hR=1.5;md=2;hnp=false;repeat=5;repeatInterval=1} @modelpart{m=giant_turtle;p=front_right_foot;offset=LOCAL;y=-2}
+  - delay 26
+  - setspeed{speed=.5;type=walking} @self
+  - setAI{ai=true} @self
+
+giantTURTLEDAMAGE:
+  Cooldown: 1
+  Skills:
+  - throw{velocity=3;velocityY=3}
+  - damage{a=25}
+
+  
+giant_turtleCOMBOsync:
+  Skills:
+  - CancelEvent
+  - skill{s=giant_turtleCOMBO} @self
+  
+giant_turtleCOMBO:
+  Conditions:
+  - offgcd
+  - targetwithin{d=10}
+  Skills:
+  #- look{headOnly=false;immediately=true;repeat=130;repeatInterval=1} @Target
+  - setspeed{speed=0;type=walking} @self
+  - gcd{ticks=130} @self
+  #- setAI{ai=false} @self
+  - state{s=combo1} @self
+  - delay 15
+  - skill{s=giant_turtleSWINGsound} @self
+  - delay 5
+  - lunge{v=1} @forward{f=5}
+  - totem{ch=1;oH=giantTURTLEDAMAGE;int=1;hR=2;md=2;hnp=false;repeat=10;repeatInterval=1} @modelpart{m=giant_turtle;p=front_left_foot;offset=LOCAL;y=-4;x=-4}
+  - delay 35
+  - skill{s=giant_turtleSWINGsound} @self
+  - delay 5
+  - lunge{v=1} @forward{f=5}
+  - totem{ch=1;oH=giantTURTLEDAMAGE;int=1;hR=1.5;md=2;hnp=false;repeat=10;repeatInterval=1} @modelpart{m=giant_turtle;p=jaw}
+  - delay 50
+  - skill{s=giant_turtleSWINGsound} @self
+  - delay 5
+  - lunge{v=1} @forward{f=5}
+  - skill{s=giant_turtleIMPACTsound} @self
+  - skill{s=giant_turtleSHAKE} @modelpart{m=giant_turtle;p=front_right_foot;offset=LOCAL;y=-4}
+  - totem{ch=1;oH=giantTURTLEDAMAGE;int=1;hR=1.5;md=2;hnp=false;repeat=10;repeatInterval=1} @modelpart{m=giant_turtle;p=front_right_foot;offset=LOCAL;y=-4}
+  - delay 16
+  - setspeed{speed=1;type=walking} @self
+  #- setAI{ai=true} @self
+  
+giant_turtleSLAM:
+  Cooldown: 50
+  Conditions:
+  - offgcd
+  - stance{s=awake} true
+  - targetwithin{d=10} false
+  Skills:
+  - gcd{ticks=50}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=retract}
+  - delay 15
+  - lunge{v=4;yv=.25} @target
+  - delay 15
+  - skill{s=giant_turtleSLAMGROUND;repeat=30;repeatInterval=1} @self
+  - throw{velocity=10;velocityY=6} @pir{r=7}
+  - lunge{v=1;yv=-10} @selflocation{y=-10}
+  - ChangePart{model=giant_turtle;part=front_left_leg;newmodel=giant_turtle_parts;newpart=empty} @self
+  - ChangePart{model=giant_turtle;part=front_left_foot;newmodel=giant_turtle_parts;newpart=empty} @self
+  - ChangePart{model=giant_turtle;part=front_left_leg2;newmodel=giant_turtle_parts;newpart=empty} @self
+  - ChangePart{model=giant_turtle;part=front_left_foot2;newmodel=giant_turtle_parts;newpart=empty} @self
+  - ChangePart{model=giant_turtle;part=front_right_leg;newmodel=giant_turtle_parts;newpart=empty} @self
+  - ChangePart{model=giant_turtle;part=front_right_foot;newmodel=giant_turtle_parts;newpart=empty} @self
+  - ChangePart{model=giant_turtle;part=front_right_leg2;newmodel=giant_turtle_parts;newpart=empty} @self
+  - ChangePart{model=giant_turtle;part=front_right_foot2;newmodel=giant_turtle_parts;newpart=empty} @self
+  - ChangePart{model=giant_turtle;part=neck1;newmodel=giant_turtle_parts;newpart=empty} @self
+  - ChangePart{model=giant_turtle;part=neck2;newmodel=giant_turtle_parts;newpart=empty} @self
+  - ChangePart{model=giant_turtle;part=head;newmodel=giant_turtle_parts;newpart=empty} @self
+  - ChangePart{model=giant_turtle;part=jaw;newmodel=giant_turtle_parts;newpart=empty} @self
+  - ChangePart{model=giant_turtle;part=tail;newmodel=giant_turtle_parts;newpart=empty} @self
+  - ChangePart{model=giant_turtle;part=tail2;newmodel=giant_turtle_parts;newpart=empty} @self
+  - ChangePart{model=giant_turtle;part=tail3;newmodel=giant_turtle_parts;newpart=empty} @self
+  - delay 10
+  - randomskill{skills=giant_turtleEXTRACT,giant_turtleSPIN} @self
+  
+giant_turtleSLAMGROUND:
+  Cooldown: 5
+  Conditions:
+  - onground
+  Skills:
+  - skill{s=giant_turtleIMPACTsound} @self
+  - skill{s=giant_turtleSHAKE}
+  - throw{velocity=10;velocityY=10} @pir{r=12}
+  - throw{velocity=1;velocityY=5} @pir{r=16}
+  - damage{a=15} @pir{r=8}
+  
+  
+giant_turtleEXTRACT:
+  Skills:
+  - bodyclamp{m=giant_turtle;c=10} @self
+  - state{s=coconut_spin;r=true} @self
+  - ChangePart{model=giant_turtle;part=front_left_leg;newmodel=giant_turtle;newpart=front_left_leg} @self
+  - ChangePart{model=giant_turtle;part=front_left_foot;newmodel=giant_turtle;newpart=front_left_foot} @self
+  - ChangePart{model=giant_turtle;part=front_left_leg2;newmodel=giant_turtle;newpart=front_left_leg2} @self
+  - ChangePart{model=giant_turtle;part=front_left_foot2;newmodel=giant_turtle;newpart=front_left_foot2} @self
+  - ChangePart{model=giant_turtle;part=front_right_leg;newmodel=giant_turtle;newpart=front_right_leg} @self
+  - ChangePart{model=giant_turtle;part=front_right_foot;newmodel=giant_turtle;newpart=front_right_foot} @self
+  - ChangePart{model=giant_turtle;part=front_right_leg2;newmodel=giant_turtle;newpart=front_right_leg2} @self
+  - ChangePart{model=giant_turtle;part=front_right_foot2;newmodel=giant_turtle;newpart=front_right_foot2} @self
+  - ChangePart{model=giant_turtle;part=neck1;newmodel=giant_turtle;newpart=neck1} @self
+  - ChangePart{model=giant_turtle;part=neck2;newmodel=giant_turtle;newpart=neck2} @self
+  - ChangePart{model=giant_turtle;part=head;newmodel=giant_turtle;newpart=head} @self
+  - ChangePart{model=giant_turtle;part=jaw;newmodel=giant_turtle;newpart=jaw} @self
+  - ChangePart{model=giant_turtle;part=tail;newmodel=giant_turtle;newpart=tail} @self
+  - ChangePart{model=giant_turtle;part=tail2;newmodel=giant_turtle;newpart=tail2} @self
+  - ChangePart{model=giant_turtle;part=tail3;newmodel=giant_turtle;newpart=tail3} @self
+  #- defaultstate{m=giant_turtle;t=idle;s=idle_awake} @self
+  #- defaultstate{m=giant_turtle;t=walk;s=walk} @self
+  - setAI{ai=false} @self
+  - state{s=extract} @self
+  - delay 10
+  - setspeed{speed=1;type=walking} @self
+  - setAI{ai=true} @self
+  
+giant_turtleSPIN:
+  Skills:
+  - sound{s=littleroom_tortus:littleroom.tortus.spin;v=5;sc=HOSTILE} @self
+  - skill{s=giant_turtleTOSSCOCONUTS;repeat=6;repeatInterval=20} @self
+  - bodyclamp{m=giant_turtle;c=365} @self
+  - damage{a=2;repeat=120;repeatInterval=1} @pir{r=5}
+  - throw{velocity=20;velocityY=2;repeat=120;repeatInterval=1} @pir{r=4}
+  - lunge{v=.25;yv=-1;repeat=120;repeatInterval=1} @target
+  - gcd{ticks=120}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=coconut_spin} @self
+  #- defaultstate{m=giant_turtle;t=idle;s=coconut_spin} @self
+  #- defaultstate{m=giant_turtle;t=walk;s=coconut_spin} @self
+  - delay 120
+  - skill{s=giant_turtleEXTRACT} @self
+  
+giant_turtleTOSSCOCONUTS:
+  Skills:
+  - summon{t=giant_turtle_coconut;a=3;r=2} @selflocation{y=6}
+  
+giant_turtle_coconutEXPLODE:
+  Conditions:
+  - onground
+  Skills:
+  - explosion{y=2} @self
+  
+giant_turtleDEATH:
+  Skills:
+  - sound{s=littleroom_tortus:littleroom.tortus.death;v=5;sc=HOSTILE} @self
+  - ChangePart{model=giant_turtle;part=front_left_leg;newmodel=giant_turtle;newpart=front_left_leg} @self
+  - ChangePart{model=giant_turtle;part=front_left_foot;newmodel=giant_turtle;newpart=front_left_foot} @self
+  - ChangePart{model=giant_turtle;part=front_left_leg2;newmodel=giant_turtle;newpart=front_left_leg2} @self
+  - ChangePart{model=giant_turtle;part=front_left_foot2;newmodel=giant_turtle;newpart=front_left_foot2} @self
+  - ChangePart{model=giant_turtle;part=front_right_leg;newmodel=giant_turtle;newpart=front_right_leg} @self
+  - ChangePart{model=giant_turtle;part=front_right_foot;newmodel=giant_turtle;newpart=front_right_foot} @self
+  - ChangePart{model=giant_turtle;part=front_right_leg2;newmodel=giant_turtle;newpart=front_right_leg2} @self
+  - ChangePart{model=giant_turtle;part=front_right_foot2;newmodel=giant_turtle;newpart=front_right_foot2} @self
+  - ChangePart{model=giant_turtle;part=neck1;newmodel=giant_turtle;newpart=neck1} @self
+  - ChangePart{model=giant_turtle;part=neck2;newmodel=giant_turtle;newpart=neck2} @self
+  - ChangePart{model=giant_turtle;part=head;newmodel=giant_turtle;newpart=head} @self
+  - ChangePart{model=giant_turtle;part=jaw;newmodel=giant_turtle;newpart=jaw} @self
+  - ChangePart{model=giant_turtle;part=tail;newmodel=giant_turtle;newpart=tail} @self
+  - ChangePart{model=giant_turtle;part=tail2;newmodel=giant_turtle;newpart=tail2} @self
+  - ChangePart{model=giant_turtle;part=tail3;newmodel=giant_turtle;newpart=tail3} @self
+  - delay 50
+  - skill{s=giant_turtleIMPACTsound} @self
+  - skill{s=giant_turtleSHAKE} @PIR{r=12}
+  - damage{a=15} @PIR{r=8}
+  - throw{velocity=20;velocityY=2} @PIR{r=8}
+  - delay 50
+  - dropitem{i=giant_turtle_shield} @forward{f=3}
+  - effect:particles{particle=poof;amount=250;hS=3;vS=3} @modelpart{m=giant_turtle;p=body}
+ 
+palmtreeHITBOX:
+  Skills:
+  - throw{velocity=2;velocityY=-1} @PIR{r=1}  
+  - totem{ch=1;oH=palmtreeHITBOXTOP;int=1;hR=.5;md=5;hnp=false} @selflocation{y=2}
+  
+palmtreeHITBOXTOP:
+  Skills:
+  - throw{velocity=2;velocityY=-1}
+
+ 
+palmtreeDROP:
+  Cooldown: 10
+  Skills:
+  - ChangePart{model=palm_tree;part=palm3;newmodel=palm_tree_parts;newpart=palm3} @self
+  - state{s=hit;li=0;lo=3} @self
+  - totem{ch=1;oS=palmtreeDROPNUTS;int=1;hR=.5;md=5;hnp=false} @modelpart{m=palm_tree;p=palm3}
+  - delay 60
+  - effect:particles{particle=poof;amount=50;hS=1;vS=1} @modelpart{m=palm_tree;p=palm2}
+  - effect:particles{particle=poof;amount=50;hS=1;vS=1} @modelpart{m=palm_tree;p=palm3}
+  - effect:particles{particle=poof;amount=50;hS=1;vS=1} @modelpart{m=palm_tree;p=palm1}
+  - remove @self
+  
+palmtreeDROPNUTS:
+  Skills:
+  - dropitem{i=palm_coconut,palm_coconut}
+  
+palm_coconutLAND:
+  Conditions:
+  - onground
+  Skills:
+  - defaultstate{m=giant_turtle_coconut;t=idle;s=land} @self
+  
+palm_coconutCUT:
+  Conditions:
+  - damagecause{cause=ENTITY_ATTACK} true
+  Skills:
+  - dropitem{i=coconut_milk,coconut_milk} @self
+  - remove @self
+  
+palm_coconutPICKUP:
+  Conditions:
+  - onground
+  Skills:
+  - defaultstate{m=giant_turtle_coconut;t=idle;s=land} @self
+  
+sand_castleREMOVE:
+  Cooldown: 10
+  Skills:
+  - state{s=remove} @self
+  - dropitem{i=sand_castleDROPTABLE} @self
+  - effect:particles{particle=block;material=sand;amount=100;hS=.5;vS=.5} @selflocation{y=.5}
+  - ChangePart{model=sand_castle;part=castle;newmodel=sand_castle_parts;newpart=castle} @self
+  - delay 80
+  - remove @self
+# 613604376509931687530002

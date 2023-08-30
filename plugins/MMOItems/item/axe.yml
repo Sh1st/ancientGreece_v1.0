@@ -213,3 +213,9 @@ THE_UNBREAKABLE:
 '1':
   base:
     material: STONE_AXE
+    custom-model-data: 4000.0
+TEST:
+  base:
+    material: DIAMOND_AXE
+    custom-model-data: 4000.0
+    name: Боевой топор

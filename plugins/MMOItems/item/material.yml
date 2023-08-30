@@ -5,8 +5,8 @@ STEEL_INGOT:
     disable-repairing: true
     disable-crafting: true
     lore:
-      - '&7Can be used at the steel crafting'
-      - '&7station to craft advanced gear.'
+    - '&7Can be used at the steel crafting'
+    - '&7station to craft advanced gear.'
 UNCOMMON_WEAPON_ESSENCE:
   base:
     material: BLAZE_POWDER
@@ -14,7 +14,7 @@ UNCOMMON_WEAPON_ESSENCE:
       unbreaking: 1
     hide-enchants: true
     lore:
-      - '&7Can be used to craft uncommon items.'
+    - '&7Can be used to craft uncommon items.'
     name: '&eUncommon Weapon Essence'
     disable-crafting: true
     disable-smelting: true
@@ -30,7 +30,7 @@ RARE_WEAPON_ESSENCE:
       unbreaking: 1
     hide-enchants: true
     lore:
-      - '&7Can be used to craft rare items.'
+    - '&7Can be used to craft rare items.'
     name: '&eRare Weapon Essence'
     disable-crafting: true
     disable-smelting: true
@@ -41,7 +41,7 @@ VERY_RARE_WEAPON_ESSENCE:
       unbreaking: 1
     hide-enchants: true
     lore:
-      - '&7Can be used to craft very rare items.'
+    - '&7Can be used to craft very rare items.'
     name: '&eVery rare Weapon Essence'
     disable-crafting: true
     disable-smelting: true
@@ -52,7 +52,7 @@ LEGENDARY_WEAPON_ESSENCE:
       unbreaking: 1
     hide-enchants: true
     lore:
-      - '&7Can be used to craft legendary items.'
+    - '&7Can be used to craft legendary items.'
     name: '&eLegendary Weapon Essence'
     disable-crafting: true
     disable-smelting: true
@@ -63,7 +63,7 @@ MYTHICAL_WEAPON_ESSENCE:
       unbreaking: 1
     hide-enchants: true
     lore:
-      - '&7Can be used to craft mythical items.'
+    - '&7Can be used to craft mythical items.'
     name: '&eMythical Weapon Essence'
     disable-crafting: true
     disable-smelting: true
@@ -74,7 +74,7 @@ EPIC_WEAPON_ESSENCE:
       unbreaking: 1
     hide-enchants: true
     lore:
-      - '&7Can be used to craft epic items.'
+    - '&7Can be used to craft epic items.'
     name: '&eEpic Weapon Essence'
     disable-crafting: true
     disable-smelting: true
@@ -85,7 +85,7 @@ MAGICAL_WEAPON_ESSENCE:
       unbreaking: 1
     hide-enchants: true
     lore:
-      - '&7Can be used to craft magical items.'
+    - '&7Can be used to craft magical items.'
     name: '&eMagical Weapon Essence'
     disable-crafting: true
     disable-smelting: true
@@ -96,7 +96,7 @@ UNIQUE_WEAPON_ESSENCE:
       unbreaking: 1
     hide-enchants: true
     lore:
-      - '&7Can be used to craft unique items.'
+    - '&7Can be used to craft unique items.'
     name: '&eUnique Weapon Essence'
     disable-crafting: true
     disable-smelting: true
@@ -106,8 +106,8 @@ WEAPON_POWDER:
     tier: TRASH
     name: '&7Broken Weapon Powder'
     lore:
-      - '&7Can be used as regular gunpowder.'
-      - '&7Obtained when deconstructing an item.'
+    - '&7Can be used as regular gunpowder.'
+    - '&7Obtained when deconstructing an item.'
 MAGIC_FRAGMENT:
   base:
     material: MAGENTA_DYE
@@ -129,7 +129,7 @@ FIRE_ESSENCE:
     enchants:
       unbreaking: 1
     crafting:
-      shaped: { }
+      shaped: {}
 RARE_DIAMOND:
   base:
     material: DIAMOND
@@ -143,7 +143,7 @@ SILVER_COIN:
     material: IRON_NUGGET
     name: '&fSilver Coin'
     lore:
-      - '&7A very shiny silver coin.'
+    - '&7A very shiny silver coin.'
     enchants:
       unbreaking: 1
     hide-enchants: true
@@ -153,7 +153,7 @@ SILVER_INGOT:
     material: IRON_INGOT
     name: '&fSilver Ingot'
     lore:
-      - '&7A very shiny silver ingot.'
+    - '&7A very shiny silver ingot.'
     enchants:
       unbreaking: 1
     hide-enchants: true
@@ -161,29 +161,71 @@ SILVER_INGOT:
     crafting:
       shaped:
         '1':
-          - MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN
-          - MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN
-          - MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN
+        - MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN
+        - MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN
+        - MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN
 RESTORATION_GEM:
   base:
     material: EMERALD
     name: §a§lRestoration Gem
     lore:
-      - §7This gem can be used to repair magic items.
+    - §7This gem can be used to repair magic items.
     tier: UNCOMMON
 ITEM_UPGRADER:
   base:
     material: PAPER
     name: §fUniversal Item Upgrader
     lore:
-      - §7§oThis blueprint can upgrade any weapon.
+    - §7§oThis blueprint can upgrade any weapon.
     tier: RARE
 DARK_NETHERITE:
   base:
     material: NETHERITE_INGOT
     name: §cDark Netherite
     lore:
-      - §cNetherite, but darker.
-      - §eCan be used in a smithing table
-      - §ewith netherite items.
+    - §cNetherite, but darker.
+    - §eCan be used in a smithing table
+    - §ewith netherite items.
     tier: RARE
+TOCHILO:
+  base:
+    material: FLINT
+    name: '&fТочило'
+    disable-repairing: true
+    disable-crafting: true
+    displayed-type: §6Материал
+    lore:
+    - '&7Маленькое точило для мечей,'
+    - '&7чтобы поддерживать и улучшать'
+    - '&7их остроту и эффективность.'
+    - ''
+    - '&fОбычный предмет'
+IRONHEART:
+  base:
+    material: QUARTZ
+    name: '&fСтальное cердце'
+    disable-repairing: true
+    disable-crafting: true
+    displayed-type: §6Материал
+    lore:
+    - '&7Руда с молочно-белыми кристаллами,'
+    - '&7доступная по цене, но обладающая'
+    - '&7хорошей прочностью.'
+    - ''
+    - '&fОбычный предмет'
+ARCANEYEY:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY3Mjk1OTAyOGYyNzRiMzc5ZDQzMGYwNjhmMGYxNWE0Zjc5M2VhYzEyYWZiOTRhZTBiNGU1MGNmODk1ZGYwZiJ9fX0=
+      uuid: 076dd3bf-0d76-497b-9745-40ed9402a311
+    name: '&eЧародейское око'
+    disable-repairing: true
+    disable-crafting: true
+    displayed-type: §6Материал
+    lore:
+    - '&7Ярко-красный дешёвый драгоценный'
+    - '&7камушек, при этом он привлекает'
+    - '&7внимание своей красотой.'
+    - ''
+    - '&eНеобычный предмет'

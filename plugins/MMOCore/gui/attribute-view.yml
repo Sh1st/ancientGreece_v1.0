@@ -5,11 +5,11 @@ name: Атрибуты персонажа
 
 # Number of slots in your inventory. Must be
 # between 9 and 54 and must be a multiple of 9.
-slots: 27
+slots: 45
 
 items:
     reallocate:
-        slots: [26]
+        slots: [40]
         function: reallocation
         item: CAULDRON
         name: '&aОчки атрибутов'
@@ -22,10 +22,10 @@ items:
             - '&eНужно 1 очко перераспределения атрибута.'
             - '&e◆ Очки перераспределения атрибутов: &6{points}'
     str:
-        slots: [11]
+        slots: [20]
         function: attribute_strength
         name: '&cСила'
-        item: GOLDEN_APPLE
+        item: WHITE_DYE
         lore: # {buffs} returns amount of buffs
             - ''
             - '&7Потрачено очков: &6{spent}&7/&6{max}'
@@ -38,10 +38,10 @@ items:
             - '&eНажмите, для улучшения на 1 очко'
             - '&e◆ Текущие очки атрибутов: {attribute_points}'
     dex:
-        slots: [13]
+        slots: [22]
         function: attribute_dexterity
         name: '&aЛовкость'
-        item: LEATHER_BOOTS
+        item: ORANGE_DYE
         hide-flags: true
         lore:
             - ''
@@ -57,10 +57,10 @@ items:
             - '&eНажмите, для улучшения на 1 очко'
             - '&e◆ Текущие очки атрибутов: {attribute_points}'
     int:
-        slots: [15]
+        slots: [24]
         function: attribute_intelligence
         name: '&bИнтеллект'
-        item: BOOK
+        item: MAGENTA_DYE
         lore:
             - ''
             - '&7Потрачено очков: &6{spent}&7/&6{max}'

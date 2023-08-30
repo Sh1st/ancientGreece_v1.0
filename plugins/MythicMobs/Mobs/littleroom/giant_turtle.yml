@@ -1,0 +1,79 @@
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+
+giant_turtle:
+  Type: RAVAGER
+  Display: 'Giant Turtle'
+  Health: 100 
+  Modules:
+    ThreatTable: true
+  DamageModifiers:
+  - PROJECTILE -0.01
+  AITargetSelectors:
+  - players
+  Options:
+    #MovementSpeed: .15
+    Collidable: true
+    FollowRange: 64
+    Silent: true
+    PreventOtherDrops: true
+  Skills:
+  - skill{s=giant_turtleIDLEsound} @self ~onTimer:60 .5
+  - skill{s=giant_turtleSPAWN} @self ~onSpawn
+  - skill{s=giant_turtleDEATH} @self ~onDeath
+  - skill{s=giant_turtleSLAM} @self ~onTimer:20
+  - skill{s=giant_turtleEMERGE} @self ~onTimer:5
+  - skill{s=giant_turtlePUSHPLAYERS} @self ~onTimer:1
+  - randomskill{skills=giant_turtleSTOMP1sync,giant_turtleSTOMP2sync,giant_turtleCOMBOsync;sync=true} @self ~onAttack
+  - model{mid=giant_turtle;step=2} @self ~onSpawn
+  - model{mid=giant_turtle;step=2} @self ~onLoad
+  - bodyclamp{m=giant_turtle;c=10} @self ~onSpawn
+  - bodyclamp{m=giant_turtle;c=10} @self ~onLoad
+  
+giant_turtle_coconut:
+  Type: ARMOR_STAND
+  Options:
+    PreventOtherDrops: true
+  Skills:
+  - lunge{v=1.5;yv=.5} @Sphere{radius=12;points=16;yoffset=5} ~onSpawn
+  - model{mid=giant_turtle_coconut} @self ~onSpawn
+  - model{mid=giant_turtle_coconut} @self ~onLoad
+  - skill{s=giant_turtle_coconutEXPLODE} @self ~onTimer:1
+  
+giant_turtle_palm:
+  Type: ARMOR_STAND
+  Options:
+    PreventOtherDrops: true
+  DamageModifiers:
+  - ENTITY_ATTACK 0.0 
+  - PROJECTILE -0.01  
+  Skills:
+  - skill{s=palmtreeHITBOX} @self ~onTimer:1
+  - skill{s=palmtreeDROP} @self ~onDamaged
+  - model{mid=palm_tree;d=false} @self ~onSpawn
+  - model{mid=palm_tree;d=false} @self ~onLoad
+  
+palm_coconut:
+  Type: ARMOR_STAND
+  Options:
+    PreventOtherDrops: true
+  Skills:
+  - lunge{v=.25;yv=.5} @Sphere{radius=3;points=16;yoffset=3} ~onSpawn
+  - model{mid=giant_turtle_coconut;d=false} @self ~onSpawn
+  - model{mid=giant_turtle_coconut;d=false} @self ~onLoad
+  - skill{s=palm_coconutLAND} @self ~onTimer:1
+  - skill{s=palm_coconutCUT} @self ~onDamaged
+  - skill{s=palm_coconutPICKUP} @self ~onTimer:1
+  
+giant_turtle_sandcastle:
+  Type: ARMOR_STAND
+  Options:
+    PreventOtherDrops: true
+  Skills:
+  - skill{s=palmtreeHITBOX} @self ~onTimer:1
+  - model{mid=sand_castle;d=false} @self ~onSpawn
+  - model{mid=sand_castle;d=false} @self ~onLoad
+  - skill{s=sand_castleREMOVE} @self ~onDamaged
+# 613604376509931687530002

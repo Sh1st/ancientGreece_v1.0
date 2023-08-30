@@ -1,0 +1,66 @@
+# +———————————————————————————————————————————————————+ #
+# |——————————     BANITEM CONFIGURATION     ——————————| #
+# |——————————————————      v3.4      —————————————————| #
+# +———————————————————————————————————————————————————+ #
+# |                   Documentation:                  | #
+# |             https://banitem.andross.fr/           | #
+# +———————————————————————————————————————————————————+ #
+# For any bugs/suggestions: Andross#5254
+# +——————————————————————————————————————————————————————————————————————————————————————————————+
+# General Informations:
+#  - The blacklist will block the items.
+#  - The whitelist will allow only the items set.
+#    -> The 'message' key represents the message sent to players if they try to use an item which is not in whitelist
+#    -> The 'ignored' key represents all ignored actions (they will not being by default banned)
+debug:
+  errors: true
+  reload: false
+  colors-console: false
+no-permission: '&cYou do not have permission.'
+prefix: '&c&l[&e&lBanItem&c&l] '
+api:
+  playerbanitemevent: false
+  deletebanneditemevent: false
+check-update: true
+priority: use,consume,click
+actions:
+  enchant:
+    material: BARRIER
+    displayname: '&cBANNED'
+    lore:
+    - '&cYou can not add this'
+    - '&cenchantement.'
+  rename:
+  - /rename
+  transfer:
+    hoppers-block: false
+  wear:
+    region-check: false
+    scanner: true
+  delete:
+    ignored-inventories-titles:
+    - My Cool Gui
+    - Shop
+hooks:
+  worldguard: false
+  advancedenchantments: false
+sound:
+  enabled: true
+  type: ENCHANT_THORNS_HIT
+  volume: 1
+  pitch: 1
+  worldSound: false
+particle:
+  enabled: false
+  type: BARRIER
+  amount: 1
+illegal-stacks:
+  enabled: false
+  vanilla-max-stack-size: true
+  block-type: split
+blacklist:
+  world:
+    slime_ball:
+      delete: {}
+    bone_meal:
+      delete: {}
